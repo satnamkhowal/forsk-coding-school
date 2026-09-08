@@ -1,0 +1,18 @@
+
+/* Forsk Coding School - runtime and local fixes */
+.preloader,.preloader.is-loading{display:none!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.header-duplicate{display:none!important}
+.header-fixed,.header-sticky{transform:none!important;visibility:visible!important;opacity:1!important}
+.header-top{display:none!important}
+.space-for-header{padding-top:105px!important}
+.site_logo img,.hamburger_logo img{width:auto!important;height:58px!important;max-width:170px!important;object-fit:contain}
+.forsk-course-thumb{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block}
+.forsk-related-card{height:100%;padding:22px;border:1px solid rgba(20,35,80,.10);border-radius:16px;background:#fff;box-shadow:0 8px 30px rgba(10,30,80,.06)}
+.forsk-related-card h3{margin-top:15px}
+.forsk-content-section{padding-top:80px;padding-bottom:80px}
+.forsk-badge{display:inline-block;padding:8px 16px;border-radius:999px;font-weight:700;background:#eef1ff;margin-bottom:14px}
+@media(max-width:991px){
+ .space-for-header{padding-top:78px!important}
+ .site_logo img,.hamburger_logo img{height:50px!important;max-width:145px!important}
+ .forsk-content-section{padding-top:55px;padding-bottom:55px}
+}

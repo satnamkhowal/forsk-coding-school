@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /cart.php
+Disallow: /checkout.php
+Disallow: /login.php
+Disallow: /sign-in.php
+Disallow: /forgot-password.php
+Disallow: /wishlist.php
+Sitemap: https://forskcodingschool.com/sitemap.xml
