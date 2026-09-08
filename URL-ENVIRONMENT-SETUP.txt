@@ -1,0 +1,18 @@
+FORSK CODING SCHOOL - LOCAL / LIVE URL SETUP
+
+This package uses one centralized URL decision in includes/head.php.
+
+LOCAL
+http://localhost:81/forsk-coding-school/
+
+LIVE
+https://forskcodingschool.com/
+
+HOW IT WORKS
+- includes/head.php detects localhost and sets $base_url.
+- A <base> tag makes relative assets (assets/...) and internal links resolve from the project root even for nested /blog/<slug>/index.php pages.
+- Existing canonical/OG/schema URLs for forskcodingschool.com are rewritten to the active environment.
+- Generated blog featured images use relative assets/images/blog/... paths in page HTML, so localhost does not try to load them from localhost:81/assets/ or another nested blog folder.
+- Keep future internal links relative (e.g. blog/foo/, courses/, assets/images/...). Do not hard-code /assets/ or /blog/ when the project is hosted in the /forsk-coding-school/ local subfolder.
+
+If the production domain changes in future, change the production URL in includes/head.php once.
