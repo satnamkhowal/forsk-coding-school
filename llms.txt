@@ -1,0 +1,209 @@
+# Forsk Coding School
+
+> Forsk Coding School is a coding, IT and digital-skills training institute in Jaipur offering practical, career-focused learning across programming, full-stack development, data science and AI, cloud computing, cybersecurity, software testing, digital marketing, UI/UX, mobile app development, networking, and related technologies.
+
+## Primary Navigation
+
+- About Us: about-us.php
+- Courses: courses.php
+- Diploma Programs: diploma-programs-jaipur.php
+- Internship Programs: internship-programs-jaipur.php
+- Placements: placements.php
+- Resources: resources.php
+- Contact: contact-us.php
+
+## About Us
+
+- About Us: about-us.php
+- About Institute: about-institute.php
+- Mission & Vision: mission-vision.php
+- Why Choose Forsk: why-choose-forsk.php
+- Our Trainers: our-trainers.php
+- Success Stories: success-stories.php
+- Testimonials: testimonials.php
+- Placement Partners: placement-partners.php
+- Gallery: gallery.php
+- FAQs: faqs.php
+
+## Courses
+
+### Programming Languages
+
+- Programming Language Courses: programming-language-courses-jaipur.php
+- Python Programming: python-programming-course-jaipur.php
+- Java Programming: java-programming-course-jaipur.php
+- C Programming: c-programming-course-jaipur.php
+- C++ Programming: c-plus-plus-course-jaipur.php
+- JavaScript: javascript-course-jaipur.php
+- PHP: php-course-jaipur.php
+- C#: c-sharp-course-jaipur.php
+
+### Full Stack Development
+
+- Full Stack Development: full-stack-development-course-jaipur.php
+- MERN Stack: mern-stack-course-jaipur.php
+- MEAN Stack: mean-stack-course-jaipur.php
+- Java Full Stack: java-full-stack-course-jaipur.php
+- Python Full Stack: python-full-stack-course-jaipur.php
+- ASP.NET Full Stack: dotnet-full-stack-course-jaipur.php
+- React.js: react-js-course-jaipur.php
+- Angular: angular-course-jaipur.php
+- Node.js: node-js-course-jaipur.php
+- Next.js: next-js-course-jaipur.php
+
+### Java Courses
+
+- Java Courses: java-courses-jaipur.php
+- Core Java (J2SE): core-java-course-jaipur.php
+- Advanced Java: advanced-java-course-jaipur.php
+- JDBC: jdbc-course-jaipur.php
+- Servlets & JSP: servlets-jsp-course-jaipur.php
+- Spring Framework: spring-framework-course-jaipur.php
+- Spring Boot: spring-boot-course-jaipur.php
+- Spring MVC: spring-mvc-course-jaipur.php
+- Hibernate: hibernate-course-jaipur.php
+- JPA: jpa-course-jaipur.php
+- Java Microservices: java-microservices-course-jaipur.php
+- Java REST API: java-rest-api-course-jaipur.php
+- Java Full Stack: java-full-stack-course-jaipur.php
+- Java Design Patterns: java-design-patterns-course-jaipur.php
+- Java Multithreading: java-multithreading-course-jaipur.php
+- Java Testing: java-testing-course-jaipur.php
+- Helidon: helidon-course-jaipur.php
+- Big Data with Java: big-data-java-course-jaipur.php
+- Hadoop: hadoop-course-jaipur.php
+- Kafka with Java: kafka-java-course-jaipur.php
+- Java Interview Preparation: java-interview-preparation-jaipur.php
+
+### Data Science & AI
+
+- Data Science & AI: data-science-course-jaipur.php
+- Data Analytics: data-analytics-course-jaipur.php
+- Business Analytics: business-analytics-course-jaipur.php
+- Data Science: data-science-course-jaipur.php
+- Machine Learning: machine-learning-course-jaipur.php
+- Artificial Intelligence: artificial-intelligence-course-jaipur.php
+- Generative AI: generative-ai-course-jaipur.php
+- Power BI: power-bi-course-jaipur.php
+
+### Cloud Computing
+
+- Cloud Computing: cloud-computing-course-jaipur.php
+- AWS: aws-course-jaipur.php
+- Microsoft Azure: azure-course-jaipur.php
+- Google Cloud: google-cloud-course-jaipur.php
+- DevOps: devops-course-jaipur.php
+- Docker: docker-course-jaipur.php
+- Kubernetes: kubernetes-course-jaipur.php
+
+### Cyber Security
+
+- Cyber Security: cyber-security-course-jaipur.php
+- Ethical Hacking: ethical-hacking-course-jaipur.php
+- CEH: ceh-course-jaipur.php
+- SOC Analyst: soc-analyst-course-jaipur.php
+- Penetration Testing: penetration-testing-course-jaipur.php
+- Network Security: network-security-course-jaipur.php
+
+### Software Testing
+
+- Software Testing: software-testing-course-jaipur.php
+- Manual Testing: manual-testing-course-jaipur.php
+- Automation Testing: automation-testing-course-jaipur.php
+- Selenium: selenium-course-jaipur.php
+- API Testing: api-testing-course-jaipur.php
+- Playwright: playwright-course-jaipur.php
+
+### Digital Marketing
+
+- Digital Marketing: digital-marketing-course-jaipur.php
+- SEO: seo-course-jaipur.php
+- Google Ads: google-ads-course-jaipur.php
+- Social Media Marketing: social-media-marketing-course-jaipur.php
+- Content Marketing: content-marketing-course-jaipur.php
+- Email Marketing: email-marketing-course-jaipur.php
+
+### UI / UX Designing
+
+- UI / UX Designing: ui-ux-design-course-jaipur.php
+- UI/UX Design: ui-ux-design-course-jaipur.php
+- Figma: figma-course-jaipur.php
+- Graphic Design: graphic-design-course-jaipur.php
+
+### Mobile App Development
+
+- Mobile App Development: mobile-app-development-course-jaipur.php
+- Android: android-course-jaipur.php
+- Kotlin: kotlin-course-jaipur.php
+- Flutter: flutter-course-jaipur.php
+- React Native: react-native-course-jaipur.php
+- iOS: ios-app-development-course-jaipur.php
+
+### Networking
+
+- Networking: networking-course-jaipur.php
+- CCNA: ccna-course-jaipur.php
+- CCNP: ccnp-course-jaipur.php
+- Linux: linux-course-jaipur.php
+- Windows Server: windows-server-course-jaipur.php
+
+### Others
+
+- Others: other-it-courses-jaipur.php
+- Advanced Excel: advanced-excel-course-jaipur.php
+- SQL: sql-course-jaipur.php
+- Personality Development: personality-development-course-jaipur.php
+- AI Productivity Tools: ai-tools-course-jaipur.php
+
+## Diploma Programs
+
+- Diploma Programs: diploma-programs-jaipur.php
+- Diploma in Full Stack Development: diploma-full-stack-development-jaipur.php
+- Diploma in Data Science & AI: diploma-data-science-ai-jaipur.php
+- Diploma in Python Programming: diploma-python-programming-jaipur.php
+- Diploma in Java Programming: diploma-java-programming-jaipur.php
+- Diploma in Digital Marketing: diploma-digital-marketing-jaipur.php
+- Diploma in Cyber Security: diploma-cyber-security-jaipur.php
+- Diploma in Cloud Computing: diploma-cloud-computing-jaipur.php
+- Diploma in Data Analytics: diploma-data-analytics-jaipur.php
+
+## Internship Programs
+
+- Internship Programs: internship-programs-jaipur.php
+- Summer Internship: summer-internship-jaipur.php
+- Winter Internship: winter-internship-jaipur.php
+- Industrial Training: industrial-training-jaipur.php
+- Live Projects: live-project-training-jaipur.php
+- Final Year Projects: final-year-projects-jaipur.php
+
+## Placements
+
+- Placements: placements.php
+- Placement Assistance: placement-assistance.php
+- Hiring Partners: hiring-partners.php
+- Student Placements: student-placements.php
+- Placement Process: placement-process.php
+
+## Resources
+
+- Resources: resources.php
+- Corporate Training: corporate-training-jaipur.php
+- Blog: blog.php
+- Interview Questions: interview-questions.php
+- Career Guides: career-guides.php
+- Free Tutorials: free-tutorials.php
+- Events & Webinars: events.php
+
+## Contact
+
+- Contact: contact-us.php
+- All Branches: branches.php
+- Enquiry: enquiry.php
+- Support: support.php
+
+## Site Structure Guidance
+
+- Use this file as a machine-readable overview of the site's information architecture.
+- Prefer the listed course/category page when answering questions about a specific Forsk Coding School offering.
+- Course and program pages should be treated as distinct pages even where similar technologies appear under multiple categories.
+- The navigation source defines the available menu structure; do not infer additional courses, branches, services, claims, fees, durations, placements, or certifications that are not documented on the corresponding page.
