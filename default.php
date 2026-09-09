@@ -528,7 +528,7 @@
         </section>
         <!-- end: Categories Section -->
         <br>
-        <!-- start: Course Section -->
+          <!-- start: Course Section -->
         <section class="tj-course-section section-gap fix tj-theme-bg">
           <div class="container">
             <div class="row">
@@ -566,9 +566,17 @@
               <div class="col-lg-4 col-md-6 tj_filter_item development design">
                 <div class="tj-course-item">
                   <div class="tj-course-img">
-                    <a href="full-stack-development-course-jaipur.php"><img src="assets/images/course/course-img-1.webp"
-                        alt="Professional Full Stack Development Course in Jaipur"></a>
-                    <div class="tj-product-badge">
+                    <a href="full-stack-development-course-jaipur.php">
+                      <figure>
+                        <img src="assets/images/full-stack-development-course-jaipur-forsk-coding-school.webp"
+                          alt="Full Stack Development Course Jaipur Course in Jaipur at Forsk Coding School"
+                          title="Full Stack Development Course Jaipur Course in Jaipur"
+                          data-description="Join the Full Stack Development Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning.">
+                        <figcaption>Full Stack Development Course Jaipur Course in Jaipur at Forsk Coding School
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <div class="tj-product-badge display-none">
                       <span>Popular</span>
                     </div>
                     <div class="tj-wishlist-btn">
@@ -581,27 +589,26 @@
                         <a class="tj-cat" href="full-stack-development-course-jaipur.php">Development</a>
                       </div>
                       <div class="tj-level">
-                        <span>Intermediate</span>
+                        <span>Beginner To Advance</span>
                       </div>
                     </div>
-                    <h3 class="title tj-fs-h5"><a href="full-stack-development-course-jaipur.php">Professional
-                        full-stack web development
-                        course.</a></h3>
+                    <h3 class="title tj-fs-h5"><a href="full-stack-development-course-jaipur.php">Full Stack Development
+                        Course Jaipur</a></h3>
                     <span class="author"><a href="instructor.php"><img src="assets/images/users/user-img-8.png" alt="">
                         Emmielar Josan</a></span>
-                    <div class="course-meta">
+                    <div class="course-meta display-none">
                       <span><i class="tji-book"></i>33 Lesson</span>
                       <span><i class="tji-clock"></i>6h 30m</span>
                       <span><i class="tji-user-duo"></i>2.1k</span>
                     </div>
-                    <div class="tj-course-price-wrap">
+                    <div class="tj-course-price-wrap display-none">
                       <div class="single-rating">
                         <i class="tji-star"></i>
                         <span class="label">4.9<span>(3K+)</span></span>
                       </div>
                       <div class="course-price tj-fs-h6"><del>$30.00</del> $20.00</div>
                     </div>
-                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
+                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap for_space"
                       href="full-stack-development-course-jaipur.php">
                       <span class="btn-text">Start learning</span>
                       <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
@@ -612,9 +619,21 @@
               <div class="col-lg-4 col-md-6 tj_filter_item business ai-ml data-science">
                 <div class="tj-course-item">
                   <div class="tj-course-img">
-                    <a href="business-analytics-course-jaipur.php"><img src="assets/images/course/course-img-2.webp"
-                        alt="Business Analytics Course in Jaipur"></a>
-                    <div class="tj-product-badge">
+                    <a href="python-programming-course-jaipur.php">
+                      <figure>
+                        <img src="assets/images/python-programming-course-jaipur-forsk-coding-school.webp"
+                          alt="Python Programming Course Jaipur Course in Jaipur at Forsk Coding School"
+                          title="Python Programming Course Jaipur Course in Jaipur"
+                          data-description="Join the Python Programming Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning.">
+                        <figcaption>Python Programming Course Jaipur Course in Jaipur at Forsk Coding School
+                        </figcaption>
+                      </figure>
+
+
+                      <img src="forsk1\assets\images\advanced-java-course-jaipur-forsk-coding-school.webp"
+                        alt="Business Analytics Course in Jaipur">
+                    </a>
+                    <div class="tj-product-badge display-none">
                       <span>New</span>
                     </div>
                     <div class="tj-wishlist-btn">
@@ -624,32 +643,31 @@
                   <div class="tj-course-content">
                     <div class="tj-cat-level-wrap">
                       <div class="tj-categories">
-                        <a class="tj-cat" href="business-analytics-course-jaipur.php">Business</a>
+                        <a class="tj-cat" href="python-programming-course-jaipur.php">Programming</a>
                       </div>
                       <div class="tj-level">
-                        <span>Beginner</span>
+                        <span>Beginner To Advance</span>
                       </div>
                     </div>
-                    <h3 class="title tj-fs-h5"><a href="business-analytics-course-jaipur.php">Business growth and
-                        strategy masterclass
-                        2026.</a>
+                    <h3 class="title tj-fs-h5"><a href="python-programming-course-jaipur.php">Python programing Course
+                        In Jaipur </a>
                     </h3>
                     <span class="author"><a href="instructor.php"><img src="assets/images/users/user-img-7.png" alt="">
                         Ronald Richards</a></span>
-                    <div class="course-meta">
+                    <div class="course-meta display-none">
                       <span><i class="tji-book"></i>26 Lesson</span>
                       <span><i class="tji-clock"></i>3h 20m</span>
                       <span><i class="tji-user-duo"></i>12.4K</span>
                     </div>
-                    <div class="tj-course-price-wrap">
+                    <div class="tj-course-price-wrap display-none">
                       <div class="single-rating">
                         <i class="tji-star"></i>
                         <span class="label">4.7<span>(2K+)</span></span>
                       </div>
                       <div class="course-price tj-fs-h6"><del>$20.00</del> $10.00</div>
                     </div>
-                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
-                      href="business-analytics-course-jaipur.php">
+                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap for_space"
+                      href="python-programming-course-jaipur.php">
                       <span class="btn-text">Start learning</span>
                       <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                     </a>
@@ -659,44 +677,49 @@
               <div class="col-lg-4 col-md-6 tj_filter_item design ai-ml">
                 <div class="tj-course-item">
                   <div class="tj-course-img">
-                    <a href="ui-ux-design-course-jaipur.php"><img src="assets/images/course/course-img-3.webp"
-                        alt="UI UX Design Course with AI in Jaipur"></a>
-                    <div class="tj-product-badge">
-                      <span>Trending</span>
-                    </div>
-                    <div class="tj-wishlist-btn">
-                      <button><i class="tji-heart"></i></button>
-                    </div>
+                    <a href="c-programming-course-jaipur.php">
+                      <figure>
+                        <img src="assets/images/c-programming-course-jaipur-forsk-coding-school.webp"
+                          alt="C Programming Course Jaipur Course in Jaipur at Forsk Coding School"
+                          title="C Programming Course Jaipur Course in Jaipur"
+                          data-description="Join the C Programming Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning.">
+                        <figcaption>C Programming Course Jaipur Course in Jaipur at Forsk Coding School</figcaption>
+                      </figure>
+                      <div class="tj-product-badge display-none">
+                        <span>Trending</span>
+                      </div>
+                      <div class="tj-wishlist-btn">
+                        <button><i class="tji-heart"></i></button>
+                      </div>
                   </div>
                   <div class="tj-course-content">
                     <div class="tj-cat-level-wrap">
                       <div class="tj-categories">
-                        <a class="tj-cat" href="ui-ux-design-course-jaipur.php">Design</a>
+                        <a class="tj-cat" href="c-programming-course-jaipur.php">Programming</a>
                       </div>
                       <div class="tj-level">
-                        <span>All levels</span>
+                        <span>Beginner To Advance</span>
                       </div>
                     </div>
-                    <h3 class="title tj-fs-h5"><a href="ui-ux-design-course-jaipur.php">Complete UI/UX Design with AI
-                        prompt in
-                        2026.</a>
+                    <h3 class="title tj-fs-h5"><a href="c-programming-course-jaipur.php">C Programming Course in
+                        Jaipur</a>
                     </h3>
                     <span class="author"><a href="instructor.php"><img src="assets/images/users/user-img-4.png" alt="">
                         Floyd Miles</a></span>
-                    <div class="course-meta">
+                    <div class="course-meta display-none">
                       <span><i class="tji-book"></i>12 Lesson</span>
                       <span><i class="tji-clock"></i>2h 30m</span>
                       <span><i class="tji-user-duo"></i>30.1K</span>
                     </div>
-                    <div class="tj-course-price-wrap">
+                    <div class="tj-course-price-wrap display-none">
                       <div class="single-rating">
                         <i class="tji-star"></i>
                         <span class="label">4.8<span>(10K+)</span></span>
                       </div>
                       <div class="course-price tj-fs-h6"><del>$26.00</del> $18.00</div>
                     </div>
-                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
-                      href="ui-ux-design-course-jaipur.php">
+                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap for_space"
+                      href="c-programming-course-jaipur.php">
                       <span class="btn-text">Start learning</span>
                       <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                     </a>
@@ -706,9 +729,16 @@
               <div class="col-lg-4 col-md-6 tj_filter_item business ai-ml data-science">
                 <div class="tj-course-item">
                   <div class="tj-course-img">
-                    <a href="machine-learning-course-jaipur.php"><img src="assets/images/course/course-img-4.webp"
-                        alt="Machine Learning Course in Jaipur"></a>
-                    <div class="tj-product-badge">
+                    <a href="c-plus-plus-course-jaipur.php">
+                      <figure>
+                        <img src="assets/images/c-plus-plus-course-jaipur-forsk-coding-school.webp"
+                          alt="C++ Course Jaipur Course in Jaipur at Forsk Coding School"
+                          title="C++ Course Jaipur Course in Jaipur"
+                          data-description="Join the C++ Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning.">
+                        <figcaption>C++ Course Jaipur Course in Jaipur at Forsk Coding School</figcaption>
+                      </figure>
+                    </a>
+                    <div class="tj-product-badge display-none">
                       <span>Free</span>
                     </div>
                     <div class="tj-wishlist-btn">
@@ -718,32 +748,31 @@
                   <div class="tj-course-content">
                     <div class="tj-cat-level-wrap">
                       <div class="tj-categories">
-                        <a class="tj-cat" href="machine-learning-course-jaipur.php">AI & ML</a>
+                        <a class="tj-cat" href="c-plus-plus-course-jaipur.php">Programming</a>
                       </div>
                       <div class="tj-level">
-                        <span>All levels</span>
+                        <span>Beginner To Advance</span>
                       </div>
                     </div>
-                    <h3 class="title tj-fs-h5"><a href="machine-learning-course-jaipur.php">AI & Machine learning course
-                        for
-                        beginner.</a>
+                    <h3 class="title tj-fs-h5"><a href="c-plus-plus-course-jaipur.php">C++ Programming Course In
+                        Jaipur</a>
                     </h3>
                     <span class="author"><a href="instructor.php"><img src="assets/images/users/user-img-3.png"
                           alt="Instructor"> Devon Lane</a></span>
-                    <div class="course-meta">
+                    <div class="course-meta display-none">
                       <span><i class="tji-book"></i>12 Lesson</span>
                       <span><i class="tji-clock"></i>2h 30m</span>
                       <span><i class="tji-user-duo"></i>30.6K</span>
                     </div>
-                    <div class="tj-course-price-wrap">
+                    <div class="tj-course-price-wrap display-none">
                       <div class="single-rating">
                         <i class="tji-star"></i>
                         <span class="label">4.9<span>(12K+)</span></span>
                       </div>
                       <div class="course-price tj-fs-h6">Free</div>
                     </div>
-                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
-                      href="machine-learning-course-jaipur.php">
+                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap for_space"
+                      href="c-plus-plus-course-jaipur.php">
                       <span class="btn-text">Start learning</span>
                       <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                     </a>
@@ -753,9 +782,16 @@
               <div class="col-lg-4 col-md-6 tj_filter_item design development">
                 <div class="tj-course-item">
                   <div class="tj-course-img">
-                    <a href="graphic-design-course-jaipur.php"><img src="assets/images/course/course-img-5.webp"
-                        alt="Graphic Design Course in Jaipur"></a>
-                    <div class="tj-product-badge">
+                    <a href="javascript-course-jaipur.php">
+                      <figure>
+                        <img src="assets/images/javascript-course-jaipur-forsk-coding-school.webp"
+                          alt="Javascript Course Jaipur Course in Jaipur at Forsk Coding School"
+                          title="Javascript Course Jaipur Course in Jaipur"
+                          data-description="Join the Javascript Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning.">
+                        <figcaption>Javascript Course Jaipur Course in Jaipur at Forsk Coding School</figcaption>
+                      </figure>
+                    </a>
+                    <div class="tj-product-badge display-none">
                       <span>Popular</span>
                     </div>
                     <div class="tj-wishlist-btn">
@@ -765,31 +801,31 @@
                   <div class="tj-course-content">
                     <div class="tj-cat-level-wrap">
                       <div class="tj-categories">
-                        <a class="tj-cat" href="graphic-design-course-jaipur.php">Design</a>
+                        <a class="tj-cat" href="javascript-course-jaipur.php">Programming</a>
                       </div>
                       <div class="tj-level">
-                        <span>Advance</span>
+                        <span>Bieginner To Advance</span>
                       </div>
                     </div>
-                    <h3 class="title tj-fs-h5"><a href="graphic-design-course-jaipur.php">Complete future graphic design
-                        masterclass.</a>
+                    <h3 class="title tj-fs-h5"><a href="javascript-course-jaipur.php">Java Script Course In
+                        Jaipur</a>
                     </h3>
                     <span class="author"><a href="instructor.php"><img src="assets/images/users/user-img-1.png" alt="">
                         Annette Black</a></span>
-                    <div class="course-meta">
+                    <div class="course-meta display-none">
                       <span><i class="tji-book"></i>18 Lesson</span>
                       <span><i class="tji-clock"></i>5h 10m</span>
                       <span><i class="tji-user-duo"></i>22.4K</span>
                     </div>
-                    <div class="tj-course-price-wrap">
+                    <div class="tj-course-price-wrap display-none">
                       <div class="single-rating">
                         <i class="tji-star"></i>
                         <span class="label">4.6<span>(16K+)</span></span>
                       </div>
                       <div class="course-price tj-fs-h6"><del>$30.00</del> $20.00</div>
                     </div>
-                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
-                      href="graphic-design-course-jaipur.php">
+                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap for_space"
+                      href="javascript-course-jaipur.php">
                       <span class="btn-text">Start learning</span>
                       <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                     </a>
@@ -799,9 +835,16 @@
               <div class="col-lg-4 col-md-6 tj_filter_item data-science business">
                 <div class="tj-course-item">
                   <div class="tj-course-img">
-                    <a href="data-science-course-jaipur.php"><img src="assets/images/course/course-img-6.webp"
-                        alt="Data Science Course in Jaipur"></a>
-                    <div class="tj-product-badge">
+                    <a href="php-course-jaipur.php">
+                      <figure>
+                        <img src="assets/images/php-course-jaipur-forsk-coding-school.webp"
+                          alt="Php Course Jaipur Course in Jaipur at Forsk Coding School"
+                          title="Php Course Jaipur Course in Jaipur"
+                          data-description="Join the Php Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning.">
+                        <figcaption>Php Course Jaipur Course in Jaipur at Forsk Coding School</figcaption>
+                      </figure>
+                    </a>
+                    <div class="tj-product-badge display-none">
                       <span>New</span>
                     </div>
                     <div class="tj-wishlist-btn">
@@ -811,37 +854,37 @@
                   <div class="tj-course-content">
                     <div class="tj-cat-level-wrap">
                       <div class="tj-categories">
-                        <a class="tj-cat" href="data-science-course-jaipur.php">Data Science</a>
+                        <a class="tj-cat" href="php-course-jaipur.php">Programming</a>
                       </div>
                       <div class="tj-level">
-                        <span>Intermediate</span>
+                        <span>Beginner To Advance</span>
                       </div>
                     </div>
-                    <h3 class="title tj-fs-h5"><a href="data-science-course-jaipur.php">Complete data science training
-                        programming.</a>
+                    <h3 class="title tj-fs-h5"><a href="php-course-jaipur.php">PHP Course in Jaipur</a>
                     </h3>
                     <span class="author"><a href="instructor.php"><img src="assets/images/users/user-img-2.png" alt="">
                         Ralph Edwards</a></span>
-                    <div class="course-meta">
+                    <div class="course-meta display-none">
                       <span><i class="tji-book"></i>12 Lesson</span>
                       <span><i class="tji-clock"></i>2h 20m</span>
                       <span><i class="tji-user-duo"></i>8.3K</span>
                     </div>
-                    <div class="tj-course-price-wrap">
+                    <div class="tj-course-price-wrap display-none">
                       <div class="single-rating">
                         <i class="tji-star"></i>
                         <span class="label">4.7<span>(2K+)</span></span>
                       </div>
                       <div class="course-price tj-fs-h6"><del>$20.00</del> $9.00</div>
                     </div>
-                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
-                      href="data-science-course-jaipur.php">
+                    <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap for_space"
+                      href="php-course-jaipur.php">
                       <span class="btn-text">Start learning</span>
                       <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                     </a>
                   </div>
                 </div>
               </div>
+              
             </div>
             <div class="row">
               <div class="col-12">
