@@ -1,0 +1,74 @@
+FORSK CODING SCHOOL — LOCALHOST + SEO UPDATE (09 SEP 2026)
+=============================================================
+
+CENTRAL CONTROL
+---------------
+All environment-dependent URLs are controlled from:
+    includes/config.php
+
+Main settings:
+    LIVE_SITE_URL
+    LOCAL_PROJECT_PATH
+    ENVIRONMENT_MODE
+
+Local host and port are detected automatically. Example ports such as :81, :8080 or :3000 do not need changes in individual pages.
+
+SEO / STRUCTURED DATA
+---------------------
+- Production canonical URLs remain on https://forskcodingschool.com even while testing locally.
+- Local/test environments automatically output noindex, nofollow.
+- Canonical, hreflang, Open Graph and Twitter metadata are centralized.
+- Home page outputs EducationalOrganization + WebSite + WebPage JSON-LD.
+- Inner pages output WebPage + BreadcrumbList.
+- Existing Course, BlogPosting, Article and other page schema are preserved and normalized to public URLs.
+- BlogPosting schema is enriched with canonical URL/mainEntityOfPage when missing.
+- Course schema keeps/gets provider and canonical URL when missing.
+- Jaipur organization address/contact details are centralized for organization schema.
+
+BLOG FIXES
+----------
+- 1,500 blog pages now use the central environment configuration.
+- Removed duplicated localhost/domain detection from blog pages.
+- Fixed 500 malformed PHP schema definitions that could cause fatal parse errors.
+- Fixed apostrophe-safe JSON-LD handling using nowdoc where required.
+- Normalized legacy ../../ HTML navigation paths for the central <base> URL.
+- Blog Open Graph type is automatically "article".
+
+SITEMAP / CRAWL CLEANUP
+-----------------------
+- sitemap.xml rebuilt with 1,634 public URLs.
+- All 1,500 blog detail pages are included.
+- blog/blogs-sitemap.xml rebuilt with 1,500 blog URLs.
+- Removed cart/login/error/template/backup/duplicate URLs from sitemap.
+- Homepage is represented as the canonical domain root, not /default.php.
+- Theme/demo pages with untouched placeholder metadata are automatically noindex.
+
+DUPLICATE CONSOLIDATION
+-----------------------
+- contact-us.php canonicalized to contact.php.
+- courses-sidebar.php canonicalized to courses.php.
+- C-programming featured-sidebar variant canonicalized to the primary C course page.
+- forskcodingschool.com.php canonicalized to the homepage root.
+
+LOCAL CORE ASSETS
+-----------------
+The uploaded working tree did not contain the assets folder, but recoverable core assets were present in Git history.
+Restored lightweight core dependencies:
+    assets/css
+    assets/js
+    assets/fonts
+    assets/images/logos
+    assets/images/shapes
+    assets/images/footer
+    assets/images/hero
+    assets/images/about
+
+Large course/blog image libraries were intentionally not restored into the delivery ZIP because they are hundreds of MB and many generated blog images are not present in Git history.
+
+VALIDATION
+----------
+- Full PHP syntax lint performed across the project.
+- Localhost rendering verified with dynamic ports.
+- Live rendering verified for production canonical/index behavior.
+- JSON-LD output validated as parseable JSON on representative Home, Course and Blog pages.
+- XML sitemap validated after regeneration.
