@@ -1,0 +1,21 @@
+UPLOAD THESE FILES PRESERVING PATHS
+===================================
+/public_html/llms.txt
+/public_html/robots.txt
+/public_html/sitemap.xml
+/public_html/sitemap-pages.xml
+/public_html/images-sitemap.xml
+/public_html/live-mentorlab.php
+/public_html/a2e6aef22b29005c161acb4bafed90cf.txt
+/public_html/default.php
+/public_html/includes/head.php
+/public_html/includes/footer.php
+/public_html/blog/llms.txt
+/public_html/blog/blogs-sitemap.xml
+/public_html/mentors/llms.txt
+/public_html/mentors/mentors-sitemap.xml
+/public_html/tools/indexnow-submit.php
+
+Optional only:
+/public_html/robots-AI-SEARCH-ONLY-optional.txt
+Do NOT rename this optional file to robots.txt unless you want to opt out of model-training bots while preserving AI/search discovery.

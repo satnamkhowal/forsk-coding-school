@@ -78,6 +78,8 @@
                           <li><a href="contact.php"><span>Careers</span></a></li>
                           <li><a href="courses.php"><span>Course</span></a></li>
                           <li><a href="blog/"><span>News</span></a></li>
+                          <li><a href="live-mentorlab.php"><span>Live MentorLab</span></a></li>
+                          <li><a href="mentors/"><span>Mentors</span></a></li>
                         </ul>
                       </div>
                       <div class="footer-widget footer-widget-contact tj-fade-anim" data-delay="0.7">

@@ -10,9 +10,11 @@
     content="Learn job-oriented coding and IT courses in Jaipur at Forsk Coding School, including Python, Java, Full Stack, AI, Data Science, AWS, Cyber Security and DevOps.">
   <meta name="keywords"
     content="Forsk Coding School Jaipur, coding courses Jaipur, IT courses Jaipur, programming courses Jaipur, Python course Jaipur, Java course Jaipur, full stack course Jaipur, AI course Jaipur, data science course Jaipur, AWS course Jaipur, cyber security course Jaipur, DevOps course Jaipur">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <title>Forsk Coding School | Coding &amp; IT Courses in Jaipur</title>
   <link rel="canonical" href="https://forskcodingschool.com/">
+  <link rel="describedby" href="https://forskcodingschool.com/llms.txt">
+  <link rel="sitemap" type="application/xml" href="https://forskcodingschool.com/sitemap.xml">
   <link rel="alternate" hreflang="en-in" href="https://forskcodingschool.com/">
   <meta name="theme-color" content="#0d6efd">
 
@@ -23,13 +25,13 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Forsk Coding School">
   <meta property="og:locale" content="en_IN">
-  <meta property="og:image" content="assets/images/logos/forsk-icon.png">
+  <meta property="og:image" content="https://forskcodingschool.com/assets/images/logos/forsk-icon.png">
   <meta property="og:image:alt" content="Forsk Coding School">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Forsk Coding School | Coding &amp; IT Courses in Jaipur">
   <meta name="twitter:description"
     content="Learn job-oriented coding and IT courses in Jaipur at Forsk Coding School, including Python, Java, Full Stack, AI, Data Science, AWS, Cyber Security and DevOps.">
-  <meta name="twitter:image" content="assets/images/logos/forsk-icon.png">
+  <meta name="twitter:image" content="https://forskcodingschool.com/assets/images/logos/forsk-icon.png">
   <link rel="shortcut icon" type="image/png" href="assets/images/logos/forsk-icon.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/edunex-icons.css">
@@ -39,8 +41,7 @@
   <link rel="stylesheet" href="assets/css/meanmenu.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/local-fix.css">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Forsk Coding School","url":"https://forskcodingschool.com/","description":"Forsk Coding School is a Jaipur-based technology training institute offering job-oriented courses in programming, full stack development, data science, AI, cloud computing, cybersecurity, software testing, digital marketing, UI/UX and mobile app development.","logo":"assets/images/logos/forsk-icon.png","areaServed":"Jaipur, Rajasthan, India"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"EducationalOrganization","@id":"https://forskcodingschool.com/#organization","name":"Forsk Coding School","url":"https://forskcodingschool.com/","description":"Forsk Coding School is a Jaipur-based technology training institute offering practical, career-focused learning in programming, full stack development, data science, AI, cloud computing, cybersecurity, software testing, digital marketing, UI/UX and related technologies.","logo":{"@type":"ImageObject","url":"https://forskcodingschool.com/assets/images/logos/forsk-icon.png"},"email":"info@forskcodingschool.com","telephone":"+917231968183","areaServed":{"@type":"City","name":"Jaipur"}},{"@type":"WebSite","@id":"https://forskcodingschool.com/#website","url":"https://forskcodingschool.com/","name":"Forsk Coding School","publisher":{"@id":"https://forskcodingschool.com/#organization"},"inLanguage":"en-IN"}]}</script>
   <style id="forsk-seo-internal-links">
     /* Forsk SEO internal-linking section */
     .forsk-seo-course-network .sec-heading .desc {
@@ -2026,6 +2027,20 @@
         <!-- end: Blog Section -->
       </main>
       <br>
+
+      <section id="forsk-learning-model" class="tj-details section-gap">
+        <div class="container"><div class="row"><div class="col-lg-10 mx-auto">
+          <div class="sec-heading sec-heading-center"><span class="sec-subtitle"><i class="tji-subtitle"></i>How learning works</span><h2 class="sec-title">Live Two-Way Learning at Forsk Coding School</h2></div>
+          <div class="row rg-20">
+            <div class="col-md-6"><div class="tj-course-item"><div class="tj-course-content"><h3 class="title tj-fs-h5">Online + Offline</h3><p>Courses can support live online learning and classroom-based offline learning in Jaipur, depending on the program and schedule.</p></div></div></div>
+            <div class="col-md-6"><div class="tj-course-item"><div class="tj-course-content"><h3 class="title tj-fs-h5">Live Two-Way Classes</h3><p>Learners can ask questions while the mentor is teaching, discuss code and receive feedback instead of only watching one-way recorded content.</p></div></div></div>
+            <div class="col-md-6"><div class="tj-course-item"><div class="tj-course-content"><h3 class="title tj-fs-h5">10–15 Learner Micro-Batches</h3><p>Small batches are planned around approximately 10–15 learners to preserve direct mentor interaction, live Q&amp;A and practical review.</p></div></div></div>
+            <div class="col-md-6"><div class="tj-course-item"><div class="tj-course-content"><h3 class="title tj-fs-h5">Practical Troubleshooting</h3><p>With learner permission, mentors can use screen sharing or consent-based remote-support tools for technical setup issues. Passwords and OTPs should never be requested.</p></div></div></div>
+          </div>
+          <div class="text-center mt-4"><a class="tj-btn-primary" href="live-mentorlab.php">Explore Forsk Live MentorLab</a></div>
+        </div></div></div>
+      </section>
+
       <!-- start: Footer Section -->
       <footer class="footer-section footer-1 section-gap-top">
         <div class="footer-inner">

@@ -1,0 +1,52 @@
+# Forsk Coding School Knowledge Hub
+
+> Practical learning guides covering programming, full-stack development, data, AI, cloud, cybersecurity, testing, design, marketing and career preparation.
+
+This file covers URLs under /blog/. Blog articles should be treated as educational guidance, not as guarantees of employment, placement, salary, certification or outcomes. Prefer the relevant course page for current program information.
+
+## Blog entry points
+- [Knowledge Hub](https://forskcodingschool.com/blog/): Browse blog content.
+- [Complete blog sitemap](https://forskcodingschool.com/blog/blogs-sitemap.xml): Full URL inventory.
+- [Courses](https://forskcodingschool.com/courses.php): Current course navigation.
+- [Live MentorLab](https://forskcodingschool.com/live-mentorlab.php): How interactive classes work.
+
+## Representative learning guides
+- [Python fundamentals and syntax: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-fundamentals-and-syntax-practical-roadmap-beginners/): Programming — Python fundamentals and syntax.
+- [Object-oriented Python: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/object-oriented-python-practical-roadmap-beginners/): Programming — Object-oriented Python.
+- [Python APIs and JSON: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-apis-and-json-practical-roadmap-beginners/): Programming — Python APIs and JSON.
+- [Python automation workflows: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-automation-workflows-practical-roadmap-beginners/): Programming — Python automation workflows.
+- [Python project development: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-project-development-practical-roadmap-beginners/): Programming — Python project development.
+- [Core Java foundations: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/core-java-foundations-practical-roadmap-beginners/): Programming — Core Java foundations.
+- [Java OOP and collections: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/java-oop-and-collections-practical-roadmap-beginners/): Programming — Java OOP and collections.
+- [Java database connectivity: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/java-database-connectivity-practical-roadmap-beginners/): Programming — Java database connectivity.
+- [Spring Boot backend development: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/spring-boot-backend-development-practical-roadmap-beginners/): Programming — Spring Boot backend development.
+- [Java microservices fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/java-microservices-fundamentals-practical-roadmap-beginners/): Programming — Java microservices fundamentals.
+- [JavaScript fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/javascript-fundamentals-practical-roadmap-beginners/): Web Development — JavaScript fundamentals.
+- [Modern ES6+ JavaScript: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/modern-es6-plus-javascript-practical-roadmap-beginners/): Web Development — Modern ES6+ JavaScript.
+- [DOM and browser programming: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/dom-and-browser-programming-practical-roadmap-beginners/): Web Development — DOM and browser programming.
+- [Asynchronous JavaScript and APIs: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/asynchronous-javascript-and-apis-practical-roadmap-beginners/): Web Development — Asynchronous JavaScript and APIs.
+- [JavaScript project architecture: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/javascript-project-architecture-practical-roadmap-beginners/): Web Development — JavaScript project architecture.
+- [MERN stack foundations: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/mern-stack-foundations-practical-roadmap-beginners/): Full Stack Development — MERN stack foundations.
+- [React frontend architecture: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/react-frontend-architecture-practical-roadmap-beginners/): Full Stack Development — React frontend architecture.
+- [Node and Express backend: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/node-and-express-backend-practical-roadmap-beginners/): Full Stack Development — Node and Express backend.
+- [MongoDB data modeling: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/mongodb-data-modeling-practical-roadmap-beginners/): Full Stack Development — MongoDB data modeling.
+- [MERN deployment workflow: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/mern-deployment-workflow-practical-roadmap-beginners/): Full Stack Development — MERN deployment workflow.
+- [Full stack web foundations: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/full-stack-web-foundations-practical-roadmap-beginners/): Full Stack Development — Full stack web foundations.
+- [Frontend to backend integration: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/frontend-to-backend-integration-practical-roadmap-beginners/): Full Stack Development — Frontend to backend integration.
+- [REST API design for full stack: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/rest-api-design-for-full-stack-practical-roadmap-beginners/): Full Stack Development — REST API design for full stack.
+- [Authentication and application security: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/authentication-and-application-security-practical-roadmap-beginners/): Full Stack Development — Authentication and application security.
+- [Full stack deployment and portfolio: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/full-stack-deployment-and-portfolio-practical-roadmap-beginners/): Full Stack Development — Full stack deployment and portfolio.
+- [SQL query fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/sql-query-fundamentals-practical-roadmap-beginners/): Data & BI — SQL query fundamentals.
+- [SQL joins and relationships: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/sql-joins-and-relationships-practical-roadmap-beginners/): Data & BI — SQL joins and relationships.
+- [Advanced SQL analytics: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/advanced-sql-analytics-practical-roadmap-beginners/): Data & BI — Advanced SQL analytics.
+- [Database design and normalization: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/database-design-and-normalization-practical-roadmap-beginners/): Data & BI — Database design and normalization.
+- [SQL performance and reporting: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/sql-performance-and-reporting-practical-roadmap-beginners/): Data & BI — SQL performance and reporting.
+- [Excel fundamentals for analysis: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/excel-fundamentals-for-analysis-practical-roadmap-beginners/): Data & BI — Excel fundamentals for analysis.
+- [Advanced Excel formulas: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/advanced-excel-formulas-practical-roadmap-beginners/): Data & BI — Advanced Excel formulas.
+- [PivotTables and reporting: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/pivottables-and-reporting-practical-roadmap-beginners/): Data & BI — PivotTables and reporting.
+- [Power Query data preparation: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/power-query-data-preparation-practical-roadmap-beginners/): Data & BI — Power Query data preparation.
+- [Excel dashboard development: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/excel-dashboard-development-practical-roadmap-beginners/): Data & BI — Excel dashboard development.
+- [Power BI fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/power-bi-fundamentals-practical-roadmap-beginners/): Data & BI — Power BI fundamentals.
+
+## Optional
+- [Root LLM guide](https://forskcodingschool.com/llms.txt)

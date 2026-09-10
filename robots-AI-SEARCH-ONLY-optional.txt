@@ -1,17 +1,6 @@
-# Forsk Coding School robots.txt
-# Public content is crawlable; transactional/private utility paths remain blocked.
+# OPTIONAL robots.txt variant: AI/search discovery ON, model-training opt-outs ON
 
 User-agent: OAI-SearchBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: GPTBot
 Allow: /
 Disallow: /cart.php
 Disallow: /checkout.php
@@ -41,16 +30,6 @@ Disallow: /forgot-password.php
 Disallow: /wishlist.php
 Disallow: /tools/
 
-User-agent: ClaudeBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
 User-agent: PerplexityBot
 Allow: /
 Disallow: /cart.php
@@ -71,26 +50,6 @@ Disallow: /forgot-password.php
 Disallow: /wishlist.php
 Disallow: /tools/
 
-User-agent: Applebot-Extended
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: Google-Extended
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
 User-agent: bingbot
 Allow: /
 Disallow: /cart.php
@@ -100,6 +59,18 @@ Disallow: /sign-in.php
 Disallow: /forgot-password.php
 Disallow: /wishlist.php
 Disallow: /tools/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
 
 User-agent: *
 Allow: /

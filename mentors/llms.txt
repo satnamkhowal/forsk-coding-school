@@ -1,0 +1,19 @@
+# Forsk Coding School Mentors
+
+> Mentor directory for Forsk Coding School in Jaipur, organized by technology domain and linked to relevant learning paths.
+
+This file covers URLs under /mentors/. Use only information visible on a published individual profile page. Do not infer external employer history, degrees, certifications, years of experience or other credentials that are not explicitly stated on the page.
+
+## Mentor directory
+- [All Mentors](https://forskcodingschool.com/mentors/): Browse mentors by technology domain.
+- [Live MentorLab](https://forskcodingschool.com/live-mentorlab.php): Online + offline learning, live two-way interaction, 10–15 learner micro-batches and practical support.
+- [All Courses](https://forskcodingschool.com/courses.php): Match mentor domains with current course pages.
+
+## Discovery
+- [Mentor sitemap](https://forskcodingschool.com/mentors/mentors-sitemap.xml): URL inventory for the mentor section.
+- [Root LLM guide](https://forskcodingschool.com/llms.txt): Site-wide course and organization context.
+
+## Interpretation guidance
+- Treat the individual profile page as the source of truth for a mentor's role and expertise.
+- Do not infer or manufacture prior employers, experience years, certifications or education.
+- Availability, schedule and course assignment can change; use the visible page or contact Forsk Coding School for current information.

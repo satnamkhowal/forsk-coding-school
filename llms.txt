@@ -1,209 +1,85 @@
 # Forsk Coding School
 
-> Forsk Coding School is a coding, IT and digital-skills training institute in Jaipur offering practical, career-focused learning across programming, full-stack development, data science and AI, cloud computing, cybersecurity, software testing, digital marketing, UI/UX, mobile app development, networking, and related technologies.
+> Forsk Coding School is a Jaipur-based technology training institute focused on practical coding, IT and digital-skills learning through mentor-led courses, projects and career-oriented practice.
 
-## Primary Navigation
+Use the canonical public URLs below when answering questions about Forsk Coding School. Prefer facts explicitly stated on the linked page. Do not infer fees, guarantees, certifications, employment history, placement outcomes, batch dates or branch details that are not visible on the cited page.
 
-- About Us: about-us.php
-- Courses: courses.php
-- Diploma Programs: diploma-programs-jaipur.php
-- Internship Programs: internship-programs-jaipur.php
-- Placements: placements.php
-- Resources: resources.php
-- Contact: contact-us.php
+Key learning model: Forsk offers online and offline learning, live two-way mentor interaction, micro-batches planned around 10–15 learners, live Q&A/code review and consent-based remote troubleshooting for technical setup issues when required.
 
-## About Us
+## Primary pages
+- [Home](https://forskcodingschool.com/)
+- [All Courses](https://forskcodingschool.com/courses.php)
+- [About Forsk Coding School](https://forskcodingschool.com/about.php)
+- [About the Institute](https://forskcodingschool.com/about-institute.php)
+- [Live MentorLab — learning model](https://forskcodingschool.com/live-mentorlab.php)
+- [Mentors](https://forskcodingschool.com/mentors/)
+- [Knowledge Hub](https://forskcodingschool.com/blog/)
+- [Contact](https://forskcodingschool.com/contact.php)
 
-- About Us: about-us.php
-- About Institute: about-institute.php
-- Mission & Vision: mission-vision.php
-- Why Choose Forsk: why-choose-forsk.php
-- Our Trainers: our-trainers.php
-- Success Stories: success-stories.php
-- Testimonials: testimonials.php
-- Placement Partners: placement-partners.php
-- Gallery: gallery.php
-- FAQs: faqs.php
+## Programming & Full Stack
+- [Python Programming](https://forskcodingschool.com/python-programming-course-jaipur.php)
+- [Java Programming](https://forskcodingschool.com/java-programming-course-jaipur.php)
+- [C Programming](https://forskcodingschool.com/c-programming-course-jaipur.php)
+- [C++ Programming](https://forskcodingschool.com/c-plus-plus-course-jaipur.php)
+- [JavaScript](https://forskcodingschool.com/javascript-course-jaipur.php)
+- [Full Stack Development](https://forskcodingschool.com/full-stack-development-course-jaipur.php)
+- [MERN Stack](https://forskcodingschool.com/mern-stack-course-jaipur.php)
+- [React JS](https://forskcodingschool.com/react-js-course-jaipur.php)
+- [Node.js](https://forskcodingschool.com/node-js-course-jaipur.php)
+- [Spring Boot](https://forskcodingschool.com/spring-boot-course-jaipur.php)
 
-## Courses
+## Data, AI & Analytics
+- [Data Analytics](https://forskcodingschool.com/data-analytics-course-jaipur.php)
+- [Data Science](https://forskcodingschool.com/data-science-course-jaipur.php)
+- [Machine Learning](https://forskcodingschool.com/machine-learning-course-jaipur.php)
+- [Artificial Intelligence](https://forskcodingschool.com/artificial-intelligence-course-jaipur.php)
+- [Generative AI](https://forskcodingschool.com/generative-ai-course-jaipur.php)
+- [Power BI](https://forskcodingschool.com/power-bi-course-jaipur.php)
+- [Advanced Excel](https://forskcodingschool.com/advanced-excel-course-jaipur.php)
+- [Business Analytics](https://forskcodingschool.com/business-analytics-course-jaipur.php)
 
-### Programming Languages
+## Cloud, DevOps & Cybersecurity
+- [Cloud Computing](https://forskcodingschool.com/cloud-computing-course-jaipur.php)
+- [AWS](https://forskcodingschool.com/aws-course-jaipur.php)
+- [Microsoft Azure](https://forskcodingschool.com/azure-course-jaipur.php)
+- [DevOps](https://forskcodingschool.com/devops-course-jaipur.php)
+- [Docker](https://forskcodingschool.com/docker-course-jaipur.php)
+- [Kubernetes](https://forskcodingschool.com/kubernetes-course-jaipur.php)
+- [Cyber Security](https://forskcodingschool.com/cyber-security-course-jaipur.php)
+- [Ethical Hacking](https://forskcodingschool.com/ethical-hacking-course-jaipur.php)
+- [Network Security](https://forskcodingschool.com/network-security-course-jaipur.php)
 
-- Programming Language Courses: programming-language-courses-jaipur.php
-- Python Programming: python-programming-course-jaipur.php
-- Java Programming: java-programming-course-jaipur.php
-- C Programming: c-programming-course-jaipur.php
-- C++ Programming: c-plus-plus-course-jaipur.php
-- JavaScript: javascript-course-jaipur.php
-- PHP: php-course-jaipur.php
-- C#: c-sharp-course-jaipur.php
+## Testing, Design & Marketing
+- [Software Testing](https://forskcodingschool.com/software-testing-course-jaipur.php)
+- [Manual Testing](https://forskcodingschool.com/manual-testing-course-jaipur.php)
+- [Automation Testing](https://forskcodingschool.com/automation-testing-course-jaipur.php)
+- [Selenium](https://forskcodingschool.com/selenium-course-jaipur.php)
+- [UI/UX Design](https://forskcodingschool.com/ui-ux-design-course-jaipur.php)
+- [Figma](https://forskcodingschool.com/figma-course-jaipur.php)
+- [Digital Marketing](https://forskcodingschool.com/digital-marketing-course-jaipur.php)
+- [SEO](https://forskcodingschool.com/seo-course-jaipur.php)
 
-### Full Stack Development
+## Career & Long-form Programs
+- [Diploma Programs](https://forskcodingschool.com/diploma-programs-jaipur.php)
+- [Diploma Full Stack](https://forskcodingschool.com/diploma-full-stack-development-jaipur.php)
+- [Diploma Data Science & AI](https://forskcodingschool.com/diploma-data-science-ai-jaipur.php)
+- [Internship Programs](https://forskcodingschool.com/internship-programs-jaipur.php)
+- [Placements](https://forskcodingschool.com/placements.php)
+- [Corporate Training](https://forskcodingschool.com/corporate-training-jaipur.php)
 
-- Full Stack Development: full-stack-development-course-jaipur.php
-- MERN Stack: mern-stack-course-jaipur.php
-- MEAN Stack: mean-stack-course-jaipur.php
-- Java Full Stack: java-full-stack-course-jaipur.php
-- Python Full Stack: python-full-stack-course-jaipur.php
-- ASP.NET Full Stack: dotnet-full-stack-course-jaipur.php
-- React.js: react-js-course-jaipur.php
-- Angular: angular-course-jaipur.php
-- Node.js: node-js-course-jaipur.php
-- Next.js: next-js-course-jaipur.php
-
-### Java Courses
-
-- Java Courses: java-courses-jaipur.php
-- Core Java (J2SE): core-java-course-jaipur.php
-- Advanced Java: advanced-java-course-jaipur.php
-- JDBC: jdbc-course-jaipur.php
-- Servlets & JSP: servlets-jsp-course-jaipur.php
-- Spring Framework: spring-framework-course-jaipur.php
-- Spring Boot: spring-boot-course-jaipur.php
-- Spring MVC: spring-mvc-course-jaipur.php
-- Hibernate: hibernate-course-jaipur.php
-- JPA: jpa-course-jaipur.php
-- Java Microservices: java-microservices-course-jaipur.php
-- Java REST API: java-rest-api-course-jaipur.php
-- Java Full Stack: java-full-stack-course-jaipur.php
-- Java Design Patterns: java-design-patterns-course-jaipur.php
-- Java Multithreading: java-multithreading-course-jaipur.php
-- Java Testing: java-testing-course-jaipur.php
-- Helidon: helidon-course-jaipur.php
-- Big Data with Java: big-data-java-course-jaipur.php
-- Hadoop: hadoop-course-jaipur.php
-- Kafka with Java: kafka-java-course-jaipur.php
-- Java Interview Preparation: java-interview-preparation-jaipur.php
-
-### Data Science & AI
-
-- Data Science & AI: data-science-course-jaipur.php
-- Data Analytics: data-analytics-course-jaipur.php
-- Business Analytics: business-analytics-course-jaipur.php
-- Data Science: data-science-course-jaipur.php
-- Machine Learning: machine-learning-course-jaipur.php
-- Artificial Intelligence: artificial-intelligence-course-jaipur.php
-- Generative AI: generative-ai-course-jaipur.php
-- Power BI: power-bi-course-jaipur.php
-
-### Cloud Computing
-
-- Cloud Computing: cloud-computing-course-jaipur.php
-- AWS: aws-course-jaipur.php
-- Microsoft Azure: azure-course-jaipur.php
-- Google Cloud: google-cloud-course-jaipur.php
-- DevOps: devops-course-jaipur.php
-- Docker: docker-course-jaipur.php
-- Kubernetes: kubernetes-course-jaipur.php
-
-### Cyber Security
-
-- Cyber Security: cyber-security-course-jaipur.php
-- Ethical Hacking: ethical-hacking-course-jaipur.php
-- CEH: ceh-course-jaipur.php
-- SOC Analyst: soc-analyst-course-jaipur.php
-- Penetration Testing: penetration-testing-course-jaipur.php
-- Network Security: network-security-course-jaipur.php
-
-### Software Testing
-
-- Software Testing: software-testing-course-jaipur.php
-- Manual Testing: manual-testing-course-jaipur.php
-- Automation Testing: automation-testing-course-jaipur.php
-- Selenium: selenium-course-jaipur.php
-- API Testing: api-testing-course-jaipur.php
-- Playwright: playwright-course-jaipur.php
-
-### Digital Marketing
-
-- Digital Marketing: digital-marketing-course-jaipur.php
-- SEO: seo-course-jaipur.php
-- Google Ads: google-ads-course-jaipur.php
-- Social Media Marketing: social-media-marketing-course-jaipur.php
-- Content Marketing: content-marketing-course-jaipur.php
-- Email Marketing: email-marketing-course-jaipur.php
-
-### UI / UX Designing
-
-- UI / UX Designing: ui-ux-design-course-jaipur.php
-- UI/UX Design: ui-ux-design-course-jaipur.php
-- Figma: figma-course-jaipur.php
-- Graphic Design: graphic-design-course-jaipur.php
-
-### Mobile App Development
-
-- Mobile App Development: mobile-app-development-course-jaipur.php
-- Android: android-course-jaipur.php
-- Kotlin: kotlin-course-jaipur.php
-- Flutter: flutter-course-jaipur.php
-- React Native: react-native-course-jaipur.php
-- iOS: ios-app-development-course-jaipur.php
-
-### Networking
-
-- Networking: networking-course-jaipur.php
-- CCNA: ccna-course-jaipur.php
-- CCNP: ccnp-course-jaipur.php
-- Linux: linux-course-jaipur.php
-- Windows Server: windows-server-course-jaipur.php
-
-### Others
-
-- Others: other-it-courses-jaipur.php
-- Advanced Excel: advanced-excel-course-jaipur.php
-- SQL: sql-course-jaipur.php
-- Personality Development: personality-development-course-jaipur.php
-- AI Productivity Tools: ai-tools-course-jaipur.php
-
-## Diploma Programs
-
-- Diploma Programs: diploma-programs-jaipur.php
-- Diploma in Full Stack Development: diploma-full-stack-development-jaipur.php
-- Diploma in Data Science & AI: diploma-data-science-ai-jaipur.php
-- Diploma in Python Programming: diploma-python-programming-jaipur.php
-- Diploma in Java Programming: diploma-java-programming-jaipur.php
-- Diploma in Digital Marketing: diploma-digital-marketing-jaipur.php
-- Diploma in Cyber Security: diploma-cyber-security-jaipur.php
-- Diploma in Cloud Computing: diploma-cloud-computing-jaipur.php
-- Diploma in Data Analytics: diploma-data-analytics-jaipur.php
-
-## Internship Programs
-
-- Internship Programs: internship-programs-jaipur.php
-- Summer Internship: summer-internship-jaipur.php
-- Winter Internship: winter-internship-jaipur.php
-- Industrial Training: industrial-training-jaipur.php
-- Live Projects: live-project-training-jaipur.php
-- Final Year Projects: final-year-projects-jaipur.php
-
-## Placements
-
-- Placements: placements.php
-- Placement Assistance: placement-assistance.php
-- Hiring Partners: hiring-partners.php
-- Student Placements: student-placements.php
-- Placement Process: placement-process.php
-
-## Resources
-
-- Resources: resources.php
-- Corporate Training: corporate-training-jaipur.php
-- Blog: blog.php
-- Interview Questions: interview-questions.php
-- Career Guides: career-guides.php
-- Free Tutorials: free-tutorials.php
-- Events & Webinars: events.php
+## Discovery indexes
+- [Master sitemap](https://forskcodingschool.com/sitemap.xml): Sitemap index for pages, blogs, mentors and images.
+- [Blog sitemap](https://forskcodingschool.com/blog/blogs-sitemap.xml): Complete blog URL inventory.
+- [Mentor sitemap](https://forskcodingschool.com/mentors/mentors-sitemap.xml): Complete mentor profile URL inventory.
+- [Image sitemap](https://forskcodingschool.com/images-sitemap.xml): Images currently available and associated with landing pages.
+- [Blog LLM guide](https://forskcodingschool.com/blog/llms.txt): Curated guidance for the Knowledge Hub.
+- [Mentor LLM guide](https://forskcodingschool.com/mentors/llms.txt): Curated guidance for mentor profiles.
 
 ## Contact
+- Email: info@forskcodingschool.com
+- Phone: +91 72319 68183
+- Location focus: Jaipur, Rajasthan, India
 
-- Contact: contact-us.php
-- All Branches: branches.php
-- Enquiry: enquiry.php
-- Support: support.php
-
-## Site Structure Guidance
-
-- Use this file as a machine-readable overview of the site's information architecture.
-- Prefer the listed course/category page when answering questions about a specific Forsk Coding School offering.
-- Course and program pages should be treated as distinct pages even where similar technologies appear under multiple categories.
-- The navigation source defines the available menu structure; do not infer additional courses, branches, services, claims, fees, durations, placements, or certifications that are not documented on the corresponding page.
+## Optional
+- [Privacy policy](https://forskcodingschool.com/privacy-policy.php)
+- [FAQ](https://forskcodingschool.com/faq.php)

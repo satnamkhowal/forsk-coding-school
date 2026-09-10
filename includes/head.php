@@ -8,6 +8,11 @@ $page_type = trim((string)($page_type ?? 'website'));
 $page_schema = $page_schema ?? '';
 
 if (IS_LOCAL) $page_robots = 'noindex, nofollow, noarchive';
+if (!IS_LOCAL && stripos($page_robots, 'noindex') === false) {
+    foreach (['max-snippet:-1','max-image-preview:large','max-video-preview:-1'] as $directive) {
+        if (stripos($page_robots, $directive) === false) $page_robots .= ', ' . $directive;
+    }
+}
 
 if (empty($page_canonical)) {
     $uri=parse_url((string)($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_PATH) ?: '/';
@@ -32,6 +37,14 @@ if (!preg_match('#^https?://#i', $page_og_image)) {
     $ogLocal=in_array($ogHost,['localhost','127.0.0.1','::1'],true) || str_ends_with($ogHost,'.localhost') || str_ends_with($ogHost,'.test');
     if ($ogHost===$liveHost || $ogLocal) $page_og_image=seo_url($page_og_image);
 }
+$canonicalPath = (string)(parse_url($page_canonical, PHP_URL_PATH) ?: '/');
+if ($canonicalPath === '/blog' || str_starts_with($canonicalPath, '/blog/')) {
+    $llms_describedby = seo_url('blog/llms.txt');
+} elseif ($canonicalPath === '/mentors' || str_starts_with($canonicalPath, '/mentors/')) {
+    $llms_describedby = seo_url('mentors/llms.txt');
+} else {
+    $llms_describedby = seo_url('llms.txt');
+}
 ?>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -44,6 +57,8 @@ if (!preg_match('#^https?://#i', $page_og_image)) {
 <meta name="googlebot" content="<?= htmlspecialchars($page_robots, ENT_QUOTES, 'UTF-8') ?>">
 <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') ?></title>
 <link rel="canonical" href="<?= htmlspecialchars($page_canonical, ENT_QUOTES, 'UTF-8') ?>">
+<link rel="describedby" href="<?= htmlspecialchars($llms_describedby, ENT_QUOTES, 'UTF-8') ?>">
+<link rel="sitemap" type="application/xml" href="<?= htmlspecialchars(seo_url('sitemap.xml'), ENT_QUOTES, 'UTF-8') ?>">
 <link rel="alternate" hreflang="en-IN" href="<?= htmlspecialchars($page_canonical, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:url" content="<?= htmlspecialchars($page_canonical, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:title" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') ?>">
