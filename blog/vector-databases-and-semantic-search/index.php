@@ -5,8 +5,10 @@ $page_description = 'Learn vector databases and semantic search with practical e
 $page_keywords = 'artificial intelligence';
 $slug = 'vector-databases-and-semantic-search';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Vector databases and semantic search', 'description': 'Learn vector databases and semantic search with practical explanations, examples, best practices, common mistakes and a clear implementation checklist f...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/vector-databases-and-semantic-search/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/vector-databases-and-semantic-search.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vector databases and semantic search","description":"Learn vector databases and semantic search with practical explanations, examples, best practices, common mistakes and a clear implementation checklist f...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/vector-databases-and-semantic-search/"},"image":"https://forskcodingschool.com/blog/images/vector-databases-and-semantic-search.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / AI</p>
 <h1>Vector databases and semantic search</h1>
 <p><small>Forsk Coding School · AI · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Vector databases and semantic search" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Vector databases and semantic search" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Vector databases and semantic search</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

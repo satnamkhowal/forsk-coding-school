@@ -72,13 +72,12 @@
                       <div class="footer-widget footer-widget-nav-menu tj-fade-anim" data-delay=".5">
                         <div class="title">Resourses</div>
                         <ul>
-                          <li><a href="mentors/"><span>Mentors</span></a></li>
                           <li><a href="contact.php"><span>Contact us</span></a></li>
                           <li><a href="privacy-policy.php"><span>Privacy policy</span></a></li>
                           <li><a href="about.php"><span>Recognitions</span></a></li>
                           <li><a href="contact.php"><span>Careers</span></a></li>
                           <li><a href="courses.php"><span>Course</span></a></li>
-                          <li><a href="blog.php"><span>News</span></a></li>
+                          <li><a href="blog/"><span>News</span></a></li>
                         </ul>
                       </div>
                       <div class="footer-widget footer-widget-contact tj-fade-anim" data-delay="0.7">

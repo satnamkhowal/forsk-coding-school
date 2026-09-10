@@ -12,7 +12,7 @@
       <li><a href="about-institute.php">About Institute</a></li>
       <li><a href="mission-vision.php">Mission &amp; Vision</a></li>
       <li><a href="why-choose-forsk.php">Why Choose Forsk</a></li>
-      <li><a href="mentors/">Our Trainers &amp; Mentors</a></li>
+      <li><a href="our-trainers.php">Our Trainers</a></li>
       <li><a href="success-stories.php">Success Stories</a></li>
       <li><a href="testimonials.php">Testimonials</a></li>
       <li><a href="placement-partners.php">Placement Partners</a></li>

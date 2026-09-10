@@ -1,0 +1,23 @@
+<?php
+$blog=[
+ 'slug'=>'figma-prototyping-workflow-interview-preparation-guide-technology-professionals',
+ 'title'=>'Figma prototyping workflow: Interview Preparation Guide for Technology Professionals',
+ 'description'=>'Learn Figma prototyping workflow with a practical interview preparation guide for technology professionals. Explore skills, projects and relevant Forsk.',
+ 'topic_id'=>'T089',
+ 'angle_id'=>'A078',
+ 'cluster'=>'UI UX Design',
+ 'category'=>'Design',
+ 'subject'=>'Figma prototyping workflow',
+ 'audience'=>'Technology Professionals',
+ 'goal'=>'interview',
+ 'goal_label'=>'Interview Preparation Guide',
+ 'goal_desc'=>'prepare to explain concepts, solve practical problems and discuss project decisions',
+ 'concepts'=>['user needs and research','wireframes and user flows','visual hierarchy and accessibility','prototyping and usability testing','design systems and case studies'],
+ 'projects'=>['mobile app redesign','website wireframe','interactive prototype','UX case study'],
+ 'image'=>'figma-prototyping-workflow-interview-preparation-guide-technology-professionals-forsk-coding-school.webp',
+ 'date_modified'=>'2026-09-10',
+ 'courses'=>[['url'=>'ui-ux-design-course-jaipur.php','label'=>'UI UX Design','anchor'=>'UI UX Design Course in Jaipur','reason'=>'Relevant structured training for Figma prototyping workflow and the broader UI UX Design learning path.'],['url'=>'figma-course-jaipur.php','label'=>'UI UX Design','anchor'=>'Figma Course in Jaipur','reason'=>'Relevant structured training for Figma prototyping workflow and the broader UI UX Design learning path.'],['url'=>'graphic-design-course-jaipur.php','label'=>'UI UX Design','anchor'=>'Graphic Design Course in Jaipur','reason'=>'Relevant structured training for Figma prototyping workflow and the broader UI UX Design learning path.']],
+ 'related'=>[['slug'=>'figma-prototyping-workflow-tools-workflow-and-skills-guide-final-year-students','title'=>'Figma prototyping workflow: Tools, Workflow and Skills Guide for Final-Year Students'],['slug'=>'figma-prototyping-workflow-practical-roadmap-beginners','title'=>'Figma prototyping workflow: Practical Roadmap for Beginners'],['slug'=>'figma-prototyping-workflow-common-learning-mistakes-to-avoid-bca-students','title'=>'Figma prototyping workflow: Common Learning Mistakes BCA Students Should Avoid']]
+];
+require dirname(__DIR__) . '/blog-details.php';
+?>

@@ -5,8 +5,10 @@ $page_description = 'Learn c++ namespaces and project organization with practica
 $page_keywords = 'C++ programming';
 $slug = 'c-namespaces-and-project-organization';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'C++ namespaces and project organization', 'description': 'Learn c++ namespaces and project organization with practical explanations, examples, best practices, common mistakes and a clear implementation checklis...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/c-namespaces-and-project-organization/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/c-namespaces-and-project-organization.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"C++ namespaces and project organization","description":"Learn c++ namespaces and project organization with practical explanations, examples, best practices, common mistakes and a clear implementation checklis...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/c-namespaces-and-project-organization/"},"image":"https://forskcodingschool.com/blog/images/c-namespaces-and-project-organization.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / C++</p>
 <h1>C++ namespaces and project organization</h1>
 <p><small>Forsk Coding School · C++ · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="C++ namespaces and project organization" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="C++ namespaces and project organization" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>C++ namespaces and project organization</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

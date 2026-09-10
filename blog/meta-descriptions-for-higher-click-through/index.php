@@ -5,8 +5,10 @@ $page_description = 'Learn meta descriptions for higher click through with pract
 $page_keywords = 'digital marketing';
 $slug = 'meta-descriptions-for-higher-click-through';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Meta descriptions for higher click through', 'description': 'Learn meta descriptions for higher click through with practical explanations, examples, best practices, common mistakes and a clear implementation check...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/meta-descriptions-for-higher-click-through/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/meta-descriptions-for-higher-click-through.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Meta descriptions for higher click through","description":"Learn meta descriptions for higher click through with practical explanations, examples, best practices, common mistakes and a clear implementation check...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/meta-descriptions-for-higher-click-through/"},"image":"https://forskcodingschool.com/blog/images/meta-descriptions-for-higher-click-through.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / Digital Marketing</p>
 <h1>Meta descriptions for higher click through</h1>
 <p><small>Forsk Coding School · Digital Marketing · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Meta descriptions for higher click through" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Meta descriptions for higher click through" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Meta descriptions for higher click through</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

@@ -5,8 +5,10 @@ $page_description = 'Learn aws cost optimization checklist with practical explan
 $page_keywords = 'AWS cloud';
 $slug = 'aws-cost-optimization-checklist';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'AWS cost optimization checklist', 'description': 'Learn aws cost optimization checklist with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from F...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/aws-cost-optimization-checklist/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/aws-cost-optimization-checklist.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"AWS cost optimization checklist","description":"Learn aws cost optimization checklist with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from F...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/aws-cost-optimization-checklist/"},"image":"https://forskcodingschool.com/blog/images/aws-cost-optimization-checklist.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / AWS</p>
 <h1>AWS cost optimization checklist</h1>
 <p><small>Forsk Coding School · AWS · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="AWS cost optimization checklist" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="AWS cost optimization checklist" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>AWS cost optimization checklist</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

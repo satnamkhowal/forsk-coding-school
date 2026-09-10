@@ -1,70 +1,69 @@
 <?php
-/*
- * Forsk Coding School - environment-aware site URL.
- * Local  : http://localhost:81/forsk-coding-school
- * Live   : https://forskcodingschool.com
- *
- * Keep all HTML asset/link paths relative (assets/..., index.php, etc.).
- * The <base> tag below makes them resolve from the site root even when a
- * PHP page lives inside /blog/<slug>/ or another nested directory.
- */
-$host = $_SERVER['HTTP_HOST'] ?? '';
-$base_url = (preg_match('/^localhost(?::\d+)?$/i', $host))
-    ? 'http://localhost:81/forsk-coding-school'
-    : 'https://forskcodingschool.com';
-
-$page_title = $page_title ?? 'Forsk Coding School | Best Coding, IT & Digital Marketing Institute in Jaipur';
-$page_description = $page_description ?? 'Forsk Coding School in Jaipur offers practical, career-focused training in programming, full stack development, data science, AI, cloud, cybersecurity, software testing, digital marketing, UI/UX and mobile app development.';
-$page_keywords = $page_keywords ?? 'Forsk Coding School Jaipur, coding institute Jaipur, IT courses Jaipur, programming courses Jaipur, software training Jaipur';
-$page_canonical = $page_canonical ?? '';
+require_once dirname(__DIR__) . '/config.php';
+$page_title = trim((string)($page_title ?? 'Forsk Coding School | Coding & IT Courses in Jaipur'));
+$page_description = trim((string)($page_description ?? 'Practical coding, IT and career-focused learning from Forsk Coding School in Jaipur.'));
+$page_keywords = trim((string)($page_keywords ?? 'Forsk Coding School Jaipur, coding courses Jaipur, IT training Jaipur'));
+$page_robots = trim((string)($page_robots ?? 'index, follow, max-image-preview:large'));
+$page_type = trim((string)($page_type ?? 'website'));
 $page_schema = $page_schema ?? '';
-$page_robots = $page_robots ?? 'index, follow, max-image-preview:large';
-$page_og_image = $page_og_image ?? $base_url . '/assets/images/logos/forsk-icon.png';
 
-// Make legacy hard-coded canonical/OG/schema URLs follow the active host.
-$page_canonical = $page_canonical ? preg_replace('#https?://forskcodingschool\.com#i', $base_url, $page_canonical) : $page_canonical;
-if ($page_canonical && !preg_match('#^https?://#i', $page_canonical)) {
-    $page_canonical = rtrim($base_url, '/') . '/' . ltrim($page_canonical, '/');
+if (IS_LOCAL) $page_robots = 'noindex, nofollow, noarchive';
+
+if (empty($page_canonical)) {
+    $uri=parse_url((string)($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_PATH) ?: '/';
+    if (IS_LOCAL) {
+        $lp='/' . trim(LOCAL_PROJECT_PATH,'/');
+        if ($lp !== '/' && str_starts_with($uri,$lp)) $uri=substr($uri,strlen($lp)) ?: '/';
+    }
+    $page_canonical=seo_url($uri);
+} elseif (!preg_match('#^https?://#i', (string)$page_canonical)) {
+    $page_canonical=seo_url((string)$page_canonical);
+} else {
+    $page_canonical=seo_url((string)$page_canonical);
 }
-$page_og_image = preg_replace('#https?://forskcodingschool\.com#i', $base_url, $page_og_image);
-if ($page_schema) {
-    $page_schema = str_replace('https://forskcodingschool.com', $base_url, $page_schema);
-    $page_schema = str_replace('http://forskcodingschool.com', $base_url, $page_schema);
+
+$page_og_image = (string)($page_og_image ?? seo_url('assets/images/logos/forsk-icon.png'));
+if (!preg_match('#^https?://#i', $page_og_image)) {
+    $page_og_image=seo_url($page_og_image);
+} else {
+    $og=parse_url($page_og_image);
+    $ogHost=strtolower((string)($og['host'] ?? ''));
+    $liveHost=strtolower((string)(parse_url(SEO_BASE_URL,PHP_URL_HOST) ?: ''));
+    $ogLocal=in_array($ogHost,['localhost','127.0.0.1','::1'],true) || str_ends_with($ogHost,'.localhost') || str_ends_with($ogHost,'.test');
+    if ($ogHost===$liveHost || $ogLocal) $page_og_image=seo_url($page_og_image);
 }
 ?>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="<?= htmlspecialchars($base_url . '/', ENT_QUOTES, 'UTF-8') ?>">
+<base href="<?= htmlspecialchars(BASE_URL . '/', ENT_QUOTES, 'UTF-8') ?>">
 <meta name="author" content="Forsk Coding School">
 <meta name="description" content="<?= htmlspecialchars($page_description, ENT_QUOTES, 'UTF-8') ?>">
-<meta name="keywords" content="<?= htmlspecialchars($page_keywords, ENT_QUOTES, 'UTF-8') ?>">
+<?php if ($page_keywords !== ''): ?><meta name="keywords" content="<?= htmlspecialchars($page_keywords, ENT_QUOTES, 'UTF-8') ?>"><?php endif; ?>
 <meta name="robots" content="<?= htmlspecialchars($page_robots, ENT_QUOTES, 'UTF-8') ?>">
+<meta name="googlebot" content="<?= htmlspecialchars($page_robots, ENT_QUOTES, 'UTF-8') ?>">
 <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') ?></title>
-<?php if ($page_canonical): ?>
 <link rel="canonical" href="<?= htmlspecialchars($page_canonical, ENT_QUOTES, 'UTF-8') ?>">
+<link rel="alternate" hreflang="en-IN" href="<?= htmlspecialchars($page_canonical, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:url" content="<?= htmlspecialchars($page_canonical, ENT_QUOTES, 'UTF-8') ?>">
-<?php endif; ?>
 <meta property="og:title" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:description" content="<?= htmlspecialchars($page_description, ENT_QUOTES, 'UTF-8') ?>">
-<meta property="og:type" content="website">
+<meta property="og:type" content="<?= htmlspecialchars($page_type, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:site_name" content="Forsk Coding School">
 <meta property="og:locale" content="en_IN">
 <meta property="og:image" content="<?= htmlspecialchars($page_og_image, ENT_QUOTES, 'UTF-8') ?>">
-<meta property="og:image:alt" content="Forsk Coding School">
+<meta property="og:image:alt" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') ?>">
 <meta name="twitter:description" content="<?= htmlspecialchars($page_description, ENT_QUOTES, 'UTF-8') ?>">
 <meta name="twitter:image" content="<?= htmlspecialchars($page_og_image, ENT_QUOTES, 'UTF-8') ?>">
-<link rel="shortcut icon" type="image/png" href="assets/images/logos/forsk-icon.png">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/edunex-icons.css">
-<link rel="stylesheet" href="assets/css/nice-select.css">
-<link rel="stylesheet" href="assets/css/swiper.min.css">
-<link rel="stylesheet" href="assets/css/venobox.min.css">
-<link rel="stylesheet" href="assets/css/meanmenu.css">
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/local-fix.css">
-<?php if ($page_schema): ?>
-<script type="application/ld+json"><?= $page_schema ?></script>
-<?php endif; ?>
+<link rel="shortcut icon" type="image/png" href="<?= htmlspecialchars(asset_url('images/logos/forsk-icon.png'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/bootstrap.min.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/edunex-icons.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/nice-select.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/swiper.min.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/venobox.min.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/meanmenu.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/main.css'), ENT_QUOTES, 'UTF-8') ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/local-fix.css'), ENT_QUOTES, 'UTF-8') ?>">
+<?php if ($page_schema): ?><script type="application/ld+json"><?= $page_schema ?></script><?php endif; ?>

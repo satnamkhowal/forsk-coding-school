@@ -1,0 +1,25 @@
+Use this structure inside a mentor object in mentors.json AFTER the details are verified:
+
+"experience_verified": true,
+"experience_years": 5,
+"in_house_verified": true,
+"career_journey": [
+  {
+    "company": "Verified Employer One",
+    "role": "Software Engineer",
+    "period": "2021 – 2023",
+    "description": "Factual responsibility/project summary."
+  },
+  {
+    "company": "Verified Employer Two",
+    "role": "Senior Software Engineer",
+    "period": "2023 – 2025",
+    "description": "Factual responsibility/project summary."
+  },
+  {
+    "company": "Forsk Coding School",
+    "role": "Technology Mentor",
+    "period": "2025 – Present",
+    "description": "Use only when this affiliation is true."
+  }
+]

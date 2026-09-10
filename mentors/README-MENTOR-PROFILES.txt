@@ -7,7 +7,7 @@ WHAT IS INCLUDED
 - One shared profile template: /mentors/profile-template.php
 - Central mentor data: /mentors/data/mentors.json
 - Mentor directory: /mentors/
-- 20 generated mentor images in /assets/images/mentors/
+- 20 generated mentor images in /mentors/images/
 - 480 reserved/pending SEO image filenames
 - mentor-links.csv and mentor-links.html
 - image-manifest.csv
@@ -17,13 +17,13 @@ WHAT IS INCLUDED
 IMAGE WORKFLOW
 --------------
 Each mentor page already points to its final SEO image filename. If that image does not yet exist, the page displays:
-  assets/images/mentors/mentor-image-coming-soon.png
+  mentors/images/mentor-image-coming-soon.png
 
 Later, generate the mentor portrait and upload it with the EXACT filename shown in:
   mentors/pending-mentor-images.csv
 
 Put the WebP file here:
-  assets/images/mentors/<exact-seo-filename>.webp
+  mentors/images/<exact-seo-filename>.webp
 
 No profile-page edit is required. The page checks whether the file exists and automatically uses it.
 
@@ -46,6 +46,6 @@ FILES TO UPLOAD / MERGE
 -----------------------
 Upload these folders into the website root:
   mentors/
-  assets/images/mentors/
+  mentors/images/
 
 The full-site ZIP provided with this package also contains the updated main menu/footer links.

@@ -1,0 +1,11 @@
+{
+  "existing_blog_count": 1500,
+  "new_blog_count": 10000,
+  "total_blog_count": 11500,
+  "unique_new_slugs": 10000,
+  "unique_new_titles": 10000,
+  "new_vs_existing_slug_overlap": 0,
+  "blog_sitemap_urls": 11500,
+  "mentor_images_in_new_folder": 32,
+  "course_links_missing": 0
+}

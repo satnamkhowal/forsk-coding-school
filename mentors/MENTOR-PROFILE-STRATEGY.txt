@@ -1,0 +1,69 @@
+FORSK CODING SCHOOL — MENTOR PROFILE STRATEGY
+==============================================
+
+PUBLIC POSITIONING
+------------------
+Use the mentor pages as part of the Forsk Coding School brand, not as a marketplace or mentor-registration platform.
+The public UI contains no "profile verification pending", "image pending", registration, seller, marketplace or onboarding badges.
+
+SIGNATURE LEARNING FORMAT
+-------------------------
+Name used in the profile system: Forsk Live MentorLab
+
+Core promise:
+1. Live two-way interactive classes — learner can ask questions during the class.
+2. Micro-batches — target 10–15 learners per batch.
+3. Online + Offline — live online access plus Jaipur classroom learning.
+4. Practical debugging — code/data/project review during live sessions.
+5. Consent-based remote troubleshooting — AnyDesk or similar remote-support tools may be used only when the learner requests help and gives explicit permission.
+6. The learner stays present during remote support and can end the session at any time. Never request passwords, OTPs or access unrelated private files.
+
+MENTOR PAGE INFORMATION ARCHITECTURE
+------------------------------------
+Hero:
+- Name
+- Role/domain
+- Online + Offline
+- Live Two-Way Classes
+- 10–15 learners / batch
+- Experience years only when factually confirmed
+- "In-house Mentor" only when actual employment/affiliation is confirmed
+
+Sections:
+- About / teaching focus
+- Core expertise
+- Professional Experience Journey (only when real employer/role/dates are supplied)
+- Otherwise Mentoring & Project Journey
+- Forsk Live MentorLab differentiators
+- Related courses
+- Sidebar CTA: Book a Mentor-Led Demo
+
+CAREER HISTORY
+--------------
+The system supports a unique career journey for every mentor. Populate these fields in mentors/data/mentors.json:
+
+"experience_verified": true,
+"experience_years": 6,
+"in_house_verified": true,
+"career_journey": [
+  {
+    "company": "<actual verified employer>",
+    "role": "<actual verified role>",
+    "period": "2022 – 2024",
+    "description": "<factual summary>"
+  }
+]
+
+Do not use famous-company names, experience years, certifications or job history merely for visual credibility. Add them only when they are true and supportable.
+A blank input sheet is provided at mentors/data/mentor-career-history-input.csv for collecting this information.
+
+PUBLISHING CONTROL
+------------------
+The public template does not show verification status. The internal `verified` flag remains as a publishing/indexing gate so incomplete profiles are not indexed accidentally.
+
+IMAGES
+------
+Current mentor image folder:
+mentors/images/
+
+31 generated mentor images are included in this revision. Remaining mentor pages already reference their final SEO image filenames and automatically fall back to the placeholder until the matching WebP is added.

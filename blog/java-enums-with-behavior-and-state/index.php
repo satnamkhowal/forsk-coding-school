@@ -5,8 +5,10 @@ $page_description = 'Learn java enums with behavior and state with practical exp
 $page_keywords = 'Java development';
 $slug = 'java-enums-with-behavior-and-state';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Java enums with behavior and state', 'description': 'Learn java enums with behavior and state with practical explanations, examples, best practices, common mistakes and a clear implementation checklist fro...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/java-enums-with-behavior-and-state/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/java-enums-with-behavior-and-state.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Java enums with behavior and state","description":"Learn java enums with behavior and state with practical explanations, examples, best practices, common mistakes and a clear implementation checklist fro...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/java-enums-with-behavior-and-state/"},"image":"https://forskcodingschool.com/blog/images/java-enums-with-behavior-and-state.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / Java</p>
 <h1>Java enums with behavior and state</h1>
 <p><small>Forsk Coding School · Java · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Java enums with behavior and state" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Java enums with behavior and state" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Java enums with behavior and state</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

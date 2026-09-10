@@ -5,8 +5,10 @@ $page_description = 'Learn azure cache for redis fundamentals with practical exp
 $page_keywords = 'Azure cloud';
 $slug = 'azure-cache-for-redis-fundamentals';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Azure Cache for Redis fundamentals', 'description': 'Learn azure cache for redis fundamentals with practical explanations, examples, best practices, common mistakes and a clear implementation checklist fro...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/azure-cache-for-redis-fundamentals/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/azure-cache-for-redis-fundamentals.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Azure Cache for Redis fundamentals","description":"Learn azure cache for redis fundamentals with practical explanations, examples, best practices, common mistakes and a clear implementation checklist fro...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/azure-cache-for-redis-fundamentals/"},"image":"https://forskcodingschool.com/blog/images/azure-cache-for-redis-fundamentals.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / Azure</p>
 <h1>Azure Cache for Redis fundamentals</h1>
 <p><small>Forsk Coding School · Azure · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Azure Cache for Redis fundamentals" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Azure Cache for Redis fundamentals" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Azure Cache for Redis fundamentals</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

@@ -1,0 +1,366 @@
+﻿Cluster,Subject,Course URL,Course Exists
+Python Programming,Python fundamentals and syntax,python-programming-course-jaipur.php,YES
+Python Programming,Python fundamentals and syntax,python-full-stack-course-jaipur.php,YES
+Python Programming,Python fundamentals and syntax,data-science-course-jaipur.php,YES
+Python Programming,Object-oriented Python,python-programming-course-jaipur.php,YES
+Python Programming,Object-oriented Python,python-full-stack-course-jaipur.php,YES
+Python Programming,Object-oriented Python,data-science-course-jaipur.php,YES
+Python Programming,Python APIs and JSON,python-programming-course-jaipur.php,YES
+Python Programming,Python APIs and JSON,python-full-stack-course-jaipur.php,YES
+Python Programming,Python APIs and JSON,data-science-course-jaipur.php,YES
+Python Programming,Python automation workflows,python-programming-course-jaipur.php,YES
+Python Programming,Python automation workflows,python-full-stack-course-jaipur.php,YES
+Python Programming,Python automation workflows,data-science-course-jaipur.php,YES
+Python Programming,Python project development,python-programming-course-jaipur.php,YES
+Python Programming,Python project development,python-full-stack-course-jaipur.php,YES
+Python Programming,Python project development,data-science-course-jaipur.php,YES
+Java Development,Core Java foundations,java-programming-course-jaipur.php,YES
+Java Development,Core Java foundations,core-java-course-jaipur.php,YES
+Java Development,Core Java foundations,advanced-java-course-jaipur.php,YES
+Java Development,Core Java foundations,spring-boot-course-jaipur.php,YES
+Java Development,Java OOP and collections,java-programming-course-jaipur.php,YES
+Java Development,Java OOP and collections,core-java-course-jaipur.php,YES
+Java Development,Java OOP and collections,advanced-java-course-jaipur.php,YES
+Java Development,Java OOP and collections,spring-boot-course-jaipur.php,YES
+Java Development,Java database connectivity,java-programming-course-jaipur.php,YES
+Java Development,Java database connectivity,core-java-course-jaipur.php,YES
+Java Development,Java database connectivity,advanced-java-course-jaipur.php,YES
+Java Development,Java database connectivity,spring-boot-course-jaipur.php,YES
+Java Development,Spring Boot backend development,java-programming-course-jaipur.php,YES
+Java Development,Spring Boot backend development,core-java-course-jaipur.php,YES
+Java Development,Spring Boot backend development,advanced-java-course-jaipur.php,YES
+Java Development,Spring Boot backend development,spring-boot-course-jaipur.php,YES
+Java Development,Java microservices fundamentals,java-programming-course-jaipur.php,YES
+Java Development,Java microservices fundamentals,core-java-course-jaipur.php,YES
+Java Development,Java microservices fundamentals,advanced-java-course-jaipur.php,YES
+Java Development,Java microservices fundamentals,spring-boot-course-jaipur.php,YES
+JavaScript Development,JavaScript fundamentals,javascript-course-jaipur.php,YES
+JavaScript Development,JavaScript fundamentals,react-js-course-jaipur.php,YES
+JavaScript Development,JavaScript fundamentals,node-js-course-jaipur.php,YES
+JavaScript Development,Modern ES6+ JavaScript,javascript-course-jaipur.php,YES
+JavaScript Development,Modern ES6+ JavaScript,react-js-course-jaipur.php,YES
+JavaScript Development,Modern ES6+ JavaScript,node-js-course-jaipur.php,YES
+JavaScript Development,DOM and browser programming,javascript-course-jaipur.php,YES
+JavaScript Development,DOM and browser programming,react-js-course-jaipur.php,YES
+JavaScript Development,DOM and browser programming,node-js-course-jaipur.php,YES
+JavaScript Development,Asynchronous JavaScript and APIs,javascript-course-jaipur.php,YES
+JavaScript Development,Asynchronous JavaScript and APIs,react-js-course-jaipur.php,YES
+JavaScript Development,Asynchronous JavaScript and APIs,node-js-course-jaipur.php,YES
+JavaScript Development,JavaScript project architecture,javascript-course-jaipur.php,YES
+JavaScript Development,JavaScript project architecture,react-js-course-jaipur.php,YES
+JavaScript Development,JavaScript project architecture,node-js-course-jaipur.php,YES
+MERN Stack,MERN stack foundations,mern-stack-course-jaipur.php,YES
+MERN Stack,MERN stack foundations,react-js-course-jaipur.php,YES
+MERN Stack,MERN stack foundations,node-js-course-jaipur.php,YES
+MERN Stack,MERN stack foundations,full-stack-development-course-jaipur.php,YES
+MERN Stack,React frontend architecture,mern-stack-course-jaipur.php,YES
+MERN Stack,React frontend architecture,react-js-course-jaipur.php,YES
+MERN Stack,React frontend architecture,node-js-course-jaipur.php,YES
+MERN Stack,React frontend architecture,full-stack-development-course-jaipur.php,YES
+MERN Stack,Node and Express backend,mern-stack-course-jaipur.php,YES
+MERN Stack,Node and Express backend,react-js-course-jaipur.php,YES
+MERN Stack,Node and Express backend,node-js-course-jaipur.php,YES
+MERN Stack,Node and Express backend,full-stack-development-course-jaipur.php,YES
+MERN Stack,MongoDB data modeling,mern-stack-course-jaipur.php,YES
+MERN Stack,MongoDB data modeling,react-js-course-jaipur.php,YES
+MERN Stack,MongoDB data modeling,node-js-course-jaipur.php,YES
+MERN Stack,MongoDB data modeling,full-stack-development-course-jaipur.php,YES
+MERN Stack,MERN deployment workflow,mern-stack-course-jaipur.php,YES
+MERN Stack,MERN deployment workflow,react-js-course-jaipur.php,YES
+MERN Stack,MERN deployment workflow,node-js-course-jaipur.php,YES
+MERN Stack,MERN deployment workflow,full-stack-development-course-jaipur.php,YES
+Full Stack Web Development,Full stack web foundations,full-stack-development-course-jaipur.php,YES
+Full Stack Web Development,Full stack web foundations,mern-stack-course-jaipur.php,YES
+Full Stack Web Development,Full stack web foundations,python-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Full stack web foundations,java-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Frontend to backend integration,full-stack-development-course-jaipur.php,YES
+Full Stack Web Development,Frontend to backend integration,mern-stack-course-jaipur.php,YES
+Full Stack Web Development,Frontend to backend integration,python-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Frontend to backend integration,java-full-stack-course-jaipur.php,YES
+Full Stack Web Development,REST API design for full stack,full-stack-development-course-jaipur.php,YES
+Full Stack Web Development,REST API design for full stack,mern-stack-course-jaipur.php,YES
+Full Stack Web Development,REST API design for full stack,python-full-stack-course-jaipur.php,YES
+Full Stack Web Development,REST API design for full stack,java-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Authentication and application security,full-stack-development-course-jaipur.php,YES
+Full Stack Web Development,Authentication and application security,mern-stack-course-jaipur.php,YES
+Full Stack Web Development,Authentication and application security,python-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Authentication and application security,java-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Full stack deployment and portfolio,full-stack-development-course-jaipur.php,YES
+Full Stack Web Development,Full stack deployment and portfolio,mern-stack-course-jaipur.php,YES
+Full Stack Web Development,Full stack deployment and portfolio,python-full-stack-course-jaipur.php,YES
+Full Stack Web Development,Full stack deployment and portfolio,java-full-stack-course-jaipur.php,YES
+SQL and Databases,SQL query fundamentals,sql-course-jaipur.php,YES
+SQL and Databases,SQL query fundamentals,data-analytics-course-jaipur.php,YES
+SQL and Databases,SQL query fundamentals,business-analytics-course-jaipur.php,YES
+SQL and Databases,SQL joins and relationships,sql-course-jaipur.php,YES
+SQL and Databases,SQL joins and relationships,data-analytics-course-jaipur.php,YES
+SQL and Databases,SQL joins and relationships,business-analytics-course-jaipur.php,YES
+SQL and Databases,Advanced SQL analytics,sql-course-jaipur.php,YES
+SQL and Databases,Advanced SQL analytics,data-analytics-course-jaipur.php,YES
+SQL and Databases,Advanced SQL analytics,business-analytics-course-jaipur.php,YES
+SQL and Databases,Database design and normalization,sql-course-jaipur.php,YES
+SQL and Databases,Database design and normalization,data-analytics-course-jaipur.php,YES
+SQL and Databases,Database design and normalization,business-analytics-course-jaipur.php,YES
+SQL and Databases,SQL performance and reporting,sql-course-jaipur.php,YES
+SQL and Databases,SQL performance and reporting,data-analytics-course-jaipur.php,YES
+SQL and Databases,SQL performance and reporting,business-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Excel fundamentals for analysis,advanced-excel-course-jaipur.php,YES
+Excel and Advanced Excel,Excel fundamentals for analysis,data-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Excel fundamentals for analysis,business-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Advanced Excel formulas,advanced-excel-course-jaipur.php,YES
+Excel and Advanced Excel,Advanced Excel formulas,data-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Advanced Excel formulas,business-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,PivotTables and reporting,advanced-excel-course-jaipur.php,YES
+Excel and Advanced Excel,PivotTables and reporting,data-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,PivotTables and reporting,business-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Power Query data preparation,advanced-excel-course-jaipur.php,YES
+Excel and Advanced Excel,Power Query data preparation,data-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Power Query data preparation,business-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Excel dashboard development,advanced-excel-course-jaipur.php,YES
+Excel and Advanced Excel,Excel dashboard development,data-analytics-course-jaipur.php,YES
+Excel and Advanced Excel,Excel dashboard development,business-analytics-course-jaipur.php,YES
+Power BI,Power BI fundamentals,power-bi-course-jaipur.php,YES
+Power BI,Power BI fundamentals,data-analytics-course-jaipur.php,YES
+Power BI,Power BI fundamentals,business-analytics-course-jaipur.php,YES
+Power BI,Power Query in Power BI,power-bi-course-jaipur.php,YES
+Power BI,Power Query in Power BI,data-analytics-course-jaipur.php,YES
+Power BI,Power Query in Power BI,business-analytics-course-jaipur.php,YES
+Power BI,DAX calculations,power-bi-course-jaipur.php,YES
+Power BI,DAX calculations,data-analytics-course-jaipur.php,YES
+Power BI,DAX calculations,business-analytics-course-jaipur.php,YES
+Power BI,Power BI data modeling,power-bi-course-jaipur.php,YES
+Power BI,Power BI data modeling,data-analytics-course-jaipur.php,YES
+Power BI,Power BI data modeling,business-analytics-course-jaipur.php,YES
+Power BI,Power BI dashboard storytelling,power-bi-course-jaipur.php,YES
+Power BI,Power BI dashboard storytelling,data-analytics-course-jaipur.php,YES
+Power BI,Power BI dashboard storytelling,business-analytics-course-jaipur.php,YES
+Data Analytics,Data analytics foundations,data-analytics-course-jaipur.php,YES
+Data Analytics,Data analytics foundations,sql-course-jaipur.php,YES
+Data Analytics,Data analytics foundations,advanced-excel-course-jaipur.php,YES
+Data Analytics,Data analytics foundations,power-bi-course-jaipur.php,YES
+Data Analytics,Data cleaning and preparation,data-analytics-course-jaipur.php,YES
+Data Analytics,Data cleaning and preparation,sql-course-jaipur.php,YES
+Data Analytics,Data cleaning and preparation,advanced-excel-course-jaipur.php,YES
+Data Analytics,Data cleaning and preparation,power-bi-course-jaipur.php,YES
+Data Analytics,Exploratory data analysis,data-analytics-course-jaipur.php,YES
+Data Analytics,Exploratory data analysis,sql-course-jaipur.php,YES
+Data Analytics,Exploratory data analysis,advanced-excel-course-jaipur.php,YES
+Data Analytics,Exploratory data analysis,power-bi-course-jaipur.php,YES
+Data Analytics,Business KPI analysis,data-analytics-course-jaipur.php,YES
+Data Analytics,Business KPI analysis,sql-course-jaipur.php,YES
+Data Analytics,Business KPI analysis,advanced-excel-course-jaipur.php,YES
+Data Analytics,Business KPI analysis,power-bi-course-jaipur.php,YES
+Data Analytics,Analytics portfolio development,data-analytics-course-jaipur.php,YES
+Data Analytics,Analytics portfolio development,sql-course-jaipur.php,YES
+Data Analytics,Analytics portfolio development,advanced-excel-course-jaipur.php,YES
+Data Analytics,Analytics portfolio development,power-bi-course-jaipur.php,YES
+Data Science,Data science foundations,data-science-course-jaipur.php,YES
+Data Science,Data science foundations,python-programming-course-jaipur.php,YES
+Data Science,Data science foundations,machine-learning-course-jaipur.php,YES
+Data Science,Pandas and NumPy workflows,data-science-course-jaipur.php,YES
+Data Science,Pandas and NumPy workflows,python-programming-course-jaipur.php,YES
+Data Science,Pandas and NumPy workflows,machine-learning-course-jaipur.php,YES
+Data Science,Statistics for data science,data-science-course-jaipur.php,YES
+Data Science,Statistics for data science,python-programming-course-jaipur.php,YES
+Data Science,Statistics for data science,machine-learning-course-jaipur.php,YES
+Data Science,Exploratory Data Analysis for Data Science,data-science-course-jaipur.php,YES
+Data Science,Exploratory Data Analysis for Data Science,python-programming-course-jaipur.php,YES
+Data Science,Exploratory Data Analysis for Data Science,machine-learning-course-jaipur.php,YES
+Data Science,Data science portfolio projects,data-science-course-jaipur.php,YES
+Data Science,Data science portfolio projects,python-programming-course-jaipur.php,YES
+Data Science,Data science portfolio projects,machine-learning-course-jaipur.php,YES
+Machine Learning,Machine learning foundations,machine-learning-course-jaipur.php,YES
+Machine Learning,Machine learning foundations,data-science-course-jaipur.php,YES
+Machine Learning,Machine learning foundations,artificial-intelligence-course-jaipur.php,YES
+Machine Learning,Supervised learning workflow,machine-learning-course-jaipur.php,YES
+Machine Learning,Supervised learning workflow,data-science-course-jaipur.php,YES
+Machine Learning,Supervised learning workflow,artificial-intelligence-course-jaipur.php,YES
+Machine Learning,Unsupervised learning workflow,machine-learning-course-jaipur.php,YES
+Machine Learning,Unsupervised learning workflow,data-science-course-jaipur.php,YES
+Machine Learning,Unsupervised learning workflow,artificial-intelligence-course-jaipur.php,YES
+Machine Learning,Feature engineering and evaluation,machine-learning-course-jaipur.php,YES
+Machine Learning,Feature engineering and evaluation,data-science-course-jaipur.php,YES
+Machine Learning,Feature engineering and evaluation,artificial-intelligence-course-jaipur.php,YES
+Machine Learning,Machine learning project deployment,machine-learning-course-jaipur.php,YES
+Machine Learning,Machine learning project deployment,data-science-course-jaipur.php,YES
+Machine Learning,Machine learning project deployment,artificial-intelligence-course-jaipur.php,YES
+Artificial Intelligence,AI foundations and problem solving,artificial-intelligence-course-jaipur.php,YES
+Artificial Intelligence,AI foundations and problem solving,ai-tools-course-jaipur.php,YES
+Artificial Intelligence,AI foundations and problem solving,generative-ai-course-jaipur.php,YES
+Artificial Intelligence,Neural network fundamentals,artificial-intelligence-course-jaipur.php,YES
+Artificial Intelligence,Neural network fundamentals,ai-tools-course-jaipur.php,YES
+Artificial Intelligence,Neural network fundamentals,generative-ai-course-jaipur.php,YES
+Artificial Intelligence,AI application design,artificial-intelligence-course-jaipur.php,YES
+Artificial Intelligence,AI application design,ai-tools-course-jaipur.php,YES
+Artificial Intelligence,AI application design,generative-ai-course-jaipur.php,YES
+Artificial Intelligence,Responsible AI workflows,artificial-intelligence-course-jaipur.php,YES
+Artificial Intelligence,Responsible AI workflows,ai-tools-course-jaipur.php,YES
+Artificial Intelligence,Responsible AI workflows,generative-ai-course-jaipur.php,YES
+Artificial Intelligence,AI project development,artificial-intelligence-course-jaipur.php,YES
+Artificial Intelligence,AI project development,ai-tools-course-jaipur.php,YES
+Artificial Intelligence,AI project development,generative-ai-course-jaipur.php,YES
+Generative AI,Generative AI foundations,generative-ai-course-jaipur.php,YES
+Generative AI,Generative AI foundations,ai-tools-course-jaipur.php,YES
+Generative AI,Generative AI foundations,artificial-intelligence-course-jaipur.php,YES
+Generative AI,Prompt engineering workflows,generative-ai-course-jaipur.php,YES
+Generative AI,Prompt engineering workflows,ai-tools-course-jaipur.php,YES
+Generative AI,Prompt engineering workflows,artificial-intelligence-course-jaipur.php,YES
+Generative AI,RAG application fundamentals,generative-ai-course-jaipur.php,YES
+Generative AI,RAG application fundamentals,ai-tools-course-jaipur.php,YES
+Generative AI,RAG application fundamentals,artificial-intelligence-course-jaipur.php,YES
+Generative AI,LLM API integration,generative-ai-course-jaipur.php,YES
+Generative AI,LLM API integration,ai-tools-course-jaipur.php,YES
+Generative AI,LLM API integration,artificial-intelligence-course-jaipur.php,YES
+Generative AI,AI agent project design,generative-ai-course-jaipur.php,YES
+Generative AI,AI agent project design,ai-tools-course-jaipur.php,YES
+Generative AI,AI agent project design,artificial-intelligence-course-jaipur.php,YES
+Cyber Security,Cyber security foundations,cyber-security-course-jaipur.php,YES
+Cyber Security,Cyber security foundations,ethical-hacking-course-jaipur.php,YES
+Cyber Security,Cyber security foundations,network-security-course-jaipur.php,YES
+Cyber Security,Cyber security foundations,soc-analyst-course-jaipur.php,YES
+Cyber Security,Network security fundamentals,cyber-security-course-jaipur.php,YES
+Cyber Security,Network security fundamentals,ethical-hacking-course-jaipur.php,YES
+Cyber Security,Network security fundamentals,network-security-course-jaipur.php,YES
+Cyber Security,Network security fundamentals,soc-analyst-course-jaipur.php,YES
+Cyber Security,Web security awareness,cyber-security-course-jaipur.php,YES
+Cyber Security,Web security awareness,ethical-hacking-course-jaipur.php,YES
+Cyber Security,Web security awareness,network-security-course-jaipur.php,YES
+Cyber Security,Web security awareness,soc-analyst-course-jaipur.php,YES
+Cyber Security,Security monitoring and SOC basics,cyber-security-course-jaipur.php,YES
+Cyber Security,Security monitoring and SOC basics,ethical-hacking-course-jaipur.php,YES
+Cyber Security,Security monitoring and SOC basics,network-security-course-jaipur.php,YES
+Cyber Security,Security monitoring and SOC basics,soc-analyst-course-jaipur.php,YES
+Cyber Security,Ethical security testing workflow,cyber-security-course-jaipur.php,YES
+Cyber Security,Ethical security testing workflow,ethical-hacking-course-jaipur.php,YES
+Cyber Security,Ethical security testing workflow,network-security-course-jaipur.php,YES
+Cyber Security,Ethical security testing workflow,soc-analyst-course-jaipur.php,YES
+Cloud Computing,Cloud computing foundations,cloud-computing-course-jaipur.php,YES
+Cloud Computing,Cloud computing foundations,aws-course-jaipur.php,YES
+Cloud Computing,Cloud computing foundations,azure-course-jaipur.php,YES
+Cloud Computing,Cloud computing foundations,google-cloud-course-jaipur.php,YES
+Cloud Computing,AWS cloud fundamentals,cloud-computing-course-jaipur.php,YES
+Cloud Computing,AWS cloud fundamentals,aws-course-jaipur.php,YES
+Cloud Computing,AWS cloud fundamentals,azure-course-jaipur.php,YES
+Cloud Computing,AWS cloud fundamentals,google-cloud-course-jaipur.php,YES
+Cloud Computing,Azure cloud fundamentals,cloud-computing-course-jaipur.php,YES
+Cloud Computing,Azure cloud fundamentals,aws-course-jaipur.php,YES
+Cloud Computing,Azure cloud fundamentals,azure-course-jaipur.php,YES
+Cloud Computing,Azure cloud fundamentals,google-cloud-course-jaipur.php,YES
+Cloud Computing,Cloud networking and identity,cloud-computing-course-jaipur.php,YES
+Cloud Computing,Cloud networking and identity,aws-course-jaipur.php,YES
+Cloud Computing,Cloud networking and identity,azure-course-jaipur.php,YES
+Cloud Computing,Cloud networking and identity,google-cloud-course-jaipur.php,YES
+Cloud Computing,Cloud deployment architecture,cloud-computing-course-jaipur.php,YES
+Cloud Computing,Cloud deployment architecture,aws-course-jaipur.php,YES
+Cloud Computing,Cloud deployment architecture,azure-course-jaipur.php,YES
+Cloud Computing,Cloud deployment architecture,google-cloud-course-jaipur.php,YES
+DevOps,DevOps foundations,devops-course-jaipur.php,YES
+DevOps,DevOps foundations,docker-course-jaipur.php,YES
+DevOps,DevOps foundations,kubernetes-course-jaipur.php,YES
+DevOps,DevOps foundations,linux-course-jaipur.php,YES
+DevOps,Docker container workflow,devops-course-jaipur.php,YES
+DevOps,Docker container workflow,docker-course-jaipur.php,YES
+DevOps,Docker container workflow,kubernetes-course-jaipur.php,YES
+DevOps,Docker container workflow,linux-course-jaipur.php,YES
+DevOps,CI/CD pipeline fundamentals,devops-course-jaipur.php,YES
+DevOps,CI/CD pipeline fundamentals,docker-course-jaipur.php,YES
+DevOps,CI/CD pipeline fundamentals,kubernetes-course-jaipur.php,YES
+DevOps,CI/CD pipeline fundamentals,linux-course-jaipur.php,YES
+DevOps,Kubernetes fundamentals,devops-course-jaipur.php,YES
+DevOps,Kubernetes fundamentals,docker-course-jaipur.php,YES
+DevOps,Kubernetes fundamentals,kubernetes-course-jaipur.php,YES
+DevOps,Kubernetes fundamentals,linux-course-jaipur.php,YES
+DevOps,DevOps monitoring and deployment,devops-course-jaipur.php,YES
+DevOps,DevOps monitoring and deployment,docker-course-jaipur.php,YES
+DevOps,DevOps monitoring and deployment,kubernetes-course-jaipur.php,YES
+DevOps,DevOps monitoring and deployment,linux-course-jaipur.php,YES
+Software Testing,Manual testing foundations,software-testing-course-jaipur.php,YES
+Software Testing,Manual testing foundations,manual-testing-course-jaipur.php,YES
+Software Testing,Manual testing foundations,automation-testing-course-jaipur.php,YES
+Software Testing,Manual testing foundations,selenium-course-jaipur.php,YES
+Software Testing,Manual testing foundations,api-testing-course-jaipur.php,YES
+Software Testing,Test case design and bug reporting,software-testing-course-jaipur.php,YES
+Software Testing,Test case design and bug reporting,manual-testing-course-jaipur.php,YES
+Software Testing,Test case design and bug reporting,automation-testing-course-jaipur.php,YES
+Software Testing,Test case design and bug reporting,selenium-course-jaipur.php,YES
+Software Testing,Test case design and bug reporting,api-testing-course-jaipur.php,YES
+Software Testing,Automation testing fundamentals,software-testing-course-jaipur.php,YES
+Software Testing,Automation testing fundamentals,manual-testing-course-jaipur.php,YES
+Software Testing,Automation testing fundamentals,automation-testing-course-jaipur.php,YES
+Software Testing,Automation testing fundamentals,selenium-course-jaipur.php,YES
+Software Testing,Automation testing fundamentals,api-testing-course-jaipur.php,YES
+Software Testing,Selenium web testing,software-testing-course-jaipur.php,YES
+Software Testing,Selenium web testing,manual-testing-course-jaipur.php,YES
+Software Testing,Selenium web testing,automation-testing-course-jaipur.php,YES
+Software Testing,Selenium web testing,selenium-course-jaipur.php,YES
+Software Testing,Selenium web testing,api-testing-course-jaipur.php,YES
+Software Testing,API testing workflow,software-testing-course-jaipur.php,YES
+Software Testing,API testing workflow,manual-testing-course-jaipur.php,YES
+Software Testing,API testing workflow,automation-testing-course-jaipur.php,YES
+Software Testing,API testing workflow,selenium-course-jaipur.php,YES
+Software Testing,API testing workflow,api-testing-course-jaipur.php,YES
+UI UX Design,UI UX design foundations,ui-ux-design-course-jaipur.php,YES
+UI UX Design,UI UX design foundations,figma-course-jaipur.php,YES
+UI UX Design,UI UX design foundations,graphic-design-course-jaipur.php,YES
+UI UX Design,User research and problem framing,ui-ux-design-course-jaipur.php,YES
+UI UX Design,User research and problem framing,figma-course-jaipur.php,YES
+UI UX Design,User research and problem framing,graphic-design-course-jaipur.php,YES
+UI UX Design,Wireframing and information architecture,ui-ux-design-course-jaipur.php,YES
+UI UX Design,Wireframing and information architecture,figma-course-jaipur.php,YES
+UI UX Design,Wireframing and information architecture,graphic-design-course-jaipur.php,YES
+UI UX Design,Figma prototyping workflow,ui-ux-design-course-jaipur.php,YES
+UI UX Design,Figma prototyping workflow,figma-course-jaipur.php,YES
+UI UX Design,Figma prototyping workflow,graphic-design-course-jaipur.php,YES
+UI UX Design,Design systems and portfolio,ui-ux-design-course-jaipur.php,YES
+UI UX Design,Design systems and portfolio,figma-course-jaipur.php,YES
+UI UX Design,Design systems and portfolio,graphic-design-course-jaipur.php,YES
+Digital Marketing and SEO,Digital marketing foundations,digital-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Digital marketing foundations,seo-course-jaipur.php,YES
+Digital Marketing and SEO,Digital marketing foundations,google-ads-course-jaipur.php,YES
+Digital Marketing and SEO,Digital marketing foundations,social-media-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Digital marketing foundations,content-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,SEO fundamentals,digital-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,SEO fundamentals,seo-course-jaipur.php,YES
+Digital Marketing and SEO,SEO fundamentals,google-ads-course-jaipur.php,YES
+Digital Marketing and SEO,SEO fundamentals,social-media-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,SEO fundamentals,content-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Local SEO and Google Business Profile,digital-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Local SEO and Google Business Profile,seo-course-jaipur.php,YES
+Digital Marketing and SEO,Local SEO and Google Business Profile,google-ads-course-jaipur.php,YES
+Digital Marketing and SEO,Local SEO and Google Business Profile,social-media-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Local SEO and Google Business Profile,content-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Paid campaign fundamentals,digital-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Paid campaign fundamentals,seo-course-jaipur.php,YES
+Digital Marketing and SEO,Paid campaign fundamentals,google-ads-course-jaipur.php,YES
+Digital Marketing and SEO,Paid campaign fundamentals,social-media-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Paid campaign fundamentals,content-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Content and social media strategy,digital-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Content and social media strategy,seo-course-jaipur.php,YES
+Digital Marketing and SEO,Content and social media strategy,google-ads-course-jaipur.php,YES
+Digital Marketing and SEO,Content and social media strategy,social-media-marketing-course-jaipur.php,YES
+Digital Marketing and SEO,Content and social media strategy,content-marketing-course-jaipur.php,YES
+Mobile App Development,Mobile app development foundations,mobile-app-development-course-jaipur.php,YES
+Mobile App Development,Mobile app development foundations,android-course-jaipur.php,YES
+Mobile App Development,Mobile app development foundations,flutter-course-jaipur.php,YES
+Mobile App Development,Mobile app development foundations,react-native-course-jaipur.php,YES
+Mobile App Development,Mobile app development foundations,ios-app-development-course-jaipur.php,YES
+Mobile App Development,Android app workflow,mobile-app-development-course-jaipur.php,YES
+Mobile App Development,Android app workflow,android-course-jaipur.php,YES
+Mobile App Development,Android app workflow,flutter-course-jaipur.php,YES
+Mobile App Development,Android app workflow,react-native-course-jaipur.php,YES
+Mobile App Development,Android app workflow,ios-app-development-course-jaipur.php,YES
+Mobile App Development,Flutter cross-platform development,mobile-app-development-course-jaipur.php,YES
+Mobile App Development,Flutter cross-platform development,android-course-jaipur.php,YES
+Mobile App Development,Flutter cross-platform development,flutter-course-jaipur.php,YES
+Mobile App Development,Flutter cross-platform development,react-native-course-jaipur.php,YES
+Mobile App Development,Flutter cross-platform development,ios-app-development-course-jaipur.php,YES
+Mobile App Development,React Native app development,mobile-app-development-course-jaipur.php,YES
+Mobile App Development,React Native app development,android-course-jaipur.php,YES
+Mobile App Development,React Native app development,flutter-course-jaipur.php,YES
+Mobile App Development,React Native app development,react-native-course-jaipur.php,YES
+Mobile App Development,React Native app development,ios-app-development-course-jaipur.php,YES
+Mobile App Development,Mobile API integration and deployment,mobile-app-development-course-jaipur.php,YES
+Mobile App Development,Mobile API integration and deployment,android-course-jaipur.php,YES
+Mobile App Development,Mobile API integration and deployment,flutter-course-jaipur.php,YES
+Mobile App Development,Mobile API integration and deployment,react-native-course-jaipur.php,YES
+Mobile App Development,Mobile API integration and deployment,ios-app-development-course-jaipur.php,YES

@@ -30,27 +30,53 @@ $role = $mentor['role'];
 $skills = $mentor['skills'] ?? [];
 $url = $mentor['url'];
 $image_filename = $mentor['image_filename'];
-$image_disk = $site_root . '/assets/images/mentors/' . $image_filename;
+$image_disk = $site_root . '/mentors/images/' . $image_filename;
 $image_available = is_file($image_disk);
 $image_path = $image_available
-    ? 'assets/images/mentors/' . $image_filename
-    : 'assets/images/mentors/mentor-image-coming-soon.png';
+    ? 'mentors/images/' . $image_filename
+    : 'mentors/images/mentor-image-coming-soon.png';
 $image_url = 'https://forskcodingschool.com/' . $image_path;
-$verified = !empty($mentor['verified']);
+$published = !empty($mentor['verified']); // Internal publishing gate only; never shown as a public badge.
+$in_house_verified = !empty($mentor['in_house_verified']);
+$experience_verified = !empty($mentor['experience_verified']);
+$experience_years = $experience_verified ? ($mentor['experience_years'] ?? null) : null;
+$career_journey = ($experience_verified && !empty($mentor['career_journey'])) ? $mentor['career_journey'] : [];
+$mentor_journey = $mentor['mentor_journey'] ?? [];
+$availability_modes = $mentor['availability_modes'] ?? ['Online','Offline'];
+$learning_format = $mentor['learning_format'] ?? 'Live Two-Way Interactive Classes';
+$batch_size = $mentor['batch_size'] ?? '10–15 learners';
+$remote_support = $mentor['remote_support'] ?? 'Consent-based remote troubleshooting when required';
 
 $page_title = $mentor['meta_title'];
 $page_description = $mentor['meta_description'];
 $page_keywords = $mentor['primary_keyword'] . ', ' . $domain . ' mentor Jaipur, Forsk Coding School mentor';
 $page_canonical = $url;
-$page_robots = $verified ? 'index, follow, max-image-preview:large' : 'noindex, nofollow, noarchive';
+$page_robots = $published ? 'index, follow, max-image-preview:large' : 'noindex, nofollow, noarchive';
 $page_og_image = $image_url;
 $header_variant = 'header-1';
 
-// Structured data is intentionally activated only after the mentor profile has
-// been verified. Set verified=true in mentors/data/mentors.json after checking
-// identity, consent, role, photo and affiliation.
 $page_schema = '';
-if ($verified) {
+if ($published) {
+    $person = [
+        '@type' => 'Person',
+        '@id' => $url . '#mentor',
+        'name' => $name,
+        'url' => $url,
+        'jobTitle' => $role,
+        'knowsAbout' => array_values($skills),
+    ];
+    if ($in_house_verified) {
+        $person['worksFor'] = [
+            '@type' => 'EducationalOrganization',
+            '@id' => 'https://forskcodingschool.com/#organization',
+            'name' => 'Forsk Coding School',
+            'url' => 'https://forskcodingschool.com/'
+        ];
+    }
+    if ($image_available) {
+        $person['image'] = $image_url;
+    }
+
     $graph = [
         '@context' => 'https://schema.org',
         '@graph' => [
@@ -63,20 +89,7 @@ if ($verified) {
                 'mainEntity' => ['@id' => $url . '#mentor'],
                 'breadcrumb' => ['@id' => $url . '#breadcrumb']
             ],
-            [
-                '@type' => 'Person',
-                '@id' => $url . '#mentor',
-                'name' => $name,
-                'url' => $url,
-                'jobTitle' => $role,
-                'knowsAbout' => array_values($skills),
-                'worksFor' => [
-                    '@type' => 'EducationalOrganization',
-                    '@id' => 'https://forskcodingschool.com/#organization',
-                    'name' => 'Forsk Coding School',
-                    'url' => 'https://forskcodingschool.com/'
-                ]
-            ],
+            $person,
             [
                 '@type' => 'BreadcrumbList',
                 '@id' => $url . '#breadcrumb',
@@ -89,7 +102,6 @@ if ($verified) {
         ]
     ];
     if ($image_available) {
-        $graph['@graph'][1]['image'] = $image_url;
         $graph['@graph'][0]['primaryImageOfPage'] = ['@id' => $image_url . '#image'];
         $graph['@graph'][] = [
             '@type'=>'ImageObject',
@@ -108,6 +120,7 @@ $course_cards = $mentor['courses'] ?? [];
 <html class="no-js" lang="en">
 <head>
 <?php include $site_root . '/includes/head.php'; ?>
+<link rel="stylesheet" href="assets/css/mentor-profile-enhancements.css">
 </head>
 <body>
 <?php include $site_root . '/includes/header.php'; ?>
@@ -117,7 +130,7 @@ $course_cards = $mentor['courses'] ?? [];
     <main id="primary" class="site-main">
       <div class="space-for-header"></div>
 
-      <section class="tj-page-header tj-page-header-2">
+      <section class="tj-page-header tj-page-header-2 mentor-hero-upgrade">
         <div class="container">
           <div class="row"><div class="col-12"><div class="tj-page-header-content">
             <div class="tj-page-link">
@@ -130,7 +143,7 @@ $course_cards = $mentor['courses'] ?? [];
             </div>
 
             <div class="tj-page-header-instructor">
-              <div class="tj-instructor-img">
+              <div class="tj-instructor-img mentor-photo-frame">
                 <img src="<?= mentor_h($image_path) ?>"
                      alt="<?= mentor_h($mentor['image_alt']) ?>"
                      title="<?= mentor_h($mentor['image_title']) ?>"
@@ -138,23 +151,36 @@ $course_cards = $mentor['courses'] ?? [];
                      width="800" height="800" decoding="async">
               </div>
               <div class="tj-instructor-content">
+                <div class="mentor-kicker">Forsk Coding School • Jaipur</div>
                 <div class="tj-categories">
                   <a class="tj-cat" href="mentors/?domain=<?= urlencode($domain) ?>"><?= mentor_h($domain) ?></a>
+                  <?php if ($in_house_verified): ?><span class="tj-cat mentor-inhouse">In-house Mentor</span><?php endif; ?>
                 </div>
                 <div class="name-area">
                   <h1 class="name tj-fs-h2"><?= mentor_h($name) ?></h1>
                   <span class="designation"><?= mentor_h($role) ?></span>
                 </div>
-                <div class="course-meta">
-                  <span><i class="tji-book"></i><?= count($skills) ?> Core Skills</span>
-                  <span><i class="tji-user-duo"></i>Forsk Coding School</span>
-                  <span><i class="tji-map"></i>Jaipur</span>
-                  <?php if (!$verified): ?><span><i class="tji-info"></i>Profile verification pending</span><?php endif; ?>
+                <div class="mentor-highlight-pills">
+                  <span>Online + Offline</span>
+                  <span>Live Two-Way Classes</span>
+                  <span><?= mentor_h($batch_size) ?> / Batch</span>
+                  <?php if ($experience_years): ?><span><?= mentor_h($experience_years) ?>+ Years Experience</span><?php endif; ?>
                 </div>
               </div>
             </div>
             <div class="shape"><img src="assets/images/shapes/stars.png" alt=""></div>
           </div></div></div>
+        </div>
+      </section>
+
+      <section class="mentor-live-lab-strip">
+        <div class="container">
+          <div class="mentor-live-lab-grid">
+            <div><strong>Live Two-Way</strong><span>Ask questions while the mentor is teaching</span></div>
+            <div><strong>10–15 Learners</strong><span>Micro-batches for meaningful interaction</span></div>
+            <div><strong>Online + Offline</strong><span>Learn in Jaipur or join live from anywhere</span></div>
+            <div><strong>Remote Debug Support</strong><span>Consent-based screen troubleshooting when needed</span></div>
+          </div>
         </div>
       </section>
 
@@ -165,15 +191,15 @@ $course_cards = $mentor['courses'] ?? [];
               <div class="tj-course-tab-wrap tj-sticky-item-2"><div class="tj-course-tab">
                 <a class="tab-nav tj-scroll-btn" href="#about">About</a>
                 <a class="tab-nav tj-scroll-btn" href="#expertise">Expertise</a>
-                <a class="tab-nav tj-scroll-btn" href="#approach">Teaching Approach</a>
+                <a class="tab-nav tj-scroll-btn" href="#journey">Journey</a>
+                <a class="tab-nav tj-scroll-btn" href="#live-learning">Live Learning</a>
                 <a class="tab-nav tj-scroll-btn" href="#courses">Courses</a>
               </div></div>
 
               <div id="about" class="tj-instructor-about">
-                <h2 class="title">About <?= mentor_h($name) ?></h2>
-                <p><?= mentor_h($name) ?> is a <?= mentor_h($role) ?> profile prepared for Forsk Coding School in Jaipur, focused on practical learning in <?= mentor_h($domain) ?>.</p>
-                <p>The planned teaching areas include <?= mentor_h(implode(', ', array_slice($skills,0,5))) ?>. Sessions are designed around concept clarity, demonstrations, guided practice and project-oriented learning.</p>
-                <p>This profile is part of the Forsk mentor content system. Identity, credentials, current affiliation and the final profile photograph should be verified before the page is enabled for search indexing.</p>
+                <h2 class="title">Learn <?= mentor_h($domain) ?> with <?= mentor_h($name) ?></h2>
+                <p><?= mentor_h($name) ?> focuses on practical, mentor-led learning in <?= mentor_h($domain) ?> through <?= mentor_h(implode(', ', array_slice($skills,0,5))) ?> and related tools.</p>
+                <p>Sessions combine concept clarity, live demonstrations, learner questions, guided practice, debugging and project-oriented implementation. The objective is to make every class interactive rather than one-way video delivery.</p>
 
                 <h2 class="title" id="expertise">Core Expertise</h2>
                 <div class="tj-skill-lists">
@@ -181,12 +207,42 @@ $course_cards = $mentor['courses'] ?? [];
                 </div>
               </div>
 
-              <div id="approach" class="tj-instructor-experience">
-                <h2 class="title">Teaching & Project Approach</h2>
+              <div id="journey" class="tj-instructor-experience">
+                <?php if ($career_journey): ?>
+                <h2 class="title">Professional Experience Journey</h2>
                 <div class="tj-instructor-experience-wrap">
-                  <div class="tj-experience-item"><div class="experience-icon"><i class="tji-book"></i></div><div class="experience-content"><h3 class="experience-title">Concept-First Learning</h3><p class="desc">Build clear foundations in <?= mentor_h($skills[0] ?? $domain) ?> and related tools before moving into advanced workflows.</p></div></div>
-                  <div class="tj-experience-item"><div class="experience-icon"><i class="tji-briefcase"></i></div><div class="experience-content"><h3 class="experience-title">Hands-on Practice</h3><p class="desc">Use guided exercises, practical examples and structured tasks to connect concepts with real implementation.</p></div></div>
-                  <div class="tj-experience-item"><div class="experience-icon"><i class="tji-user-duo"></i></div><div class="experience-content"><h3 class="experience-title">Project-Oriented Mentoring</h3><p class="desc">Focus on portfolio-ready learning, debugging, problem solving and practical project discussions relevant to <?= mentor_h($domain) ?>.</p></div></div>
+                  <?php foreach ($career_journey as $step): ?>
+                  <div class="tj-experience-item"><div class="experience-icon"><i class="tji-briefcase"></i></div><div class="experience-content">
+                    <h3 class="experience-title"><?= mentor_h($step['role'] ?? '') ?></h3>
+                    <span class="experience-year"><?= mentor_h($step['company'] ?? '') ?><?= !empty($step['period']) ? ' • '.mentor_h($step['period']) : '' ?></span>
+                    <?php if (!empty($step['description'])): ?><p class="desc"><?= mentor_h($step['description']) ?></p><?php endif; ?>
+                  </div></div>
+                  <?php endforeach; ?>
+                </div>
+                <?php else: ?>
+                <h2 class="title">Mentoring & Project Journey</h2>
+                <div class="tj-instructor-experience-wrap">
+                  <?php foreach ($mentor_journey as $step): ?>
+                  <div class="tj-experience-item"><div class="experience-icon"><i class="tji-book"></i></div><div class="experience-content">
+                    <h3 class="experience-title"><?= mentor_h($step['title'] ?? '') ?></h3>
+                    <p class="desc"><?= mentor_h($step['description'] ?? '') ?></p>
+                  </div></div>
+                  <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+              </div>
+
+              <div id="live-learning" class="mentor-live-learning-section">
+                <div class="mentor-section-heading">
+                  <span class="mentor-eyebrow">Forsk Live MentorLab</span>
+                  <h2>Not a one-way online class. A live two-way mentor room.</h2>
+                  <p>Every session is designed so learners can interrupt constructively, ask questions, share code or screens, and get feedback while the topic is being taught.</p>
+                </div>
+                <div class="mentor-feature-cards">
+                  <article><h3>Interactive by Design</h3><p>The mentor teaches live and learners can ask questions in the same session instead of waiting for recorded-video support.</p></article>
+                  <article><h3>Micro-Batch Attention</h3><p>Target batch size is <?= mentor_h($batch_size) ?> so the mentor can engage with individual questions and learning gaps.</p></article>
+                  <article><h3>Code & Project Review</h3><p>Use screen sharing, live debugging and mentor feedback to understand why something works—not only what to type.</p></article>
+                  <article><h3>Remote Troubleshooting</h3><p>When a learner requests technical help, support may use AnyDesk or a similar remote-support tool with explicit permission. The learner stays present and can end the session at any time; passwords, OTPs and unrelated private files should never be requested.</p></article>
                 </div>
               </div>
 
@@ -195,10 +251,10 @@ $course_cards = $mentor['courses'] ?? [];
                 <div class="row rg-20">
                   <?php foreach ($course_cards as $course): ?>
                   <div class="col-md-6"><div class="tj-course-item"><div class="tj-course-content">
-                    <div class="tj-cat-level-wrap"><div class="tj-categories"><a class="tj-cat" href="<?= mentor_h($course['file']) ?>"><?= mentor_h($domain) ?></a></div><div class="tj-level"><span>Practical Training</span></div></div>
+                    <div class="tj-cat-level-wrap"><div class="tj-categories"><a class="tj-cat" href="<?= mentor_h($course['file']) ?>"><?= mentor_h($domain) ?></a></div><div class="tj-level"><span>Live Mentor Training</span></div></div>
                     <h3 class="title tj-fs-h5"><a href="<?= mentor_h($course['file']) ?>"><?= mentor_h($course['title']) ?></a></h3>
-                    <span class="author"><a href="#about"><?= mentor_h($name) ?> Mentor Profile</a></span>
-                    <div class="course-meta"><span><i class="tji-book"></i>Hands-on Learning</span><span><i class="tji-user-duo"></i>Career Focused</span></div>
+                    <span class="author"><a href="#about"><?= mentor_h($name) ?></a></span>
+                    <div class="course-meta"><span><i class="tji-book"></i>Hands-on Learning</span><span><i class="tji-user-duo"></i>Two-Way Q&A</span></div>
                     <a class="tj-btn-primary tj-btn-primary-md flip-text-wrap" href="<?= mentor_h($course['file']) ?>"><span class="btn-text">View course</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a>
                   </div></div></div>
                   <?php endforeach; ?>
@@ -208,18 +264,18 @@ $course_cards = $mentor['courses'] ?? [];
           </div>
 
           <div class="col-lg-4"><div class="tj-sticky-item-2"><div class="tj-course-sidebar">
-            <div class="tj-course-widget-price">
+            <div class="tj-course-widget-price mentor-sidebar-card">
               <div class="price-wrap"><div class="course-price tj-fs-h6"><?= mentor_h($domain) ?> Mentor</div></div>
               <div class="course-end"><?= mentor_h(implode(', ', array_slice($skills,0,4))) ?></div>
               <div class="tj-instructor-info">
-                <div class="info-item"><span class="title"><?= count($skills) ?>+</span><span class="text">Focus Skills</span></div>
-                <div class="info-item"><span class="title"><?= count($course_cards) ?></span><span class="text">Related Courses</span></div>
-                <div class="info-item"><span class="title">Jaipur</span><span class="text">Learning Location</span></div>
-                <div class="info-item"><span class="title"><?= $image_available ? 'Ready' : 'Pending' ?></span><span class="text">Profile Image</span></div>
+                <div class="info-item"><span class="title">Online</span><span class="text">Live Access</span></div>
+                <div class="info-item"><span class="title">Offline</span><span class="text">Jaipur</span></div>
+                <div class="info-item"><span class="title">10–15</span><span class="text">Batch Size</span></div>
+                <div class="info-item"><span class="title">2-Way</span><span class="text">Live Communication</span></div>
               </div>
-              <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap" href="contact.php"><span class="btn-text">Enquire About Training</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a>
+              <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap" href="contact.php"><span class="btn-text">Book a Mentor-Led Demo</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a>
               <a class="tj-btn-primary tj-btn-primary-light tj-btn-primary-md tj-btn-full flip-text-wrap" href="courses.php"><span class="btn-text">Explore Courses</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a>
-              <div class="guarantee-text"><i class="tji-guarantee"></i>Practical, career-focused learning</div>
+              <div class="guarantee-text"><i class="tji-guarantee"></i>Live, interactive, project-focused learning</div>
             </div>
             <div class="tj-course-widget"><h3 class="course-widget-title">Teaching Areas</h3><ul class="tj-course-includes">
               <?php foreach ($skills as $skill): ?><li><i class="tji-check"></i><?= mentor_h($skill) ?></li><?php endforeach; ?>
@@ -229,9 +285,9 @@ $course_cards = $mentor['courses'] ?? [];
       </section>
 
       <section class="tj-details section-gap-bottom"><div class="container"><div class="row"><div class="col-lg-8">
-        <h2>Learn <?= mentor_h($domain) ?> in Jaipur with <?= mentor_h($name) ?></h2>
-        <p>This mentor profile is structured around <?= mentor_h($mentor['primary_keyword']) ?> and related practical skills, while keeping the content useful for learners rather than repeating keywords unnaturally.</p>
-        <p>Explore relevant Forsk Coding School courses, compare learning paths and use the mentor directory to discover profiles by technology domain.</p>
+        <h2>Mentor-led <?= mentor_h($domain) ?> Training in Jaipur</h2>
+        <p>Forsk Coding School combines live mentor interaction, small-batch learning, practical assignments and project feedback for learners who want more support than a recorded course can provide.</p>
+        <p>Choose online or offline learning, ask questions during class, and use structured troubleshooting support when you get stuck during practice.</p>
       </div></div></div></section>
     </main>
     <?php include $site_root . '/includes/footer.php'; ?>

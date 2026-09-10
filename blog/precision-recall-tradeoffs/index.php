@@ -5,8 +5,10 @@ $page_description = 'Learn precision recall tradeoffs with practical explanation
 $page_keywords = 'data science';
 $slug = 'precision-recall-tradeoffs';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Precision recall tradeoffs', 'description': 'Learn precision recall tradeoffs with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/precision-recall-tradeoffs/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/precision-recall-tradeoffs.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Precision recall tradeoffs","description":"Learn precision recall tradeoffs with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/precision-recall-tradeoffs/"},"image":"https://forskcodingschool.com/blog/images/precision-recall-tradeoffs.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / Data Science</p>
 <h1>Precision recall tradeoffs</h1>
 <p><small>Forsk Coding School · Data Science · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Precision recall tradeoffs" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Precision recall tradeoffs" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Precision recall tradeoffs</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

@@ -5,8 +5,10 @@ $page_description = 'Learn local seo for training institutes with practical expl
 $page_keywords = 'digital marketing';
 $slug = 'local-seo-for-training-institutes';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Local SEO for training institutes', 'description': 'Learn local seo for training institutes with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/local-seo-for-training-institutes/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/local-seo-for-training-institutes.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Local SEO for training institutes","description":"Learn local seo for training institutes with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/local-seo-for-training-institutes/"},"image":"https://forskcodingschool.com/blog/images/local-seo-for-training-institutes.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / Digital Marketing</p>
 <h1>Local SEO for training institutes</h1>
 <p><small>Forsk Coding School · Digital Marketing · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Local SEO for training institutes" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Local SEO for training institutes" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Local SEO for training institutes</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>

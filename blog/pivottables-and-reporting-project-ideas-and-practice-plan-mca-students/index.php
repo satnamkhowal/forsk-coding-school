@@ -1,0 +1,23 @@
+<?php
+$blog=[
+ 'slug'=>'pivottables-and-reporting-project-ideas-and-practice-plan-mca-students',
+ 'title'=>'PivotTables and reporting: Project Ideas and Practice Plan for MCA Students',
+ 'description'=>'Learn PivotTables and reporting with a practical project ideas and practice plan for mca students. Explore skills, projects and relevant Forsk Coding School.',
+ 'topic_id'=>'T033',
+ 'angle_id'=>'A037',
+ 'cluster'=>'Excel and Advanced Excel',
+ 'category'=>'Data & BI',
+ 'subject'=>'PivotTables and reporting',
+ 'audience'=>'MCA Students',
+ 'goal'=>'projects',
+ 'goal_label'=>'Project Ideas and Practice Plan',
+ 'goal_desc'=>'turn concepts into portfolio evidence through progressively stronger projects',
+ 'concepts'=>['clean tabular data','lookup and logical formulas','PivotTables and charts','Power Query transformation','dashboard design and reporting'],
+ 'projects'=>['sales workbook','finance tracker','operations dashboard','automated reporting workbook'],
+ 'image'=>'pivottables-and-reporting-project-ideas-and-practice-plan-mca-students-forsk-coding-school.webp',
+ 'date_modified'=>'2026-09-10',
+ 'courses'=>[['url'=>'advanced-excel-course-jaipur.php','label'=>'Excel and Advanced Excel','anchor'=>'Advanced Excel Course in Jaipur','reason'=>'Relevant structured training for PivotTables and reporting and the broader Excel and Advanced Excel learning path.'],['url'=>'data-analytics-course-jaipur.php','label'=>'Excel and Advanced Excel','anchor'=>'Data Analytics Course in Jaipur','reason'=>'Relevant structured training for PivotTables and reporting and the broader Excel and Advanced Excel learning path.'],['url'=>'business-analytics-course-jaipur.php','label'=>'Excel and Advanced Excel','anchor'=>'Business Analytics Course in Jaipur','reason'=>'Relevant structured training for PivotTables and reporting and the broader Excel and Advanced Excel learning path.']],
+ 'related'=>[['slug'=>'pivottables-and-reporting-common-learning-mistakes-to-avoid-non-technical-learners','title'=>'PivotTables and reporting: Common Learning Mistakes Non-Technical Learners Should Avoid'],['slug'=>'pivottables-and-reporting-tools-workflow-and-skills-guide-placement-aspirants','title'=>'PivotTables and reporting: Tools, Workflow and Skills Guide for Placement Aspirants'],['slug'=>'pivottables-and-reporting-interview-preparation-guide-job-seekers','title'=>'PivotTables and reporting: Interview Preparation Guide for Job Seekers']]
+];
+require dirname(__DIR__) . '/blog-details.php';
+?>

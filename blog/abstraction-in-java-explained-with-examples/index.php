@@ -10,7 +10,7 @@
     $page_title = 'Abstraction in Java Explained with Examples';
     $page_description = 'Learn about abstraction in java explained with examples with practical guidance, key skills, career insights, projects and a clear learning roadmap from Forsk.';
     $page_canonical = '/blog/abstraction-in-java-explained-with-examples/';
-    $page_schema = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Abstraction in Java Explained with Examples","description":"Learn about abstraction in java explained with examples with practical guidance, key skills, career insights, projects and a clear learning roadmap from Forsk.","url":"https://forskcodingschool.com/blog/abstraction-in-java-explained-with-examples/","image":"https://forskcodingschool.com/assets/images/blog/abstraction-in-java-explained-with-examples.webp","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"}}';
+    $page_schema = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Abstraction in Java Explained with Examples","description":"Learn about abstraction in java explained with examples with practical guidance, key skills, career insights, projects and a clear learning roadmap from Forsk.","url":"https://forskcodingschool.com/blog/abstraction-in-java-explained-with-examples/","image":"https://forskcodingschool.com/blog/images/abstraction-in-java-explained-with-examples.webp","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"}}';
     $header_variant = 'header-1';
     ?>
     <?php include __DIR__ . '/../../includes/head.php'; ?>
@@ -45,7 +45,7 @@
                                 <div class="tj_wpost_wrapper">
                                     <div class="tj_wpost_singular">
                                         <div class="tj_wpost_thumb tj-fade-anim"><img
-                                                src="assets/images/blog/abstraction-in-java-explained-with-examples.webp"
+                                                src="blog/images/abstraction-in-java-explained-with-examples.webp"
                                                 alt="Abstraction in Java Explained with Examples - Forsk Coding School"
                                                 loading="eager"></div>
                                         <h2 class="tj_wpost_title">Abstraction in Java Explained with Examples</h2>
@@ -116,7 +116,7 @@
                                                 Over time, this cycle creates a stronger foundation than passive content
                                                 consumption.</p>
                                             <div class="tj_wpost_video tj-fade-anim"><img
-                                                    src="assets/images/blog/abstraction-in-java-explained-with-examples.webp"
+                                                    src="blog/images/abstraction-in-java-explained-with-examples.webp"
                                                     alt="Abstraction in Java Explained with Examples visual"
                                                     loading="lazy"><a class="tj_video_btn" href="#"><span><i
                                                             class="tji-play"></i></span></a></div>

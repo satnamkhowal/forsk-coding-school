@@ -5,8 +5,10 @@ $page_description = 'Learn node.js request validation at the api boundary with p
 $page_keywords = 'Node.js development';
 $slug = 'node-js-request-validation-at-the-api-boundary';
 $page_canonical = blog_url($slug);
-$page_og_image = asset_url('images/blog/' . $slug . '.webp');
-$page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': 'Node.js request validation at the API boundary', 'description': 'Learn node.js request validation at the api boundary with practical explanations, examples, best practices, common mistakes and a clear implementation c...', 'author': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'publisher': {'@type': 'Organization', 'name': 'Forsk Coding School'}, 'mainEntityOfPage': {'@type': 'WebPage', '@id': 'https://forskcodingschool.com/blog/node-js-request-validation-at-the-api-boundary/'}, 'image': 'https://forskcodingschool.com/assets/images/blog/node-js-request-validation-at-the-api-boundary.webp'}, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$page_og_image = blog_image_url($slug . '.webp');
+$page_schema = <<<'FORSK_JSON'
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Node.js request validation at the API boundary","description":"Learn node.js request validation at the api boundary with practical explanations, examples, best practices, common mistakes and a clear implementation c...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/node-js-request-validation-at-the-api-boundary/"},"image":"https://forskcodingschool.com/blog/images/node-js-request-validation-at-the-api-boundary.webp"}
+FORSK_JSON;
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +24,7 @@ $page_schema = json_encode({'@context': 'https://schema.org', '@type': 'BlogPost
 <p><a href="<?= site_url('/blog/') ?>">Blog</a> / Node.js</p>
 <h1>Node.js request validation at the API boundary</h1>
 <p><small>Forsk Coding School · Node.js · Practical learning guide</small></p>
-<img src="<?= asset_url('images/blog/' . $slug . '.webp') ?>" alt="Node.js request validation at the API boundary" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
+<img src="<?= blog_image_url($slug . '.webp') ?>" alt="Node.js request validation at the API boundary" loading="eager" style="max-width:100%;height:auto;border-radius:8px">
 <article>
 <section class="blog-intro">
 <p><strong>Node.js request validation at the API boundary</strong> is a practical topic for learners who want to move from memorising terminology to making better technical decisions. This guide focuses on what the concept means, where it fits in real projects, how to apply it, and which mistakes commonly reduce reliability, performance, accessibility, security, or maintainability.</p>
