@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Android Jetpack Basics";
-$page_description="Android Jetpack Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur";
+$page_description = "Learn Android Jetpack Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="android development, android jetpack basics, android, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/android-jetpack-basics/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Android Jetpack Basics\",\"description\":\"Android Jetpack Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur\",\"url\":\"https://forskcodingschool.com/blog/android-jetpack-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/android-jetpack-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Android Jetpack Basics\",\"description\":\"Learn Android Jetpack Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/android-jetpack-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/android-jetpack-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/android-jetpack-basics.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/android-jetpack-basics.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/android-ui-layouts-and-responsive-design/">Android UI Layouts and Responsive Design</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/laravel-basics-for-beginners/">Laravel Basics for Beginners</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/what-is-dsa-complete-beginner-guide/">What Is Dsa Complete Beginner Guide</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/arrays-in-dsa-explained/">Arrays In Dsa Explained</a></li></ul><h3>Conclusion</h3><p>Android Jetpack Basics should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger android development fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/android-jetpack-basics.webp" alt="Android Jetpack Basics featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

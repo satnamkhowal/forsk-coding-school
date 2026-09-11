@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'End to end testing strategy';
-$page_description = 'Learn end to end testing strategy with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk...';
+$page_description = 'Learn End to end testing strategy with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'software testing';
 $slug = 'end-to-end-testing-strategy';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"End to end testing strategy","description":"Learn end to end testing strategy with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/end-to-end-testing-strategy/"},"image":"https://forskcodingschool.com/blog/images/end-to-end-testing-strategy.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"End to end testing strategy","description":"Learn End to end testing strategy with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/end-to-end-testing-strategy/"},"image":"https://forskcodingschool.com/blog/images/end-to-end-testing-strategy.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -108,6 +108,8 @@ Arrange → Act → Assert
 <p>End to end testing strategy becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

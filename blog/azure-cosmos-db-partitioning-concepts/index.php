@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'Azure Cosmos DB partitioning concepts';
-$page_description = 'Learn azure cosmos db partitioning concepts with practical explanations, examples, best practices, common mistakes and a clear implementation checklist...';
+$page_description = 'Learn Azure Cosmos DB partitioning concepts with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'Azure cloud';
 $slug = 'azure-cosmos-db-partitioning-concepts';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"Azure Cosmos DB partitioning concepts","description":"Learn azure cosmos db partitioning concepts with practical explanations, examples, best practices, common mistakes and a clear implementation checklist...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/azure-cosmos-db-partitioning-concepts/"},"image":"https://forskcodingschool.com/blog/images/azure-cosmos-db-partitioning-concepts.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Azure Cosmos DB partitioning concepts","description":"Learn Azure Cosmos DB partitioning concepts with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/azure-cosmos-db-partitioning-concepts/"},"image":"https://forskcodingschool.com/blog/images/azure-cosmos-db-partitioning-concepts.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -105,6 +105,8 @@ Source → Build → Test → Security checks → Deploy → Observe
 <p>Azure Cosmos DB partitioning concepts becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

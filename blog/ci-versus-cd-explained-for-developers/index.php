@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'CI versus CD explained for developers';
-$page_description = 'Learn ci versus cd explained for developers with practical explanations, examples, best practices, common mistakes and a clear implementation checklist...';
+$page_description = 'Learn CI versus CD explained for developers with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'DevOps';
 $slug = 'ci-versus-cd-explained-for-developers';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"CI versus CD explained for developers","description":"Learn ci versus cd explained for developers with practical explanations, examples, best practices, common mistakes and a clear implementation checklist...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/ci-versus-cd-explained-for-developers/"},"image":"https://forskcodingschool.com/blog/images/ci-versus-cd-explained-for-developers.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"CI versus CD explained for developers","description":"Learn CI versus CD explained for developers with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/ci-versus-cd-explained-for-developers/"},"image":"https://forskcodingschool.com/blog/images/ci-versus-cd-explained-for-developers.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -105,6 +105,8 @@ Source → Build → Test → Security checks → Deploy → Observe
 <p>CI versus CD explained for developers becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

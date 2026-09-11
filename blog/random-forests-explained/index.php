@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'Random forests explained';
-$page_description = 'Learn random forests explained with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk Co...';
+$page_description = 'Learn Random forests explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'machine learning';
 $slug = 'random-forests-explained';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"Random forests explained","description":"Learn random forests explained with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk Co...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/random-forests-explained/"},"image":"https://forskcodingschool.com/blog/images/random-forests-explained.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Random forests explained","description":"Learn Random forests explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/random-forests-explained/"},"image":"https://forskcodingschool.com/blog/images/random-forests-explained.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -107,6 +107,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 <p>Random forests explained becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

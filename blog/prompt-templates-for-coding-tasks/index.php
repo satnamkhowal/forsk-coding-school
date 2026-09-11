@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Prompt Templates for Coding Tasks";
-$page_description="Prompt Templates for Coding Tasks with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in J";
+$page_description = "Learn Prompt Templates for Coding Tasks with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="prompt engineering, prompt templates for coding tasks, prompt engineering, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/prompt-templates-for-coding-tasks/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Prompt Templates for Coding Tasks\",\"description\":\"Prompt Templates for Coding Tasks with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in J\",\"url\":\"https://forskcodingschool.com/blog/prompt-templates-for-coding-tasks/\",\"image\":\"https://forskcodingschool.com/blog/images/prompt-templates-for-coding-tasks.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Prompt Templates for Coding Tasks\",\"description\":\"Learn Prompt Templates for Coding Tasks with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/prompt-templates-for-coding-tasks/\",\"image\":\"https://forskcodingschool.com/blog/images/prompt-templates-for-coding-tasks.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/prompt-templates-for-coding-tasks.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/prompt-templates-for-coding-tasks.webp'
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/structured-output-prompts-explained/">Structured Output Prompts Explained</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/computer-vision-basics-for-beginners/">Computer Vision Basics for Beginners</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/job-oriented-coding-classes-in-jaipur/">Job Oriented Coding Classes In Jaipur</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/what-is-cloud-computing-beginners-guide/">What Is Cloud Computing Beginners Guide</a></li></ul><h3>Conclusion</h3><p>Prompt Templates for Coding Tasks should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger prompt engineering fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/prompt-templates-for-coding-tasks.webp" alt="Prompt Templates for Coding Tasks featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

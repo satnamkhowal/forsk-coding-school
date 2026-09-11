@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'JavaScript memory leaks and garbage collection';
-$page_description = 'Learn javascript memory leaks and garbage collection with practical explanations, examples, best practices, common mistakes and a clear implementation c...';
+$page_description = 'Learn JavaScript memory leaks and garbage collection with practical examples, project guidance and related Forsk Coding School courses in Jaipur.';
 $page_keywords = 'JavaScript development';
 $slug = 'javascript-memory-leaks-and-garbage-collection';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"JavaScript memory leaks and garbage collection","description":"Learn javascript memory leaks and garbage collection with practical explanations, examples, best practices, common mistakes and a clear implementation c...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/javascript-memory-leaks-and-garbage-collection/"},"image":"https://forskcodingschool.com/blog/images/javascript-memory-leaks-and-garbage-collection.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"JavaScript memory leaks and garbage collection","description":"Learn JavaScript memory leaks and garbage collection with practical examples, project guidance and related Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/javascript-memory-leaks-and-garbage-collection/"},"image":"https://forskcodingschool.com/blog/images/javascript-memory-leaks-and-garbage-collection.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -109,6 +109,8 @@ fetch(&#x27;/api/courses&#x27;, { signal: controller.signal })
 <p>JavaScript memory leaks and garbage collection becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

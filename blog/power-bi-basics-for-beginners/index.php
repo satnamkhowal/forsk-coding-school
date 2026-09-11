@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Power BI Basics for Beginners";
-$page_description="Power BI Basics for Beginners with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipu";
+$page_description = "Learn Power BI Basics for Beginners with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="power bi, power bi basics for beginners, power bi, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/power-bi-basics-for-beginners/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Power BI Basics for Beginners\",\"description\":\"Power BI Basics for Beginners with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipu\",\"url\":\"https://forskcodingschool.com/blog/power-bi-basics-for-beginners/\",\"image\":\"https://forskcodingschool.com/blog/images/power-bi-basics-for-beginners.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Power BI Basics for Beginners\",\"description\":\"Learn Power BI Basics for Beginners with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/power-bi-basics-for-beginners/\",\"image\":\"https://forskcodingschool.com/blog/images/power-bi-basics-for-beginners.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/power-bi-basics-for-beginners.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/power-bi-basics-for-beginners.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/power-bi-data-cleaning-with-power-query/">Power BI Data Cleaning with Power Query</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/excel-data-cleaning-techniques/">Excel Data Cleaning Techniques</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/c-programming-training-in-jaipur-why-should-you-learn-c/">C Programming Training In Jaipur Why Should You Learn C</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/best-java-course-in-jaipur-with-practical-projects/">Best Java Course In Jaipur With Practical Projects</a></li></ul><h3>Conclusion</h3><p>Power BI Basics for Beginners should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger power bi fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/power-bi-basics-for-beginners.webp" alt="Power BI Basics for Beginners featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

@@ -367,7 +367,12 @@ $header_variant='header-1';
                   <div class="col-xl-4 col-sm-6">
                     <div class="tj-instructor-item tj-instructor-item-2">
                       <div class="tj-instructor-img">
-                        <a href="instructor-details.php"><img src="assets/images/instructor/instructor-4.webp"
+                        <a href="instructor-details.php">
+                          
+                        
+                        <img src="assets/images/instructor/instructor-4.webp"
+
+                        
                             alt="Instructor"></a>
                         <div class="single-rating">
                           <i class="tji-star"></i>

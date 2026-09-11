@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Android App Architecture Basics";
-$page_description="Android App Architecture Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jai";
+$page_description = "Learn Android App Architecture Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="android development, android app architecture basics, android, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/android-app-architecture-basics/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Android App Architecture Basics\",\"description\":\"Android App Architecture Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jai\",\"url\":\"https://forskcodingschool.com/blog/android-app-architecture-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/android-app-architecture-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Android App Architecture Basics\",\"description\":\"Learn Android App Architecture Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/android-app-architecture-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/android-app-architecture-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/android-app-architecture-basics.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/android-app-architecture-basics.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/android-debugging-and-logcat-guide/">Android Debugging and Logcat Guide</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/laravel-migrations-and-database-design/">Laravel Migrations and Database Design</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/why-should-students-learn-programming/">Why Should Students Learn Programming</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/mongodb-vs-mysql-which-database-should-you-learn/">Mongodb Vs Mysql Which Database Should You Learn</a></li></ul><h3>Conclusion</h3><p>Android App Architecture Basics should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger android development fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/android-app-architecture-basics.webp" alt="Android App Architecture Basics featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

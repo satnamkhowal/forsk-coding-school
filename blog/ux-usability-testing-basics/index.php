@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="UX Usability Testing Basics";
-$page_description="UX Usability Testing Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur";
+$page_description = "Learn UX Usability Testing Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="ui ux design, ux usability testing basics, ui/ux, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/ux-usability-testing-basics/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"UX Usability Testing Basics\",\"description\":\"UX Usability Testing Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur\",\"url\":\"https://forskcodingschool.com/blog/ux-usability-testing-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/ux-usability-testing-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"UX Usability Testing Basics\",\"description\":\"Learn UX Usability Testing Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/ux-usability-testing-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/ux-usability-testing-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/ux-usability-testing-basics.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/ux-usability-testing-basics.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/ui-design-principles-for-clean-interfaces/">UI Design Principles for Clean Interfaces</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/flutter-widget-tree-explained/">Flutter Widget Tree Explained</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/coding-interview-preparation-guide-for-freshers/">Coding Interview Preparation Guide For Freshers</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/most-in-demand-programming-skills-in-2026/">Most In Demand Programming Skills In 2026</a></li></ul><h3>Conclusion</h3><p>UX Usability Testing Basics should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger ui ux design fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/ux-usability-testing-basics.webp" alt="UX Usability Testing Basics featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

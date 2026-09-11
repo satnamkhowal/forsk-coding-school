@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Image Classification Explained";
-$page_description="Image Classification Explained with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaip";
+$page_description = "Learn Image Classification Explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="computer vision, image classification explained, computer vision, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/image-classification-explained/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Image Classification Explained\",\"description\":\"Image Classification Explained with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaip\",\"url\":\"https://forskcodingschool.com/blog/image-classification-explained/\",\"image\":\"https://forskcodingschool.com/blog/images/image-classification-explained.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Image Classification Explained\",\"description\":\"Learn Image Classification Explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/image-classification-explained/\",\"image\":\"https://forskcodingschool.com/blog/images/image-classification-explained.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/image-classification-explained.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/image-classification-explained.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/object-detection-fundamentals/">Object Detection Fundamentals</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/power-bi-portfolio-project-ideas/">Power BI Portfolio Project Ideas</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/best-java-course-in-jaipur-with-practical-projects/">Best Java Course In Jaipur With Practical Projects</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/why-python-is-one-of-the-best-languages-for-beginners/">Why Python Is One Of The Best Languages For Beginners</a></li></ul><h3>Conclusion</h3><p>Image Classification Explained should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger computer vision fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/image-classification-explained.webp" alt="Image Classification Explained featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

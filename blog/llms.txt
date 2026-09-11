@@ -1,52 +1,118 @@
 # Forsk Coding School Knowledge Hub
 
-> Practical learning guides covering programming, full-stack development, data, AI, cloud, cybersecurity, testing, design, marketing and career preparation.
+> Curated programming, data, AI, cloud, security, testing, design and career-learning resources from Forsk Coding School Jaipur.
 
-This file covers URLs under /blog/. Blog articles should be treated as educational guidance, not as guarantees of employment, placement, salary, certification or outcomes. Prefer the relevant course page for current program information.
+Use the topic hubs below as the preferred entry points. The site keeps additional learner variants available for navigation, but only the strongest intent/audience combinations are recommended for search indexing.
 
-## Blog entry points
-- [Knowledge Hub](https://forskcodingschool.com/blog/): Browse blog content.
-- [Complete blog sitemap](https://forskcodingschool.com/blog/blogs-sitemap.xml): Full URL inventory.
-- [Courses](https://forskcodingschool.com/courses.php): Current course navigation.
-- [Live MentorLab](https://forskcodingschool.com/live-mentorlab.php): How interactive classes work.
+## Primary entry points
+- [Knowledge Hub](https://forskcodingschool.com/blog/): Browse curated technology learning resources.
+- [Blog sitemap](https://forskcodingschool.com/blog/blogs-sitemap.xml): Indexable blog and topic-hub inventory.
+- [Courses](https://forskcodingschool.com/courses.php): Current Forsk Coding School courses.
+- [Live MentorLab](https://forskcodingschool.com/live-mentorlab.php): Interactive online and offline learning model.
 
-## Representative learning guides
-- [Python fundamentals and syntax: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-fundamentals-and-syntax-practical-roadmap-beginners/): Programming — Python fundamentals and syntax.
-- [Object-oriented Python: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/object-oriented-python-practical-roadmap-beginners/): Programming — Object-oriented Python.
-- [Python APIs and JSON: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-apis-and-json-practical-roadmap-beginners/): Programming — Python APIs and JSON.
-- [Python automation workflows: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-automation-workflows-practical-roadmap-beginners/): Programming — Python automation workflows.
-- [Python project development: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/python-project-development-practical-roadmap-beginners/): Programming — Python project development.
-- [Core Java foundations: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/core-java-foundations-practical-roadmap-beginners/): Programming — Core Java foundations.
-- [Java OOP and collections: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/java-oop-and-collections-practical-roadmap-beginners/): Programming — Java OOP and collections.
-- [Java database connectivity: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/java-database-connectivity-practical-roadmap-beginners/): Programming — Java database connectivity.
-- [Spring Boot backend development: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/spring-boot-backend-development-practical-roadmap-beginners/): Programming — Spring Boot backend development.
-- [Java microservices fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/java-microservices-fundamentals-practical-roadmap-beginners/): Programming — Java microservices fundamentals.
-- [JavaScript fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/javascript-fundamentals-practical-roadmap-beginners/): Web Development — JavaScript fundamentals.
-- [Modern ES6+ JavaScript: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/modern-es6-plus-javascript-practical-roadmap-beginners/): Web Development — Modern ES6+ JavaScript.
-- [DOM and browser programming: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/dom-and-browser-programming-practical-roadmap-beginners/): Web Development — DOM and browser programming.
-- [Asynchronous JavaScript and APIs: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/asynchronous-javascript-and-apis-practical-roadmap-beginners/): Web Development — Asynchronous JavaScript and APIs.
-- [JavaScript project architecture: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/javascript-project-architecture-practical-roadmap-beginners/): Web Development — JavaScript project architecture.
-- [MERN stack foundations: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/mern-stack-foundations-practical-roadmap-beginners/): Full Stack Development — MERN stack foundations.
-- [React frontend architecture: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/react-frontend-architecture-practical-roadmap-beginners/): Full Stack Development — React frontend architecture.
-- [Node and Express backend: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/node-and-express-backend-practical-roadmap-beginners/): Full Stack Development — Node and Express backend.
-- [MongoDB data modeling: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/mongodb-data-modeling-practical-roadmap-beginners/): Full Stack Development — MongoDB data modeling.
-- [MERN deployment workflow: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/mern-deployment-workflow-practical-roadmap-beginners/): Full Stack Development — MERN deployment workflow.
-- [Full stack web foundations: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/full-stack-web-foundations-practical-roadmap-beginners/): Full Stack Development — Full stack web foundations.
-- [Frontend to backend integration: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/frontend-to-backend-integration-practical-roadmap-beginners/): Full Stack Development — Frontend to backend integration.
-- [REST API design for full stack: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/rest-api-design-for-full-stack-practical-roadmap-beginners/): Full Stack Development — REST API design for full stack.
-- [Authentication and application security: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/authentication-and-application-security-practical-roadmap-beginners/): Full Stack Development — Authentication and application security.
-- [Full stack deployment and portfolio: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/full-stack-deployment-and-portfolio-practical-roadmap-beginners/): Full Stack Development — Full stack deployment and portfolio.
-- [SQL query fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/sql-query-fundamentals-practical-roadmap-beginners/): Data & BI — SQL query fundamentals.
-- [SQL joins and relationships: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/sql-joins-and-relationships-practical-roadmap-beginners/): Data & BI — SQL joins and relationships.
-- [Advanced SQL analytics: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/advanced-sql-analytics-practical-roadmap-beginners/): Data & BI — Advanced SQL analytics.
-- [Database design and normalization: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/database-design-and-normalization-practical-roadmap-beginners/): Data & BI — Database design and normalization.
-- [SQL performance and reporting: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/sql-performance-and-reporting-practical-roadmap-beginners/): Data & BI — SQL performance and reporting.
-- [Excel fundamentals for analysis: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/excel-fundamentals-for-analysis-practical-roadmap-beginners/): Data & BI — Excel fundamentals for analysis.
-- [Advanced Excel formulas: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/advanced-excel-formulas-practical-roadmap-beginners/): Data & BI — Advanced Excel formulas.
-- [PivotTables and reporting: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/pivottables-and-reporting-practical-roadmap-beginners/): Data & BI — PivotTables and reporting.
-- [Power Query data preparation: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/power-query-data-preparation-practical-roadmap-beginners/): Data & BI — Power Query data preparation.
-- [Excel dashboard development: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/excel-dashboard-development-practical-roadmap-beginners/): Data & BI — Excel dashboard development.
-- [Power BI fundamentals: Practical Roadmap for Beginners](https://forskcodingschool.com/blog/power-bi-fundamentals-practical-roadmap-beginners/): Data & BI — Power BI fundamentals.
+## Topic hubs
+- [AI agent project design Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ai-agent-project-design-learning-guides/): AI & GenAI — 5 curated guides.
+- [AI application design Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ai-application-design-learning-guides/): AI & GenAI — 5 curated guides.
+- [AI foundations and problem solving Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ai-foundations-and-problem-solving-learning-guides/): AI & GenAI — 5 curated guides.
+- [AI project development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ai-project-development-learning-guides/): AI & GenAI — 5 curated guides.
+- [API testing workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/api-testing-workflow-learning-guides/): Software Testing — 5 curated guides.
+- [AWS cloud fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/aws-cloud-fundamentals-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Advanced Excel formulas Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/advanced-excel-formulas-learning-guides/): Data & BI — 5 curated guides.
+- [Advanced SQL analytics Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/advanced-sql-analytics-learning-guides/): Data & BI — 5 curated guides.
+- [Analytics portfolio development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/analytics-portfolio-development-learning-guides/): Data & BI — 5 curated guides.
+- [Android app workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/android-app-workflow-learning-guides/): Mobile Development — 5 curated guides.
+- [Asynchronous JavaScript and APIs Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/asynchronous-javascript-and-apis-learning-guides/): Web Development — 5 curated guides.
+- [Authentication and application security Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/authentication-and-application-security-learning-guides/): Full Stack Development — 5 curated guides.
+- [Automation testing fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/automation-testing-fundamentals-learning-guides/): Software Testing — 5 curated guides.
+- [Azure cloud fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/azure-cloud-fundamentals-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Business KPI analysis Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/business-kpi-analysis-learning-guides/): Data & BI — 5 curated guides.
+- [CI/CD pipeline fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ci-cd-pipeline-fundamentals-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Cloud computing foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/cloud-computing-foundations-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Cloud deployment architecture Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/cloud-deployment-architecture-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Cloud networking and identity Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/cloud-networking-and-identity-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Content and social media strategy Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/content-and-social-media-strategy-learning-guides/): Digital Marketing — 5 curated guides.
+- [Core Java foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/core-java-foundations-learning-guides/): Programming — 5 curated guides.
+- [Cyber security foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/cyber-security-foundations-learning-guides/): Cyber Security — 5 curated guides.
+- [DAX calculations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/dax-calculations-learning-guides/): Data & BI — 5 curated guides.
+- [DOM and browser programming Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/dom-and-browser-programming-learning-guides/): Web Development — 5 curated guides.
+- [Data analytics foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/data-analytics-foundations-learning-guides/): Data & BI — 5 curated guides.
+- [Data cleaning and preparation Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/data-cleaning-and-preparation-learning-guides/): Data & BI — 5 curated guides.
+- [Data science foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/data-science-foundations-learning-guides/): Data & AI — 5 curated guides.
+- [Data science portfolio projects Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/data-science-portfolio-projects-learning-guides/): Data & AI — 5 curated guides.
+- [Database design and normalization Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/database-design-and-normalization-learning-guides/): Data & BI — 5 curated guides.
+- [Design systems and portfolio Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/design-systems-and-portfolio-learning-guides/): Design — 5 curated guides.
+- [DevOps foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/devops-foundations-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [DevOps monitoring and deployment Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/devops-monitoring-and-deployment-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Digital marketing foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/digital-marketing-foundations-learning-guides/): Digital Marketing — 5 curated guides.
+- [Docker container workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/docker-container-workflow-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [Ethical security testing workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ethical-security-testing-workflow-learning-guides/): Cyber Security — 5 curated guides.
+- [Excel dashboard development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/excel-dashboard-development-learning-guides/): Data & BI — 5 curated guides.
+- [Excel fundamentals for analysis Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/excel-fundamentals-for-analysis-learning-guides/): Data & BI — 5 curated guides.
+- [Exploratory Data Analysis for Data Science Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/exploratory-data-analysis-for-data-science-learning-guides/): Data & AI — 5 curated guides.
+- [Exploratory data analysis Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/exploratory-data-analysis-learning-guides/): Data & BI — 5 curated guides.
+- [Feature engineering and evaluation Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/feature-engineering-and-evaluation-learning-guides/): Data & AI — 5 curated guides.
+- [Figma prototyping workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/figma-prototyping-workflow-learning-guides/): Design — 5 curated guides.
+- [Flutter cross-platform development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/flutter-cross-platform-development-learning-guides/): Mobile Development — 5 curated guides.
+- [Frontend to backend integration Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/frontend-to-backend-integration-learning-guides/): Full Stack Development — 5 curated guides.
+- [Full stack deployment and portfolio Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/full-stack-deployment-and-portfolio-learning-guides/): Full Stack Development — 5 curated guides.
+- [Full stack web foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/full-stack-web-foundations-learning-guides/): Full Stack Development — 5 curated guides.
+- [Generative AI foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/generative-ai-foundations-learning-guides/): AI & GenAI — 5 curated guides.
+- [Java OOP and collections Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/java-oop-and-collections-learning-guides/): Programming — 5 curated guides.
+- [Java database connectivity Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/java-database-connectivity-learning-guides/): Programming — 5 curated guides.
+- [Java microservices fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/java-microservices-fundamentals-learning-guides/): Programming — 5 curated guides.
+- [JavaScript fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/javascript-fundamentals-learning-guides/): Web Development — 5 curated guides.
+- [JavaScript project architecture Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/javascript-project-architecture-learning-guides/): Web Development — 5 curated guides.
+- [Kubernetes fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/kubernetes-fundamentals-learning-guides/): Cloud & DevOps — 5 curated guides.
+- [LLM API integration Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/llm-api-integration-learning-guides/): AI & GenAI — 5 curated guides.
+- [Local SEO and Google Business Profile Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/local-seo-and-google-business-profile-learning-guides/): Digital Marketing — 5 curated guides.
+- [MERN deployment workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/mern-deployment-workflow-learning-guides/): Full Stack Development — 5 curated guides.
+- [MERN stack foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/mern-stack-foundations-learning-guides/): Full Stack Development — 5 curated guides.
+- [Machine learning foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/machine-learning-foundations-learning-guides/): Data & AI — 5 curated guides.
+- [Machine learning project deployment Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/machine-learning-project-deployment-learning-guides/): Data & AI — 5 curated guides.
+- [Manual testing foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/manual-testing-foundations-learning-guides/): Software Testing — 5 curated guides.
+- [Mobile API integration and deployment Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/mobile-api-integration-and-deployment-learning-guides/): Mobile Development — 5 curated guides.
+- [Mobile app development foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/mobile-app-development-foundations-learning-guides/): Mobile Development — 5 curated guides.
+- [Modern ES6+ JavaScript Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/modern-es6-plus-javascript-learning-guides/): Web Development — 5 curated guides.
+- [MongoDB data modeling Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/mongodb-data-modeling-learning-guides/): Full Stack Development — 5 curated guides.
+- [Network security fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/network-security-fundamentals-learning-guides/): Cyber Security — 5 curated guides.
+- [Neural network fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/neural-network-fundamentals-learning-guides/): AI & GenAI — 5 curated guides.
+- [Node and Express backend Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/node-and-express-backend-learning-guides/): Full Stack Development — 5 curated guides.
+- [Object-oriented Python Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/object-oriented-python-learning-guides/): Programming — 5 curated guides.
+- [Paid campaign fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/paid-campaign-fundamentals-learning-guides/): Digital Marketing — 5 curated guides.
+- [Pandas and NumPy workflows Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/pandas-and-numpy-workflows-learning-guides/): Data & AI — 5 curated guides.
+- [PivotTables and reporting Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/pivottables-and-reporting-learning-guides/): Data & BI — 5 curated guides.
+- [Power BI dashboard storytelling Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/power-bi-dashboard-storytelling-learning-guides/): Data & BI — 5 curated guides.
+- [Power BI data modeling Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/power-bi-data-modeling-learning-guides/): Data & BI — 5 curated guides.
+- [Power BI fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/power-bi-fundamentals-learning-guides/): Data & BI — 5 curated guides.
+- [Power Query data preparation Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/power-query-data-preparation-learning-guides/): Data & BI — 5 curated guides.
+- [Power Query in Power BI Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/power-query-in-power-bi-learning-guides/): Data & BI — 5 curated guides.
+- [Prompt engineering workflows Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/prompt-engineering-workflows-learning-guides/): AI & GenAI — 5 curated guides.
+- [Python APIs and JSON Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/python-apis-and-json-learning-guides/): Programming — 5 curated guides.
+- [Python automation workflows Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/python-automation-workflows-learning-guides/): Programming — 5 curated guides.
+- [Python fundamentals and syntax Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/python-fundamentals-and-syntax-learning-guides/): Programming — 5 curated guides.
+- [Python project development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/python-project-development-learning-guides/): Programming — 5 curated guides.
+- [RAG application fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/rag-application-fundamentals-learning-guides/): AI & GenAI — 5 curated guides.
+- [REST API design for full stack Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/rest-api-design-for-full-stack-learning-guides/): Full Stack Development — 5 curated guides.
+- [React Native app development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/react-native-app-development-learning-guides/): Mobile Development — 5 curated guides.
+- [React frontend architecture Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/react-frontend-architecture-learning-guides/): Full Stack Development — 5 curated guides.
+- [Responsible AI workflows Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/responsible-ai-workflows-learning-guides/): AI & GenAI — 5 curated guides.
+- [SEO fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/seo-fundamentals-learning-guides/): Digital Marketing — 5 curated guides.
+- [SQL joins and relationships Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/sql-joins-and-relationships-learning-guides/): Data & BI — 5 curated guides.
+- [SQL performance and reporting Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/sql-performance-and-reporting-learning-guides/): Data & BI — 5 curated guides.
+- [SQL query fundamentals Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/sql-query-fundamentals-learning-guides/): Data & BI — 5 curated guides.
+- [Security monitoring and SOC basics Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/security-monitoring-and-soc-basics-learning-guides/): Cyber Security — 5 curated guides.
+- [Selenium web testing Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/selenium-web-testing-learning-guides/): Software Testing — 5 curated guides.
+- [Spring Boot backend development Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/spring-boot-backend-development-learning-guides/): Programming — 5 curated guides.
+- [Statistics for data science Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/statistics-for-data-science-learning-guides/): Data & AI — 5 curated guides.
+- [Supervised learning workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/supervised-learning-workflow-learning-guides/): Data & AI — 5 curated guides.
+- [Test case design and bug reporting Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/test-case-design-and-bug-reporting-learning-guides/): Software Testing — 5 curated guides.
+- [UI UX design foundations Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/ui-ux-design-foundations-learning-guides/): Design — 5 curated guides.
+- [Unsupervised learning workflow Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/unsupervised-learning-workflow-learning-guides/): Data & AI — 5 curated guides.
+- [User research and problem framing Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/user-research-and-problem-framing-learning-guides/): Design — 5 curated guides.
+- [Web security awareness Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/web-security-awareness-learning-guides/): Cyber Security — 5 curated guides.
+- [Wireframing and information architecture Learning Guides, Projects & Career Practice](https://forskcodingschool.com/blog/wireframing-and-information-architecture-learning-guides/): Design — 5 curated guides.
 
-## Optional
+## Notes
+- Educational content is guidance, not a guarantee of placement, salary, employment or certification outcomes.
+- Prefer current course pages for fees, schedules, syllabus and enrollment information.
 - [Root LLM guide](https://forskcodingschool.com/llms.txt)

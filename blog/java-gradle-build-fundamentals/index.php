@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'Java Gradle build fundamentals';
-$page_description = 'Learn java gradle build fundamentals with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Fo...';
+$page_description = 'Learn Java Gradle build fundamentals with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'Java development';
 $slug = 'java-gradle-build-fundamentals';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"Java Gradle build fundamentals","description":"Learn java gradle build fundamentals with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Fo...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/java-gradle-build-fundamentals/"},"image":"https://forskcodingschool.com/blog/images/java-gradle-build-fundamentals.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Java Gradle build fundamentals","description":"Learn Java Gradle build fundamentals with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/java-gradle-build-fundamentals/"},"image":"https://forskcodingschool.com/blog/images/java-gradle-build-fundamentals.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -108,6 +108,8 @@ System.out.println(user.email());
 <p>Java Gradle build fundamentals becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

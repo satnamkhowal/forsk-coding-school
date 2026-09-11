@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'SQL foreign keys and referential integrity';
-$page_description = 'Learn sql foreign keys and referential integrity with practical explanations, examples, best practices, common mistakes and a clear implementation check...';
+$page_description = 'Learn SQL foreign keys and referential integrity with practical examples, project guidance and related Forsk Coding School courses in Jaipur.';
 $page_keywords = 'database development';
 $slug = 'sql-foreign-keys-and-referential-integrity';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"SQL foreign keys and referential integrity","description":"Learn sql foreign keys and referential integrity with practical explanations, examples, best practices, common mistakes and a clear implementation check...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/sql-foreign-keys-and-referential-integrity/"},"image":"https://forskcodingschool.com/blog/images/sql-foreign-keys-and-referential-integrity.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"SQL foreign keys and referential integrity","description":"Learn SQL foreign keys and referential integrity with practical examples, project guidance and related Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/sql-foreign-keys-and-referential-integrity/"},"image":"https://forskcodingschool.com/blog/images/sql-foreign-keys-and-referential-integrity.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -108,6 +108,8 @@ ORDER BY orders DESC;
 <p>SQL foreign keys and referential integrity becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

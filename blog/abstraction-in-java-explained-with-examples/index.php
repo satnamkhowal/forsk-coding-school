@@ -236,7 +236,9 @@
                         </div>
                     </div>
                 </section>
-            </main><?php include __DIR__ . '/../../includes/footer.php'; ?>
+            
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__ . '/../../includes/footer.php'; ?>
         </div>
     </div>
 </body>

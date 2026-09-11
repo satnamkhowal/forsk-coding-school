@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'PHP file upload security';
-$page_description = 'Learn php file upload security with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk Co...';
+$page_description = 'Learn PHP file upload security with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'PHP development';
 $slug = 'php-file-upload-security';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"PHP file upload security","description":"Learn php file upload security with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from Forsk Co...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/php-file-upload-security/"},"image":"https://forskcodingschool.com/blog/images/php-file-upload-security.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"PHP file upload security","description":"Learn PHP file upload security with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/php-file-upload-security/"},"image":"https://forskcodingschool.com/blog/images/php-file-upload-security.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -105,6 +105,8 @@ Request → validation → business logic → data access → response
 <p>PHP file upload security becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

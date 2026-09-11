@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Figma Design Systems for Teams";
-$page_description="Figma Design Systems for Teams with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaip";
+$page_description = "Learn Figma Design Systems for Teams with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="figma, figma design systems for teams, figma, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/figma-design-systems-for-teams/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Figma Design Systems for Teams\",\"description\":\"Figma Design Systems for Teams with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaip\",\"url\":\"https://forskcodingschool.com/blog/figma-design-systems-for-teams/\",\"image\":\"https://forskcodingschool.com/blog/images/figma-design-systems-for-teams.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Figma Design Systems for Teams\",\"description\":\"Learn Figma Design Systems for Teams with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/figma-design-systems-for-teams/\",\"image\":\"https://forskcodingschool.com/blog/images/figma-design-systems-for-teams.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/figma-design-systems-for-teams.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/figma-design-systems-for-teams.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/figma-prototyping-for-ux-projects/">Figma Prototyping for UX Projects</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/android-development-basics-for-beginners/">Android Development Basics for Beginners</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/best-full-stack-course-in-jaipur-with-real-world-projects/">Best Full Stack Course In Jaipur With Real World Projects</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/python-developer-roadmap-from-beginner-to-professional/">Python Developer Roadmap From Beginner To Professional</a></li></ul><h3>Conclusion</h3><p>Figma Design Systems for Teams should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger figma fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/figma-design-systems-for-teams.webp" alt="Figma Design Systems for Teams featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

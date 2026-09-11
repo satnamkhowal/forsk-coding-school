@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="API Error Response Design";
-$page_description="API Error Response Design with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur";
+$page_description = "Learn API Error Response Design with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="rest api development, api error response design, rest apis, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/api-error-response-design/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"API Error Response Design\",\"description\":\"API Error Response Design with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur\",\"url\":\"https://forskcodingschool.com/blog/api-error-response-design/\",\"image\":\"https://forskcodingschool.com/blog/images/api-error-response-design.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"API Error Response Design\",\"description\":\"Learn API Error Response Design with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/api-error-response-design/\",\"image\":\"https://forskcodingschool.com/blog/images/api-error-response-design.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/api-error-response-design.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/api-error-response-design.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/api-documentation-with-openapi-basics/">API Documentation with OpenAPI Basics</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/resume-projects-that-help-junior-developers/">Resume Projects That Help Junior Developers</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/developer-resume-mistakes-freshers-should-avoid/">Developer Resume Mistakes Freshers Should Avoid</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/best-dsa-training-in-jaipur-for-software-developer-jobs/">Best Dsa Training In Jaipur For Software Developer Jobs</a></li></ul><h3>Conclusion</h3><p>API Error Response Design should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger rest api development fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/api-error-response-design.webp" alt="API Error Response Design featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

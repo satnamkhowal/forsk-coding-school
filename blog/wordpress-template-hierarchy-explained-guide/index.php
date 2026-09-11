@@ -1,13 +1,14 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'WordPress template hierarchy explained';
-$page_description = 'Learn wordpress template hierarchy explained with practical explanations, examples, best practices, common mistakes and a clear implementation checklist...';
+$page_description = 'Learn WordPress template hierarchy explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'WordPress development';
 $slug = 'wordpress-template-hierarchy-explained-guide';
-$page_canonical = blog_url($slug);
+$page_canonical = blog_url('wordpress-template-hierarchy-explained');
+$page_robots = 'noindex, follow';
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"WordPress template hierarchy explained","description":"Learn wordpress template hierarchy explained with practical explanations, examples, best practices, common mistakes and a clear implementation checklist...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/wordpress-template-hierarchy-explained-guide/"},"image":"https://forskcodingschool.com/blog/images/wordpress-template-hierarchy-explained-guide.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"WordPress template hierarchy explained","description":"Learn WordPress template hierarchy explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/wordpress-template-hierarchy-explained-guide/"},"image":"https://forskcodingschool.com/blog/images/wordpress-template-hierarchy-explained-guide.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -103,6 +104,8 @@ FORSK_JSON;
 <p>WordPress template hierarchy explained becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

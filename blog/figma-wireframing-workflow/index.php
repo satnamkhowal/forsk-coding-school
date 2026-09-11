@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Figma Wireframing Workflow";
-$page_description="Figma Wireframing Workflow with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur";
+$page_description = "Learn Figma Wireframing Workflow with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="figma, figma wireframing workflow, figma, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/figma-wireframing-workflow/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Figma Wireframing Workflow\",\"description\":\"Figma Wireframing Workflow with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur\",\"url\":\"https://forskcodingschool.com/blog/figma-wireframing-workflow/\",\"image\":\"https://forskcodingschool.com/blog/images/figma-wireframing-workflow.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Figma Wireframing Workflow\",\"description\":\"Learn Figma Wireframing Workflow with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/figma-wireframing-workflow/\",\"image\":\"https://forskcodingschool.com/blog/images/figma-wireframing-workflow.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/figma-wireframing-workflow.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/figma-wireframing-workflow.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/figma-variables-and-design-tokens/">Figma Variables and Design Tokens</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/android-activity-and-fragment-concepts/">Android Activity and Fragment Concepts</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/why-problem-solving-is-important-for-programmers/">Why Problem Solving Is Important For Programmers</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/best-coding-courses-in-jaipur-after-12th/">Best Coding Courses In Jaipur After 12Th</a></li></ul><h3>Conclusion</h3><p>Figma Wireframing Workflow should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger figma fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/figma-wireframing-workflow.webp" alt="Figma Wireframing Workflow featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

@@ -1,13 +1,13 @@
 <?php
 require_once dirname(__DIR__, 2) . '/config.php';
 $page_title = 'HTML responsive images and srcset';
-$page_description = 'Learn html responsive images and srcset with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from...';
+$page_description = 'Learn HTML responsive images and srcset with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.';
 $page_keywords = 'frontend development';
 $slug = 'html-responsive-images-and-srcset';
 $page_canonical = blog_url($slug);
 $page_og_image = blog_image_url($slug . '.webp');
 $page_schema = <<<'FORSK_JSON'
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"HTML responsive images and srcset","description":"Learn html responsive images and srcset with practical explanations, examples, best practices, common mistakes and a clear implementation checklist from...","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/html-responsive-images-and-srcset/"},"image":"https://forskcodingschool.com/blog/images/html-responsive-images-and-srcset.webp"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"HTML responsive images and srcset","description":"Learn HTML responsive images and srcset with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.","author":{"@type":"Organization","name":"Forsk Coding School"},"publisher":{"@type":"Organization","name":"Forsk Coding School"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://forskcodingschool.com/blog/html-responsive-images-and-srcset/"},"image":"https://forskcodingschool.com/blog/images/html-responsive-images-and-srcset.webp"}
 FORSK_JSON;
 ?>
 <!doctype html>
@@ -105,6 +105,8 @@ FORSK_JSON;
 <p>HTML responsive images and srcset becomes valuable when you can apply it consistently and verify the result. Learn the core principle, build a small example, test failure cases, measure where appropriate, and document the tradeoffs. That workflow develops practical skills that transfer across projects and technologies.</p>
 <div class="blog-cta"><strong>Build practical skills with Forsk Coding School.</strong> Use this guide as a starting point, then turn the concept into a project you can demonstrate in your portfolio.</div>
 </article>
+
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
 </main>
 <?php require dirname(__DIR__, 2) . '/includes/footer.php'; ?>
 </body>

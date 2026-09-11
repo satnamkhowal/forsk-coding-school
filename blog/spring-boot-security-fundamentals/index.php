@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Spring Boot Security Fundamentals";
-$page_description="Spring Boot Security Fundamentals with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in J";
+$page_description = "Learn Spring Boot Security Fundamentals with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="spring boot, spring boot security fundamentals, spring boot, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/spring-boot-security-fundamentals/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Spring Boot Security Fundamentals\",\"description\":\"Spring Boot Security Fundamentals with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in J\",\"url\":\"https://forskcodingschool.com/blog/spring-boot-security-fundamentals/\",\"image\":\"https://forskcodingschool.com/blog/images/spring-boot-security-fundamentals.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Spring Boot Security Fundamentals\",\"description\":\"Learn Spring Boot Security Fundamentals with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/spring-boot-security-fundamentals/\",\"image\":\"https://forskcodingschool.com/blog/images/spring-boot-security-fundamentals.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/spring-boot-security-fundamentals.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/spring-boot-security-fundamentals.webp'
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/spring-boot-testing-basics/">Spring Boot Testing Basics</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/database-scaling-basics/">Database Scaling Basics</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/how-to-become-a-backend-developer-in-2026/">How To Become A Backend Developer In 2026</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/machine-learning-roadmap-for-beginners/">Machine Learning Roadmap For Beginners</a></li></ul><h3>Conclusion</h3><p>Spring Boot Security Fundamentals should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger spring boot fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/spring-boot-security-fundamentals.webp" alt="Spring Boot Security Fundamentals featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

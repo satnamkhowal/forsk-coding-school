@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="AWS Route 53 DNS Basics";
-$page_description="AWS Route 53 DNS Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur";
+$page_description = "Learn AWS Route 53 DNS Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="aws, aws route 53 dns basics, aws, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/aws-route-53-dns-basics/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"AWS Route 53 DNS Basics\",\"description\":\"AWS Route 53 DNS Basics with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in Jaipur\",\"url\":\"https://forskcodingschool.com/blog/aws-route-53-dns-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/aws-route-53-dns-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"AWS Route 53 DNS Basics\",\"description\":\"Learn AWS Route 53 DNS Basics with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/aws-route-53-dns-basics/\",\"image\":\"https://forskcodingschool.com/blog/images/aws-route-53-dns-basics.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/aws-route-53-dns-basics.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/aws-route-53-dns-basics.webp';
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/aws-architecture-basics-for-web-applications/">AWS Architecture Basics for Web Applications</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/cloud-load-balancing-explained/">Cloud Load Balancing Explained</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/top-technology-skills-to-learn-for-the-future/">Top Technology Skills To Learn For The Future</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/coding-classes-in-jaipur-for-non-it-students/">Coding Classes In Jaipur For Non It Students</a></li></ul><h3>Conclusion</h3><p>AWS Route 53 DNS Basics should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger aws fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/aws-route-53-dns-basics.webp" alt="AWS Route 53 DNS Basics featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>

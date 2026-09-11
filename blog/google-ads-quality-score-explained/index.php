@@ -2,10 +2,10 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $base_url = (preg_match('/^localhost(?::\d+)?$/i', $host)) ? 'http://localhost:81/forsk-coding-school' : 'https://forskcodingschool.com';
 $page_title="Google Ads Quality Score Explained";
-$page_description="Google Ads Quality Score Explained with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in";
+$page_description = "Learn Google Ads Quality Score Explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.";
 $page_keywords="google ads, google ads quality score explained, google ads, Forsk Coding School Jaipur";
 $page_canonical=$base_url . '/blog/google-ads-quality-score-explained/';
-$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Google Ads Quality Score Explained\",\"description\":\"Google Ads Quality Score Explained with practical examples, learning steps, common mistakes, projects and career-focused guidance from Forsk Coding School in\",\"url\":\"https://forskcodingschool.com/blog/google-ads-quality-score-explained/\",\"image\":\"https://forskcodingschool.com/blog/images/google-ads-quality-score-explained.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
+$page_schema="{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Google Ads Quality Score Explained\",\"description\":\"Learn Google Ads Quality Score Explained with practical examples, common mistakes, project guidance and relevant Forsk Coding School courses in Jaipur.\",\"url\":\"https://forskcodingschool.com/blog/google-ads-quality-score-explained/\",\"image\":\"https://forskcodingschool.com/blog/images/google-ads-quality-score-explained.webp\",\"author\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Forsk Coding School\"},\"datePublished\":\"2026-09-08\",\"dateModified\":\"2026-09-08\"}";
 $page_og_image=$base_url . '/blog/images/google-ads-quality-score-explained.webp';
 ?>
 <?php include __DIR__.'/../../includes/head.php'; ?></head><body>
@@ -24,5 +24,7 @@ $page_og_image=$base_url . '/blog/images/google-ads-quality-score-explained.webp
 <h4>How can this become portfolio evidence?</h4><p>Document the requirement, implementation, testing and lessons learned. A reviewer should be able to understand what you built and why you made the key technical decisions.</p>
 <h3>Related Learning Resources</h3><ul class="tj_list"><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/landing-pages-for-google-ads-campaigns/">Landing Pages for Google Ads Campaigns</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/figma-auto-layout-explained/">Figma Auto Layout Explained</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/mern-stack-developer-roadmap-complete-guide-for-beginners/">Mern Stack Developer Roadmap Complete Guide For Beginners</a></li><li><i class="tji-arrow-right-4"></i><a href="<?= $base_url ?>/blog/php-course-fees-in-jaipur/">Php Course Fees In Jaipur</a></li></ul><h3>Conclusion</h3><p>Google Ads Quality Score Explained should be learned as a repeatable skill, not an isolated definition. Start with the core idea, build a small example, apply it to a realistic requirement and review the result. That cycle creates stronger google ads fundamentals and gives you useful evidence for future projects and interviews.</p><p>For structured, practical learning in Jaipur, Forsk Coding School can be part of a broader plan that combines guided training, projects, practice and career preparation.</p>
 <div class="tj_wpost_thumb tj-fade-anim"><img src="<?= $base_url ?>/blog/images/google-ads-quality-score-explained.webp" alt="Google Ads Quality Score Explained featured image" loading="lazy"></div>
-</div></div></div></div></div></section></main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
+</div></div></div></div></div></section>
+<?php require dirname(__DIR__) . '/legacy-seo-enhancement.php'; ?>
+</main><?php include __DIR__.'/../../includes/footer.php'; ?></div></div>
 </body></html>
