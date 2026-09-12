@@ -1,0 +1,1252 @@
+[
+  {
+    "slug": "ai-agent-project-design-learning-guides",
+    "title": "AI agent project design Learning Guides, Projects & Career Practice",
+    "description": "Explore curated AI agent project design learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "generative-ai-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "ai-application-design-learning-guides",
+    "title": "AI application design Learning Guides, Projects & Career Practice",
+    "description": "Explore curated AI application design learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "artificial-intelligence-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "generative-ai-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "ai-foundations-and-problem-solving-learning-guides",
+    "title": "AI foundations and problem solving Learning Guides, Projects & Career Practice",
+    "description": "Explore curated AI foundations and problem solving learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "artificial-intelligence-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "generative-ai-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "ai-project-development-learning-guides",
+    "title": "AI project development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated AI project development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "artificial-intelligence-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "generative-ai-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "api-testing-workflow-learning-guides",
+    "title": "API testing workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated API testing workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Software Testing",
+    "course_urls": [
+      "software-testing-course-jaipur.php",
+      "manual-testing-course-jaipur.php",
+      "automation-testing-course-jaipur.php",
+      "selenium-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "aws-cloud-fundamentals-learning-guides",
+    "title": "AWS cloud fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated AWS cloud fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "cloud-computing-course-jaipur.php",
+      "aws-course-jaipur.php",
+      "azure-course-jaipur.php",
+      "google-cloud-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "advanced-excel-formulas-learning-guides",
+    "title": "Advanced Excel formulas Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Advanced Excel formulas learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "advanced-excel-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "advanced-sql-analytics-learning-guides",
+    "title": "Advanced SQL analytics Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Advanced SQL analytics learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "sql-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "analytics-portfolio-development-learning-guides",
+    "title": "Analytics portfolio development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Analytics portfolio development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & BI",
+    "course_urls": [
+      "data-analytics-course-jaipur.php",
+      "sql-course-jaipur.php",
+      "advanced-excel-course-jaipur.php",
+      "power-bi-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "android-app-workflow-learning-guides",
+    "title": "Android app workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Android app workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Mobile Development",
+    "course_urls": [
+      "mobile-app-development-course-jaipur.php",
+      "android-course-jaipur.php",
+      "flutter-course-jaipur.php",
+      "react-native-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "asynchronous-javascript-and-apis-learning-guides",
+    "title": "Asynchronous JavaScript and APIs Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Asynchronous JavaScript and APIs learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Web Development",
+    "course_urls": [
+      "javascript-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "authentication-and-application-security-learning-guides",
+    "title": "Authentication and application security Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Authentication and application security learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "full-stack-development-course-jaipur.php",
+      "mern-stack-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "java-full-stack-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "automation-testing-fundamentals-learning-guides",
+    "title": "Automation testing fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Automation testing fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Software Testing",
+    "course_urls": [
+      "software-testing-course-jaipur.php",
+      "manual-testing-course-jaipur.php",
+      "automation-testing-course-jaipur.php",
+      "selenium-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "azure-cloud-fundamentals-learning-guides",
+    "title": "Azure cloud fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Azure cloud fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "cloud-computing-course-jaipur.php",
+      "aws-course-jaipur.php",
+      "azure-course-jaipur.php",
+      "google-cloud-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "business-kpi-analysis-learning-guides",
+    "title": "Business KPI analysis Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Business KPI analysis learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "data-analytics-course-jaipur.php",
+      "sql-course-jaipur.php",
+      "advanced-excel-course-jaipur.php",
+      "power-bi-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "ci-cd-pipeline-fundamentals-learning-guides",
+    "title": "CI/CD pipeline fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated CI/CD pipeline fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "devops-course-jaipur.php",
+      "docker-course-jaipur.php",
+      "kubernetes-course-jaipur.php",
+      "linux-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "cloud-computing-foundations-learning-guides",
+    "title": "Cloud computing foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Cloud computing foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "cloud-computing-course-jaipur.php",
+      "aws-course-jaipur.php",
+      "azure-course-jaipur.php",
+      "google-cloud-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "cloud-deployment-architecture-learning-guides",
+    "title": "Cloud deployment architecture Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Cloud deployment architecture learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "cloud-computing-course-jaipur.php",
+      "aws-course-jaipur.php",
+      "azure-course-jaipur.php",
+      "google-cloud-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "cloud-networking-and-identity-learning-guides",
+    "title": "Cloud networking and identity Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Cloud networking and identity learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "cloud-computing-course-jaipur.php",
+      "aws-course-jaipur.php",
+      "azure-course-jaipur.php",
+      "google-cloud-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "content-and-social-media-strategy-learning-guides",
+    "title": "Content and social media strategy Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Content and social media strategy learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Digital Marketing",
+    "course_urls": [
+      "digital-marketing-course-jaipur.php",
+      "seo-course-jaipur.php",
+      "google-ads-course-jaipur.php",
+      "social-media-marketing-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "core-java-foundations-learning-guides",
+    "title": "Core Java foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Core Java foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Programming",
+    "course_urls": [
+      "java-programming-course-jaipur.php",
+      "core-java-course-jaipur.php",
+      "advanced-java-course-jaipur.php",
+      "spring-boot-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "cyber-security-foundations-learning-guides",
+    "title": "Cyber security foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Cyber security foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cyber Security",
+    "course_urls": [
+      "cyber-security-course-jaipur.php",
+      "ethical-hacking-course-jaipur.php",
+      "network-security-course-jaipur.php",
+      "soc-analyst-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "dax-calculations-learning-guides",
+    "title": "DAX calculations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated DAX calculations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School Jaipur.",
+    "category": "Data & BI",
+    "course_urls": [
+      "power-bi-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "dom-and-browser-programming-learning-guides",
+    "title": "DOM and browser programming Learning Guides, Projects & Career Practice",
+    "description": "Explore curated DOM and browser programming learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Web Development",
+    "course_urls": [
+      "javascript-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "data-analytics-foundations-learning-guides",
+    "title": "Data analytics foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Data analytics foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "data-analytics-course-jaipur.php",
+      "sql-course-jaipur.php",
+      "advanced-excel-course-jaipur.php",
+      "power-bi-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "data-cleaning-and-preparation-learning-guides",
+    "title": "Data cleaning and preparation Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Data cleaning and preparation learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "data-analytics-course-jaipur.php",
+      "sql-course-jaipur.php",
+      "advanced-excel-course-jaipur.php",
+      "power-bi-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "data-science-foundations-learning-guides",
+    "title": "Data science foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Data science foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & AI",
+    "course_urls": [
+      "data-science-course-jaipur.php",
+      "python-programming-course-jaipur.php",
+      "machine-learning-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "data-science-portfolio-projects-learning-guides",
+    "title": "Data science portfolio projects Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Data science portfolio projects learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & AI",
+    "course_urls": [
+      "data-science-course-jaipur.php",
+      "python-programming-course-jaipur.php",
+      "machine-learning-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "database-design-and-normalization-learning-guides",
+    "title": "Database design and normalization Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Database design and normalization learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & BI",
+    "course_urls": [
+      "sql-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "design-systems-and-portfolio-learning-guides",
+    "title": "Design systems and portfolio Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Design systems and portfolio learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Design",
+    "course_urls": [
+      "ui-ux-design-course-jaipur.php",
+      "figma-course-jaipur.php",
+      "graphic-design-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "devops-foundations-learning-guides",
+    "title": "DevOps foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated DevOps foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "devops-course-jaipur.php",
+      "docker-course-jaipur.php",
+      "kubernetes-course-jaipur.php",
+      "linux-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "devops-monitoring-and-deployment-learning-guides",
+    "title": "DevOps monitoring and deployment Learning Guides, Projects & Career Practice",
+    "description": "Explore curated DevOps monitoring and deployment learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "devops-course-jaipur.php",
+      "docker-course-jaipur.php",
+      "kubernetes-course-jaipur.php",
+      "linux-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "digital-marketing-foundations-learning-guides",
+    "title": "Digital marketing foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Digital marketing foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Digital Marketing",
+    "course_urls": [
+      "digital-marketing-course-jaipur.php",
+      "seo-course-jaipur.php",
+      "google-ads-course-jaipur.php",
+      "social-media-marketing-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "docker-container-workflow-learning-guides",
+    "title": "Docker container workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Docker container workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "devops-course-jaipur.php",
+      "docker-course-jaipur.php",
+      "kubernetes-course-jaipur.php",
+      "linux-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "ethical-security-testing-workflow-learning-guides",
+    "title": "Ethical security testing workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Ethical security testing workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Cyber Security",
+    "course_urls": [
+      "cyber-security-course-jaipur.php",
+      "ethical-hacking-course-jaipur.php",
+      "network-security-course-jaipur.php",
+      "soc-analyst-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "excel-dashboard-development-learning-guides",
+    "title": "Excel dashboard development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Excel dashboard development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "advanced-excel-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "excel-fundamentals-for-analysis-learning-guides",
+    "title": "Excel fundamentals for analysis Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Excel fundamentals for analysis learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & BI",
+    "course_urls": [
+      "advanced-excel-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "exploratory-data-analysis-for-data-science-learning-guides",
+    "title": "Exploratory Data Analysis for Data Science Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Exploratory Data Analysis for Data Science learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from.",
+    "category": "Data & AI",
+    "course_urls": [
+      "data-science-course-jaipur.php",
+      "python-programming-course-jaipur.php",
+      "machine-learning-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "exploratory-data-analysis-learning-guides",
+    "title": "Exploratory data analysis Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Exploratory data analysis learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "data-analytics-course-jaipur.php",
+      "sql-course-jaipur.php",
+      "advanced-excel-course-jaipur.php",
+      "power-bi-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "feature-engineering-and-evaluation-learning-guides",
+    "title": "Feature engineering and evaluation Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Feature engineering and evaluation learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & AI",
+    "course_urls": [
+      "machine-learning-course-jaipur.php",
+      "data-science-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "figma-prototyping-workflow-learning-guides",
+    "title": "Figma prototyping workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Figma prototyping workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Design",
+    "course_urls": [
+      "ui-ux-design-course-jaipur.php",
+      "figma-course-jaipur.php",
+      "graphic-design-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "flutter-cross-platform-development-learning-guides",
+    "title": "Flutter cross-platform development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Flutter cross-platform development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Mobile Development",
+    "course_urls": [
+      "mobile-app-development-course-jaipur.php",
+      "android-course-jaipur.php",
+      "flutter-course-jaipur.php",
+      "react-native-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "frontend-to-backend-integration-learning-guides",
+    "title": "Frontend to backend integration Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Frontend to backend integration learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "full-stack-development-course-jaipur.php",
+      "mern-stack-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "java-full-stack-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "full-stack-deployment-and-portfolio-learning-guides",
+    "title": "Full stack deployment and portfolio Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Full stack deployment and portfolio learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "full-stack-development-course-jaipur.php",
+      "mern-stack-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "java-full-stack-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "full-stack-web-foundations-learning-guides",
+    "title": "Full stack web foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Full stack web foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "full-stack-development-course-jaipur.php",
+      "mern-stack-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "java-full-stack-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "generative-ai-foundations-learning-guides",
+    "title": "Generative AI foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Generative AI foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "generative-ai-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "java-oop-and-collections-learning-guides",
+    "title": "Java OOP and collections Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Java OOP and collections learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Programming",
+    "course_urls": [
+      "java-programming-course-jaipur.php",
+      "core-java-course-jaipur.php",
+      "advanced-java-course-jaipur.php",
+      "spring-boot-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "java-database-connectivity-learning-guides",
+    "title": "Java database connectivity Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Java database connectivity learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Programming",
+    "course_urls": [
+      "java-programming-course-jaipur.php",
+      "core-java-course-jaipur.php",
+      "advanced-java-course-jaipur.php",
+      "spring-boot-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "java-microservices-fundamentals-learning-guides",
+    "title": "Java microservices fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Java microservices fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Programming",
+    "course_urls": [
+      "java-programming-course-jaipur.php",
+      "core-java-course-jaipur.php",
+      "advanced-java-course-jaipur.php",
+      "spring-boot-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "javascript-fundamentals-learning-guides",
+    "title": "JavaScript fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated JavaScript fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Web Development",
+    "course_urls": [
+      "javascript-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "javascript-project-architecture-learning-guides",
+    "title": "JavaScript project architecture Learning Guides, Projects & Career Practice",
+    "description": "Explore curated JavaScript project architecture learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Web Development",
+    "course_urls": [
+      "javascript-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "kubernetes-fundamentals-learning-guides",
+    "title": "Kubernetes fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Kubernetes fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Cloud & DevOps",
+    "course_urls": [
+      "devops-course-jaipur.php",
+      "docker-course-jaipur.php",
+      "kubernetes-course-jaipur.php",
+      "linux-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "llm-api-integration-learning-guides",
+    "title": "LLM API integration Learning Guides, Projects & Career Practice",
+    "description": "Explore curated LLM API integration learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "generative-ai-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "local-seo-and-google-business-profile-learning-guides",
+    "title": "Local SEO and Google Business Profile Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Local SEO and Google Business Profile learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Digital Marketing",
+    "course_urls": [
+      "digital-marketing-course-jaipur.php",
+      "seo-course-jaipur.php",
+      "google-ads-course-jaipur.php",
+      "social-media-marketing-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "mern-deployment-workflow-learning-guides",
+    "title": "MERN deployment workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated MERN deployment workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "mern-stack-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php",
+      "full-stack-development-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "mern-stack-foundations-learning-guides",
+    "title": "MERN stack foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated MERN stack foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "mern-stack-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php",
+      "full-stack-development-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "machine-learning-foundations-learning-guides",
+    "title": "Machine learning foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Machine learning foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & AI",
+    "course_urls": [
+      "machine-learning-course-jaipur.php",
+      "data-science-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "machine-learning-project-deployment-learning-guides",
+    "title": "Machine learning project deployment Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Machine learning project deployment learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & AI",
+    "course_urls": [
+      "machine-learning-course-jaipur.php",
+      "data-science-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "manual-testing-foundations-learning-guides",
+    "title": "Manual testing foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Manual testing foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Software Testing",
+    "course_urls": [
+      "software-testing-course-jaipur.php",
+      "manual-testing-course-jaipur.php",
+      "automation-testing-course-jaipur.php",
+      "selenium-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "mobile-api-integration-and-deployment-learning-guides",
+    "title": "Mobile API integration and deployment Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Mobile API integration and deployment learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Mobile Development",
+    "course_urls": [
+      "mobile-app-development-course-jaipur.php",
+      "android-course-jaipur.php",
+      "flutter-course-jaipur.php",
+      "react-native-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "mobile-app-development-foundations-learning-guides",
+    "title": "Mobile app development foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Mobile app development foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Mobile Development",
+    "course_urls": [
+      "mobile-app-development-course-jaipur.php",
+      "android-course-jaipur.php",
+      "flutter-course-jaipur.php",
+      "react-native-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "modern-es6-plus-javascript-learning-guides",
+    "title": "Modern ES6+ JavaScript Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Modern ES6+ JavaScript learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Web Development",
+    "course_urls": [
+      "javascript-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "mongodb-data-modeling-learning-guides",
+    "title": "MongoDB data modeling Learning Guides, Projects & Career Practice",
+    "description": "Explore curated MongoDB data modeling learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "mern-stack-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php",
+      "full-stack-development-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "network-security-fundamentals-learning-guides",
+    "title": "Network security fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Network security fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Cyber Security",
+    "course_urls": [
+      "cyber-security-course-jaipur.php",
+      "ethical-hacking-course-jaipur.php",
+      "network-security-course-jaipur.php",
+      "soc-analyst-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "neural-network-fundamentals-learning-guides",
+    "title": "Neural network fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Neural network fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "artificial-intelligence-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "generative-ai-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "node-and-express-backend-learning-guides",
+    "title": "Node and Express backend Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Node and Express backend learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "mern-stack-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php",
+      "full-stack-development-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "object-oriented-python-learning-guides",
+    "title": "Object-oriented Python Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Object-oriented Python learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Programming",
+    "course_urls": [
+      "python-programming-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "data-science-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "paid-campaign-fundamentals-learning-guides",
+    "title": "Paid campaign fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Paid campaign fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Digital Marketing",
+    "course_urls": [
+      "digital-marketing-course-jaipur.php",
+      "seo-course-jaipur.php",
+      "google-ads-course-jaipur.php",
+      "social-media-marketing-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "pandas-and-numpy-workflows-learning-guides",
+    "title": "Pandas and NumPy workflows Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Pandas and NumPy workflows learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & AI",
+    "course_urls": [
+      "data-science-course-jaipur.php",
+      "python-programming-course-jaipur.php",
+      "machine-learning-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "pivottables-and-reporting-learning-guides",
+    "title": "PivotTables and reporting Learning Guides, Projects & Career Practice",
+    "description": "Explore curated PivotTables and reporting learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "advanced-excel-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "power-bi-dashboard-storytelling-learning-guides",
+    "title": "Power BI dashboard storytelling Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Power BI dashboard storytelling learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Data & BI",
+    "course_urls": [
+      "power-bi-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "power-bi-data-modeling-learning-guides",
+    "title": "Power BI data modeling Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Power BI data modeling learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "power-bi-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "power-bi-fundamentals-learning-guides",
+    "title": "Power BI fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Power BI fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "power-bi-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "power-query-data-preparation-learning-guides",
+    "title": "Power Query data preparation Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Power Query data preparation learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "advanced-excel-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "power-query-in-power-bi-learning-guides",
+    "title": "Power Query in Power BI Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Power Query in Power BI learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "power-bi-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "prompt-engineering-workflows-learning-guides",
+    "title": "Prompt engineering workflows Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Prompt engineering workflows learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "generative-ai-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "python-apis-and-json-learning-guides",
+    "title": "Python APIs and JSON Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Python APIs and JSON learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Programming",
+    "course_urls": [
+      "python-programming-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "data-science-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "python-automation-workflows-learning-guides",
+    "title": "Python automation workflows Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Python automation workflows learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Programming",
+    "course_urls": [
+      "python-programming-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "data-science-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "python-fundamentals-and-syntax-learning-guides",
+    "title": "Python fundamentals and syntax Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Python fundamentals and syntax learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Programming",
+    "course_urls": [
+      "python-programming-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "data-science-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "python-project-development-learning-guides",
+    "title": "Python project development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Python project development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Programming",
+    "course_urls": [
+      "python-programming-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "data-science-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "rag-application-fundamentals-learning-guides",
+    "title": "RAG application fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated RAG application fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "generative-ai-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "rest-api-design-for-full-stack-learning-guides",
+    "title": "REST API design for full stack Learning Guides, Projects & Career Practice",
+    "description": "Explore curated REST API design for full stack learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "full-stack-development-course-jaipur.php",
+      "mern-stack-course-jaipur.php",
+      "python-full-stack-course-jaipur.php",
+      "java-full-stack-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "react-native-app-development-learning-guides",
+    "title": "React Native app development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated React Native app development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Mobile Development",
+    "course_urls": [
+      "mobile-app-development-course-jaipur.php",
+      "android-course-jaipur.php",
+      "flutter-course-jaipur.php",
+      "react-native-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "react-frontend-architecture-learning-guides",
+    "title": "React frontend architecture Learning Guides, Projects & Career Practice",
+    "description": "Explore curated React frontend architecture learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Full Stack Development",
+    "course_urls": [
+      "mern-stack-course-jaipur.php",
+      "react-js-course-jaipur.php",
+      "node-js-course-jaipur.php",
+      "full-stack-development-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "responsible-ai-workflows-learning-guides",
+    "title": "Responsible AI workflows Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Responsible AI workflows learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "AI & GenAI",
+    "course_urls": [
+      "artificial-intelligence-course-jaipur.php",
+      "ai-tools-course-jaipur.php",
+      "generative-ai-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "seo-fundamentals-learning-guides",
+    "title": "SEO fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated SEO fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School Jaipur.",
+    "category": "Digital Marketing",
+    "course_urls": [
+      "digital-marketing-course-jaipur.php",
+      "seo-course-jaipur.php",
+      "google-ads-course-jaipur.php",
+      "social-media-marketing-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "sql-joins-and-relationships-learning-guides",
+    "title": "SQL joins and relationships Learning Guides, Projects & Career Practice",
+    "description": "Explore curated SQL joins and relationships learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "sql-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "sql-performance-and-reporting-learning-guides",
+    "title": "SQL performance and reporting Learning Guides, Projects & Career Practice",
+    "description": "Explore curated SQL performance and reporting learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & BI",
+    "course_urls": [
+      "sql-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "sql-query-fundamentals-learning-guides",
+    "title": "SQL query fundamentals Learning Guides, Projects & Career Practice",
+    "description": "Explore curated SQL query fundamentals learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Data & BI",
+    "course_urls": [
+      "sql-course-jaipur.php",
+      "data-analytics-course-jaipur.php",
+      "business-analytics-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "security-monitoring-and-soc-basics-learning-guides",
+    "title": "Security monitoring and SOC basics Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Security monitoring and SOC basics learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Cyber Security",
+    "course_urls": [
+      "cyber-security-course-jaipur.php",
+      "ethical-hacking-course-jaipur.php",
+      "network-security-course-jaipur.php",
+      "soc-analyst-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "selenium-web-testing-learning-guides",
+    "title": "Selenium web testing Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Selenium web testing learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Software Testing",
+    "course_urls": [
+      "software-testing-course-jaipur.php",
+      "manual-testing-course-jaipur.php",
+      "automation-testing-course-jaipur.php",
+      "selenium-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "spring-boot-backend-development-learning-guides",
+    "title": "Spring Boot backend development Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Spring Boot backend development learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Programming",
+    "course_urls": [
+      "java-programming-course-jaipur.php",
+      "core-java-course-jaipur.php",
+      "advanced-java-course-jaipur.php",
+      "spring-boot-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "statistics-for-data-science-learning-guides",
+    "title": "Statistics for data science Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Statistics for data science learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & AI",
+    "course_urls": [
+      "data-science-course-jaipur.php",
+      "python-programming-course-jaipur.php",
+      "machine-learning-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "supervised-learning-workflow-learning-guides",
+    "title": "Supervised learning workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Supervised learning workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & AI",
+    "course_urls": [
+      "machine-learning-course-jaipur.php",
+      "data-science-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "test-case-design-and-bug-reporting-learning-guides",
+    "title": "Test case design and bug reporting Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Test case design and bug reporting learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Software Testing",
+    "course_urls": [
+      "software-testing-course-jaipur.php",
+      "manual-testing-course-jaipur.php",
+      "automation-testing-course-jaipur.php",
+      "selenium-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "ui-ux-design-foundations-learning-guides",
+    "title": "UI UX design foundations Learning Guides, Projects & Career Practice",
+    "description": "Explore curated UI UX design foundations learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Design",
+    "course_urls": [
+      "ui-ux-design-course-jaipur.php",
+      "figma-course-jaipur.php",
+      "graphic-design-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "unsupervised-learning-workflow-learning-guides",
+    "title": "Unsupervised learning workflow Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Unsupervised learning workflow learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding.",
+    "category": "Data & AI",
+    "course_urls": [
+      "machine-learning-course-jaipur.php",
+      "data-science-course-jaipur.php",
+      "artificial-intelligence-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "user-research-and-problem-framing-learning-guides",
+    "title": "User research and problem framing Learning Guides, Projects & Career Practice",
+    "description": "Explore curated User research and problem framing learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk.",
+    "category": "Design",
+    "course_urls": [
+      "ui-ux-design-course-jaipur.php",
+      "figma-course-jaipur.php",
+      "graphic-design-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "web-security-awareness-learning-guides",
+    "title": "Web security awareness Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Web security awareness learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from Forsk Coding School.",
+    "category": "Cyber Security",
+    "course_urls": [
+      "cyber-security-course-jaipur.php",
+      "ethical-hacking-course-jaipur.php",
+      "network-security-course-jaipur.php",
+      "soc-analyst-course-jaipur.php"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "wireframing-and-information-architecture-learning-guides",
+    "title": "Wireframing and information architecture Learning Guides, Projects & Career Practice",
+    "description": "Explore curated Wireframing and information architecture learning guides for roadmaps, projects, interviews, common mistakes and practical workflows from.",
+    "category": "Design",
+    "course_urls": [
+      "ui-ux-design-course-jaipur.php",
+      "figma-course-jaipur.php",
+      "graphic-design-course-jaipur.php"
+    ],
+    "count": 5
+  }
+]

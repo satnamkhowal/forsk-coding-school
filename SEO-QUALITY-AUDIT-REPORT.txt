@@ -1,0 +1,112 @@
+FORSK CODING SCHOOL — SEO QUALITY & SCALE AUDIT
+Build date: 2026-09-10
+Domain: https://forskcodingschool.com/
+
+WHY THIS UPDATE EXISTS
+----------------------
+The site contains 10,000 newly generated blog URLs plus 1,500 legacy blogs. Publishing and force-indexing thousands of highly similar audience permutations at once creates a scaled-content quality risk. The production strategy now keeps all URLs available, but only exposes the strongest pages to search engines first.
+
+PRODUCTION INDEXATION STRATEGY
+------------------------------
+New generated blog URLs:                 10,000
+New pages INDEX NOW:                        500
+New pages HOLD / NOINDEX:                 9,500
+New topic hubs created and indexable:       100
+Legacy blogs preserved:                   1,500
+Legacy exact-title duplicates noindexed:      6
+Legacy blogs remaining indexable:         1,494
+Production blog sitemap URLs:             2,095
+
+The 500 new index-ready pages represent 100 subjects x 5 meaningfully different search intents:
+- Beginner roadmap
+- Beginner project/practice guide
+- Fresher interview guide
+- Beginner common-mistakes guide
+- Working-professional tools/workflow guide
+
+The remaining audience variants are still live and usable, but output noindex, follow and are excluded from the production blog sitemap. They can be promoted after adding materially unique examples, screenshots, local proof, project walkthroughs, instructor input, or other original value.
+
+QUALITY IMPROVEMENTS APPLIED
+----------------------------
+1. Replaced broken/truncated generated meta descriptions.
+   - 10,000/10,000 new meta descriptions are complete sentences.
+   - Length range: 146–157 characters.
+   - Removed the previous "practical practical" wording issue.
+
+2. Generated 10,000 distinct SERP titles centrally.
+   - 10,000/10,000 titles unique.
+   - Titles adapt to search intent and audience.
+
+3. Added 100 subject/topic hubs.
+   - Each hub links the strongest five intent pages for the subject.
+   - Each hub also links relevant Forsk Coding School course pages.
+   - Blog homepage surfaces the topic hubs before the long article archive.
+
+4. Expanded new-blog helpful content.
+   - Quick answer near the top.
+   - Audience-specific guidance.
+   - Five-stage practice plan.
+   - Goal-specific module for roadmap/projects/interview/mistakes/workflow.
+   - Relevant course links with descriptive anchors.
+   - Related guides restricted to index-ready pages.
+   - Official documentation links where appropriate.
+   - Jaipur-specific content only when the page audience is actually Jaipur-focused.
+
+5. Legacy blog cleanup.
+   - 1,002 incomplete/truncated legacy meta descriptions repaired.
+   - Contextual course-link module added to all 1,500 legacy blogs.
+   - 6 exact duplicate-title URL pairs consolidated to a preferred canonical URL.
+   - Duplicate variants use noindex, follow.
+
+6. Search archive cleanup.
+   - Blog search/filter/pagination URLs are noindex, follow.
+   - Default archive shows index-ready + legacy articles, not the 9,500 held variants.
+
+7. Sitemap cleanup.
+   - blog/blogs-sitemap.xml contains only index-ready new pages, legacy pages that are not exact duplicates, topic hubs, and the blog root.
+   - Current production blog sitemap count: 2,095 URLs.
+   - Root sitemap index continues to reference the blog sitemap.
+
+8. Future promotion workflow.
+   - Edit: blog/indexing-overrides.php
+   - Add 'slug' => true only after materially enriching that page.
+   - Run from project root: php tools/blog-seo-refresh.php
+   - The tool refreshes index flags and blog/blogs-sitemap.xml.
+
+IMAGE PRIORITY
+--------------
+Instead of trying to create images for all 10,000 pages first, generate images for the 500 index-ready new blogs first.
+See: blog/priority-indexable-blog-images.csv
+Expected image folder: blog/images/
+Use the exact SEO filename in the CSV.
+
+MENTOR INDEXING NOTE
+--------------------
+The current 500 mentor records are still internally unverified/hypothetical, so the mentor templates remain noindex. This avoids publishing fictional identities or invented employment histories as factual staff profiles. Once a real mentor's identity, affiliation, image and profile facts are confirmed, that profile can be enabled for indexing.
+
+FILES TO USE
+------------
+blog/seo-quality.php                     Central quality/title/meta/index logic
+blog/quality-data.php                    Indexable slug + topic hub lookup
+blog/indexing-overrides.php              Manual page promotion/demotion
+blog/blog-topic-hub.php                  Shared topic-hub renderer
+blog/topic-hubs.json                     100 hub catalog
+blog/blogs-sitemap.xml                   Production blog sitemap
+blog/seo-quality-audit-10000.csv         Full 10,000-page audit
+blog/legacy-blog-seo-repair-report.csv   Legacy repair report
+blog/priority-indexable-blog-images.csv  500-image priority queue
+blog/seo-quality-summary.json            Machine-readable QA summary
+tools/blog-seo-refresh.php               Rebuild tool after overrides
+
+DEPLOYMENT CHECKLIST
+--------------------
+1. Upload/merge this build.
+2. Verify https://forskcodingschool.com/sitemap.xml returns HTTP 200.
+3. Verify https://forskcodingschool.com/blog/blogs-sitemap.xml returns HTTP 200.
+4. Submit only the master sitemap in Google Search Console.
+5. Inspect several INDEX NOW pages with URL Inspection.
+6. Confirm held audience variants show noindex, follow.
+7. Generate the 500 priority blog images before expanding to the remaining image queue.
+8. Add genuinely original examples and evidence before promoting held pages.
+
+The objective is not to maximize the number of indexed URLs. The objective is to maximize the percentage of indexed URLs that deserve to rank.

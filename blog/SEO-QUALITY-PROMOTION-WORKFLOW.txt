@@ -1,0 +1,23 @@
+PROMOTING A HELD BLOG PAGE TO INDEXABLE
+
+1. Open the held page and materially improve it. Good reasons to promote include:
+   - a unique worked example or project walkthrough;
+   - original screenshots/diagrams/results;
+   - learner-specific advice that is not repeated on the primary guide;
+   - Jaipur-specific information that is genuinely local and useful;
+   - mentor/instructor technical input based on real expertise;
+   - an original comparison, checklist, dataset, benchmark or troubleshooting case.
+
+2. Add the page slug to blog/indexing-overrides.php:
+
+   return [
+     'your-page-slug' => true,
+   ];
+
+3. Run from the project root:
+
+   php tools/blog-seo-refresh.php
+
+4. Confirm the page now renders index, follow and appears in blog/blogs-sitemap.xml.
+
+Do not promote a page only because a keyword has search volume. The page should provide meaningfully distinct value from the already-indexed guide for the same subject.
