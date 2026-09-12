@@ -1,0 +1,66 @@
+FORSK CODING SCHOOL — BRANCH LANDING PAGE SYSTEM
+
+CURRENT VERIFIED BRANCH
+https://forskcodingschool.com/branches/jaipur-shyam-nagar/
+
+DIRECTORY
+https://forskcodingschool.com/branches/
+
+IMPORTANT TRUTH RULE
+Do not create a physical branch landing page for a city/area unless Forsk Coding School actually operates there and the address/contact details are confirmed.
+Students in non-branch locations should be served through online course/location content, not a fake branch page.
+
+MODULE STRUCTURE
+/public_html/branches/
+  index.php
+  branch-details.php
+  llms.txt
+  branches-sitemap.xml
+  BRANCH-PAGE-STRATEGY.txt
+  branch-data-template.csv
+  branch-staff-template-30.csv
+  team-structure-20-30-employees.csv
+  /data/
+    branches.php
+    employees.php
+    team-structure.php
+  /images/
+    <branch and employee images>
+  /jaipur-shyam-nagar/
+    index.php
+
+SEO URL PATTERN
+/branches/<city-area>/
+Example: /branches/jaipur-shyam-nagar/
+
+BRANCH IMAGE RULE
+/branches/images/forsk-coding-school-<area>-<city>-branch.webp
+Example:
+/branches/images/forsk-coding-school-shyam-nagar-jaipur-branch.webp
+
+BRANCH EMPLOYEE IMAGE RULE
+/branches/images/<employee-name>-<role>-<city>-forsk-coding-school.webp
+Only add named employee data after confirming the person, role and branch association.
+
+NEW BRANCH WORKFLOW
+1. Add one verified record to /branches/data/branches.php.
+2. Run: php tools/branch-pages-refresh.php
+3. Upload the SEO-named branch image to /branches/images/.
+4. Add real employee data to /branches/data/employees.php when available.
+5. Confirm the new branch appears in /branches/branches-sitemap.xml.
+6. Test the map, phone, address, course links and enrollment form.
+
+TEAM OPERATING MODEL
+The included model uses 27 role/seats across:
+- Branch Leadership & Operations
+- Academic & Technical Team
+- Admissions, Learner Success & Careers
+- Growth & Business Support
+
+This is a recommended staffing structure for a 20–30 employee branch, not a factual claim about current headcount.
+
+SEO / DISCOVERY
+The root sitemap index includes /branches/branches-sitemap.xml.
+Branch pages use EducationalOrganization + WebPage + BreadcrumbList + FAQPage structured data.
+The branch module has its own /branches/llms.txt.
+The central <head> automatically references the branch-specific llms.txt for /branches/ URLs.

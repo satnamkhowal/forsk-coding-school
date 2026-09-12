@@ -191,10 +191,11 @@
       <li><a href="events.php">Events &amp; Webinars</a></li>
     </ul>
   </li>
-  <li class="has-dropdown"><a href="contact-us.php">Contact</a>
+  <li class="has-dropdown"><a href="contact.php">Contact</a>
     <ul class="sub-menu">
-      <li><a href="branches.php">All Branches</a></li>
-      <li><a href="enquiry.php">Enquiry</a></li>
+      <li><a href="enroll-now.php">Enroll Now</a></li>
+      <li><a href="branches/">All Branches</a></li>
+      <li><a href="contact.php">General Enquiry</a></li>
       <li><a href="support.php">Support</a></li>
     </ul>
   </li>

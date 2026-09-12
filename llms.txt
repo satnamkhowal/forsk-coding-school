@@ -15,6 +15,8 @@ Key learning model: Forsk offers online and offline learning, live two-way mento
 - [Mentors](https://forskcodingschool.com/mentors/)
 - [Knowledge Hub](https://forskcodingschool.com/blog/)
 - [Contact](https://forskcodingschool.com/contact.php)
+- [Enroll Now](https://forskcodingschool.com/enroll-now.php)
+- [Verified Branches & Maps](https://forskcodingschool.com/branches/)
 
 ## Programming & Full Stack
 - [Python Programming](https://forskcodingschool.com/python-programming-course-jaipur.php)
@@ -83,3 +85,5 @@ Key learning model: Forsk offers online and offline learning, live two-way mento
 ## Optional
 - [Privacy policy](https://forskcodingschool.com/privacy-policy.php)
 - [FAQ](https://forskcodingschool.com/faq.php)
+
+- [Shyam Nagar Jaipur Branch](https://forskcodingschool.com/branches/jaipur-shyam-nagar/): Verified physical training location, map, courses, learning model and branch organization.

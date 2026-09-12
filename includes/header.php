@@ -121,11 +121,11 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
-                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="contact.php">
-                    <span class="btn-text">Sign in</span>
+                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
               </div>
@@ -180,11 +180,11 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
-                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="contact.php">
-                    <span class="btn-text">Sign in</span>
+                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
               </div>
@@ -239,14 +239,14 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
                 </div>
                 <div class="header-button d-lg-flex d-none">
-                  <a class="tj-btn-primary style-2 style-2-sm flip-text-wrap" href="contact.php">
+                  <a class="tj-btn-primary style-2 style-2-sm flip-text-wrap" href="enroll-now.php">
                     <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
-                    <span class="btn-text">Book a demo</span>
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
 
@@ -301,14 +301,14 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
                 </div>
                 <div class="header-button d-lg-flex d-none">
-                  <a class="tj-btn-primary style-2 style-2-sm flip-text-wrap" href="contact.php">
+                  <a class="tj-btn-primary style-2 style-2-sm flip-text-wrap" href="enroll-now.php">
                     <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
-                    <span class="btn-text">Book a demo</span>
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
 
@@ -363,13 +363,13 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
                 </div>
                 <div class="header-button d-lg-flex d-none">
-                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="contact.php">
-                    <span class="btn-text">Start free</span>
+                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
 
@@ -424,13 +424,13 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
                 </div>
                 <div class="header-button d-lg-flex d-none">
-                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="contact.php">
-                    <span class="btn-text">Start free</span>
+                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
 
@@ -492,11 +492,11 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
-                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="contact.php">
-                    <span class="btn-text">Sign in</span>
+                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
               </div>
@@ -557,11 +557,11 @@
                 </div>
                 <div class="header-button d-xl-flex d-none">
                   <a class="tj-btn-primary tj-btn-primary-border tj-btn-primary-border-sm flip-text-wrap"
-                    href="contact.php">
-                    <span class="btn-text">Log in</span>
+                    href="branches/">
+                    <span class="btn-text">Branches</span>
                   </a>
-                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="contact.php">
-                    <span class="btn-text">Sign in</span>
+                  <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enroll Now</span>
                   </a>
                 </div>
               </div>

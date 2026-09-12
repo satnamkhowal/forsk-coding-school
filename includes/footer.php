@@ -70,8 +70,10 @@
                         </ul>
                       </div>
                       <div class="footer-widget footer-widget-nav-menu tj-fade-anim" data-delay=".5">
-                        <div class="title">Resourses</div>
+                        <div class="title">Resources</div>
                         <ul>
+                          <li><a href="enroll-now.php"><span>Enroll Now</span></a></li>
+                          <li><a href="branches/"><span>All Branches</span></a></li>
                           <li><a href="contact.php"><span>Contact us</span></a></li>
                           <li><a href="privacy-policy.php"><span>Privacy policy</span></a></li>
                           <li><a href="about.php"><span>Recognitions</span></a></li>

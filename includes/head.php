@@ -42,6 +42,8 @@ if ($canonicalPath === '/blog' || str_starts_with($canonicalPath, '/blog/')) {
     $llms_describedby = seo_url('blog/llms.txt');
 } elseif ($canonicalPath === '/mentors' || str_starts_with($canonicalPath, '/mentors/')) {
     $llms_describedby = seo_url('mentors/llms.txt');
+} elseif ($canonicalPath === '/branches' || str_starts_with($canonicalPath, '/branches/')) {
+    $llms_describedby = seo_url('branches/llms.txt');
 } else {
     $llms_describedby = seo_url('llms.txt');
 }
