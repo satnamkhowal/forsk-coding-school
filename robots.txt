@@ -1,105 +1,5 @@
 # Forsk Coding School robots.txt
-# Public content is crawlable; transactional/private utility paths remain blocked.
-
-User-agent: OAI-SearchBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: GPTBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: Claude-SearchBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: Claude-User
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: ClaudeBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: PerplexityBot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: Applebot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: Applebot-Extended
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: Google-Extended
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
-
-User-agent: bingbot
-Allow: /
-Disallow: /cart.php
-Disallow: /checkout.php
-Disallow: /login.php
-Disallow: /sign-in.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
-Disallow: /tools/
+# Public learning content is crawlable; transactional/private utility paths are blocked.
 
 User-agent: *
 Allow: /
@@ -109,6 +9,37 @@ Disallow: /login.php
 Disallow: /sign-in.php
 Disallow: /forgot-password.php
 Disallow: /wishlist.php
+Disallow: /thank-you.php
+Disallow: /mail.php
+Disallow: /storage/
+Disallow: /tools/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /thank-you.php
+Disallow: /mail.php
+Disallow: /storage/
+Disallow: /tools/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /thank-you.php
+Disallow: /mail.php
+Disallow: /storage/
+Disallow: /tools/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /thank-you.php
+Disallow: /mail.php
+Disallow: /storage/
+Disallow: /tools/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /thank-you.php
+Disallow: /mail.php
+Disallow: /storage/
 Disallow: /tools/
 
 Sitemap: https://forskcodingschool.com/sitemap.xml
