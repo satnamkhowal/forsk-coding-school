@@ -20,7 +20,6 @@ function forsk_safe_line(string $value): string {
     return preg_replace('/[\r\n]+/', ' ', trim($value)) ?? '';
 }
 
-// Honeypot. Real users should never fill this field.
 if (forsk_post('website') !== '') {
     header('Location: ' . site_url('thank-you.php'), true, 303);
     exit;
@@ -99,15 +98,66 @@ if (is_file($marker) && (time() - (int)filemtime($marker)) < 120) {
     exit;
 }
 
-$leadFile = $storageDir . '/leads-' . gmdate('Y-m') . '.jsonl';
-$json = json_encode($record, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-if ($json === false || file_put_contents($leadFile, $json . PHP_EOL, FILE_APPEND | LOCK_EX) === false) {
+$persisted = false;
+if (class_exists('PDO') && in_array('sqlite', PDO::getAvailableDrivers(), true)) {
+    try {
+        $pdo = new PDO('sqlite:' . $storageDir . '/leads.sqlite');
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo->exec('CREATE TABLE IF NOT EXISTS leads (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            submitted_at TEXT NOT NULL,
+            name TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            email TEXT NOT NULL,
+            city TEXT,
+            current_qualification TEXT,
+            interested_course TEXT,
+            preferred_mode TEXT,
+            preferred_branch TEXT,
+            batch_preference TEXT,
+            message TEXT,
+            consent INTEGER NOT NULL DEFAULT 1,
+            source_domain TEXT,
+            source_page TEXT,
+            page_title TEXT,
+            course_name TEXT,
+            student_segment TEXT,
+            landing_page TEXT,
+            referrer TEXT,
+            utm_source TEXT,
+            utm_medium TEXT,
+            utm_campaign TEXT,
+            utm_term TEXT,
+            utm_content TEXT,
+            ip_hash TEXT,
+            user_agent TEXT
+        )');
+        $columns = array_keys($record);
+        $sql = 'INSERT INTO leads (' . implode(',', $columns) . ') VALUES (:' . implode(',:', $columns) . ')';
+        $stmt = $pdo->prepare($sql);
+        $dbRecord = $record;
+        $dbRecord['consent'] = 1;
+        $stmt->execute($dbRecord);
+        $persisted = true;
+    } catch (Throwable $e) {
+        error_log('Forsk SQLite lead persistence failed: ' . $e->getMessage());
+    }
+}
+
+if (!$persisted) {
+    $leadFile = $storageDir . '/leads-' . gmdate('Y-m') . '.jsonl';
+    $json = json_encode($record, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+    if ($json !== false && file_put_contents($leadFile, $json . PHP_EOL, FILE_APPEND | LOCK_EX) !== false) {
+        $persisted = true;
+    }
+}
+
+if (!$persisted) {
     error_log('Forsk lead could not be persisted.');
     forsk_redirect_error('temporary');
 }
 @touch($marker);
 
-// Email happens only after the lead is safely persisted. A mail failure never loses the lead.
 $recipient = getenv('FORSK_LEAD_EMAIL') ?: 'info@forskcodingschool.com';
 $subject = 'New Forsk Coding School course enquiry';
 $bodyLines = [
