@@ -1,1 +1,7 @@
+# Runtime lead storage
+storage/leads/*.jsonl
+storage/leads/dedupe/
+.env
+.env.*
+!.env.example
 *.zip
