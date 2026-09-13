@@ -12,9 +12,9 @@ $featuredPrograms = [
     ['Python Programming', 'Programming', 'python-programming-course-jaipur.php', 'assets/images/python-programming-course-jaipur-forsk-coding-school.webp', 'Build programming fundamentals, problem-solving ability and practical Python skills.'],
     ['Full Stack Development', 'Development', 'full-stack-development-course-jaipur.php', 'assets/images/full-stack-development-course-jaipur-forsk-coding-school.webp', 'Learn front-end and back-end development through structured practice and projects.'],
     ['Data Analytics', 'Data', 'data-analytics-course-jaipur.php', 'assets/images/data-analytics-course-jaipur-forsk-coding-school.webp', 'Work with Excel, SQL, Python and Power BI concepts for practical analytics workflows.'],
-    ['Artificial Intelligence', 'AI', 'artificial-intelligence-course-jaipur.php', 'assets/images/artificial-intelligence-course-jaipur-forsk-coding-school.webp', 'Understand AI foundations, modern tools and applied learning through guided exercises.'],
-    ['Java Programming', 'Programming', 'java-programming-course-jaipur.php', 'assets/images/java-programming-course-jaipur-forsk-coding-school.webp', 'Strengthen Core Java concepts, OOP, problem solving and application-development fundamentals.'],
-    ['Cloud & DevOps', 'Cloud', 'devops-course-jaipur.php', 'assets/images/devops-course-jaipur-forsk-coding-school.webp', 'Explore deployment, automation and modern cloud-development workflows with practical guidance.'],
+    ['Artificial Intelligence', 'AI', 'artificial-intelligence-course-jaipur.php', 'assets/images/generative-ai-course-jaipur-forsk-coding-school.webp', 'Understand AI foundations, modern tools and applied learning through guided exercises.'],
+    ['Java Programming', 'Programming', 'java-programming-course-jaipur.php', 'assets/images/java-courses-jaipur-forsk-coding-school.webp', 'Strengthen Core Java concepts, OOP, problem solving and application-development fundamentals.'],
+    ['Cloud & DevOps', 'Cloud', 'devops-course-jaipur.php', 'assets/images/aws-course-jaipur-forsk-coding-school.webp', 'Explore deployment, automation and modern cloud-development workflows with practical guidance.'],
 ];
 
 $faqs = [
@@ -121,7 +121,7 @@ $page_schema = json_encode([
               </div>
               <div class="col-lg-5">
                 <div class="forsk-hero-media">
-                  <img src="<?= htmlspecialchars(asset_url('images/hero/h2-hero-img.webp'), ENT_QUOTES, 'UTF-8') ?>" width="640" height="640" fetchpriority="high" alt="Student learning coding and technology skills at Forsk Coding School Jaipur">
+                  <img src="<?= htmlspecialchars(asset_url('images/hero/h2-hero-img.webp'), ENT_QUOTES, 'UTF-8') ?>" fetchpriority="high" alt="Student learning coding and technology skills at Forsk Coding School Jaipur">
                   <div class="forsk-hero-note"><strong>Not sure where to start?</strong><span>Tell us your goal and current qualification. We will help you shortlist a suitable learning path.</span></div>
                 </div>
               </div>
