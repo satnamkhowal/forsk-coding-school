@@ -4,6 +4,11 @@ $lead_interest = trim((string)($lead_interest ?? ''));
 $lead_heading = trim((string)($lead_heading ?? ($lead_channel === 'college' ? 'Request Admission Guidance' : 'Request Free Counselling')));
 $lead_submit_label = trim((string)($lead_submit_label ?? ($lead_channel === 'college' ? 'Request Admission Call' : 'Send Enquiry')));
 $lead_options = is_array($lead_options ?? null) ? $lead_options : [];
+$lead_return_path = trim((string)($lead_return_path ?? basename((string)($_SERVER['SCRIPT_NAME'] ?? 'contact.php'))));
+$lead_college_category = trim((string)($lead_college_category ?? ''));
+$lead_college_slug = trim((string)($lead_college_slug ?? ''));
+$lead_college_name = trim((string)($lead_college_name ?? ''));
+$lead_program = trim((string)($lead_program ?? ''));
 $lead_form_id = 'lead-' . substr(md5($lead_channel . '|' . $lead_interest . '|' . ($page_canonical ?? '')), 0, 10);
 $formError = trim((string)($_GET['form_error'] ?? ''));
 ?>
@@ -20,7 +25,7 @@ $formError = trim((string)($_GET['form_error'] ?? ''));
     <div class="alert alert-danger" role="alert">Please check the form details and submit again, or call +91 72319 68183.</div>
   <?php endif; ?>
 
-  <form action="lead-submit.php" method="post" id="<?= htmlspecialchars($lead_form_id, ENT_QUOTES, 'UTF-8') ?>">
+  <form action="<?= htmlspecialchars(site_url('lead-submit.php'), ENT_QUOTES, 'UTF-8') ?>" method="post" id="<?= htmlspecialchars($lead_form_id, ENT_QUOTES, 'UTF-8') ?>">
     <div class="row">
       <div class="col-md-6"><div class="form-input"><label class="cf-label">Full name</label><input type="text" name="name" maxlength="100" autocomplete="name" required></div></div>
       <div class="col-md-6"><div class="form-input"><label class="cf-label">Mobile number</label><input type="tel" name="phone" maxlength="10" pattern="[6-9][0-9]{9}" inputmode="numeric" autocomplete="tel" required></div></div>
@@ -46,10 +51,14 @@ $formError = trim((string)($_GET['form_error'] ?? ''));
 
       <div style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <input type="hidden" name="lead_channel" value="<?= htmlspecialchars($lead_channel, ENT_QUOTES, 'UTF-8') ?>">
-      <input type="hidden" name="return_path" value="<?= htmlspecialchars(basename((string)($_SERVER['SCRIPT_NAME'] ?? 'contact.php')), ENT_QUOTES, 'UTF-8') ?>">
+      <input type="hidden" name="return_path" value="<?= htmlspecialchars($lead_return_path, ENT_QUOTES, 'UTF-8') ?>">
       <input type="hidden" name="source_page" value="">
       <input type="hidden" name="page_title" value="<?= htmlspecialchars((string)($page_title ?? ''), ENT_QUOTES, 'UTF-8') ?>">
       <input type="hidden" name="referrer" value="">
+      <input type="hidden" name="college_category" value="<?= htmlspecialchars($lead_college_category, ENT_QUOTES, 'UTF-8') ?>">
+      <input type="hidden" name="college_slug" value="<?= htmlspecialchars($lead_college_slug, ENT_QUOTES, 'UTF-8') ?>">
+      <input type="hidden" name="college_name" value="<?= htmlspecialchars($lead_college_name, ENT_QUOTES, 'UTF-8') ?>">
+      <input type="hidden" name="college_program" value="<?= htmlspecialchars($lead_program, ENT_QUOTES, 'UTF-8') ?>">
       <input type="hidden" name="utm_source" value=""><input type="hidden" name="utm_medium" value=""><input type="hidden" name="utm_campaign" value=""><input type="hidden" name="utm_term" value=""><input type="hidden" name="utm_content" value="">
 
       <div class="col-12"><div class="form-input"><label><input type="checkbox" name="consent" value="1" required> I agree that Forsk Coding School may contact me about this enquiry.</label></div></div>
