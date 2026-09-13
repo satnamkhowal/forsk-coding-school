@@ -173,6 +173,15 @@
       <li><a href="final-year-projects-jaipur.php">Final Year Projects</a></li>
     </ul>
   </li>
+  <li class="has-dropdown"><a href="college-admissions-jaipur.php">College Admissions</a>
+    <ul class="sub-menu">
+      <li><a href="college-admissions-jaipur.php">Admissions Overview</a></li>
+      <li><a href="bca-admission-jaipur.php">BCA Admission</a></li>
+      <li><a href="mca-admission-jaipur.php">MCA Admission</a></li>
+      <li><a href="btech-admission-jaipur.php">B.Tech Admission</a></li>
+      <li><a href="bba-admission-jaipur.php">BBA Admission</a></li>
+    </ul>
+  </li>
   <li class="has-dropdown"><a href="placements.php">Placements</a>
     <ul class="sub-menu">
       <li><a href="placements.php">Placement Assistance</a></li>
