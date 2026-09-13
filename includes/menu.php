@@ -7,17 +7,17 @@
 ?>
 <ul>
 
-  <li class="has-dropdown"><a href="about-us.php">About Us</a>
+  <li class="has-dropdown"><a href="about.php">About Us</a>
     <ul class="sub-menu">
-      <li><a href="about-institute.php">About Institute</a></li>
+      <li><a href="about.php">About Institute</a></li>
       <li><a href="mission-vision.php">Mission &amp; Vision</a></li>
       <li><a href="why-choose-forsk.php">Why Choose Forsk</a></li>
-      <li><a href="our-trainers.php">Our Trainers</a></li>
-      <li><a href="success-stories.php">Success Stories</a></li>
+      <li><a href="mentors/">Our Trainers</a></li>
+      <li><a href="testimonials.php">Success Stories</a></li>
       <li><a href="testimonials.php">Testimonials</a></li>
       <li><a href="placement-partners.php">Placement Partners</a></li>
       <li><a href="gallery.php">Gallery</a></li>
-      <li><a href="faqs.php">FAQs</a></li>
+      <li><a href="faq.php">FAQs</a></li>
     </ul>
   </li>
   <li class="has-dropdown"><a href="courses.php">Courses</a>
@@ -175,10 +175,10 @@
   </li>
   <li class="has-dropdown"><a href="placements.php">Placements</a>
     <ul class="sub-menu">
-      <li><a href="placement-assistance.php">Placement Assistance</a></li>
+      <li><a href="placements.php">Placement Assistance</a></li>
       <li><a href="hiring-partners.php">Hiring Partners</a></li>
       <li><a href="student-placements.php">Student Placements</a></li>
-      <li><a href="placement-process.php">Placement Process</a></li>
+      <li><a href="placements.php">Placement Process</a></li>
     </ul>
   </li>
   <li class="has-dropdown"><a href="resources.php">Resources</a>
@@ -196,7 +196,7 @@
       <li><a href="enroll-now.php">Enroll Now</a></li>
       <li><a href="branches/">All Branches</a></li>
       <li><a href="contact.php">General Enquiry</a></li>
-      <li><a href="support.php">Support</a></li>
+      <li><a href="contact.php">Support</a></li>
     </ul>
   </li>
 </ul>
