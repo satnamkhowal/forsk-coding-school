@@ -10,8 +10,12 @@ function forsk_lead_post(string $key): string {
     return trim(is_string($v) ? $v : '');
 }
 function forsk_lead_return(string $code = ''): never {
-    $path = forsk_lead_post('return_path');
-    if (!preg_match('/^[A-Za-z0-9][A-Za-z0-9._-]*\.php$/', $path)) $path = 'contact.php';
+    $path = ltrim(forsk_lead_post('return_path'), '/');
+    $valid = $path !== ''
+        && !str_contains($path, '..')
+        && !str_contains($path, '//')
+        && preg_match('#^[A-Za-z0-9][A-Za-z0-9/_\.-]*$#', $path);
+    if (!$valid) $path = 'contact.php';
     $suffix = $code === '' ? '' : '?form_error=' . rawurlencode($code);
     header('Location: ' . site_url($path . $suffix . '#enquiry'), true, 303);
     exit;
@@ -38,6 +42,11 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) forsk_lead_return('email');
 if ($interest === '' || mb_strlen($interest) > 190) forsk_lead_return('interest');
 if ($consent !== '1') forsk_lead_return('consent');
 
+$collegeCategory = substr(forsk_lead_post('college_category'), 0, 120);
+$collegeSlug = substr(forsk_lead_post('college_slug'), 0, 120);
+$collegeName = substr(forsk_lead_post('college_name'), 0, 190);
+$collegeProgram = substr(forsk_lead_post('college_program'), 0, 120);
+
 $record = [
     'submitted_at' => gmdate('c'),
     'lead_channel' => $channel,
@@ -48,6 +57,10 @@ $record = [
     'qualification' => $qualification,
     'interest' => $interest,
     'message' => $message,
+    'college_category' => $channel === 'college' ? $collegeCategory : '',
+    'college_slug' => $channel === 'college' ? $collegeSlug : '',
+    'college_name' => $channel === 'college' ? $collegeName : '',
+    'college_program' => $channel === 'college' ? $collegeProgram : '',
     'source_page' => forsk_lead_post('source_page'),
     'page_title' => forsk_lead_post('page_title'),
     'referrer' => forsk_lead_post('referrer'),
