@@ -82,6 +82,14 @@ require_once __DIR__ . '/floating-contact.php';
   </div>
 </footer>
 <!-- end: Footer Section -->
+<?php
+$enableCoursePricingMentors = in_array($currentLandingPage, ['default.php', 'index.php', 'courses.php'], true);
+if ($enableCoursePricingMentors):
+  require_once __DIR__ . '/course-pricing.php';
+?>
+<link rel="stylesheet" href="assets/css/course-pricing-mentors.css">
+<script>window.FORSK_COURSE_PRICING = <?= json_encode($FORSK_COURSE_PRICING, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>;</script>
+<?php endif; ?>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/gsap.min.js"></script>
@@ -98,3 +106,6 @@ require_once __DIR__ . '/floating-contact.php';
 <script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/local-site.js"></script>
+<?php if ($enableCoursePricingMentors): ?>
+<script src="assets/js/course-pricing-mentors.js"></script>
+<?php endif; ?>
