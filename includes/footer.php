@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/floating-contact.php'; ?>
 <!-- start: Footer Section -->
 <footer class="footer-section footer-1 section-gap-top">
   <div class="footer-inner">
