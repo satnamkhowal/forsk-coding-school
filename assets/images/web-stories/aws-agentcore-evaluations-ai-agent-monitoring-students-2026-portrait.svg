@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+<title id="title">AI Agent Monitoring: Five Lessons from AWS AgentCore</title><desc id="desc">Portrait learner graphic about production AI agent evaluation, traces, quality monitoring, CI/CD and cloud debugging.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#04111f"/><stop offset=".55" stop-color="#123f66"/><stop offset="1" stop-color="#0b6b65"/></linearGradient><linearGradient id="panel" x1="0" x2="1"><stop stop-color="#1d4ed8"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<circle cx="930" cy="220" r="270" fill="#38bdf8" opacity=".08"/><circle cx="110" cy="1700" r="300" fill="#34d399" opacity=".07"/>
+<text x="80" y="145" fill="#bae6fd" font-family="Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="4">AWS • AI • CLOUD • DEVOPS</text>
+<text x="80" y="270" fill="#fff" font-family="Arial,sans-serif" font-size="76" font-weight="800">AI Agent</text>
+<text x="80" y="360" fill="#fff" font-family="Arial,sans-serif" font-size="76" font-weight="800">Monitoring</text>
+<text x="80" y="443" fill="#dbeafe" font-family="Arial,sans-serif" font-size="38">5 lessons for students</text>
+<rect x="80" y="535" width="920" height="820" rx="44" fill="#071827" opacity=".88" stroke="#4d8fb7" stroke-width="3"/>
+<rect x="140" y="610" width="800" height="145" rx="30" fill="url(#panel)"/><text x="190" y="665" fill="#dbeafe" font-family="Arial,sans-serif" font-size="27" font-weight="700">01 • QUALITY</text><text x="190" y="716" fill="#fff" font-family="Arial,sans-serif" font-size="34">Uptime is not enough</text>
+<rect x="140" y="800" width="800" height="145" rx="30" fill="#172554" stroke="#60a5fa"/><text x="190" y="855" fill="#bfdbfe" font-family="Arial,sans-serif" font-size="27" font-weight="700">02 • TRACES</text><text x="190" y="906" fill="#fff" font-family="Arial,sans-serif" font-size="34">Follow routes + tool calls</text>
+<rect x="140" y="990" width="800" height="145" rx="30" fill="#052e2b" stroke="#34d399"/><text x="190" y="1045" fill="#a7f3d0" font-family="Arial,sans-serif" font-size="27" font-weight="700">03 • EVALUATE</text><text x="190" y="1096" fill="#fff" font-family="Arial,sans-serif" font-size="34">Measure task success</text>
+<rect x="140" y="1180" width="800" height="105" rx="28" fill="#3f2712" stroke="#fbbf24"/><text x="190" y="1247" fill="#fff" font-family="Arial,sans-serif" font-size="30">04 CI/CD • 05 Cloud debugging</text>
+<text x="80" y="1460" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700">Production-ready AI means</text>
+<text x="80" y="1522" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700">being able to explain failure.</text>
+<text x="80" y="1610" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="29">Based on AWS guidance published</text><text x="80" y="1655" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="29">11 September 2026</text>
+<rect x="80" y="1745" width="920" height="2" fill="#5fa3c7" opacity=".7"/>
+<text x="80" y="1815" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">Forsk Coding School</text>
+<text x="80" y="1860" fill="#bae6fd" font-family="Arial,sans-serif" font-size="25">Learner briefing • 14 September 2026</text>
+</svg>
