@@ -67,7 +67,7 @@
 
       <div class="tj-copyright-area"><div class="tj-copyright-wrap"><div class="container"><div class="row"><div class="col-12">
         <div class="tj-copyright-content-area tj-fade-anim" data-delay=".3">
-          <div class="footer-logo"><a href="default.php"><img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School logo"></a></div>
+          <div class="footer-logo"><a href="./"><img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School logo"></a></div>
           <div class="tj-copyright-text-wrapper"><div class="tj-copyright-text"><p>&copy; 2026 Forsk Coding School. All rights reserved.</p></div></div>
         </div>
       </div></div></div></div></div>
