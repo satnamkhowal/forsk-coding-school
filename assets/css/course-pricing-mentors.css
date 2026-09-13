@@ -1,0 +1,30 @@
+/* Forsk course pricing + mentor enhancements. Reuses the existing site card language. */
+.forsk-fee-panel{margin:0 0 38px;padding:28px;border:1px solid rgba(16,24,40,.10);border-radius:18px;background:#fff;box-shadow:0 12px 36px rgba(16,24,40,.06)}
+.forsk-fee-panel__head{display:flex;gap:20px;align-items:end;justify-content:space-between;flex-wrap:wrap;margin-bottom:20px}
+.forsk-fee-panel__copy{max-width:760px}
+.forsk-fee-panel__eyebrow{display:inline-block;margin-bottom:6px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.72}
+.forsk-fee-panel h2{margin:0 0 8px;font-size:clamp(25px,3vw,36px)}
+.forsk-fee-panel p{margin:0;color:inherit;opacity:.78}
+.forsk-fee-panel__control{min-width:min(100%,320px)}
+.forsk-fee-panel__control label{display:block;margin-bottom:7px;font-size:13px;font-weight:700}
+.forsk-fee-panel__control select{width:100%;min-height:48px;padding:0 14px;border:1px solid rgba(16,24,40,.18);border-radius:10px;background:#fff;color:inherit}
+.forsk-fee-table-wrap{overflow:auto;border:1px solid rgba(16,24,40,.09);border-radius:12px}
+.forsk-fee-table{width:100%;min-width:720px;border-collapse:collapse;margin:0}
+.forsk-fee-table th,.forsk-fee-table td{padding:14px 16px;text-align:left;border-bottom:1px solid rgba(16,24,40,.08);vertical-align:top}
+.forsk-fee-table th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;background:rgba(16,24,40,.035)}
+.forsk-fee-table tr:last-child td{border-bottom:0}
+.forsk-fee-table a{font-weight:700;text-decoration:none}
+.forsk-fee-price{white-space:nowrap;font-weight:800}
+.forsk-fee-note{display:block;margin-top:12px;font-size:12px;opacity:.72}
+.forsk-course-mentor-note{display:flex;align-items:center;gap:8px;margin:10px 0 0;font-size:13px}
+.forsk-course-mentor-note img{width:28px;height:28px;border-radius:50%;object-fit:cover;flex:0 0 28px}
+.forsk-course-mentor-note a{font-weight:700}
+.forsk-home-mentors .forsk-program-grid{margin-top:24px}
+.forsk-home-mentors .forsk-program-card .media{aspect-ratio:4/3;overflow:hidden}
+.forsk-home-mentors .forsk-program-card .media img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.forsk-home-mentors .forsk-program-card .kicker{display:block;margin-bottom:7px}
+.forsk-home-mentors .forsk-program-card h3{margin-bottom:6px}
+.forsk-home-mentors .forsk-program-card p{margin-bottom:12px}
+.forsk-home-mentors__empty{padding:18px;border:1px dashed rgba(16,24,40,.18);border-radius:12px}
+@media(max-width:767px){.forsk-fee-panel{padding:20px 16px}.forsk-fee-panel__control{width:100%;min-width:0}.forsk-fee-table th,.forsk-fee-table td{padding:12px}.forsk-home-mentors .forsk-program-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.forsk-home-mentors .forsk-program-grid{grid-template-columns:1fr}}
