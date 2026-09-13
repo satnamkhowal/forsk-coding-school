@@ -15,4 +15,9 @@
  .space-for-header{padding-top:78px!important}
  .site_logo img,.hamburger_logo img{height:50px!important;max-width:145px!important}
  .forsk-content-section{padding-top:55px;padding-bottom:55px}
+ .hamburger-area .mobile_menu li.has-dropdown{position:relative}
+ .hamburger-area .mobile_menu li.has-dropdown>a{padding-right:54px}
+ .hamburger-area .mobile_menu .forsk-submenu-toggle{position:absolute;top:0;right:0;width:46px;height:46px;border:0;background:transparent;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;cursor:pointer;z-index:2}
+ .hamburger-area .mobile_menu .forsk-submenu-toggle span{display:block;transition:transform .2s ease}
+ .hamburger-area .mobile_menu li.open>.forsk-submenu-toggle span{transform:rotate(180deg)}
 }
