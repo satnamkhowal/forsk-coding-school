@@ -1,4 +1,10 @@
-<?php require_once __DIR__ . '/floating-contact.php'; ?>
+<?php
+$currentLandingPage = basename((string)($_SERVER['SCRIPT_NAME'] ?? ''));
+$isIndividualCourseLanding = preg_match('/-course-jaipur\.php$/', $currentLandingPage) === 1
+  || preg_match('/^diploma-.*-jaipur\.php$/', $currentLandingPage) === 1;
+if ($isIndividualCourseLanding) require __DIR__ . '/course-enquiry-section.php';
+require_once __DIR__ . '/floating-contact.php';
+?>
 <!-- start: Footer Section -->
 <footer class="footer-section footer-1 section-gap-top">
   <div class="footer-inner">
