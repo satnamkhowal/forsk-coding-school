@@ -19,28 +19,32 @@ $page_description = $description;
 $page_keywords = (string)($introduced_course['keywords'] ?? ($name . ' course Jaipur, ' . $name . ' training Jaipur, Forsk Coding School'));
 $page_canonical = SEO_BASE_URL . '/' . $slug;
 $header_variant = 'header-1';
+
+$courseSchema = [
+    '@type' => 'Course',
+    'name' => $name . ' Course in Jaipur',
+    'description' => $description,
+    'url' => $page_canonical,
+    'provider' => [
+        '@type' => 'EducationalOrganization',
+        'name' => 'Forsk Coding School',
+        'url' => SEO_BASE_URL . '/',
+    ],
+];
+if (is_numeric($fee)) {
+    $courseSchema['offers'] = [
+        '@type' => 'Offer',
+        'priceCurrency' => 'INR',
+        'price' => (string)$fee,
+        'availability' => 'https://schema.org/InStock',
+        'url' => $page_canonical,
+        'description' => 'Current listed course fee: ' . $feeLabel,
+    ];
+}
 $page_schema = json_encode([
     '@context' => 'https://schema.org',
     '@graph' => [
-        [
-            '@type' => 'Course',
-            'name' => $name . ' Course in Jaipur',
-            'description' => $description,
-            'url' => $page_canonical,
-            'provider' => [
-                '@type' => 'EducationalOrganization',
-                'name' => 'Forsk Coding School',
-                'url' => SEO_BASE_URL . '/',
-            ],
-            'offers' => [
-                '@type' => 'Offer',
-                'priceCurrency' => 'INR',
-                'price' => is_numeric($fee) ? (string)$fee : '0',
-                'availability' => 'https://schema.org/InStock',
-                'url' => $page_canonical,
-                'description' => is_numeric($fee) ? ('Current listed course fee: ' . $feeLabel) : 'Contact Forsk Coding School for the current fee.',
-            ],
-        ],
+        $courseSchema,
         [
             '@type' => 'BreadcrumbList',
             'itemListElement' => [
