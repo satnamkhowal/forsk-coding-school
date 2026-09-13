@@ -3,6 +3,8 @@ storage/leads/*.jsonl
 storage/leads/*.sqlite
 storage/leads/*.sqlite-*
 storage/leads/dedupe/
+storage/private/integrations.php
+storage/private/*.tmp
 .env
 .env.*
 !.env.example

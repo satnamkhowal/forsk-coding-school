@@ -1,2 +1,18 @@
-<?php $page_title='Winter Internship | Forsk Coding School Jaipur'; $page_description='Learn about Winter Internship at Forsk Coding School in Jaipur. Explore practical training, projects, career-focused learning and admissions support.'; $page_keywords='Winter Internship, Forsk Coding School, Winter Internship Jaipur, training institute Jaipur'; $page_canonical='https://forskcodingschool.com/winter-internship-jaipur.php'; $page_schema=json_encode(['@context'=>'https://schema.org','@type'=>'WebPage','name'=>$page_title,'description'=>$page_description,'url'=>$page_canonical],JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE); $header_variant='header-1'; ?>
-<!DOCTYPE html><html lang="en"><head><?php include __DIR__.'/includes/head.php'; ?></head><body><?php include __DIR__.'/includes/header.php'; ?><div id="smooth-wrapper"><div id="smooth-content"><main class="site-main"><div class="space-for-header"></div><section class="tj-breadcrumb-area"><div class="container"><div class="breadcrumb-content"><h1 class="breadcrumb-title"><?=htmlspecialchars($page_title)?></h1><div class="breadcrumb-list"><span><a href="index.php">Home</a></span><span><?=htmlspecialchars($page_title)?></span></div></div></div></section><section class="section-space"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="tj-course-details-content"><h2><?=htmlspecialchars($page_title)?></h2><p><?=htmlspecialchars($page_description)?></p><p>Forsk Coding School provides practical, career-focused learning in Jaipur with structured curriculum, hands-on assignments, projects, mentor support and career guidance.</p><a class="tj-btn-primary" href="enquiry.php"><span class="btn-text">Enquire Now</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div></div></section></main></div></div><?php include __DIR__.'/includes/footer.php'; ?></body></html>
+<?php
+$landing_title = 'Winter Internship in Jaipur';
+$landing_description = 'Use your winter break for focused practical training, guided assignments and a compact project track at Forsk Coding School Jaipur.';
+$page_title = 'Winter Internship in Jaipur' . ' | Forsk Coding School';
+$page_description = $landing_description;
+$page_keywords = 'winter internship Jaipur, winter training Jaipur, coding internship Jaipur';
+$page_canonical = 'https://forskcodingschool.com/winter-internship-jaipur.php';
+$landing_eyebrow = 'Internships';
+$landing_image = 'assets/images/java-programming-course-jaipur-forsk-coding-school.webp';
+$landing_image_alt = 'Winter Internship in Jaipur';
+$landing_highlights = ['Compact learning track','Hands-on exercises','Mentor reviews','Project outcome'];
+$landing_sections = ['Winter internship focus'=>['Fast revision of fundamentals','Practical implementation','Short guided project','Debugging and review','Next-step learning roadmap'],'Good fit for'=>'College learners and freshers who want a focused practical program during the winter break.','Program note'=>'The exact duration and domain are confirmed during counselling based on your availability and skill level.'];
+$lead_channel = 'academic';
+$lead_interest = 'Winter Internship';
+$lead_options = [];
+$lead_heading = 'Enquire for Winter Internship';
+$lead_submit_label = 'Request Internship Call';
+require __DIR__ . '/includes/program-landing.php';

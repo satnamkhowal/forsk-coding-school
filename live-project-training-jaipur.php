@@ -1,2 +1,18 @@
-<?php $page_title='Live Projects | Forsk Coding School Jaipur'; $page_description='Learn about Live Projects at Forsk Coding School in Jaipur. Explore practical training, projects, career-focused learning and admissions support.'; $page_keywords='Live Projects, Forsk Coding School, Live Projects Jaipur, training institute Jaipur'; $page_canonical='https://forskcodingschool.com/live-project-training-jaipur.php'; $page_schema=json_encode(['@context'=>'https://schema.org','@type'=>'WebPage','name'=>$page_title,'description'=>$page_description,'url'=>$page_canonical],JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE); $header_variant='header-1'; ?>
-<!DOCTYPE html><html lang="en"><head><?php include __DIR__.'/includes/head.php'; ?></head><body><?php include __DIR__.'/includes/header.php'; ?><div id="smooth-wrapper"><div id="smooth-content"><main class="site-main"><div class="space-for-header"></div><section class="tj-breadcrumb-area"><div class="container"><div class="breadcrumb-content"><h1 class="breadcrumb-title"><?=htmlspecialchars($page_title)?></h1><div class="breadcrumb-list"><span><a href="index.php">Home</a></span><span><?=htmlspecialchars($page_title)?></span></div></div></div></section><section class="section-space"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="tj-course-details-content"><h2><?=htmlspecialchars($page_title)?></h2><p><?=htmlspecialchars($page_description)?></p><p>Forsk Coding School provides practical, career-focused learning in Jaipur with structured curriculum, hands-on assignments, projects, mentor support and career guidance.</p><a class="tj-btn-primary" href="enquiry.php"><span class="btn-text">Enquire Now</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div></div></section></main></div></div><?php include __DIR__.'/includes/footer.php'; ?></body></html>
+<?php
+$landing_title = 'Live Project Training in Jaipur';
+$landing_description = 'Learn by building practical projects with structured milestones, mentor reviews, debugging practice and documentation support in Jaipur.';
+$page_title = 'Live Project Training in Jaipur' . ' | Forsk Coding School';
+$page_description = $landing_description;
+$page_keywords = 'live project training Jaipur, project based training Jaipur, software project training Jaipur';
+$page_canonical = 'https://forskcodingschool.com/live-project-training-jaipur.php';
+$landing_eyebrow = 'Internships';
+$landing_image = 'assets/images/mern-stack-course-jaipur-forsk-coding-school.webp';
+$landing_image_alt = 'Live Project Training in Jaipur';
+$landing_highlights = ['Project planning','Milestone reviews','Debugging practice','Portfolio documentation'];
+$landing_sections = ['Project workflow'=>['Define scope and expected outcome','Break work into milestones','Implement features or analysis tasks','Review, debug and improve','Prepare documentation and presentation'],'Domains'=>'Project tracks may include web development, full stack, Python, data analytics, data science, AI and related technologies depending on mentor availability.','Outcome'=>'The focus is on practical learning and demonstrable work rather than guaranteed employment or guaranteed academic approval.'];
+$lead_channel = 'academic';
+$lead_interest = 'Live Project Training';
+$lead_options = [];
+$lead_heading = 'Enquire for Live Project Training';
+$lead_submit_label = 'Request Project Call';
+require __DIR__ . '/includes/program-landing.php';

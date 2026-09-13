@@ -1,2 +1,18 @@
-<?php $page_title='Industrial Training in Jaipur | Forsk Coding School'; $page_description='Practical industrial training in Jaipur with technology projects, guided learning and career-oriented skill development.'; $page_keywords='Industrial Training in Jaipur, Forsk Coding School Jaipur, IT courses Jaipur, coding institute Jaipur'; $page_canonical='https://forskcodingschool.com/industrial-training-jaipur.php'; $page_schema=json_encode(['@context'=>'https://schema.org','@type'=>'WebPage','name'=>$page_title,'description'=>$page_description,'url'=>$page_canonical],JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE); $header_variant='header-1'; ?>
-<!DOCTYPE html><html lang="en"><head><?php include __DIR__.'/includes/head.php'; ?></head><body><?php include __DIR__.'/includes/header.php'; ?><div id="smooth-wrapper"><div id="smooth-content"><main class="site-main"><div class="space-for-header"></div><section class="tj-breadcrumb-area"><div class="container"><div class="breadcrumb-content"><h1 class="breadcrumb-title"><?=htmlspecialchars($page_title)?></h1><div class="breadcrumb-list"><span><a href="index.php">Home</a></span><span><?=htmlspecialchars($page_title)?></span></div></div></div></section><section class="section-space"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="tj-course-details-content"><h2><?=htmlspecialchars($page_title)?></h2><p><?=htmlspecialchars($page_description)?></p><p>Forsk Coding School provides practical, career-focused learning in Jaipur with structured curriculum, hands-on assignments, projects, mentor support and career guidance.</p><a class="tj-btn-primary" href="enquiry.php"><span class="btn-text">Enquire Now</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div></div></section></main></div></div><?php include __DIR__.'/includes/footer.php'; ?></body></html>
+<?php
+$landing_title = 'Industrial Training in Jaipur';
+$landing_description = 'Get structured industrial training in Jaipur with practical workflows, project tasks, mentor feedback and career-oriented technology learning.';
+$page_title = 'Industrial Training in Jaipur' . ' | Forsk Coding School';
+$page_description = $landing_description;
+$page_keywords = 'industrial training Jaipur, IT industrial training Jaipur, technical training Jaipur';
+$page_canonical = 'https://forskcodingschool.com/industrial-training-jaipur.php';
+$landing_eyebrow = 'Internships';
+$landing_image = 'assets/images/data-analytics-course-jaipur-forsk-coding-school.webp';
+$landing_image_alt = 'Industrial Training in Jaipur';
+$landing_highlights = ['Industry-style workflow','Practical tasks','Project documentation','Mentor feedback'];
+$landing_sections = ['Training approach'=>['Concept-to-implementation learning','Realistic tasks and troubleshooting','Version control or tool workflow where relevant','Project documentation','Technical discussion and review'],'Suitable for'=>['Diploma and degree students','Students completing industrial-training requirements','Freshers seeking practical technology exposure'],'Important'=>'Any college documentation or training format requirements should be shared during counselling so the team can confirm what can be supported.'];
+$lead_channel = 'academic';
+$lead_interest = 'Industrial Training';
+$lead_options = [];
+$lead_heading = 'Enquire for Industrial Training';
+$lead_submit_label = 'Request Training Call';
+require __DIR__ . '/includes/program-landing.php';

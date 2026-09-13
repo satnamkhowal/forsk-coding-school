@@ -1,2 +1,18 @@
-<?php $page_title='Final Year Projects in Jaipur | Forsk Coding School'; $page_description='Get practical final year project guidance in Jaipur across software, web, data, AI and cybersecurity domains.'; $page_keywords='Final Year Projects in Jaipur, Forsk Coding School Jaipur, IT courses Jaipur, coding institute Jaipur'; $page_canonical='https://forskcodingschool.com/final-year-projects-jaipur.php'; $page_schema=json_encode(['@context'=>'https://schema.org','@type'=>'WebPage','name'=>$page_title,'description'=>$page_description,'url'=>$page_canonical],JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE); $header_variant='header-1'; ?>
-<!DOCTYPE html><html lang="en"><head><?php include __DIR__.'/includes/head.php'; ?></head><body><?php include __DIR__.'/includes/header.php'; ?><div id="smooth-wrapper"><div id="smooth-content"><main class="site-main"><div class="space-for-header"></div><section class="tj-breadcrumb-area"><div class="container"><div class="breadcrumb-content"><h1 class="breadcrumb-title"><?=htmlspecialchars($page_title)?></h1><div class="breadcrumb-list"><span><a href="index.php">Home</a></span><span><?=htmlspecialchars($page_title)?></span></div></div></div></section><section class="section-space"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="tj-course-details-content"><h2><?=htmlspecialchars($page_title)?></h2><p><?=htmlspecialchars($page_description)?></p><p>Forsk Coding School provides practical, career-focused learning in Jaipur with structured curriculum, hands-on assignments, projects, mentor support and career guidance.</p><a class="tj-btn-primary" href="enquiry.php"><span class="btn-text">Enquire Now</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div></div></section></main></div></div><?php include __DIR__.'/includes/footer.php'; ?></body></html>
+<?php
+$landing_title = 'Final Year Project Guidance in Jaipur';
+$landing_description = 'Get structured technical guidance for final-year projects with topic refinement, implementation support, debugging and presentation preparation.';
+$page_title = 'Final Year Project Guidance in Jaipur' . ' | Forsk Coding School';
+$page_description = $landing_description;
+$page_keywords = 'final year project guidance Jaipur, engineering project guidance Jaipur, BCA MCA project Jaipur';
+$page_canonical = 'https://forskcodingschool.com/final-year-projects-jaipur.php';
+$landing_eyebrow = 'Internships';
+$landing_image = 'assets/images/artificial-intelligence-course-jaipur-forsk-coding-school.webp';
+$landing_image_alt = 'Final Year Project Guidance in Jaipur';
+$landing_highlights = ['Topic refinement','Implementation guidance','Debugging reviews','Presentation preparation'];
+$landing_sections = ['How we support'=>['Project idea and scope discussion','Technology-stack guidance','Implementation milestones','Debugging and code review guidance','Documentation and presentation preparation'],'Academic integrity'=>'Students are expected to understand and own their submitted work. Guidance is designed to support learning, implementation and explanation—not to impersonate the student or bypass college rules.','Before starting'=>'Share your college guidelines, submission dates and approved topic requirements so the team can confirm the appropriate support.'];
+$lead_channel = 'academic';
+$lead_interest = 'Final Year Project Guidance';
+$lead_options = [];
+$lead_heading = 'Discuss Your Final Year Project';
+$lead_submit_label = 'Request Project Guidance';
+require __DIR__ . '/includes/program-landing.php';
