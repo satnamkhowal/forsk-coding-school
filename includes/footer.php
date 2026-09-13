@@ -108,4 +108,5 @@ if ($enableCoursePricingMentors):
 <script src="assets/js/local-site.js"></script>
 <?php if ($enableCoursePricingMentors): ?>
 <script src="assets/js/course-pricing-mentors.js"></script>
+<script src="assets/js/mentor-card-fallback.js"></script>
 <?php endif; ?>
