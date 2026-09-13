@@ -4,9 +4,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /checkout.php
-Disallow: /forgot-password.php
-Disallow: /wishlist.php
 Disallow: /thank-you.php
 Disallow: /mail.php
 Disallow: /storage/
