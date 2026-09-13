@@ -38,6 +38,18 @@ if (!preg_match('#^https?://#i', $page_og_image)) {
     if ($ogHost===$liveHost || $ogLocal) $page_og_image=seo_url($page_og_image);
 }
 $canonicalPath = (string)(parse_url($page_canonical, PHP_URL_PATH) ?: '/');
+
+// Fail closed for mentor/person pages. The repository contains a large mentor
+// profile workspace, so a profile must receive an explicit editorial indexing
+// approval in addition to its data-level verification before search engines can
+// index it. This prevents generated, draft or insufficiently verified people
+// content and Person schema from being published accidentally.
+$isMentorPath = $canonicalPath === '/mentors' || str_starts_with($canonicalPath, '/mentors/');
+$mentorIndexingApproved = !empty($allow_verified_mentor_indexing);
+if (!IS_LOCAL && $isMentorPath && !$mentorIndexingApproved) {
+    $page_robots = 'noindex, follow, noarchive';
+}
+
 if ($canonicalPath === '/blog' || str_starts_with($canonicalPath, '/blog/')) {
     $llms_describedby = seo_url('blog/llms.txt');
 } elseif ($canonicalPath === '/mentors' || str_starts_with($canonicalPath, '/mentors/')) {
