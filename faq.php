@@ -1,595 +1,135 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
 <?php
-$page_title='Frequently Asked Questions | Forsk Coding School Jaipur';
-$page_description='Frequently asked questions about Forsk Coding School courses, admissions, training, projects, internships and career preparation.';
-$page_canonical='https://forskcodingschool.com/faq.php';
-$page_schema='{"@context":"https://schema.org","@type":"WebPage","name":"Frequently Asked Questions | Forsk Coding School Jaipur","description":"Frequently asked questions about Forsk Coding School courses, admissions, training, projects, internships and career preparation.","url":"https://forskcodingschool.com/faq.php"}';
-$header_variant='header-1';
+require_once __DIR__ . '/config.php';
+
+$page_title = 'Forsk Coding School FAQs | Courses, Admissions & Training Jaipur';
+$page_description = 'Answers to common questions about Forsk Coding School courses, admissions, learning modes, projects, internships and career preparation in Jaipur.';
+$page_canonical = seo_url('faq.php');
+$header_variant = 'header-1';
+
+$faq_items = [
+    [
+        'q' => 'What courses does Forsk Coding School offer in Jaipur?',
+        'a' => 'Forsk Coding School offers programming, full-stack development, data analytics, data science, artificial intelligence and machine learning, cloud, cybersecurity, software testing, digital marketing and other technology-focused training. Current course availability can be checked on the Courses page.'
+    ],
+    [
+        'q' => 'Can beginners join Forsk Coding School courses?',
+        'a' => 'Yes. Many programs are designed to start from fundamentals and progress toward practical applications. The recommended starting point depends on your current skills and the course you choose.'
+    ],
+    [
+        'q' => 'Are courses available online and offline?',
+        'a' => 'Learning mode can vary by course and batch. Contact the admissions team for the current online, offline or hybrid options available for the program you want to join.'
+    ],
+    [
+        'q' => 'Does the training include practical projects?',
+        'a' => 'Practical learning is part of the training approach for relevant technical programs. Project scope and tools differ by course, so review the individual course page or speak with the admissions team for the current curriculum.'
+    ],
+    [
+        'q' => 'Does Forsk Coding School provide internship or career preparation support?',
+        'a' => 'Selected programs may include internship opportunities, interview preparation, project guidance or career-support activities. Availability and eligibility depend on the specific program and current batch.'
+    ],
+    [
+        'q' => 'How can I check course fees and batch timings?',
+        'a' => 'Fees, schedules and batch availability can change. Use the enquiry or contact page to get the latest information for the exact course and learning mode you are interested in.'
+    ],
+    [
+        'q' => 'Where is Forsk Coding School located?',
+        'a' => 'Forsk Coding School operates in Jaipur, Rajasthan. For the latest branch address, directions and contact information, use the Contact page or the relevant Jaipur location page.'
+    ],
+    [
+        'q' => 'How do I choose the right course?',
+        'a' => 'Choose based on your current level, target role and preferred technology. Beginners can start with programming foundations, while learners targeting specific roles can compare full-stack, data, AI, cloud, cybersecurity, testing and digital-marketing pathways.'
+    ]
+];
+
+$page_schema = json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => array_map(static function ($item) {
+        return [
+            '@type' => 'Question',
+            'name' => $item['q'],
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => $item['a']
+            ]
+        ];
+    }, $faq_items)
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 ?>
-<?php include __DIR__.'/includes/head.php'; ?>
+<!DOCTYPE html>
+<html class="no-js" lang="en-IN">
+<head>
+<?php include __DIR__ . '/includes/head.php'; ?>
 </head>
 <body>
-<?php include __DIR__.'/includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header.php'; ?>
 <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main id="primary" class="site-main">
+  <div id="smooth-content">
+    <main id="primary" class="site-main">
+      <div class="space-for-header"></div>
 
-        <div class="space-for-header"></div>
-        <!-- start: Page Header Section -->
-        <section class="tj-page-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="tj-page-header-content">
-                  <h1 class="tj-page-title">FAQs</h1>
-                  <div class="tj-page-link">
-                    <span><i class="tji-home"></i></span>
-                    <span>
-                      <a href="index.php">Home</a>
-                    </span>
-                    <span><i class="tji-arrow-right-4"></i></span>
-                    <span>
-                      <span>FAQs</span>
-                    </span>
-                  </div>
-                  <div class="shape"><img src="assets/images/shapes/stars.png" alt=""></div>
+      <section class="tj-page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tj-page-header-content">
+                <h1 class="tj-page-title">Forsk Coding School FAQs</h1>
+                <div class="tj-page-link">
+                  <span><i class="tji-home"></i></span>
+                  <span><a href="<?= htmlspecialchars(site_url('/'), ENT_QUOTES, 'UTF-8') ?>">Home</a></span>
+                  <span><i class="tji-arrow-right-4"></i></span>
+                  <span>FAQs</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <!-- end: Page Header Section -->
-
-        <!-- start: FAQ Section -->
-        <section class="tj-faq-section-4 section-gap-bottom fix">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="sec-heading sec-heading-center">
-                  <span class="sec-subtitle"><i class="tji-subtitle"></i> Support center</span>
-                  <h2 class="sec-title tj-fade-anim" data-delay="0.3">Browse FAQs to Get Quick answers.</h2>
-                </div>
-                <div class="tj-faq-wrapper-3">
-                  <div class="d-flex justify-content-center tj-fade-anim" data-delay="0.4">
-                    <ul class="nav nav-tabs tj-faq-tab" id="faq-tab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="item-all-tab" data-bs-toggle="tab"
-                          data-bs-target="#item-all" type="button" role="tab" aria-controls="item-all"
-                          aria-selected="true">General</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="item-1-tab" data-bs-toggle="tab" data-bs-target="#item-1"
-                          type="button" role="tab" aria-controls="item-1" aria-selected="false">Courses</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="item-2-tab" data-bs-toggle="tab" data-bs-target="#item-2"
-                          type="button" role="tab" aria-controls="item-2" aria-selected="false">Payments</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="item-3-tab" data-bs-toggle="tab" data-bs-target="#item-3"
-                          type="button" role="tab" aria-controls="item-3" aria-selected="false">Accounts</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="item-4-tab" data-bs-toggle="tab" data-bs-target="#item-4"
-                          type="button" role="tab" aria-controls="item-4" aria-selected="false">Support</button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-content" id="faq-tabContent">
-                    <div class="tab-pane fade show active" id="item-all" role="tabpanel" aria-labelledby="item-all-tab"
-                      tabindex="0">
-                      <div class="tj-faq tj-faq-3" id="tjAccordion01">
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-1" aria-expanded="true">Can I host live coaching
-                            sessions?</button>
-                          <div id="accordion-1" class="collapse show" data-bs-parent="#tjAccordion01">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-2" aria-expanded="false">How do clients book coaching
-                            sessions?</button>
-                          <div id="accordion-2" class="collapse" data-bs-parent="#tjAccordion01">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-3" aria-expanded="false">Can I sell courses and coaching
-                            programs?</button>
-                          <div id="accordion-3" class="collapse" data-bs-parent="#tjAccordion01">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-4" aria-expanded="false">Does the platform support progress
-                            tracking?</button>
-                          <div id="accordion-4" class="collapse" data-bs-parent="#tjAccordion01">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <div class="accordion-inner">
-                            <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#accordion-5" aria-expanded="false">Do I need technical skills to get
-                              started?</button>
-                            <div id="accordion-5" class="collapse" data-bs-parent="#tjAccordion01">
-                              <div class="accordion-body tj-accordion-content">
-                                Clients can view your availability, choose a suitable time slot, and book sessions
-                                online
-                                through the built-in scheduling system. Organize and manage all your projects
-                                effortlessly
-                                in one place. From initial planning to the finalized. Organize and manage all your
-                                projects
-                                effortlessly.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="item-1" role="tabpanel" aria-labelledby="item-1-tab" tabindex="0">
-                      <div class="tj-faq tj-faq-3" id="tjAccordion02">
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-6" aria-expanded="true">Can I host live coaching
-                            sessions?</button>
-                          <div id="accordion-6" class="collapse" data-bs-parent="#tjAccordion02">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-7" aria-expanded="false">How do clients book coaching
-                            sessions?</button>
-                          <div id="accordion-7" class="collapse" data-bs-parent="#tjAccordion02">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-8" aria-expanded="false">Can I sell courses and coaching
-                            programs?</button>
-                          <div id="accordion-8" class="collapse" data-bs-parent="#tjAccordion02">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-9" aria-expanded="false">Does the platform support progress
-                            tracking?</button>
-                          <div id="accordion-9" class="collapse" data-bs-parent="#tjAccordion02">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <div class="accordion-inner">
-                            <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#accordion-10" aria-expanded="false">Do I need technical skills to get
-                              started?</button>
-                            <div id="accordion-10" class="collapse" data-bs-parent="#tjAccordion02">
-                              <div class="accordion-body tj-accordion-content">
-                                Clients can view your availability, choose a suitable time slot, and book sessions
-                                online
-                                through the built-in scheduling system. Organize and manage all your projects
-                                effortlessly
-                                in one place. From initial planning to the finalized. Organize and manage all your
-                                projects
-                                effortlessly.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="item-2" role="tabpanel" aria-labelledby="item-2-tab" tabindex="0">
-                      <div class="tj-faq tj-faq-3" id="tjAccordion03">
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-11" aria-expanded="true">Can I host live coaching
-                            sessions?</button>
-                          <div id="accordion-11" class="collapse" data-bs-parent="#tjAccordion03">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-12" aria-expanded="false">How do clients book coaching
-                            sessions?</button>
-                          <div id="accordion-12" class="collapse" data-bs-parent="#tjAccordion03">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-13" aria-expanded="false">Can I sell courses and coaching
-                            programs?</button>
-                          <div id="accordion-13" class="collapse" data-bs-parent="#tjAccordion03">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-14" aria-expanded="false">Does the platform support progress
-                            tracking?</button>
-                          <div id="accordion-14" class="collapse" data-bs-parent="#tjAccordion03">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <div class="accordion-inner">
-                            <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#accordion-15" aria-expanded="false">Do I need technical skills to get
-                              started?</button>
-                            <div id="accordion-15" class="collapse" data-bs-parent="#tjAccordion03">
-                              <div class="accordion-body tj-accordion-content">
-                                Clients can view your availability, choose a suitable time slot, and book sessions
-                                online
-                                through the built-in scheduling system. Organize and manage all your projects
-                                effortlessly
-                                in one place. From initial planning to the finalized. Organize and manage all your
-                                projects
-                                effortlessly.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="item-3" role="tabpanel" aria-labelledby="item-3-tab" tabindex="0">
-                      <div class="tj-faq tj-faq-3" id="tjAccordion04">
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-16" aria-expanded="true">Can I host live coaching
-                            sessions?</button>
-                          <div id="accordion-16" class="collapse" data-bs-parent="#tjAccordion04">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-17" aria-expanded="false">How do clients book coaching
-                            sessions?</button>
-                          <div id="accordion-17" class="collapse" data-bs-parent="#tjAccordion04">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-18" aria-expanded="false">Can I sell courses and coaching
-                            programs?</button>
-                          <div id="accordion-18" class="collapse" data-bs-parent="#tjAccordion04">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-19" aria-expanded="false">Does the platform support progress
-                            tracking?</button>
-                          <div id="accordion-19" class="collapse" data-bs-parent="#tjAccordion04">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <div class="accordion-inner">
-                            <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#accordion-20" aria-expanded="false">Do I need technical skills to get
-                              started?</button>
-                            <div id="accordion-20" class="collapse" data-bs-parent="#tjAccordion04">
-                              <div class="accordion-body tj-accordion-content">
-                                Clients can view your availability, choose a suitable time slot, and book sessions
-                                online
-                                through the built-in scheduling system. Organize and manage all your projects
-                                effortlessly
-                                in one place. From initial planning to the finalized. Organize and manage all your
-                                projects
-                                effortlessly.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="item-4" role="tabpanel" aria-labelledby="item-4-tab" tabindex="0">
-                      <div class="tj-faq tj-faq-3" id="tjAccordion05">
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-21" aria-expanded="true">Can I host live coaching
-                            sessions?</button>
-                          <div id="accordion-21" class="collapse" data-bs-parent="#tjAccordion05">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-22" aria-expanded="false">How do clients book coaching
-                            sessions?</button>
-                          <div id="accordion-22" class="collapse" data-bs-parent="#tjAccordion05">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-23" aria-expanded="false">Can I sell courses and coaching
-                            programs?</button>
-                          <div id="accordion-23" class="collapse" data-bs-parent="#tjAccordion05">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#accordion-24" aria-expanded="false">Does the platform support progress
-                            tracking?</button>
-                          <div id="accordion-24" class="collapse" data-bs-parent="#tjAccordion05">
-                            <div class="accordion-body tj-accordion-content">
-                              Clients can view your availability, choose a suitable time slot, and book sessions online
-                              through the built-in scheduling system. Organize and manage all your projects effortlessly
-                              in
-                              one place. From initial planning to the finalized. Organize and manage all your projects
-                              effortlessly.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tj-accordion-item tj-fade-anim" data-delay=".3" data-duration="0.6">
-                          <div class="accordion-inner">
-                            <button class="tj-accordion-title collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#accordion-25" aria-expanded="false">Do I need technical skills to get
-                              started?</button>
-                            <div id="accordion-25" class="collapse" data-bs-parent="#tjAccordion05">
-                              <div class="accordion-body tj-accordion-content">
-                                Clients can view your availability, choose a suitable time slot, and book sessions
-                                online
-                                through the built-in scheduling system. Organize and manage all your projects
-                                effortlessly
-                                in one place. From initial planning to the finalized. Organize and manage all your
-                                projects
-                                effortlessly.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="course-bottom-content style-3">
-                  <span><img src="assets/images/icons/fire.svg" alt=""> Support</span>
-                  <p>Our support team is here to help.</p>
-                  <div>
-                    <a class="tj-text-btn-2" href="contact.php">
-                      <span class="btn-text"><span>Still Have a Question?</span></span>
-                      <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end: FAQ Section -->
-      </main>
-
-      <?php include __DIR__.'/includes/footer.php'; ?>
-<!-- start: Product details modal Area -->
-      <div id="tj-product-modal-1" style="display: none;">
-        <div class="single-product woosq-product container">
-          <div class="product row ">
-            <div class="col-12 col-md-6 thumbnails">
-              <div class="images tj-quick-details-slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="thumbnail"><img src="assets/images/product/product-1.webp"
-                        class="attachment-woosq size-woosq" alt=""></div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="thumbnail"><img src="assets/images/product/product-2.webp"
-                        class="attachment-woosq size-woosq" alt=""></div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="thumbnail"><img src="assets/images/product/product-3.webp"
-                        class="attachment-woosq size-woosq" alt=""></div>
-                  </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 summary entry-summary">
-
-              <div class="summary-content ps-container ps-theme-wpc">
-                <div class="product-stock">
-                  <span class="stock in-stock">10 in stock</span>
-                </div>
-                <h3 class="tj-product-details-title">Personal holding earbud</h3>
-                <p class="price">
-                  <del><span class="price-amount amount"><span>$</span>240.00</span></del>
-                  <span class="price-amount amount"><span>$</span>200.00</span>
-                </p>
-                <div class="product-details__short-description">
-                  <p>Experience true wireless freedom with our latest earbuds, designed to deliver
-                    crystal-clear sound and deep bass in compact, lightweight package.</p>
-                </div>
-                <div class="tj-product-details-action-wrapper">
-                  <form class="cart">
-                    <div class="tj-product-details-action-item-wrapper d-flex align-items-center">
-                      <div class="tj-product-details-quantity">
-                        <div class="tj-product-quantity">
-                          <div class="quantity">
-
-                            <span class="qty_button minus tj-cart-minus">
-                              -
-                            </span>
-                            <input type="text" id="quantity_6862037ea99bb"
-                              class="input-text tj-cart-input qty tj-cart-input text" name="quantity" value="1">
-                            <span class="qty_button plus tj-cart-plus ">
-                              +
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tj-product-details-add-to-cart">
-                        <button type="submit" name="add-to-cart" value="5403"
-                          class="single_add_to_cart_button tj-cart-btn ">
-                          <span class="btn-icon"><i class="fal fa-shopping-cart"></i><i
-                              class="fal fa-shopping-cart"></i></span>
-                          <span class="btn-text"><span>Add to cart</span></span>
-                        </button>
-                      </div>
-                      <div class="tj-product-details-wishlist">
-                        <button class="woosw-btn ">Add to wishlist</button>
-                      </div>
-                    </div>
-
-                  </form>
-                </div>
-                <div class="tj-product-details-query-item d-flex align-items-center">
-                  <span>SKU:</span>
-                  <p>SV-18</p>
-                </div>
-                <div class="tj-product-details-query-item d-flex align-items-center">
-                  <span>Category: </span> <a href="faq.php#">Power</a>
-                </div>
-                <div class="tj-product-details-query-item d-flex align-items-center">
-                  <span>Tag:</span> <a href="faq.php#">Portable</a>
-                </div>
-                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                </div>
-                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-      </div>
-      <!-- end: Product details modal Area -->
-</div>
+      </section>
+
+      <section class="tj-faq-section-4 section-gap">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="sec-heading sec-heading-center">
+                <span class="sec-subtitle"><i class="tji-subtitle"></i> Student Help</span>
+                <h2 class="sec-title">Common questions about courses and admissions</h2>
+                <p>Use these answers as a starting point. For fees, batch schedules and current availability, contact the admissions team because those details can change by course and intake.</p>
+              </div>
+
+              <div class="tj-faq tj-faq-3" id="forskFaqAccordion">
+                <?php foreach ($faq_items as $index => $item):
+                    $collapse_id = 'forsk-faq-' . ($index + 1);
+                    $is_first = $index === 0;
+                ?>
+                  <div class="tj-accordion-item">
+                    <button class="tj-accordion-title<?= $is_first ? '' : ' collapsed' ?>" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $collapse_id ?>" aria-expanded="<?= $is_first ? 'true' : 'false' ?>" aria-controls="<?= $collapse_id ?>">
+                      <?= htmlspecialchars($item['q'], ENT_QUOTES, 'UTF-8') ?>
+                    </button>
+                    <div id="<?= $collapse_id ?>" class="collapse<?= $is_first ? ' show' : '' ?>" data-bs-parent="#forskFaqAccordion">
+                      <div class="accordion-body tj-accordion-content">
+                        <?= htmlspecialchars($item['a'], ENT_QUOTES, 'UTF-8') ?>
+                      </div>
+                    </div>
+                  </div>
+                <?php endforeach; ?>
+              </div>
+
+              <div class="text-center mt-5">
+                <h2>Still have a question?</h2>
+                <p>Check the full course catalogue or contact Forsk Coding School for current admissions information.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                  <a class="tj-primary-btn" href="<?= htmlspecialchars(site_url('courses.php'), ENT_QUOTES, 'UTF-8') ?>"><span class="btn-text"><span>Explore Courses</span></span></a>
+                  <a class="tj-primary-btn" href="<?= htmlspecialchars(site_url('contact.php'), ENT_QUOTES, 'UTF-8') ?>"><span class="btn-text"><span>Contact Admissions</span></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <?php include __DIR__ . '/includes/footer.php'; ?>
+  </div>
 </div>
 </body>
 </html>
