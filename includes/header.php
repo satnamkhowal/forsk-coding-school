@@ -3,7 +3,7 @@
 <!-- Preloader disabled for local stability -->
 <div class="preloader" style="display:none!important;"></div>
 <div class="back-to-top-wrapper">
-  <button id="back-to-top" type="button" class="back-to-top-btn">
+  <button id="back-to-top" type="button" class="back-to-top-btn" aria-label="Back to top">
     <span class="back-to-top-icon"><i class="tji-arrow-up-2"></i></span>
   </button>
 </div>
@@ -14,12 +14,12 @@
       <div class="hamburger_inner">
         <div class="hamburger_top d-flex align-items-center justify-content-between">
           <div class="hamburger_logo">
-            <a href="index.php" class="mobile_logo">
-              <img src="assets/images/logos/forsk-icon.png" alt="Logo">
+            <a href="./" class="mobile_logo" aria-label="Forsk Coding School home">
+              <img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School">
             </a>
           </div>
           <div class="hamburger_close">
-            <button class="hamburger_close_btn">
+            <button class="hamburger_close_btn" type="button" aria-label="Close menu">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -30,16 +30,14 @@
           </div>
         </div>
         <div class="hamburger-text d-none d-lg-block">
-          <p>Developing personalize our customer journeys to increase satisfaction &amp; loyalty of our expansion
-            recognized
-            by industry leaders.</p>
+          <p>Practical coding and data-skills training in Jaipur with project-focused learning, mentor guidance and career preparation.</p>
         </div>
         <div class="hamburger-search-area">
-          <h5 class="hamburger-title">Search now</h5>
+          <h5 class="hamburger-title">Search courses</h5>
           <div class="hamburger_search">
-            <form method="get" action="index.php">
-              <button type="submit"><i class="tji-search"></i></button>
-              <input type="search" autocomplete="off" name="s" value="" placeholder="Search here...">
+            <form method="get" action="courses.php">
+              <button type="submit" aria-label="Search courses"><i class="tji-search"></i></button>
+              <input type="search" autocomplete="off" name="s" value="" placeholder="Search courses..." aria-label="Search courses">
             </form>
           </div>
         </div>
@@ -51,7 +49,7 @@
           <div class="contact-info">
             <div class="contact-item">
               <span class="subtitle">Phone:</span>
-              <a class="contact-link" href="tel:+1(009)544-7818">+91 72319 68183</a>
+              <a class="contact-link" href="tel:+917231968183">+91 72319 68183</a>
             </div>
             <div class="contact-item">
               <span class="subtitle">Email:</span>
@@ -59,29 +57,15 @@
             </div>
             <div class="contact-item">
               <span class="subtitle">Location:</span>
-              <span class="contact-link">Jaipur, Rajasthan, India</span>
+              <a class="contact-link" href="branches/">Jaipur, Rajasthan, India</a>
             </div>
           </div>
         </div>
       </div>
       <div class="hamburger-socials">
-        <h5 class="hamburger-title">Follow us</h5>
-        <div class="social-links">
-          <ul class="tj-socials">
-            <li>
-              <a href="#" target="_blank"><i class="tji-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"><i class="tji-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"><i class="tji-x-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"><i class="tji-linkedin"></i></a>
-            </li>
-          </ul>
-        </div>
+        <a class="tj-btn-primary tj-btn-primary-sm flip-text-wrap" href="enroll-now.php">
+          <span class="btn-text">Enquire / Enroll</span>
+        </a>
       </div>
     </div>
   </div>
