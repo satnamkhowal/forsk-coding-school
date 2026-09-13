@@ -1,0 +1,15 @@
+<?php
+require_once dirname(__DIR__) . '/config.php';
+$groups = [
+ ['slug'=>'engineering-colleges-in-jaipur','title'=>'Engineering Colleges in Jaipur','program'=>'B.Tech / Engineering'],
+ ['slug'=>'bca-colleges-in-jaipur','title'=>'BCA Colleges in Jaipur','program'=>'BCA'],
+ ['slug'=>'mca-colleges-in-jaipur','title'=>'MCA Colleges in Jaipur','program'=>'MCA'],
+ ['slug'=>'bba-colleges-in-jaipur','title'=>'BBA Colleges in Jaipur','program'=>'BBA'],
+ ['slug'=>'mba-colleges-in-jaipur','title'=>'MBA Colleges in Jaipur','program'=>'MBA / PGDM'],
+];
+$page_title='Colleges in Jaipur | Engineering, BCA, MCA, BBA & MBA Guides';
+$page_description='Explore Forsk Coding School college guides for Engineering, BCA, MCA, BBA and MBA options in Jaipur with verified official links and admission guidance.';
+$page_keywords='colleges in Jaipur, engineering colleges Jaipur, BCA colleges Jaipur, MCA colleges Jaipur, BBA colleges Jaipur, MBA colleges Jaipur';
+$page_canonical=seo_url('colleges-in-jaipur/');
+$page_schema=json_encode(['@context'=>'https://schema.org','@type'=>'CollectionPage','name'=>'Colleges in Jaipur','url'=>$page_canonical,'description'=>$page_description],JSON_UNESCAPED_SLASHES);
+?><!DOCTYPE html><html class="no-js" lang="en"><head><?php include dirname(__DIR__).'/includes/head.php'; ?><link rel="stylesheet" href="includes/college-pages.css"></head><body><?php include dirname(__DIR__).'/includes/header.php'; ?><div id="smooth-wrapper"><div id="smooth-content"><main class="site-main college-pages"><section class="college-hero"><div class="container"><nav class="college-breadcrumb"><a href="/">Home</a><span>/</span><span>Colleges in Jaipur</span></nav><div class="college-hero-grid"><div><span class="college-kicker">Jaipur admission research hub</span><h1>Colleges in Jaipur</h1><p>Explore focused college guides for high-intent programmes. Each directory links to individual landing pages with official website/contact references and a tracked admission-guidance form.</p></div><div class="college-hero-panel"><strong>5 focused college guides</strong><span>Built as independent static modules so each category can evolve without breaking the others.</span></div></div></div></section><section class="college-section"><div class="container"><div class="college-grid"><?php foreach($groups as $g): ?><article class="college-card"><span class="college-kicker"><?= htmlspecialchars($g['program'],ENT_QUOTES,'UTF-8') ?></span><h2 style="font-size:28px"><a href="<?= htmlspecialchars($g['slug'].'/',ENT_QUOTES,'UTF-8') ?>"><?= htmlspecialchars($g['title'],ENT_QUOTES,'UTF-8') ?></a></h2><p>Compare selected institutions, open verified official resources and request guidance.</p><div class="college-card-actions"><a class="college-btn college-btn-primary" href="<?= htmlspecialchars($g['slug'].'/',ENT_QUOTES,'UTF-8') ?>">Explore guide</a></div></article><?php endforeach; ?></div></div></section></main><?php include dirname(__DIR__).'/includes/footer.php'; ?></div></div></body></html>
