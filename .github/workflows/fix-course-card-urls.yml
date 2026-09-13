@@ -40,3 +40,5 @@ jobs:
 
       - name: Correct forsk.in on course cards and commit one by one
         run: python tools/fix_course_card_urls.py
+
+# trigger-refresh
