@@ -1,0 +1,1 @@
+<?php $legacy_page_key='10-java-projects-to-master-java-programming-beginner-to-advanced-guide'; require dirname(__DIR__).'/legacy-indexed-page.php';
