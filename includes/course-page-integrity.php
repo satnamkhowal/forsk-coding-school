@@ -57,7 +57,7 @@ if (!function_exists('forsk_course_page_integrity_filter')) {
         // Generated course templates label a practical-support section as
         // “Reviews”. Keep the useful content but make the navigation truthful.
         $html = preg_replace(
-            '#(<a\b[^>]*href=["\']#reviews["\'][^>]*>)\s*Reviews\s*(</a>)#i',
+            '~(<a\b[^>]*href=["\']#reviews["\'][^>]*>)\s*Reviews\s*(</a>)~i',
             '$1Practice$2',
             $html
         ) ?? $html;
