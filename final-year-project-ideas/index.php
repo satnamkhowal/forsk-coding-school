@@ -1,0 +1,1 @@
+<?php $legacy_page_key='final-year-project-ideas'; require dirname(__DIR__).'/legacy-indexed-page.php';
