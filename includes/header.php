@@ -1,4 +1,8 @@
-<?php $header_variant = $header_variant ?? 'header-1'; ?>
+<?php
+require_once __DIR__ . '/../config.php';
+$header_variant = $header_variant ?? 'header-1';
+$header_location = SITE_LOCALITY . ', ' . SITE_REGION . ', India';
+?>
 <div class="body-overlay"></div>
 <!-- Preloader disabled for local stability -->
 <div class="preloader" style="display:none!important;"></div>
@@ -15,8 +19,8 @@
     <div class="hamburger_inner">
       <div class="hamburger_top d-flex align-items-center justify-content-between">
         <div class="hamburger_logo">
-          <a href="./" class="mobile_logo" aria-label="Forsk Coding School home">
-            <img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School">
+          <a href="./" class="mobile_logo" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home">
+            <img src="assets/images/logos/forsk-icon.png" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>">
           </a>
         </div>
         <div class="hamburger_close">
@@ -48,15 +52,15 @@
         <div class="contact-info">
           <div class="contact-item">
             <span class="subtitle">Phone:</span>
-            <a class="contact-link" href="tel:+917231968183">+91 72319 68183</a>
+            <a class="contact-link" href="tel:<?= htmlspecialchars(SITE_PHONE_E164, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></a>
           </div>
           <div class="contact-item">
             <span class="subtitle">Email:</span>
-            <a class="contact-link" href="mailto:info@forskcodingschool.com">info@forskcodingschool.com</a>
+            <a class="contact-link" href="mailto:<?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?></a>
           </div>
           <div class="contact-item">
             <span class="subtitle">Location:</span>
-            <a class="contact-link" href="branches/">Jaipur, Rajasthan, India</a>
+            <a class="contact-link" href="branches/"><?= htmlspecialchars($header_location, ENT_QUOTES, 'UTF-8') ?></a>
           </div>
         </div>
       </div>
@@ -134,7 +138,7 @@ function forsk_mobile_menu_button(): void {
 <?php if ($header_variant === 'header-2'): ?>
 <header class="header-area header-2 header-absolute">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(true); ?>
     <?php forsk_header_actions('header-2'); ?>
     <?php forsk_mobile_menu_button(); ?>
@@ -142,7 +146,7 @@ function forsk_mobile_menu_button(): void {
 </header>
 <header class="header-area header-2 header-duplicate header-sticky">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(); ?>
     <?php forsk_header_actions('header-2'); ?>
     <?php forsk_mobile_menu_button(); ?>
@@ -152,7 +156,7 @@ function forsk_mobile_menu_button(): void {
 <?php elseif ($header_variant === 'header-3'): ?>
 <header class="header-area header-3 header-absolute">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(true); ?>
     <?php forsk_header_actions('header-3'); ?>
     <?php forsk_mobile_menu_button(); ?>
@@ -160,7 +164,7 @@ function forsk_mobile_menu_button(): void {
 </header>
 <header class="header-area header-3 header-duplicate header-sticky">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(); ?>
     <?php forsk_header_actions('header-3'); ?>
     <?php forsk_mobile_menu_button(); ?>
@@ -170,7 +174,7 @@ function forsk_mobile_menu_button(): void {
 <?php elseif ($header_variant === 'header-4'): ?>
 <header class="header-area header-4 header-absolute">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(true); ?>
     <?php forsk_header_actions('header-4'); ?>
     <?php forsk_mobile_menu_button(); ?>
@@ -178,7 +182,7 @@ function forsk_mobile_menu_button(): void {
 </header>
 <header class="header-area header-4 header-duplicate header-sticky">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(); ?>
     <?php forsk_header_actions('header-4'); ?>
     <?php forsk_mobile_menu_button(); ?>
@@ -188,14 +192,14 @@ function forsk_mobile_menu_button(): void {
 <?php else: ?>
 <header class="header-area header-1 header-fixed">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="<?= htmlspecialchars($header_logo, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(true); ?>
     <?php forsk_mobile_menu_button(); ?>
   </div></div></div></div></div>
 </header>
 <header class="header-area header-1 header-duplicate header-sticky">
   <div class="header-bottom"><div class="container-fluid"><div class="row"><div class="col-12"><div class="header-wrapper">
-    <div class="site_logo"><a class="logo" href="./" aria-label="Forsk Coding School home"><img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School"></a></div>
+    <div class="site_logo"><a class="logo" href="./" aria-label="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> home"><img src="assets/images/logos/forsk-icon.png" alt="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"></a></div>
     <?php forsk_header_navigation(); ?>
     <?php forsk_header_actions('header-1', true); ?>
     <?php forsk_mobile_menu_button(); ?>
