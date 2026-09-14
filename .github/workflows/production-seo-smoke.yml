@@ -1,0 +1,38 @@
+name: Production SEO smoke check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.php'
+      - 'includes/**'
+      - 'courses/**'
+      - 'branches/**'
+      - 'sitemap*.xml'
+      - 'robots.txt'
+      - 'tools/qa-production-seo.sh'
+      - '.github/workflows/production-seo-smoke.yml'
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-seo-smoke
+  cancel-in-progress: true
+
+jobs:
+  verify-production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Run production SEO smoke checks
+        run: bash tools/qa-production-seo.sh
