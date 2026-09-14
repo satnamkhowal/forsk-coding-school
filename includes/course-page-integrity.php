@@ -35,6 +35,42 @@ if (!function_exists('forsk_schema_contains_course_type')) {
     }
 }
 
+if (!function_exists('forsk_normalize_course_schema')) {
+    function forsk_normalize_course_schema(array $node): array
+    {
+        $type = $node['@type'] ?? null;
+        $isCourse = $type === 'Course' || (is_array($type) && in_array('Course', $type, true));
+
+        if ($isCourse) {
+            // Reference the single authoritative organization entity emitted by
+            // includes/head.php instead of creating a second partial provider
+            // entity on every course page.
+            $node['provider'] = ['@id' => SITE_ORGANIZATION_ID];
+
+            // Generated course pages may pass repository-relative image paths.
+            // Structured-data URLs should be absolute and canonical on production.
+            if (isset($node['image']) && is_string($node['image']) && trim($node['image']) !== '') {
+                $image = trim($node['image']);
+                if (!preg_match('#^https?://#i', $image)) {
+                    $node['image'] = seo_url($image);
+                }
+            }
+
+            if (isset($node['url']) && is_string($node['url']) && trim($node['url']) !== '') {
+                $node['url'] = seo_url(trim($node['url']));
+            }
+        }
+
+        foreach ($node as $key => $value) {
+            if (is_array($value)) {
+                $node[$key] = forsk_normalize_course_schema($value);
+            }
+        }
+
+        return $node;
+    }
+}
+
 if (!function_exists('forsk_course_page_integrity_filter')) {
     function forsk_course_page_integrity_filter(string $html): string
     {
@@ -104,5 +140,10 @@ if (is_string($page_schema ?? null) && trim($page_schema) !== '') {
 }
 
 if (is_array($courseSchema) && forsk_schema_contains_course_type($courseSchema)) {
+    $courseSchema = forsk_normalize_course_schema($courseSchema);
+    $page_schema = json_encode(
+        $courseSchema,
+        JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
+    );
     ob_start('forsk_course_page_integrity_filter');
 }
