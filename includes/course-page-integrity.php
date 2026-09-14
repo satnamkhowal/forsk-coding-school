@@ -3,9 +3,10 @@
  * Course page trust/UX integrity layer.
  *
  * Generated course pages historically inherited template-only UI such as
- * unsupported rating counters and a wishlist action with no maintained
- * product/account workflow. Until those signals are backed by verified data,
- * fail closed and remove them from the server-rendered HTML.
+ * unsupported rating counters, hard-coded lesson/hour totals, dead social
+ * share links and a wishlist action with no maintained product/account flow.
+ * Until those signals are backed by verified first-party data, fail closed and
+ * remove them from the server-rendered HTML.
  *
  * This filter activates only when the page publishes Course structured data.
  */
@@ -46,10 +47,36 @@ if (!function_exists('forsk_course_page_integrity_filter')) {
             $html
         ) ?? $html;
 
+        // Generated detail pages repeat the same lesson/hour totals across
+        // unrelated courses. Hide those counters until each course has a verified,
+        // maintained curriculum total. Preserve factual non-numeric metadata such
+        // as delivery style and educational level.
+        $html = preg_replace(
+            '#<span>\s*<i\b[^>]*class=["\'][^"\']*\btji-(?:book|clock)\b[^"\']*["\'][^>]*></i>\s*\d+\+?\s*(?:Lessons?|Hours?)\s*</span>#i',
+            '',
+            $html
+        ) ?? $html;
+
+        // The generated curriculum subtitle repeats template lesson counts. Keep a
+        // truthful qualitative label rather than publishing an unverified number.
+        $html = preg_replace(
+            '#(<div\b[^>]*class=["\'][^"\']*\bcurriculum-title-meta\b[^"\']*["\'][^>]*>)[^<]*(?:lesson|hour)[^<]*(</div>)#i',
+            '$1Practical, project-based learning$2',
+            $html
+        ) ?? $html;
+
         // Wishlist was retired and has no maintained user/account workflow.
         // Remove the dead control rather than sending visitors through a redirect.
         $html = preg_replace(
             '#<a\b[^>]*class=["\'][^"\']*\btj-wishlist-btn(?:-2)?\b[^"\']*["\'][^>]*>.*?</a>#is',
+            '',
+            $html
+        ) ?? $html;
+
+        // Generated share menus contain placeholder href="#" social links. Remove
+        // only that dead list; retain the valid copy-link control in the popup.
+        $html = preg_replace(
+            '#<ul\b[^>]*class=["\'][^"\']*\btj-socials\b[^"\']*["\'][^>]*>\s*(?:<li>\s*<a\b[^>]*href=["\']#["\'][^>]*>.*?</a>\s*</li>\s*)+</ul>#is',
             '',
             $html
         ) ?? $html;
