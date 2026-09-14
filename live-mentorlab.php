@@ -2,9 +2,10 @@
 <html class="no-js" lang="en">
 <head>
 <?php
+require_once __DIR__.'/config.php';
 $page_title = 'Live Two-Way Coding Classes in Jaipur | Forsk MentorLab';
 $page_description = 'Forsk Live MentorLab offers online and offline coding classes in Jaipur with live two-way mentor interaction, 10–15 learner micro-batches, Q&A, project guidance and consent-based remote troubleshooting.';
-$page_canonical = 'https://forskcodingschool.com/live-mentorlab.php';
+$page_canonical = seo_url('live-mentorlab.php');
 $page_type = 'website';
 $page_schema = json_encode([
   '@context'=>'https://schema.org',
@@ -15,21 +16,13 @@ $page_schema = json_encode([
       'url'=>$page_canonical,
       'name'=>$page_title,
       'description'=>$page_description,
-      'about'=>['Live coding classes','Two-way interactive learning','Online coding classes','Offline coding classes','Small batch training']
-    ],
-    [
-      '@type'=>'EducationalOrganization',
-      '@id'=>'https://forskcodingschool.com/#organization',
-      'name'=>'Forsk Coding School',
-      'url'=>'https://forskcodingschool.com/',
-      'email'=>'info@forskcodingschool.com',
-      'telephone'=>'+917231968183',
-      'areaServed'=>['@type'=>'City','name'=>'Jaipur']
+      'about'=>['@id'=>SITE_ORGANIZATION_ID],
+      'keywords'=>['Live coding classes','Two-way interactive learning','Online coding classes','Offline coding classes','Small batch training']
     ],
     [
       '@type'=>'BreadcrumbList',
       'itemListElement'=>[
-        ['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>'https://forskcodingschool.com/'],
+        ['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>seo_url('/')],
         ['@type'=>'ListItem','position'=>2,'name'=>'Live MentorLab','item'=>$page_canonical]
       ]
     ]
