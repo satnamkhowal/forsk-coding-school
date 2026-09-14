@@ -1,0 +1,1 @@
+<?php $legacy_page_key='data-science-roadmap-step-by-step-guide-to-become-a-data-scientist-in-2026'; require dirname(__DIR__).'/legacy-indexed-page.php';
