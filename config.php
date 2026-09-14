@@ -25,8 +25,7 @@ define('SITE_ORGANIZATION_ID', rtrim(LIVE_SITE_URL, '/') . '/#organization');
 
 /**
  * Read a runtime environment value robustly across Apache/FPM/hosting panels.
- * Falls back to the root .env file (gitignored) so shared hosting users can
- * configure private values without committing credentials.
+ * Falls back to storage/private/.env, which is protected from direct web access.
  */
 if (!function_exists('forsk_env_value')) {
     function forsk_env_value(string $key, string $default = ''): string {
@@ -41,7 +40,7 @@ if (!function_exists('forsk_env_value')) {
             }
         }
 
-        $envFile = __DIR__ . '/.env';
+        $envFile = __DIR__ . '/storage/private/.env';
         if (is_readable($envFile)) {
             $lines = @file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             if (is_array($lines)) {
