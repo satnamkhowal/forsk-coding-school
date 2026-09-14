@@ -20,7 +20,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
     }
 
     if (!$setupKeyConfigured) {
-        $error = 'PHP cannot see FORSK_SETUP_KEY yet. Add it as a hosting environment variable or create a private .env file in the website root with FORSK_SETUP_KEY=your-secret-key, then reload this page.';
+        $error = 'PHP cannot see FORSK_SETUP_KEY yet. Add it as a hosting environment variable or create storage/private/.env with FORSK_SETUP_KEY=your-secret-key, then reload this page.';
     } elseif ($providedKey === '') {
         $error = 'Enter your installer security key.';
     } elseif (!hash_equals($setupKey, $providedKey)) {
@@ -88,7 +88,7 @@ foreach ($requirements as $requirement) {
 <div class="success">✓ FORSK_SETUP_KEY is visible to PHP. Enter the same key below.</div>
 <?php else: ?>
 <p class="notice">FORSK_SETUP_KEY is not currently visible to PHP. The button remains active so the installer can show the exact configuration error after submit.</p>
-<p class="muted">Shared hosting fallback: create a root <span class="code">.env</span> file containing <span class="code">FORSK_SETUP_KEY=your-secret-key</span>. The file is already excluded from Git.</p>
+<p class="muted">Shared hosting fallback: create <span class="code">storage/private/.env</span> containing <span class="code">FORSK_SETUP_KEY=your-secret-key</span>. That directory is blocked from direct web access.</p>
 <?php endif; ?>
 <form method="post" autocomplete="off">
 <label for="setup_key">Installer security key</label>
