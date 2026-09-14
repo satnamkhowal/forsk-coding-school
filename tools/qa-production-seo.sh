@@ -75,12 +75,25 @@ assert_redirect() {
 
 printf 'Checking production SEO state at %s\n' "$BASE_URL"
 
+# Homepage deployment guard: catch legacy template content and verify canonical NAP.
+assert_contains "/" "+91 72319 68183" "Homepage exposes canonical Forsk phone number"
+assert_not_contains "/" "Brooklyn Simmons" "Homepage no longer exposes template testimonials"
+assert_not_contains "/" "Devoin Lanee" "Homepage no longer exposes template instructor identities"
+assert_not_contains "/" "Miami, Florida, USA" "Homepage no longer exposes template event locations"
+assert_not_contains "/" "180,000+ learners" "Homepage no longer exposes unsupported learner count"
+
+# Maintained first-party surfaces.
 assert_contains "/about.php" "Information we intentionally verify" "About page is on maintained factual version"
 assert_not_contains "/about.php" "2,540 Google reviews" "About page no longer exposes template review count"
 assert_contains "/courses.php" "Job-Oriented IT & Coding Courses in Jaipur" "Course catalogue is on maintained discovery experience"
 assert_not_contains "/courses.php" "180K learners" "Course catalogue no longer exposes template learner count"
+
+# Permanent consolidation guards for retired/legacy URLs.
 assert_redirect "/instructor.php" "/mentors/" "Legacy instructor directory permanently redirects to mentor hub"
 assert_redirect "/courses/python-programming-course-jaipur/" "/python-programming-course-jaipur.php" "Legacy Python course URL consolidates to canonical page"
+assert_redirect "/courses/data-analytics-course-with-python-sql-excel-power-bi/" "/data-analytics-course-jaipur.php" "Legacy Data Analytics LMS URL consolidates to canonical page"
+assert_redirect "/courses/java-full-stack-course-jaipur/" "/java-full-stack-course-jaipur.php" "Legacy Java Full Stack LMS URL consolidates to canonical page"
+assert_redirect "/courses/dotnet-full-stack-course-jaipur/" "/dotnet-full-stack-course-jaipur.php" "Legacy .NET Full Stack LMS URL consolidates to canonical page"
 
 if (( FAILURES > 0 )); then
   printf '\nProduction SEO QA failed with %d issue(s).\n' "$FAILURES" >&2
