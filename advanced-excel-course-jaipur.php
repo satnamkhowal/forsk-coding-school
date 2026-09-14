@@ -1,221 +1,287 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en">">
 <head>
 <?php
 $page_title = "Advanced Excel Course in Jaipur | Forsk Coding School";
-$page_description = "Learn Advanced Excel Course with practical training in Jaipur at Forsk Coding School. Build real-world skills through structured lessons, hands-on exercises, projects, troubleshooting, assessment practice and career-focused guidance.";
-$page_keywords = "Advanced Excel Course, Advanced Excel Training Jaipur, Advanced Excel Classes Jaipur, Advanced Excel Institute Jaipur, Advanced Excel Certification, Advanced Excel Projects, Forsk Coding School";
+$page_description = "Learn Advanced Excel in Jaipur with hands-on practice in formulas, XLOOKUP, PivotTables, dashboards, data cleaning and Power Query at Forsk Coding School.";
+$page_keywords = "Advanced Excel Course in Jaipur, Advanced Excel Training Jaipur, Excel Classes Jaipur, XLOOKUP Course Jaipur, Pivot Table Training Jaipur, Power Query Excel Jaipur";
 $page_canonical = "https://forskcodingschool.com/advanced-excel-course-jaipur.php";
 $page_og_image = "assets/images/advanced-excel-course-jaipur-forsk-coding-school.webp";
+
+$courseSchema = [
+  '@type' => 'Course',
+  '@id' => $page_canonical . '#course',
+  'name' => 'Advanced Excel Course in Jaipur',
+  'description' => $page_description,
+  'url' => $page_canonical,
+  'image' => 'https://forskcodingschool.com/' . $page_og_image,
+  'provider' => [
+    '@type' => 'EducationalOrganization',
+    'name' => 'Forsk Coding School',
+    'url' => 'https://forskcodingschool.com/'
+  ],
+  'courseMode' => ['onsite', 'online'],
+  'educationalLevel' => 'Beginner to Advanced',
+  'inLanguage' => 'en-IN'
+];
+
+$breadcrumbSchema = [
+  '@type' => 'BreadcrumbList',
+  '@id' => $page_canonical . '#breadcrumb',
+  'itemListElement' => [
+    ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => 'https://forskcodingschool.com/'],
+    ['@type' => 'ListItem', 'position' => 2, 'name' => 'Courses', 'item' => 'https://forskcodingschool.com/courses.php'],
+    ['@type' => 'ListItem', 'position' => 3, 'name' => 'Advanced Excel Course in Jaipur', 'item' => $page_canonical]
+  ]
+];
+
+$faqSchema = [
+  '@type' => 'FAQPage',
+  '@id' => $page_canonical . '#faq',
+  'mainEntity' => [
+    [
+      '@type' => 'Question',
+      'name' => 'Who can join the Advanced Excel course in Jaipur?',
+      'acceptedAnswer' => [
+        '@type' => 'Answer',
+        'text' => 'The course is suitable for students, freshers, working professionals, MIS and operations learners, and anyone who wants practical spreadsheet and reporting skills. Basic computer knowledge is helpful.'
+      ]
+    ],
+    [
+      '@type' => 'Question',
+      'name' => 'What will I learn in the Advanced Excel course?',
+      'acceptedAnswer' => [
+        '@type' => 'Answer',
+        'text' => 'The learning path covers spreadsheet fundamentals, advanced formulas, lookup functions, data cleaning, tables, PivotTables, charts, dashboards, Power Query and practical reporting exercises.'
+      ]
+    ],
+    [
+      '@type' => 'Question',
+      'name' => 'Is this Advanced Excel training practical?',
+      'acceptedAnswer' => [
+        '@type' => 'Answer',
+        'text' => 'Yes. The course is structured around guided practice, workbook exercises, reporting scenarios and project-style tasks rather than theory alone.'
+      ]
+    ],
+    [
+      '@type' => 'Question',
+      'name' => 'Are online and classroom learning options available?',
+      'acceptedAnswer' => [
+        '@type' => 'Answer',
+        'text' => 'Forsk Coding School supports online and classroom-oriented learning options. Current batch format, timing and seat availability should be confirmed with the admissions team.'
+      ]
+    ]
+  ]
+];
+
 $page_schema = json_encode([
-  '@context'=>'https://schema.org',
-  '@type'=>'Course',
-  'name'=>"Advanced Excel Course",
-  'description'=>$page_description,
-  'url'=>$page_canonical,
-  'image'=>$page_og_image,
-  'provider'=>['@type'=>'EducationalOrganization','name'=>'Forsk Coding School','url'=>'https://forskcodingschool.com/'],
-  'courseMode'=>'Blended',
-  'educationalLevel'=>"Beginner to Intermediate"
-], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
-$header_variant='header-1';
+  '@context' => 'https://schema.org',
+  '@graph' => [$courseSchema, $breadcrumbSchema, $faqSchema]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$header_variant = 'header-1';
 ?>
-<?php include __DIR__.'/includes/head.php'; ?>
+<?php include __DIR__ . '/includes/head.php'; ?>
 </head>
 <body>
-<?php include __DIR__.'/includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header.php'; ?>
 <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main id="primary" class="site-main">
+  <div id="smooth-content">
+    <main id="primary" class="site-main">
+      <div class="space-for-header"></div>
 
-        <div class="space-for-header"></div>
-        <!-- start: Page Header Section -->
-        <section class="tj-page-header tj-page-header-2">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="tj-page-header-content">
-                  <div class="tj-page-link">
-                    <span><i class="tji-home"></i></span>
-                    <span>
-                      <a href="index.php">Home</a>
-                    </span>
-                    <span><i class="tji-arrow-right-4"></i></span>
-                    <span>
-                      <a href="courses.php">Courses</a>
-                    </span>
-                    <span><i class="tji-arrow-right-4"></i></span>
-                    <span>
-                      <span>Course details</span>
-                    </span>
-                  </div>
-                  <div class="tj-categories">
-                    <a class="tj-cat" href="courses.php">Data &amp; AI</a>
-                  </div>
-                  <h1 class="tj-page-title">Advanced Excel Course in Jaipur</h1>
-                  <p class="tj-page-desc">Learn Advanced Excel Course with practical training in Jaipur at Forsk Coding School. Build real-world skills through structured lessons, hands-on exercises, projects, troubleshooting, assessment practice and career-focused guidance.</p>
-                  <div class="course-meta">
-                    <div class="single-rating">
-                      <i class="tji-star"></i>
-                      <span class="label">4.9<span>(3K+)</span></span>
-                    </div>
-                    <span><i class="tji-book"></i>40 Lessons</span>
-                    <span><i class="tji-clock"></i>40+ Hours</span>
-                    <span><i class="tji-user-duo"></i>Project Based</span>
-                    <span><i class="tji-layers"></i>Beginner to Intermediate</span>
-                  </div>
-                  <div class="tj-page-header-bottom">
-                    <div class="author-wrap">
-                      <div class="author-avatar">
-                        <img src="assets/images/instructor/instructor-8.webp" alt="">
-                      </div>
-                      <div class="author-info">
-                        <span class="designation">Created by</span>
-                        <h3 class="name tj-fs-h6"><a href="instructor.php">Forsk Coding School Mentors</a></h3>
-                      </div>
-                    </div>
-                    <div class="btn-area">
-                      <div class="tj-share-btn share-popup">
-                        <span class="btn-icon"><i class="tji-share"></i></span>
-                        <span class="btn-text">Share</span>
-                        <div class="share-wrap">
-                          <div class="share-title">Share this course</div>
-                          <ul class="tj-socials tj-socials-2">
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-facebook"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-x-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-linkedin"></i></a>
-                            </li>
-                          </ul>
-                          <div class="tj-copy">
-                            <span class="copy-icon"><i class="tji-link"></i></span>
-                            <span class="copy-text">
-                              <span>forskcodingschool.com/advanced-excel-course-jaipur.php</span>
-                            </span>
-                            <span class="copy-icon"><i class="tji-copy"></i></span>
-                            <span class="copy-tooltip">Copied!</span>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="courses-details.php#" class="tj-wishlist-btn-2">
-                        <span class="btn-icon"><i class="tji-heart"></i></span>
-                        <span class="btn-text">Wishlist</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="shape"><img src="assets/images/shapes/stars.png" alt=""></div>
+      <section class="tj-page-header tj-page-header-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tj-page-header-content">
+                <nav class="tj-page-link" aria-label="Breadcrumb">
+                  <span><i class="tji-home" aria-hidden="true"></i></span>
+                  <span><a href="./">Home</a></span>
+                  <span><i class="tji-arrow-right-4" aria-hidden="true"></i></span>
+                  <span><a href="courses.php">Courses</a></span>
+                  <span><i class="tji-arrow-right-4" aria-hidden="true"></i></span>
+                  <span aria-current="page">Advanced Excel</span>
+                </nav>
+                <div class="tj-categories">
+                  <a class="tj-cat" href="courses.php">Data &amp; Analytics</a>
                 </div>
+                <h1 class="tj-page-title">Advanced Excel Course in Jaipur</h1>
+                <p class="tj-page-desc">Build practical Excel skills for data cleaning, analysis, reporting and dashboard work. Learn through guided exercises and realistic business datasets at Forsk Coding School, Jaipur.</p>
+                <div class="course-meta" aria-label="Course highlights">
+                  <span><i class="tji-user-duo" aria-hidden="true"></i>Practical Training</span>
+                  <span><i class="tji-book" aria-hidden="true"></i>Workbook Exercises</span>
+                  <span><i class="tji-layers" aria-hidden="true"></i>Beginner to Advanced</span>
+                </div>
+                <div class="btn-area mt-4">
+                  <a class="tj-btn-primary flip-text-wrap" href="enroll-now.php">
+                    <span class="btn-text">Enquire About This Course</span>
+                    <span class="btn-icon"><i class="tji-arrow-right-2" aria-hidden="true"></i></span>
+                  </a>
+                  <a class="tj-btn-primary tj-btn-primary-light flip-text-wrap" href="courses.php">
+                    <span class="btn-text">Explore All Courses</span>
+                    <span class="btn-icon"><i class="tji-arrow-right-2" aria-hidden="true"></i></span>
+                  </a>
+                </div>
+                <div class="shape"><img src="assets/images/shapes/stars.png" alt="" width="120" height="120"></div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- end: Page Header Section -->
+        </div>
+      </section>
 
-        <!-- start: Course Details Section -->
-        <section class="tj-course-details section-gap-bottom fix tj-sticky-container-2"><div class="container"><div class="row"><div class="col-lg-8"><div class="tj-course-details-wrapper tj-tab-sticky-wrapper"><div class="tj-course-tab-wrap tj-sticky-item-2"><div class="tj-course-tab"><a class="tab-nav tj-scroll-btn" href="#overview">Overview</a><a class="tab-nav tj-scroll-btn" href="#curriculum">Curriculum</a><a class="tab-nav tj-scroll-btn" href="#instructor">Instructor</a><a class="tab-nav tj-scroll-btn" href="#reviews">Reviews</a><a class="tab-nav tj-scroll-btn" href="#faqs">FAQs</a></div></div><div id="overview" class="tj-course-overview"><div class="tutor-course-details-content"><div class="tj-course-details-box"><h3 class="title">Learning goals</h3><ul class="tj-list"><li><span class="icon"><i class="tji-check"></i></span><span class="text">Build practical, job-oriented skills in Advanced Excel.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Understand the complete workflow from fundamentals to real-world implementation.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Practise concepts through guided exercises and scenario-based assignments.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Use relevant tools and professional workflows confidently.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Create project work that demonstrates your skills.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Develop troubleshooting, testing and problem-solving ability.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Prepare for technical assessments and interviews.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Build a foundation for advanced learning and career growth.</span></li></ul></div><h3 class="title">Skills you'll gain</h3><div class="tj-skill-lists"><span class="tj-skill-item">Core Concepts</span><span class="tj-skill-item">Practical Skills</span><span class="tj-skill-item">Tools & Workflow</span><span class="tj-skill-item">Problem Solving</span><span class="tj-skill-item">Debugging</span><span class="tj-skill-item">Projects</span><span class="tj-skill-item">Testing</span><span class="tj-skill-item">Interview Preparation</span></div><h3 class="title">Course description</h3><p>The <strong>Advanced Excel Course</strong> at <strong>Forsk Coding School, Jaipur</strong> is designed for learners who want practical, structured training with a clear path from fundamentals to real-world application. The program combines instructor-led concepts, demonstrations, guided practice and project work.</p><p>Learners practise the tools and workflows used in the subject, work through realistic scenarios and develop the ability to troubleshoot and explain their solutions. The exact depth and toolset are aligned to the selected course and batch.</p><p>By the end of the program, learners should have a stronger practical foundation, project experience and a clear roadmap for further specialization.</p><h3 class="title">Course highlights</h3><ul class="course-details-list"><li>Structured learning path from fundamentals to advanced topics</li><li>Hands-on exercises and practical implementation</li><li>Real-world scenarios and project-based learning</li><li>Industry tools and workflow exposure</li><li>Debugging, testing and problem-solving practice</li><li>Technical assessment and interview preparation</li><li>Career-focused mentoring and project guidance</li></ul><h3 class="title">Requirements</h3><ul class="course-details-list"><li>Basic computer knowledge</li><li>Beginner learners can start from fundamentals; advanced programs may have prerequisites</li><li>A computer/laptop suitable for the course tools</li><li>Regular practice is recommended for best results</li></ul><h3 class="title">Who should join?</h3><ul class="tj-list tj-list-2"><li><span class="icon"><i class="tji-check"></i></span><span class="text">Students and freshers building job-ready technology skills.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">College learners preparing for academic and technical assessments.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Working professionals looking to upskill or change roles.</span></li><li><span class="icon"><i class="tji-check"></i></span><span class="text">Learners who prefer practical and project-based training.</span></li></ul></div></div><div id="curriculum" class="tj-course-curriculum"><div class="tj-course-curriculum-title-wrap"><h3 class="title">Advanced Excel Course Curriculum</h3><div class="curriculum-title-meta">10 modules • 40 lessons • practical learning</div></div><div class="tj-course-curriculum-inner"><div class="tutor-accordion"><div class="tj-course-accordion"><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">01</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Foundations &amp; Environment</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Core concepts and workflow</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Environment setup</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Variables and data types</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Problem-solving exercises</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">02</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Data Handling</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Data structures and tabular data</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Importing and cleaning data</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Missing values and transformations</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Data quality checks</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">03</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Analysis &amp; Visualization</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Descriptive statistics and KPIs</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Charts and dashboards</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Exploratory analysis</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Insight communication</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">04</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">SQL &amp; Databases</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Relational databases</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">SELECT, JOIN, GROUP BY and subqueries</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Aggregation and reporting</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Practical database exercises</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">05</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Analytics / ML Core</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Analytical methods and model concepts</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Feature engineering</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Model evaluation</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Business interpretation</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">06</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Advanced Techniques</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Automation and reusable workflows</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Performance and optimization</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Data pipelines</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Responsible data practices</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">07</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Tools &amp; Platforms</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">IDE or notebook workflow</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Version control</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">BI or data platform workflow</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Publishing results</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">08</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Projects</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Real-world dataset project</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Dashboard or analytical report</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">End-to-end project</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Portfolio documentation</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">09</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Interview Preparation</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Technical questions</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Case studies</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Project explanation</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Assessment preparation</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div><div class="tj-course-accordion-item"><h4 class="tj-course-accordion-header tutor-accordion-item-header"><span class="sl-no">10</span><span class="tj-course-accordion-title-wrap"><span class="tj-course-accordion-title">Career Roadmap</span><span class="tj-course-accordion-meta">4 lessons</span></span></h4><div class="tj-course-accordion-content"><ul class="course-content-lists"><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Entry-level roles</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Portfolio strategy</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Resume readiness</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li><li class="tutor-course-content-list-item locked"><div class="course-content-left"><span class="course-icon"><i class="tji-play"></i></span><h5 class="tutor-course-content-list-item-title">Next-step learning</h5></div><div class="course-content-right"><span class="course-lock"><i class="tji-lock"></i></span></div></li></ul></div></div></div></div></div></div><div class="tj-course-details-box"><h3 class="title">Practical Projects</h3><p>Project work is aligned with the course domain and focuses on applying the concepts covered in the curriculum. Learners practise planning, implementation, testing, documentation and presentation.</p><ul class="course-details-list"><li>Guided mini project</li><li>Feature-based practical assignments</li><li>Real-world scenario project</li><li>Final portfolio/capstone project</li></ul></div><div class="tj-course-details-box"><h3 class="title">Tools &amp; Technologies</h3><div class="tj-skill-lists"><span class="tj-skill-item">Core Concepts</span><span class="tj-skill-item">Practical Skills</span><span class="tj-skill-item">Tools & Workflow</span><span class="tj-skill-item">Problem Solving</span><span class="tj-skill-item">Debugging</span><span class="tj-skill-item">Projects</span><span class="tj-skill-item">Testing</span><span class="tj-skill-item">Interview Preparation</span></div></div><div class="tj-course-details-box"><h3 class="title">Career Opportunities</h3><p>After building sufficient hands-on skills, learners can target entry-level opportunities related to Advanced Excel. Job titles, responsibilities and eligibility vary by employer and experience.</p><ul class="course-details-list"><li>Entry-level roles related to Advanced Excel</li><li>Junior developer, analyst, tester or administrator roles where applicable</li><li>Internship and trainee opportunities</li><li>Freelance and project-based opportunities where relevant</li></ul></div><div class="tj-course-details-box"><h3 class="title">Certification &amp; Career Support</h3><p>Course completion recognition may be provided according to the selected Forsk Coding School program. Career-focused support can include project guidance, resume preparation, interview practice and portfolio development.</p></div><div id="instructor" class="tj-course-instructor"><h3 class="title">Learn with Forsk Coding School Mentors</h3><div class="tj-course-instructor-wrap"><div class="tj-course-instructor-img"><img src="assets/images/instructor/instructor-8.webp" alt="Forsk Coding School mentor"></div><div class="tj-course-instructor-content"><div class="tj-instructor-header"><div><h4 class="name">Forsk Coding School Mentoring Team</h4><span class="designation">Data &amp; AI Training</span></div></div><p class="desc">The Advanced Excel Course program is delivered through structured lessons, demonstrations, guided practice, troubleshooting and project work. Learners are encouraged to understand concepts, apply them and explain their solutions.</p><p class="desc">Mentoring focuses on practical implementation, professional workflow and career-oriented preparation.</p></div></div></div><div id="reviews" class="tj-course-reviews"><h3 class="title">Learning Support &amp; Practice</h3><div class="tj-course-reviews-summary"><div class="tj-reviews-rating-wrap"><div class="tj-reviews-rating"><div class="tj-reviews-rating-average">Practice First</div></div></div><div class="tj-reviews-summary-content"><h4 class="title">A practical path from learning to application</h4><p class="desc">Learners reinforce each module through exercises, revision, troubleshooting and project-based practice.</p><ul class="course-details-list"><li>Concept-wise practice</li><li>Problem-solving and debugging</li><li>Project guidance</li><li>Interview-oriented preparation</li></ul></div></div></div><div id="faqs" class="tj-course-faqs"><h3 class="title">Frequently Asked Questions</h3><div class="tj-faq tj-faq-4" id="tjAccordion01"><div class="tj-accordion-item"><button class="tj-accordion-title" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="true">Is this Advanced Excel course suitable for beginners?</button><div id="accordion-1" class="collapse show" data-bs-parent="#tjAccordion01"><div class="accordion-body tj-accordion-content">The course begins with fundamentals and progresses to practical implementation. Advanced-only programs may have prerequisites.</div></div></div><div class="tj-accordion-item"><button class="tj-accordion-title" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2" aria-expanded="false">What will I learn in this course?</button><div id="accordion-2" class="collapse" data-bs-parent="#tjAccordion01"><div class="accordion-body tj-accordion-content">You will learn the concepts, tools, workflows and practical techniques listed in the curriculum, supported by exercises and project-based application.</div></div></div><div class="tj-accordion-item"><button class="tj-accordion-title" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3" aria-expanded="false">Does the course include practical projects?</button><div id="accordion-3" class="collapse" data-bs-parent="#tjAccordion01"><div class="accordion-body tj-accordion-content">Yes. Practical assignments and projects are included to help learners apply concepts and create portfolio evidence.</div></div></div><div class="tj-accordion-item"><button class="tj-accordion-title" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4" aria-expanded="false">Will I get interview preparation?</button><div id="accordion-4" class="collapse" data-bs-parent="#tjAccordion01"><div class="accordion-body tj-accordion-content">The program includes interview-oriented questions, assessment practice and guidance on explaining projects and skills professionally.</div></div></div><div class="tj-accordion-item"><button class="tj-accordion-title" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5" aria-expanded="false">How can I enrol?</button><div id="accordion-5" class="collapse" data-bs-parent="#tjAccordion01"><div class="accordion-body tj-accordion-content">Use the Enquire Now or Start Learning button on this page to contact Forsk Coding School about the current batch, fee and admission process.</div></div></div></div></div><div class="btn-area mt-4"><a class="tj-btn-primary flip-text-wrap" href="enquiry.php"><span class="btn-text">Enquire About Advanced Excel</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a><a class="tj-btn-primary tj-btn-primary-light flip-text-wrap" href="courses.php"><span class="btn-text">Browse All Courses</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div>              <div class="col-lg-4">
-                <div class="tj-sticky-item-2">
-                  <div class="tj-course-sidebar">
-                    <div class="tj-course-thumb">
-                      <img src="assets/images/advanced-excel-course-jaipur-forsk-coding-school.webp" alt="Advanced Excel Course Jaipur Course in Jaipur at Forsk Coding School">
-                      <a class="video-btn video-popup" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px"
-                        href="#">
-                        <span><i class="tji-play"></i></span>
-                      </a>
-                    </div>
-                    <div class="tj-course-widget-price">
-                      <div class="price-wrap">
-                        <div class="course-price tj-fs-h6">Enquire for Fee</div>
-                        
-                      </div>
+      <section class="tj-course-details section-gap fix">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-8">
+              <div class="tj-course-details-wrapper">
+                <figure class="mb-5">
+                  <img src="assets/images/advanced-excel-course-jaipur-forsk-coding-school.webp" alt="Advanced Excel course training at Forsk Coding School Jaipur" loading="eager" decoding="async" style="width:100%;height:auto;">
+                </figure>
 
-                      <div class="course-end"><i class="tji-clock"></i>Enrol now and start learning Advanced Excel</div>
-                      <a class="tj-btn-primary tj-btn-primary-md tj-btn-full flip-text-wrap"
-                        href="enquiry.php">
-                        <span class="btn-text">Start learning</span>
-                        <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
-                      </a>
-                      <a class="tj-btn-primary tj-btn-primary-light tj-btn-primary-md tj-btn-full flip-text-wrap"
-                        href="enquiry.php">
-                        <span class="btn-text">Enquire now</span>
-                      </a>
-                      <div class="guarantee-text"><i class="tji-guarantee"></i>Career-focused, project-based learning</div>
+                <div id="overview" class="tj-course-overview">
+                  <div class="tutor-course-details-content">
+                    <h2 class="title">Advanced Excel Training for Practical Data Work</h2>
+                    <p>Excel remains a core tool for reporting, operations, finance, sales, administration and data analysis. This Advanced Excel course in Jaipur focuses on the spreadsheet skills used to organise data, build reliable calculations, answer business questions and present results clearly.</p>
+                    <p>The learning path starts with a quick foundation refresh and progresses into formulas, lookup techniques, data validation, PivotTables, dashboards and Power Query. Learners work with structured exercises so they can understand not only <em>which</em> feature to use, but also <em>when</em> and <em>why</em> to use it.</p>
+
+                    <div class="tj-course-details-box mt-4">
+                      <h3 class="title">What you will be able to do</h3>
+                      <ul class="tj-list">
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Build clean, structured and analysis-ready Excel workbooks.</span></li>
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Use logical, conditional, text, date and aggregation formulas confidently.</span></li>
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Retrieve and combine information with XLOOKUP and related lookup techniques.</span></li>
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Summarise large datasets with PivotTables and PivotCharts.</span></li>
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Clean, transform and combine repeatable data sources with Power Query.</span></li>
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Create useful charts, KPI summaries and interactive dashboard-style reports.</span></li>
+                        <li><span class="icon"><i class="tji-check"></i></span><span class="text">Apply validation, error handling and workbook checks to reduce reporting mistakes.</span></li>
+                      </ul>
                     </div>
-                    <div class="tj-course-widget-list">
-                      <h3 class="course-widget-title">This course includes</h3>
-                      <div class="tj-course-widget-list-inner">
-                        <div class="tj-course-widget-list-item">
-                          <span class="icon"><i class="tji-clock"></i></span>
-                          <span class="text">Lifetime access to all lessons</span>
-                        </div>
-                        <div class="tj-course-widget-list-item">
-                          <span class="icon"><i class="tji-certified"></i></span>
-                          <span class="text">Certificate of completion</span>
-                        </div>
-                        <div class="tj-course-widget-list-item">
-                          <span class="icon"><i class="tji-download"></i></span>
-                          <span class="text">Structured lessons and downloadable resources</span>
-                        </div>
-                        <div class="tj-course-widget-list-item">
-                          <span class="icon"><i class="tji-smartphone"></i></span>
-                          <span class="text">Access on mobile & desktop</span>
-                        </div>
-                        <div class="tj-course-widget-list-item">
-                          <span class="icon"><i class="tji-file"></i></span>
-                          <span class="text">Hands-on Advanced Excel projects</span>
+
+                    <h2 class="title mt-5">Advanced Excel Course Curriculum</h2>
+                    <div class="tj-course-curriculum-inner">
+                      <div class="tutor-accordion">
+                        <div class="tj-course-accordion">
+                          <?php
+                          $modules = [
+                            ['Excel Foundations & Efficient Workflows', ['Workbook structure and navigation', 'Tables, ranges and named ranges', 'Relative, absolute and mixed references', 'Sorting, filtering and productivity shortcuts']],
+                            ['Essential & Advanced Formulas', ['SUMIFS, COUNTIFS and AVERAGEIFS', 'IF, IFS, AND, OR and IFERROR', 'Text functions and data extraction', 'Date and time calculations']],
+                            ['Lookup & Reference Techniques', ['XLOOKUP fundamentals and practical use', 'INDEX and MATCH concepts', 'Multi-criteria lookup approaches', 'Handling missing and inconsistent lookup data']],
+                            ['Data Cleaning & Validation', ['Find, replace and text cleanup', 'Remove duplicates and standardise values', 'Data validation and controlled input', 'Error checks and workbook quality review']],
+                            ['PivotTables & PivotCharts', ['Building PivotTables from structured data', 'Grouping, filtering and calculated summaries', 'Slicers and interactive analysis', 'PivotCharts for management reporting']],
+                            ['Charts & Dashboard Design', ['Choosing the right chart for the question', 'KPI cards and summary views', 'Conditional formatting for analysis', 'Building a clear dashboard layout']],
+                            ['Power Query for Repeatable Data Prep', ['Importing spreadsheet and text data', 'Changing data types and cleaning columns', 'Merging and appending queries', 'Refreshing repeatable reporting workflows']],
+                            ['Practical Reporting Project', ['Prepare a messy source dataset', 'Build calculations and analysis views', 'Create a PivotTable-based summary', 'Present insights in a dashboard-style workbook']]
+                          ];
+                          foreach ($modules as $index => $module):
+                          ?>
+                            <div class="tj-course-accordion-item">
+                              <h3 class="tj-course-accordion-header tutor-accordion-item-header">
+                                <span class="sl-no"><?= str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT) ?></span>
+                                <span class="tj-course-accordion-title-wrap">
+                                  <span class="tj-course-accordion-title"><?= htmlspecialchars($module[0], ENT_QUOTES, 'UTF-8') ?></span>
+                                </span>
+                              </h3>
+                              <div class="tj-course-accordion-content">
+                                <ul class="course-content-lists">
+                                  <?php foreach ($module[1] as $topic): ?>
+                                    <li class="tutor-course-content-list-item">
+                                      <div class="course-content-left">
+                                        <span class="course-icon"><i class="tji-check" aria-hidden="true"></i></span>
+                                        <h4 class="tutor-course-content-list-item-title"><?= htmlspecialchars($topic, ENT_QUOTES, 'UTF-8') ?></h4>
+                                      </div>
+                                    </li>
+                                  <?php endforeach; ?>
+                                </ul>
+                              </div>
+                            </div>
+                          <?php endforeach; ?>
                         </div>
                       </div>
                     </div>
-                    <div class="tj-course-share">
-                      <div class="tj-share-btn share-popup">
-                        <span class="btn-icon"><i class="tji-share"></i></span>
-                        <span class="btn-text">Share this course</span>
-                        <div class="share-wrap">
-                          <div class="share-title">Share this course</div>
-                          <ul class="tj-socials tj-socials-2">
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-facebook"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-x-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" target="_blank"><i class="tji-linkedin"></i></a>
-                            </li>
-                          </ul>
-                          <div class="tj-copy">
-                            <span class="copy-icon"><i class="tji-link"></i></span>
-                            <span class="copy-text">
-                              <span>Forsk Coding School.com/courses/complete-ai-machine-learning</span>
-                            </span>
-                            <span class="copy-icon"><i class="tji-copy"></i></span>
-                            <span class="copy-tooltip">Copied!</span>
-                          </div>
+
+                    <h2 class="title mt-5">Who should join?</h2>
+                    <p>This training is suitable for learners who regularly work with spreadsheets or want Excel skills for internships, office work, analytics and reporting roles.</p>
+                    <ul class="tj-list tj-list-2">
+                      <li><span class="icon"><i class="tji-check"></i></span><span class="text">Students and freshers preparing for data, operations, finance or MIS-oriented roles.</span></li>
+                      <li><span class="icon"><i class="tji-check"></i></span><span class="text">Working professionals who want faster and more reliable reporting workflows.</span></li>
+                      <li><span class="icon"><i class="tji-check"></i></span><span class="text">Business owners and team members who analyse sales, inventory or operational data.</span></li>
+                      <li><span class="icon"><i class="tji-check"></i></span><span class="text">Learners planning to progress into Data Analytics, Power BI or Business Analytics.</span></li>
+                    </ul>
+
+                    <h2 class="title mt-5">Learning approach</h2>
+                    <p>Sessions combine explanation, instructor demonstration and hands-on workbook practice. Exercises are designed around realistic reporting tasks so learners build repeatable problem-solving habits instead of memorising formulas in isolation.</p>
+                    <p>Batch schedules, exact training depth and current delivery format can vary. Contact admissions for the latest timetable and learning option available at the Jaipur centres.</p>
+
+                    <div id="faqs" class="mt-5">
+                      <h2 class="title">Advanced Excel Course FAQs</h2>
+                      <div class="accordion" id="excelFaqs">
+                        <div class="accordion-item">
+                          <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#excelFaq1" aria-expanded="true" aria-controls="excelFaq1">Who can join the Advanced Excel course in Jaipur?</button></h3>
+                          <div id="excelFaq1" class="accordion-collapse collapse show" data-bs-parent="#excelFaqs"><div class="accordion-body">Students, freshers and working professionals can join. Basic computer knowledge is helpful; the training refreshes essential Excel concepts before moving into advanced topics.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#excelFaq2" aria-expanded="false" aria-controls="excelFaq2">What topics are covered?</button></h3>
+                          <div id="excelFaq2" class="accordion-collapse collapse" data-bs-parent="#excelFaqs"><div class="accordion-body">The curriculum covers advanced formulas, XLOOKUP and lookup techniques, data cleaning, validation, PivotTables, PivotCharts, dashboards, Power Query and a practical reporting project.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#excelFaq3" aria-expanded="false" aria-controls="excelFaq3">Is the course practical?</button></h3>
+                          <div id="excelFaq3" class="accordion-collapse collapse" data-bs-parent="#excelFaqs"><div class="accordion-body">Yes. Guided workbook exercises and reporting scenarios are a core part of the learning approach.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#excelFaq4" aria-expanded="false" aria-controls="excelFaq4">Are online and classroom options available?</button></h3>
+                          <div id="excelFaq4" class="accordion-collapse collapse" data-bs-parent="#excelFaqs"><div class="accordion-body">Online and classroom-oriented options are supported. Confirm the current batch format, timing and seat availability with the admissions team before enrolling.</div></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-</div></div></section>
-        <!-- end: Course Details Section -->
+            </div>
 
-        <!-- start: Course Section -->
-                <section class="tj-course-section section-gap section-separator fix"><div class="container"><div class="row"><div class="col-12"><div class="sec-heading"><span class="sec-subtitle tj-fade-anim" data-direction="top"><i class="tji-subtitle"></i>Keep learning</span><div class="sec-heading-inner"><h2 class="sec-title tj-fade-anim" data-delay="0.3">Related Courses.</h2></div></div></div><div class="col-12"><div class="tj__slider-wrapper"><div class="tj-course-slider swiper swiper-container tj-fade-anim"><div class="swiper-wrapper"><div class="swiper-slide"><div class="tj-course-item"><div class="tj-course-img"><a href="machine-learning-course-jaipur.php"><img src="assets/images/machine_learning_course_banner.webp" alt="Machine Learning Course Jaipur Course in Jaipur at Forsk Coding School" title="Machine Learning Course Jaipur Course in Jaipur" data-description="Join the Machine Learning Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning."></a></div><div class="tj-course-content"><div class="tj-cat-level-wrap"><div class="tj-categories"><a class="tj-cat" href="machine-learning-course-jaipur.php">Data &amp; AI</a></div><div class="tj-level"><span>Practical</span></div></div><h3 class="title tj-fs-h5"><a href="machine-learning-course-jaipur.php">Machine Learning Course in Jaipur</a></h3><div class="course-meta"><span><i class="tji-book"></i>Structured Curriculum</span><span><i class="tji-clock"></i>Hands-on Training</span></div><a class="tj-btn-primary tj-btn-primary-md flip-text-wrap" href="machine-learning-course-jaipur.php"><span class="btn-text">View course</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div><div class="swiper-slide"><div class="tj-course-item"><div class="tj-course-img"><a href="azure-course-jaipur.php"><img src="assets/images/azure-course-jaipur-forsk-coding-school.webp" alt="Azure Course Jaipur Course in Jaipur at Forsk Coding School" title="Azure Course Jaipur Course in Jaipur" data-description="Join the Azure Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning."></a></div><div class="tj-course-content"><div class="tj-cat-level-wrap"><div class="tj-categories"><a class="tj-cat" href="azure-course-jaipur.php">Cloud &amp; DevOps</a></div><div class="tj-level"><span>Practical</span></div></div><h3 class="title tj-fs-h5"><a href="azure-course-jaipur.php">Microsoft Azure Course in Jaipur</a></h3><div class="course-meta"><span><i class="tji-book"></i>Structured Curriculum</span><span><i class="tji-clock"></i>Hands-on Training</span></div><a class="tj-btn-primary tj-btn-primary-md flip-text-wrap" href="azure-course-jaipur.php"><span class="btn-text">View course</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div><div class="swiper-slide"><div class="tj-course-item"><div class="tj-course-img"><a href="cyber-security-course-jaipur.php"><img src="assets/images/cyber-security-course-jaipur-forsk-coding-school.webp" alt="Cyber Security Course Jaipur Course in Jaipur at Forsk Coding School" title="Cyber Security Course Jaipur Course in Jaipur" data-description="Join the Cyber Security Course Jaipur course in Jaipur at Forsk Coding School with practical training, hands-on projects, industry-oriented skills and career-focused learning."></a></div><div class="tj-course-content"><div class="tj-cat-level-wrap"><div class="tj-categories"><a class="tj-cat" href="cyber-security-course-jaipur.php">Cyber Security &amp; Networking</a></div><div class="tj-level"><span>Practical</span></div></div><h3 class="title tj-fs-h5"><a href="cyber-security-course-jaipur.php">Cyber Security Course in Jaipur</a></h3><div class="course-meta"><span><i class="tji-book"></i>Structured Curriculum</span><span><i class="tji-clock"></i>Hands-on Training</span></div><a class="tj-btn-primary tj-btn-primary-md flip-text-wrap" href="cyber-security-course-jaipur.php"><span class="btn-text">View course</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div></div></div></div></div></div></div></div></div></section>
-        <!-- end: Course Section -->
-      </main>
+            <aside class="col-lg-4" aria-label="Advanced Excel course enquiry">
+              <div class="tj-course-details-sidebar">
+                <div class="course-sidebar-info">
+                  <h2 class="tj-fs-h4">Plan Your Excel Training</h2>
+                  <p>Speak with the admissions team about the current Advanced Excel batch, mode, timing and course fit.</p>
+                  <ul class="course-details-list">
+                    <li>Jaipur-based course counselling</li>
+                    <li>Online and classroom-oriented options</li>
+                    <li>Hands-on workbook practice</li>
+                    <li>Project-style reporting exercises</li>
+                  </ul>
+                  <div class="btn-area mt-4">
+                    <a class="tj-btn-primary w-100 text-center" href="enroll-now.php">Enquire Now</a>
+                  </div>
+                  <div class="btn-area mt-3">
+                    <a class="tj-text-btn" href="tel:+917231968183">Call +91 72319 68183</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
 
-      <?php include __DIR__.'/includes/footer.php'; ?>
-</div>
+      <section class="section-gap-bottom">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 text-center">
+              <span class="sec-subtitle"><i class="tji-subtitle"></i>Continue Learning</span>
+              <h2>Related Data &amp; Analytics Courses in Jaipur</h2>
+              <p>Advanced Excel is often a useful foundation for learners moving into analytics and business reporting.</p>
+              <div class="btn-area d-flex flex-wrap justify-content-center gap-3 mt-4">
+                <a class="tj-btn-primary" href="data-analytics-course-jaipur.php">Data Analytics Course</a>
+                <a class="tj-btn-primary tj-btn-primary-light" href="power-bi-course-jaipur.php">Power BI Course</a>
+                <a class="tj-btn-primary tj-btn-primary-light" href="business-analytics-course-jaipur.php">Business Analytics Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <?php include __DIR__ . '/includes/footer.php'; ?>
+  </div>
 </div>
 </body>
 </html>
