@@ -12,8 +12,19 @@ define('LIVE_SITE_URL', 'https://forskcodingschool.com');
 define('LOCAL_PROJECT_PATH', '/forsk-coding-school');
 define('SITE_LANGUAGE', 'en-IN');
 
+// Canonical first-party identity. Keep NAP details here so templates and
+// structured data cannot drift between course, contact and branch surfaces.
+define('SITE_PHONE_E164', '+917231968183');
+define('SITE_PHONE_DISPLAY', '+91 72319 68183');
+define('SITE_EMAIL', 'info@forskcodingschool.com');
+define('SITE_LOCALITY', 'Jaipur');
+define('SITE_REGION', 'Rajasthan');
+define('SITE_COUNTRY', 'IN');
+define('SITE_PRIMARY_AREA', 'Shyam Nagar');
+define('SITE_ORGANIZATION_ID', rtrim(LIVE_SITE_URL, '/') . '/#organization');
+
 $hostHeader = strtolower((string)($_SERVER['HTTP_HOST'] ?? 'localhost'));
-$hostOnly = preg_replace('/:\\d+$/', '', trim($hostHeader, '[]'));
+$hostOnly = preg_replace('/:\d+$/', '', trim($hostHeader, '[]'));
 $isLocal = in_array($hostOnly, ['localhost','127.0.0.1','::1'], true)
     || str_ends_with($hostOnly, '.localhost') || str_ends_with($hostOnly, '.test');
 define('IS_LOCAL', $isLocal);
