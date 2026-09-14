@@ -46,22 +46,11 @@ $page_schema = json_encode([
     '@context' => 'https://schema.org',
     '@graph' => [
         [
-            '@type' => 'EducationalOrganization',
-            '@id' => SEO_BASE_URL . '/#organization',
-            'name' => 'Forsk Coding School',
-            'url' => SEO_BASE_URL . '/',
-            'logo' => ['@type' => 'ImageObject', 'url' => seo_url('assets/images/logos/forsk-icon.png')],
-            'telephone' => '+917231968183',
-            'email' => 'info@forskcodingschool.com',
-            'areaServed' => ['@type' => 'City', 'name' => 'Jaipur'],
-            'description' => $page_description,
-        ],
-        [
             '@type' => 'WebSite',
             '@id' => SEO_BASE_URL . '/#website',
             'url' => SEO_BASE_URL . '/',
-            'name' => 'Forsk Coding School',
-            'publisher' => ['@id' => SEO_BASE_URL . '/#organization'],
+            'name' => SITE_NAME,
+            'publisher' => ['@id' => SITE_ORGANIZATION_ID],
             'inLanguage' => 'en-IN',
         ],
         [
@@ -71,7 +60,7 @@ $page_schema = json_encode([
             'name' => $page_title,
             'description' => $page_description,
             'isPartOf' => ['@id' => SEO_BASE_URL . '/#website'],
-            'about' => ['@id' => SEO_BASE_URL . '/#organization'],
+            'about' => ['@id' => SITE_ORGANIZATION_ID],
             'inLanguage' => 'en-IN',
         ],
         [
@@ -224,10 +213,10 @@ $page_schema = json_encode([
                 <h2 class="forsk-section-title" id="counselling-title">Tell Us What You Want to Learn</h2>
                 <p class="forsk-section-copy">Share your goal, qualification and preferred program. Our academic team can help you understand suitable learning paths and current batch options.</p>
                 <ul class="forsk-contact-points">
-                  <li><strong>Call</strong><a href="tel:+917231968183">+91 72319 68183</a></li>
-                  <li><strong>WhatsApp</strong><a href="https://wa.me/917231968183?text=Hi%20Forsk%20Coding%20School%2C%20I%20want%20course%20counselling." target="_blank" rel="noopener">Chat with Forsk Coding School</a></li>
-                  <li><strong>Email</strong><a href="mailto:info@forskcodingschool.com">info@forskcodingschool.com</a></li>
-                  <li><strong>Location</strong><span>Shyam Nagar, Jaipur, Rajasthan</span></li>
+                  <li><strong>Call</strong><a href="tel:<?= htmlspecialchars(SITE_PHONE_E164, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></a></li>
+                  <li><strong>WhatsApp</strong><a href="https://wa.me/<?= htmlspecialchars(preg_replace('/\D+/', '', SITE_PHONE_E164), ENT_QUOTES, 'UTF-8') ?>?text=<?= rawurlencode('Hi ' . SITE_NAME . ', I want course counselling.') ?>" target="_blank" rel="noopener">Chat with <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?></a></li>
+                  <li><strong>Email</strong><a href="mailto:<?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?></a></li>
+                  <li><strong>Location</strong><span><?= htmlspecialchars(SITE_PRIMARY_AREA . ', ' . SITE_LOCALITY . ', ' . SITE_REGION, ENT_QUOTES, 'UTF-8') ?></span></li>
                 </ul>
               </div>
               <div class="col-lg-7">
