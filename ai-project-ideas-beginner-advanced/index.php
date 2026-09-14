@@ -1,1 +1,0 @@
-<?php $legacy_page_key='ai-project-ideas-beginner-advanced'; require dirname(__DIR__).'/legacy-indexed-page.php';
