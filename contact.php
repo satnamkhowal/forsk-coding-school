@@ -1,29 +1,23 @@
 <?php
+require_once __DIR__ . '/config.php';
+
 $formError = trim((string)($_GET['form_error'] ?? ''));
 $page_title = 'Contact Forsk Coding School Jaipur | Free Course Counselling';
 $page_description = 'Contact Forsk Coding School in Jaipur for practical coding and IT course counselling, online or offline learning, internship information and placement assistance.';
-$page_canonical = 'https://forskcodingschool.com/contact.php';
+$page_canonical = seo_url('contact.php');
 $page_schema = json_encode([
     '@context' => 'https://schema.org',
-    '@graph' => [
-        [
-            '@type' => 'ContactPage',
-            'name' => $page_title,
-            'description' => $page_description,
-            'url' => $page_canonical,
-        ],
-        [
-            '@type' => 'EducationalOrganization',
-            '@id' => 'https://forskcodingschool.com/#organization',
-            'name' => 'Forsk Coding School',
-            'url' => 'https://forskcodingschool.com/',
-            'telephone' => '+917231968183',
-            'email' => 'info@forskcodingschool.com',
-            'areaServed' => ['@type' => 'City', 'name' => 'Jaipur'],
-        ],
-    ],
+    '@type' => 'ContactPage',
+    '@id' => $page_canonical . '#webpage',
+    'name' => $page_title,
+    'description' => $page_description,
+    'url' => $page_canonical,
+    'about' => ['@id' => SITE_ORGANIZATION_ID],
+    'mainEntity' => ['@id' => SITE_ORGANIZATION_ID],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 $header_variant = 'header-1';
+$whatsappNumber = preg_replace('/\D+/', '', SITE_PHONE_E164);
+$whatsappMessage = rawurlencode('Hi ' . SITE_NAME . ', I want course counselling.');
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -65,7 +59,7 @@ $header_variant = 'header-1';
                   </div>
 
                   <?php if ($formError !== ''): ?>
-                    <div class="alert alert-danger" role="alert">Please check the form details and try again. If the problem continues, call +91 72319 68183.</div>
+                    <div class="alert alert-danger" role="alert">Please check the form details and try again. If the problem continues, call <?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?>.</div>
                   <?php endif; ?>
 
                   <form action="mail.php" method="POST" id="contact-form" novalidate>
@@ -140,7 +134,7 @@ $header_variant = 'header-1';
                       <input type="hidden" name="utm_source" id="utm-source"><input type="hidden" name="utm_medium" id="utm-medium"><input type="hidden" name="utm_campaign" id="utm-campaign"><input type="hidden" name="utm_term" id="utm-term"><input type="hidden" name="utm_content" id="utm-content">
 
                       <div class="col-12"><div class="form-input">
-                        <label><input type="checkbox" name="consent" value="1" required> I agree that Forsk Coding School may contact me about my course enquiry. I can ask to stop communication at any time.</label>
+                        <label><input type="checkbox" name="consent" value="1" required> I agree that <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> may contact me about my course enquiry. I can ask to stop communication at any time.</label>
                       </div></div>
 
                       <div class="col-12"><div class="form-submit">
@@ -155,14 +149,14 @@ $header_variant = 'header-1';
                 <div class="tj-contact-area">
                   <div class="sec-heading">
                     <span class="sec-subtitle tj-fade-anim" data-direction="top"><i class="tji-subtitle"></i> Jaipur support</span>
-                    <h2 class="sec-title tj-fade-anim">Talk to Forsk Coding School</h2>
+                    <h2 class="sec-title tj-fade-anim">Talk to <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?></h2>
                     <p class="desc tj-fade-anim" data-delay=".3">Learn programming, Full Stack development, Data Analytics, Data Science and AI through live classes, practical assignments and guided projects.</p>
                   </div>
                   <div class="contact-item-wrap">
-                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-phone-call"></i></div><div class="contact-content"><h3 class="contact-title">Call us</h3><p>Course and batch enquiries</p><a class="contact-link" href="tel:+917231968183">+91 72319 68183</a></div></div>
-                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-message"></i></div><div class="contact-content"><h3 class="contact-title">WhatsApp us</h3><p>Ask about courses and learning modes</p><a class="contact-link" href="https://wa.me/917231968183?text=Hi%20Forsk%20Coding%20School%2C%20I%20want%20course%20counselling." target="_blank" rel="noopener">Chat on WhatsApp</a></div></div>
-                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-envelope"></i></div><div class="contact-content"><h3 class="contact-title">Email us</h3><p>Course and collaboration enquiries</p><a class="contact-link" href="mailto:info@forskcodingschool.com">info@forskcodingschool.com</a></div></div>
-                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-location"></i></div><div class="contact-content"><h3 class="contact-title">Jaipur location</h3><p>Shyam Nagar, Jaipur, Rajasthan</p><span class="contact-link">Exact visit details can be confirmed by phone.</span></div></div>
+                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-phone-call"></i></div><div class="contact-content"><h3 class="contact-title">Call us</h3><p>Course and batch enquiries</p><a class="contact-link" href="tel:<?= htmlspecialchars(SITE_PHONE_E164, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></a></div></div>
+                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-message"></i></div><div class="contact-content"><h3 class="contact-title">WhatsApp us</h3><p>Ask about courses and learning modes</p><a class="contact-link" href="https://wa.me/<?= htmlspecialchars($whatsappNumber, ENT_QUOTES, 'UTF-8') ?>?text=<?= htmlspecialchars($whatsappMessage, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener">Chat on WhatsApp</a></div></div>
+                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-envelope"></i></div><div class="contact-content"><h3 class="contact-title">Email us</h3><p>Course and collaboration enquiries</p><a class="contact-link" href="mailto:<?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?></a></div></div>
+                    <div class="contact-item style-2 tj-fade-anim"><div class="contact-icon"><i class="tji-location"></i></div><div class="contact-content"><h3 class="contact-title">Jaipur location</h3><p><?= htmlspecialchars(SITE_PRIMARY_AREA . ', ' . SITE_LOCALITY . ', ' . SITE_REGION, ENT_QUOTES, 'UTF-8') ?></p><span class="contact-link">Exact visit details can be confirmed by phone.</span></div></div>
                   </div>
                 </div>
               </div>
