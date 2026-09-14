@@ -12,6 +12,12 @@
 .forsk-content-section{padding-top:80px;padding-bottom:80px}
 .forsk-badge{display:inline-block;padding:8px 16px;border-radius:999px;font-weight:700;background:#eef1ff;margin-bottom:14px}
 .forsk-lead-form{border:1px solid rgba(20,35,80,.10);border-radius:18px;padding:28px;background:#fff;box-shadow:0 12px 34px rgba(10,30,80,.08)}
+
+/* Keep the classic instructor/mentor visual balance. The theme default grew these
+   portraits to 220px; 180px is closer to the earlier compact homepage treatment. */
+.tj-instructor-section .tj-instructor-img{width:180px!important;max-width:180px!important;aspect-ratio:1/1;margin-inline:auto}
+.tj-instructor-section .tj-instructor-img img{width:100%!important;height:100%!important;aspect-ratio:1/1;object-fit:cover}
+
 @media(min-width:992px){
  .header-area .mainmenu>ul>li{margin-left:8px!important;margin-right:8px!important}
  .header-area .mainmenu>ul>li>a{font-size:14px!important}
@@ -26,4 +32,8 @@
  .hamburger-area .mobile_menu .forsk-submenu-toggle{position:absolute;top:0;right:0;width:46px;height:46px;border:0;background:transparent;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;cursor:pointer;z-index:2}
  .hamburger-area .mobile_menu .forsk-submenu-toggle span{display:block;transition:transform .2s ease}
  .hamburger-area .mobile_menu li.open>.forsk-submenu-toggle span{transform:rotate(180deg)}
+ .tj-instructor-section .tj-instructor-img{width:160px!important;max-width:160px!important}
+}
+@media(max-width:575px){
+ .tj-instructor-section .tj-instructor-img{width:145px!important;max-width:145px!important}
 }
