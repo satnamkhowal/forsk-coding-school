@@ -1,9 +1,12 @@
 <?php
+require_once dirname(__DIR__) . '/config.php';
 $currentLandingPage = basename((string)($_SERVER['SCRIPT_NAME'] ?? ''));
 $isIndividualCourseLanding = preg_match('/-course-jaipur\.php$/', $currentLandingPage) === 1
   || preg_match('/^diploma-.*-jaipur\.php$/', $currentLandingPage) === 1;
 if ($isIndividualCourseLanding) require __DIR__ . '/course-enquiry-section.php';
 require_once __DIR__ . '/floating-contact.php';
+$footerWhatsApp = preg_replace('/\D+/', '', SITE_PHONE_E164);
+$footerWhatsAppText = rawurlencode('Hi ' . SITE_NAME . ', I want course counselling.');
 ?>
 <!-- start: Footer Section -->
 <footer class="footer-section footer-1 section-gap-top">
@@ -30,9 +33,9 @@ require_once __DIR__ . '/floating-contact.php';
         <div class="container"><div class="row"><div class="col">
           <div class="footer-widget-wrapper">
             <div class="footer-widget footer-widget-subscribe tj-fade-anim">
-              <h3 class="title">Forsk Coding School</h3>
+              <h3 class="title"><?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?></h3>
               <p>Practical coding and IT training in Jaipur for students, freshers, working professionals and beginners.</p>
-              <div class="btn-area mt-3"><a class="tj-text-btn flip-text-wrap" href="https://wa.me/917231968183?text=Hi%20Forsk%20Coding%20School%2C%20I%20want%20course%20counselling." target="_blank" rel="noopener"><span class="btn-text">WhatsApp +91 72319 68183</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div>
+              <div class="btn-area mt-3"><a class="tj-text-btn flip-text-wrap" href="https://wa.me/<?= htmlspecialchars($footerWhatsApp, ENT_QUOTES, 'UTF-8') ?>?text=<?= htmlspecialchars($footerWhatsAppText, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer"><span class="btn-text">WhatsApp <?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div>
             </div>
 
             <div class="footer-widget footer-widget-nav-menu tj-fade-anim" data-delay=".3">
@@ -62,9 +65,9 @@ require_once __DIR__ . '/floating-contact.php';
             <div class="footer-widget footer-widget-contact tj-fade-anim" data-delay=".7">
               <div class="title">Contact</div>
               <div class="footer-contact">
-                <div class="footer-info">Shyam Nagar, Jaipur, Rajasthan</div>
-                <a href="tel:+917231968183" class="footer-info">+91 72319 68183</a>
-                <a href="mailto:info@forskcodingschool.com" class="footer-info">info@forskcodingschool.com</a>
+                <div class="footer-info"><?= htmlspecialchars(SITE_PRIMARY_AREA . ', ' . SITE_LOCALITY . ', ' . SITE_REGION, ENT_QUOTES, 'UTF-8') ?></div>
+                <a href="tel:<?= htmlspecialchars(SITE_PHONE_E164, ENT_QUOTES, 'UTF-8') ?>" class="footer-info"><?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></a>
+                <a href="mailto:<?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?>" class="footer-info"><?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?></a>
               </div>
               <p class="mt-3">Call before visiting to confirm current counselling hours and location details.</p>
             </div>
@@ -75,7 +78,7 @@ require_once __DIR__ . '/floating-contact.php';
       <div class="tj-copyright-area"><div class="tj-copyright-wrap"><div class="container"><div class="row"><div class="col-12">
         <div class="tj-copyright-content-area tj-fade-anim" data-delay=".3">
           <div class="footer-logo"><a href="./"><img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School logo"></a></div>
-          <div class="tj-copyright-text-wrapper"><div class="tj-copyright-text"><p>&copy; 2026 Forsk Coding School. All rights reserved.</p></div></div>
+          <div class="tj-copyright-text-wrapper"><div class="tj-copyright-text"><p>&copy; 2026 <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>. All rights reserved.</p></div></div>
         </div>
       </div></div></div></div></div>
     </div>
