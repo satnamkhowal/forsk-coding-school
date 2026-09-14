@@ -60,6 +60,30 @@ if ($canonicalPath === '/blog' || str_starts_with($canonicalPath, '/blog/')) {
     $llms_describedby = seo_url('llms.txt');
 }
 
+// One authoritative organization entity is published on every maintained page.
+// Page-level Course/Contact/Article schema can reference this stable @id without
+// repeating or drifting NAP details across templates.
+$organization_schema = json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'EducationalOrganization',
+    '@id' => SITE_ORGANIZATION_ID,
+    'name' => SITE_NAME,
+    'url' => seo_url('/'),
+    'logo' => seo_url('assets/images/forsk-coding-school-logo-transparent-black-text-horizontal.webp'),
+    'telephone' => SITE_PHONE_E164,
+    'email' => SITE_EMAIL,
+    'address' => [
+        '@type' => 'PostalAddress',
+        'addressLocality' => SITE_LOCALITY,
+        'addressRegion' => SITE_REGION,
+        'addressCountry' => SITE_COUNTRY,
+    ],
+    'areaServed' => [
+        '@type' => 'City',
+        'name' => SITE_LOCALITY,
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
 require_once __DIR__ . '/course-page-integrity.php';
 ?>
 <meta charset="utf-8">
@@ -97,4 +121,5 @@ require_once __DIR__ . '/course-page-integrity.php';
 <link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/meanmenu.css'), ENT_QUOTES, 'UTF-8') ?>">
 <link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/main.css'), ENT_QUOTES, 'UTF-8') ?>">
 <link rel="stylesheet" href="<?= htmlspecialchars(asset_url('css/local-fix.css'), ENT_QUOTES, 'UTF-8') ?>">
+<script type="application/ld+json"><?= $organization_schema ?></script>
 <?php if ($page_schema): ?><script type="application/ld+json"><?= $page_schema ?></script><?php endif; ?>
