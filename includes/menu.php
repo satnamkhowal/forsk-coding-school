@@ -193,7 +193,7 @@
   <li class="has-dropdown"><a href="resources.php">Resources</a>
     <ul class="sub-menu">
       <li><a href="corporate-training-jaipur.php">Corporate Training</a></li>
-      <li><a href="blog.php">Blog</a></li>
+      <li><a href="blog/">Blog</a></li>
       <li><a href="interview-questions.php">Interview Questions</a></li>
       <li><a href="career-guides.php">Career Guides</a></li>
       <li><a href="free-tutorials.php">Free Tutorials</a></li>
