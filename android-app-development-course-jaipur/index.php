@@ -1,0 +1,1 @@
+<?php $legacy_page_key='android-app-development-course-jaipur'; require dirname(__DIR__).'/legacy-indexed-page.php';
