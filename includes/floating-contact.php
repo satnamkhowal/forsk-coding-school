@@ -8,10 +8,11 @@
  * position: fixed relative to the viewport instead of a transformed scroll
  * wrapper.
  */
-$contactPhoneDisplay = '+91 72319 68183';
-$contactPhoneHref = '+917231968183';
-$contactWhatsApp = '917231968183';
-$contactWhatsAppText = rawurlencode('Hi Forsk Coding School, I want course counselling.');
+require_once dirname(__DIR__) . '/config.php';
+$contactPhoneDisplay = SITE_PHONE_DISPLAY;
+$contactPhoneHref = SITE_PHONE_E164;
+$contactWhatsApp = preg_replace('/\D+/', '', SITE_PHONE_E164);
+$contactWhatsAppText = rawurlencode('Hi ' . SITE_NAME . ', I want course counselling.');
 ?>
 <style>
   .forsk-floating-contact {
@@ -118,8 +119,8 @@ $contactWhatsAppText = rawurlencode('Hi Forsk Coding School, I want course couns
     href="https://wa.me/<?= htmlspecialchars($contactWhatsApp, ENT_QUOTES, 'UTF-8') ?>?text=<?= htmlspecialchars($contactWhatsAppText, ENT_QUOTES, 'UTF-8') ?>"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Message Forsk Coding School on WhatsApp"
-    title="WhatsApp Forsk Coding School"
+    aria-label="Message <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> on WhatsApp"
+    title="WhatsApp <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>"
   >
     <svg class="forsk-floating-contact__icon forsk-floating-contact__icon--whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.4-4.4A8.4 8.4 0 1 1 20.5 11.7Z"></path>
@@ -131,7 +132,7 @@ $contactWhatsAppText = rawurlencode('Hi Forsk Coding School, I want course couns
   <a
     class="forsk-floating-contact__link forsk-floating-contact__link--call"
     href="tel:<?= htmlspecialchars($contactPhoneHref, ENT_QUOTES, 'UTF-8') ?>"
-    aria-label="Call Forsk Coding School at <?= htmlspecialchars($contactPhoneDisplay, ENT_QUOTES, 'UTF-8') ?>"
+    aria-label="Call <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?> at <?= htmlspecialchars($contactPhoneDisplay, ENT_QUOTES, 'UTF-8') ?>"
     title="Call <?= htmlspecialchars($contactPhoneDisplay, ENT_QUOTES, 'UTF-8') ?>"
   >
     <svg class="forsk-floating-contact__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
