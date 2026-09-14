@@ -1,0 +1,1 @@
+<?php $legacy_page_key='dsa-in-python-complete-beginner-guide-with-examples'; require dirname(__DIR__).'/legacy-indexed-page.php';
