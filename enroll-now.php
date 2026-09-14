@@ -24,33 +24,13 @@ $page_keywords = 'Forsk Coding School enrollment, enroll coding course Jaipur, c
 $page_canonical = 'https://forskcodingschool.com/enroll-now.php';
 $page_schema = json_encode([
     '@context' => 'https://schema.org',
-    '@graph' => [
-        [
-            '@type' => 'WebPage',
-            '@id' => $page_canonical . '#webpage',
-            'url' => $page_canonical,
-            'name' => $page_title,
-            'description' => $page_description,
-            'isPartOf' => ['@id' => 'https://forskcodingschool.com/#website'],
-            'about' => ['@id' => 'https://forskcodingschool.com/#organization'],
-        ],
-        [
-            '@type' => 'EducationalOrganization',
-            '@id' => 'https://forskcodingschool.com/#organization',
-            'name' => 'Forsk Coding School',
-            'url' => 'https://forskcodingschool.com/',
-            'telephone' => '+91-72319-68183',
-            'email' => 'info@forskcodingschool.com',
-            'address' => [
-                '@type' => 'PostalAddress',
-                'streetAddress' => 'F1, Forsk Coding School, New Sanganer Rd, F Block, Shyam Nagar',
-                'addressLocality' => 'Jaipur',
-                'addressRegion' => 'Rajasthan',
-                'postalCode' => '302019',
-                'addressCountry' => 'IN',
-            ],
-        ],
-    ],
+    '@type' => 'WebPage',
+    '@id' => $page_canonical . '#webpage',
+    'url' => $page_canonical,
+    'name' => $page_title,
+    'description' => $page_description,
+    'isPartOf' => ['@id' => 'https://forskcodingschool.com/#website'],
+    'about' => ['@id' => 'https://forskcodingschool.com/#organization'],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 $header_variant = 'header-1';
 ?>
