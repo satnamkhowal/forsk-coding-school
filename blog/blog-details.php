@@ -39,11 +39,10 @@ $page_keywords=implode(', ',array_unique([$blog['subject'],$blog['cluster'],$blo
 $page_canonical=blog_seo_url($slug);
 $page_type='article';
 $header_variant='header-1';
-$image_file=$blog['image'];
-$image_disk=__DIR__.'/images/'.$image_file;
-$image_exists=is_file($image_disk);
-$visible_image=$image_exists ? blog_image_url($image_file) : blog_image_url('blog-image-placeholder.svg');
-$page_og_image=$image_exists ? blog_image_seo_url($image_file) : seo_url('blog/images/blog-image-placeholder.svg');
+$image_asset=forsk_blog_image_asset($blog);
+$image_exists=(bool)$image_asset['exists'];
+$visible_image=$image_asset['visible_url'];
+$page_og_image=$image_asset['seo_url'];
 $date_published=$blog['date_published'] ?? '2026-09-10';
 $date_modified=$blog['date_modified'] ?? '2026-09-10';
 
@@ -57,7 +56,7 @@ $articleSchema=[
  'about'=>[$blog['subject'],$blog['cluster']], 'keywords'=>$page_keywords,
  'datePublished'=>$date_published,'dateModified'=>$date_modified
 ];
-if ($image_exists) $articleSchema['image']=blog_image_seo_url($image_file);
+if ($image_exists) $articleSchema['image']=$image_asset['seo_url'];
 $breadcrumb=['@type'=>'BreadcrumbList','@id'=>$page_canonical.'#breadcrumb','itemListElement'=>[
  ['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>SEO_BASE_URL.'/'],
  ['@type'=>'ListItem','position'=>2,'name'=>'Blog','item'=>seo_url('blog/')],
