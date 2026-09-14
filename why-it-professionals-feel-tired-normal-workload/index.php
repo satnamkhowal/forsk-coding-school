@@ -1,0 +1,1 @@
+<?php $legacy_page_key='why-it-professionals-feel-tired-normal-workload'; require dirname(__DIR__).'/legacy-indexed-page.php';
