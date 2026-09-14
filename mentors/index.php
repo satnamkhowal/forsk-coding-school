@@ -28,7 +28,7 @@ function mh($v){ return htmlspecialchars((string)$v,ENT_QUOTES,'UTF-8'); }
 <div><strong>Practical Support</strong><span>Screen sharing, code review and consent-based remote troubleshooting when needed.</span></div>
 </div></div></section>
 
-<section class="tj-details section-gap-bottom"><div class="container">
+<section class="tj-details section-gap-bottom mentor-directory"><div class="container">
 <form method="get" action="mentors/" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px">
 <input type="search" name="q" value="<?= mh($q) ?>" placeholder="Search mentor or skill" style="min-width:260px;padding:12px">
 <select name="domain" style="min-width:260px;padding:12px"><option value="">All domains</option><?php foreach($domains as $d): ?><option value="<?= mh($d) ?>" <?= $filter===$d?'selected':'' ?>><?= mh($d) ?></option><?php endforeach; ?></select>
