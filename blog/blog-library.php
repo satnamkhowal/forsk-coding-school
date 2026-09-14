@@ -6,6 +6,57 @@ function forsk_pick(array $items, string $key, int $offset=0): string {
     $h=hexdec(substr(md5($key.'|'.$offset),0,7));
     return $items[$h % count($items)];
 }}
+
+/**
+ * Resolve one blog's featured image from a stable SEO filename.
+ *
+ * Preferred location remains /blog/images/<seo-name>.webp so existing URLs do
+ * not need to change. If a generated asset is supplied as AVIF/JPG/PNG with
+ * the same basename, the renderer can still use it without editing thousands
+ * of blog wrappers. WebP remains the first choice.
+ */
+if (!function_exists('forsk_blog_image_asset')) {
+function forsk_blog_image_asset(array $blog): array {
+    $requested=basename(trim((string)($blog['image'] ?? '')));
+    $fallback='blog-image-placeholder.svg';
+    $imageDir=__DIR__.'/images/';
+
+    if ($requested !== '') {
+        $stem=pathinfo($requested, PATHINFO_FILENAME);
+        $requestedExt=strtolower((string)pathinfo($requested, PATHINFO_EXTENSION));
+        $extensions=array_values(array_unique(array_filter([$requestedExt,'webp','avif','jpg','jpeg','png'])));
+        foreach ($extensions as $ext) {
+            $candidate=$stem.'.'.$ext;
+            if (is_file($imageDir.$candidate)) {
+                return [
+                    'exists'=>true,
+                    'filename'=>$candidate,
+                    'visible_url'=>blog_image_url($candidate),
+                    'seo_url'=>blog_image_seo_url($candidate),
+                ];
+            }
+        }
+    }
+
+    return [
+        'exists'=>false,
+        'filename'=>$fallback,
+        'visible_url'=>blog_image_url($fallback),
+        'seo_url'=>seo_url('blog/images/'.$fallback),
+    ];
+}}
+
+/** Build a reusable generation prompt for a missing blog image. */
+if (!function_exists('forsk_blog_image_prompt')) {
+function forsk_blog_image_prompt(array $blog): string {
+    $title=trim((string)($blog['title'] ?? $blog['slug'] ?? 'Technology learning guide'));
+    $subject=trim((string)($blog['subject'] ?? 'technology learning'));
+    $category=trim((string)($blog['category'] ?? 'Technology'));
+    $audience=trim((string)($blog['audience'] ?? 'students and learners'));
+    $angle=trim((string)($blog['goal_label'] ?? $blog['goal_desc'] ?? 'practical learning guide'));
+    return "Create a premium 16:9 editorial featured image for Forsk Coding School for the article '{$title}'. Visual focus: {$subject}. Category: {$category}. Audience: {$audience}. Content angle: {$angle}. Show a realistic modern Indian technology-learning environment, workstation, classroom or practical project scene that clearly matches the topic. Use natural lighting, clean professional composition and subtle Forsk-inspired red, black, white and neutral accents. No readable text, fake code, fake certificates, watermarks or distorted logos. Keep the subject clear at thumbnail size. Output 1200x675 or larger; preferred final format WebP.";
+}}
+
 if (!function_exists('forsk_blog_article_sections')) {
 function forsk_blog_article_sections(array $b): array {
     $key=$b['slug']; $subject=$b['subject']; $cluster=$b['cluster']; $aud=$b['audience']; $goal=$b['goal'];
