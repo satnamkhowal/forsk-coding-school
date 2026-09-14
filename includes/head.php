@@ -59,6 +59,8 @@ if ($canonicalPath === '/blog' || str_starts_with($canonicalPath, '/blog/')) {
 } else {
     $llms_describedby = seo_url('llms.txt');
 }
+
+require_once __DIR__ . '/course-page-integrity.php';
 ?>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
