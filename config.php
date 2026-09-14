@@ -23,6 +23,59 @@ define('SITE_COUNTRY', 'IN');
 define('SITE_PRIMARY_AREA', 'Shyam Nagar');
 define('SITE_ORGANIZATION_ID', rtrim(LIVE_SITE_URL, '/') . '/#organization');
 
+/**
+ * Read a runtime environment value robustly across Apache/FPM/hosting panels.
+ * Falls back to the root .env file (gitignored) so shared hosting users can
+ * configure private values without committing credentials.
+ */
+if (!function_exists('forsk_env_value')) {
+    function forsk_env_value(string $key, string $default = ''): string {
+        $value = getenv($key);
+        if ($value !== false && trim((string)$value) !== '') return trim((string)$value);
+
+        foreach ([$_SERVER ?? [], $_ENV ?? []] as $source) {
+            if (isset($source[$key]) && trim((string)$source[$key]) !== '') {
+                $value = trim((string)$source[$key]);
+                @putenv($key . '=' . $value);
+                return $value;
+            }
+        }
+
+        $envFile = __DIR__ . '/.env';
+        if (is_readable($envFile)) {
+            $lines = @file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            if (is_array($lines)) {
+                foreach ($lines as $line) {
+                    $line = trim((string)$line);
+                    if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) continue;
+                    [$name, $raw] = array_map('trim', explode('=', $line, 2));
+                    if ($name !== $key) continue;
+                    if (strlen($raw) >= 2) {
+                        $first = $raw[0];
+                        $last = $raw[strlen($raw) - 1];
+                        if (($first === '"' && $last === '"') || ($first === "'" && $last === "'")) {
+                            $raw = substr($raw, 1, -1);
+                        }
+                    }
+                    $value = trim($raw);
+                    if ($value !== '') {
+                        $_ENV[$key] = $value;
+                        $_SERVER[$key] = $value;
+                        @putenv($key . '=' . $value);
+                        return $value;
+                    }
+                }
+            }
+        }
+
+        return $default;
+    }
+}
+
+// Prime the installer key once so legacy setup code using getenv() also works.
+$runtimeSetupKey = forsk_env_value('FORSK_SETUP_KEY');
+if ($runtimeSetupKey !== '') @putenv('FORSK_SETUP_KEY=' . $runtimeSetupKey);
+
 $hostHeader = strtolower((string)($_SERVER['HTTP_HOST'] ?? 'localhost'));
 $hostOnly = preg_replace('/:\d+$/', '', trim($hostHeader, '[]'));
 $isLocal = in_array($hostOnly, ['localhost','127.0.0.1','::1'], true)
