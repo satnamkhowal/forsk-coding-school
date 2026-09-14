@@ -74,8 +74,10 @@ $organization_schema = json_encode([
     'email' => SITE_EMAIL,
     'address' => [
         '@type' => 'PostalAddress',
+        'streetAddress' => SITE_STREET_ADDRESS,
         'addressLocality' => SITE_LOCALITY,
         'addressRegion' => SITE_REGION,
+        'postalCode' => SITE_POSTAL_CODE,
         'addressCountry' => SITE_COUNTRY,
     ],
     'areaServed' => [

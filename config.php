@@ -21,6 +21,8 @@ define('SITE_LOCALITY', 'Jaipur');
 define('SITE_REGION', 'Rajasthan');
 define('SITE_COUNTRY', 'IN');
 define('SITE_PRIMARY_AREA', 'Shyam Nagar');
+define('SITE_STREET_ADDRESS', 'F1, Forsk Coding School, New Sanganer Rd, F Block, Shyam Nagar');
+define('SITE_POSTAL_CODE', '302019');
 define('SITE_ORGANIZATION_ID', rtrim(LIVE_SITE_URL, '/') . '/#organization');
 
 /**
