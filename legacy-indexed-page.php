@@ -1,8 +1,11 @@
 <?php
 /**
- * Compatibility page for legacy Google-indexed URLs that currently 404.
- * Existing URLs/routes are intentionally left unchanged. Each legacy URL gets
- * its own physical index.php and uses this shared renderer.
+ * Compatibility page for legacy URLs that no longer have a substantive source page.
+ *
+ * IMPORTANT: these recovery pages intentionally remain noindex until each URL has
+ * distinct, editorially reviewed content worth indexing. This preserves the URL
+ * for users/internal links without publishing a network of near-duplicate thin
+ * pages to search engines.
  */
 require_once __DIR__ . '/config.php';
 $legacy_pages = [
@@ -35,6 +38,7 @@ $page_title = $data[0] . ' | Forsk Coding School';
 $page_description = $data[1];
 $page_canonical = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 $page_keywords = $key . ', Forsk Coding School Jaipur, coding courses Jaipur, IT training Jaipur';
+$page_robots = 'noindex, follow, noarchive, max-image-preview:large';
 $page_type = 'article';
 $page_schema = json_encode(['@context'=>'https://schema.org','@type'=>'Article','headline'=>$data[0],'description'=>$data[1],'mainEntityOfPage'=>seo_url($page_canonical),'author'=>['@type'=>'Organization','@id'=>SITE_ORGANIZATION_ID],'publisher'=>['@type'=>'Organization','@id'=>SITE_ORGANIZATION_ID]], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
 ?>
