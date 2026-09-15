@@ -1,6 +1,10 @@
 <?php
 /**
- * Forsk Coding School homepage entry point.
- * Keep this file intentionally small so homepage content and styling stay decoupled.
+ * Legacy homepage alias.
+ *
+ * /default.php previously rendered a second copy of the homepage and remains
+ * discoverable in search. Permanently consolidate that legacy URL into the
+ * canonical root homepage so crawlers and users have one authoritative URL.
  */
-require __DIR__ . '/includes/homepage.php';
+header('Location: /', true, 301);
+exit;
