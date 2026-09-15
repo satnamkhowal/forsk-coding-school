@@ -4,6 +4,7 @@
  * Existing URLs/routes are intentionally left unchanged. Each legacy URL gets
  * its own physical index.php and uses this shared renderer.
  */
+require_once __DIR__ . '/config.php';
 $legacy_pages = [
  'data-science-roadmap-step-by-step-guide-to-become-a-data-scientist-in-2026' => ['Data Science Roadmap: Step-by-Step Guide to Become a Data Scientist in 2026','Follow a practical data science roadmap covering Python, SQL, statistics, data analysis, machine learning, projects and career preparation.'],
  'final-year-project-ideas' => ['Final Year Project Ideas for Students','Explore practical final year project ideas for computer science, IT, engineering, data science, AI and web development students.'],
