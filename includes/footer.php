@@ -7,84 +7,35 @@ if ($isIndividualCourseLanding) require __DIR__ . '/course-enquiry-section.php';
 require_once __DIR__ . '/floating-contact.php';
 $footerWhatsApp = preg_replace('/\D+/', '', SITE_PHONE_E164);
 $footerWhatsAppText = rawurlencode('Hi ' . SITE_NAME . ', I want course counselling.');
+$footerYear = date('Y');
 ?>
-<!-- start: Footer Section -->
-<footer class="footer-section footer-1 section-gap-top">
-  <div class="footer-inner">
-    <div class="footer-cta">
-      <div class="container"><div class="row"><div class="col">
-        <div class="cta-area">
-          <div class="sec-heading sec-heading-center">
-            <span class="sec-subtitle tj-fade-anim" data-direction="top"><i class="tji-subtitle"></i> Course counselling</span>
-            <h2 class="sec-title tj-fade-anim" data-delay=".3">Build Practical Tech Skills in Jaipur</h2>
-            <p class="desc tj-fade-anim" data-delay=".35">Explore coding, Full Stack, Data Analytics, Data Science and AI learning paths with practical assignments, guided projects and mentor support.</p>
-            <div class="btn-area tj-fade-anim" data-delay=".4">
-              <a class="tj-btn-primary flip-text-wrap" href="contact.php"><span class="btn-text">Get Free Course Counselling</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a>
-              <a class="tj-btn-primary tj-btn-primary-light flip-text-wrap" href="courses.php"><span class="btn-text">Explore Courses</span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a>
-            </div>
-          </div>
-        </div>
-      </div></div></div>
-    </div>
-
-    <div class="footer-main-wrapper">
-      <div class="bg-img" data-bg-image="assets/images/footer/footer-bg.png"></div>
-      <div class="footer-main-area">
-        <div class="container"><div class="row"><div class="col">
-          <div class="footer-widget-wrapper">
-            <div class="footer-widget footer-widget-subscribe tj-fade-anim">
-              <h3 class="title"><?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?></h3>
-              <p>Practical coding and IT training in Jaipur for students, freshers, working professionals and beginners.</p>
-              <div class="btn-area mt-3"><a class="tj-text-btn flip-text-wrap" href="https://wa.me/<?= htmlspecialchars($footerWhatsApp, ENT_QUOTES, 'UTF-8') ?>?text=<?= htmlspecialchars($footerWhatsAppText, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer"><span class="btn-text">WhatsApp <?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></span><span class="btn-icon"><i class="tji-arrow-right-2"></i></span></a></div>
-            </div>
-
-            <div class="footer-widget footer-widget-nav-menu tj-fade-anim" data-delay=".3">
-              <div class="title">Popular Courses</div>
-              <ul>
-                <li><a href="python-programming-course-jaipur.php"><span>Python Programming</span></a></li>
-                <li><a href="java-programming-course-jaipur.php"><span>Java Programming</span></a></li>
-                <li><a href="full-stack-development-course-jaipur.php"><span>Full Stack Development</span></a></li>
-                <li><a href="data-analytics-course-jaipur.php"><span>Data Analytics</span></a></li>
-                <li><a href="data-science-course-jaipur.php"><span>Data Science</span></a></li>
-                <li><a href="artificial-intelligence-course-jaipur.php"><span>Artificial Intelligence</span></a></li>
-              </ul>
-            </div>
-
-            <div class="footer-widget footer-widget-nav-menu tj-fade-anim" data-delay=".5">
-              <div class="title">Resources</div>
-              <ul>
-                <li><a href="courses.php"><span>All Courses</span></a></li>
-                <li><a href="branches/"><span>Jaipur Branches</span></a></li>
-                <li><a href="contact.php"><span>Course Counselling</span></a></li>
-                <li><a href="blog/"><span>Learning Guides</span></a></li>
-                <li><a href="privacy-policy.php"><span>Privacy Policy</span></a></li>
-                <li><a href="about.php"><span>About Forsk</span></a></li>
-              </ul>
-            </div>
-
-            <div class="footer-widget footer-widget-contact tj-fade-anim" data-delay=".7">
-              <div class="title">Contact</div>
-              <div class="footer-contact">
-                <div class="footer-info"><?= htmlspecialchars(SITE_PRIMARY_AREA . ', ' . SITE_LOCALITY . ', ' . SITE_REGION, ENT_QUOTES, 'UTF-8') ?></div>
-                <a href="tel:<?= htmlspecialchars(SITE_PHONE_E164, ENT_QUOTES, 'UTF-8') ?>" class="footer-info"><?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></a>
-                <a href="mailto:<?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?>" class="footer-info"><?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?></a>
-              </div>
-              <p class="mt-3">Call before visiting to confirm current counselling hours and location details.</p>
-            </div>
-          </div>
-        </div></div></div>
+<style>
+:root{--ff-navy:#0b1020;--ff-navy2:#111936;--ff-blue:#5f72d7;--ff-blue-dark:#3d49aa;--ff-yellow:#ffd928;--ff-text:#d9def0;--ff-muted:#9aa5c4;--ff-line:rgba(255,255,255,.10)}
+.forsk-footer,.forsk-footer *{box-sizing:border-box}.forsk-footer{position:relative;margin-top:80px;background:radial-gradient(circle at 10% 10%,rgba(95,114,215,.20),transparent 35%),radial-gradient(circle at 90% 20%,rgba(255,217,40,.07),transparent 28%),var(--ff-navy);color:var(--ff-text);overflow:hidden}.forsk-footer:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 70%)}.forsk-footer-container{width:min(1180px,calc(100% - 36px));margin:auto;position:relative;z-index:2}.forsk-footer-cta{transform:translateY(-48px);display:flex;align-items:center;justify-content:space-between;gap:28px;padding:30px 32px;border-radius:24px;background:linear-gradient(120deg,var(--ff-blue-dark),var(--ff-blue));border:1px solid rgba(255,255,255,.16);box-shadow:0 24px 60px rgba(0,0,0,.26)}.forsk-footer-cta h2{margin:0 0 7px;color:#fff;font-size:clamp(24px,3vw,38px);line-height:1.15;letter-spacing:-.02em}.forsk-footer-cta p{margin:0;color:rgba(255,255,255,.82);max-width:700px;line-height:1.65;font-size:15px}.forsk-footer-cta-actions{display:flex;gap:10px;flex-wrap:wrap;flex:0 0 auto}.forsk-footer-btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:0 19px;border-radius:12px;font-weight:700;text-decoration:none!important;transition:.22s ease;white-space:nowrap}.forsk-footer-btn-primary{color:#11172e!important;background:var(--ff-yellow);box-shadow:0 10px 28px rgba(255,217,40,.18)}.forsk-footer-btn-secondary{color:#fff!important;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22)}.forsk-footer-btn:hover{transform:translateY(-2px)}.forsk-footer-main{display:grid;grid-template-columns:1.45fr .9fr .9fr 1.25fr;gap:42px;padding:10px 0 42px}.forsk-footer-logo{width:min(285px,100%);height:auto;display:block;margin-bottom:20px}.forsk-footer-about{margin:0 0 20px;max-width:430px;color:var(--ff-muted);line-height:1.75;font-size:14.5px}.forsk-footer-chips{display:flex;gap:8px;flex-wrap:wrap}.forsk-footer-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border-radius:999px;border:1px solid var(--ff-line);background:rgba(255,255,255,.045);color:#cbd3ef;font-size:12px;font-weight:600}.forsk-footer-chip i{width:7px;height:7px;border-radius:50%;background:var(--ff-yellow);display:block}.forsk-footer h3{color:#fff;margin:8px 0 18px;font-size:15px;letter-spacing:.02em}.forsk-footer-links{list-style:none;margin:0;padding:0;display:grid;gap:11px}.forsk-footer-links a{color:var(--ff-muted)!important;text-decoration:none!important;font-size:14px;line-height:1.45;transition:.2s ease}.forsk-footer-links a:hover{color:#fff!important}.forsk-footer-contact{display:grid;gap:12px}.forsk-contact-row{display:grid;grid-template-columns:38px 1fr;gap:11px;align-items:start}.forsk-contact-icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(95,114,215,.13);border:1px solid rgba(95,114,215,.27);color:#aeb9ff}.forsk-contact-icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8}.forsk-contact-row strong{display:block;color:#fff;font-size:13px;margin:1px 0 4px}.forsk-contact-row a,.forsk-contact-row span{color:var(--ff-muted)!important;text-decoration:none!important;font-size:13.5px;line-height:1.55}.forsk-whatsapp-mini{display:inline-flex;margin-top:16px;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:12px;background:#1fca72;color:#061c11!important;font-weight:800;font-size:13px;text-decoration:none!important;transition:.2s ease}.forsk-whatsapp-mini:hover{transform:translateY(-2px)}.forsk-footer-bottom{border-top:1px solid var(--ff-line);min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:18px;color:#7f8aa8;font-size:12.5px}.forsk-footer-legal{display:flex;gap:18px;flex-wrap:wrap}.forsk-footer-legal a{color:#8f9bbb!important;text-decoration:none!important}.forsk-footer-legal a:hover{color:#fff!important}@media(max-width:980px){.forsk-footer-main{grid-template-columns:1.3fr 1fr 1fr}.forsk-footer-brand{grid-column:1/-1}}@media(max-width:760px){.forsk-footer{margin-top:64px}.forsk-footer-cta{padding:24px;display:block;transform:translateY(-36px)}.forsk-footer-cta-actions{margin-top:18px}.forsk-footer-btn{flex:1 1 170px}.forsk-footer-main{grid-template-columns:1fr 1fr;gap:32px 24px;padding-top:0}.forsk-footer-contact-col{grid-column:1/-1}.forsk-footer-bottom{padding:18px 0;align-items:flex-start;flex-direction:column}}@media(max-width:520px){.forsk-footer-container{width:min(100% - 26px,1180px)}.forsk-footer-cta{border-radius:18px;padding:21px 18px}.forsk-footer-cta-actions{display:grid;grid-template-columns:1fr}.forsk-footer-main{grid-template-columns:1fr;gap:28px}.forsk-footer-contact-col{grid-column:auto}.forsk-footer-logo{width:250px}}
+</style>
+<footer class="forsk-footer">
+  <div class="forsk-footer-container">
+    <section class="forsk-footer-cta" aria-label="Course counselling">
+      <div><h2>Build practical tech skills. Start with the right course.</h2><p>Explore coding, Full Stack, Data Analytics, Data Science, AI, Cloud, Cyber Security and other career-focused learning paths with practical projects and mentor support.</p></div>
+      <div class="forsk-footer-cta-actions"><a class="forsk-footer-btn forsk-footer-btn-primary" href="courses.php">Explore Courses <span aria-hidden="true">→</span></a><a class="forsk-footer-btn forsk-footer-btn-secondary" href="contact.php">Free Counselling</a></div>
+    </section>
+    <div class="forsk-footer-main">
+      <div class="forsk-footer-brand">
+        <a href="./" aria-label="Forsk Coding School home"><img class="forsk-footer-logo" src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School Jaipur" loading="lazy"></a>
+        <p class="forsk-footer-about">Practical coding and IT training in Jaipur for students, freshers, beginners and working professionals. Learn through structured lessons, hands-on practice, guided projects and mentor support.</p>
+        <div class="forsk-footer-chips" aria-label="Learning options"><span class="forsk-footer-chip"><i></i> Jaipur Classroom</span><span class="forsk-footer-chip"><i></i> Live Online</span><span class="forsk-footer-chip"><i></i> Project-Based</span></div>
       </div>
-
-      <div class="tj-copyright-area"><div class="tj-copyright-wrap"><div class="container"><div class="row"><div class="col-12">
-        <div class="tj-copyright-content-area tj-fade-anim" data-delay=".3">
-          <div class="footer-logo"><a href="./"><img src="assets/images/logos/forsk-icon.png" alt="Forsk Coding School logo"></a></div>
-          <div class="tj-copyright-text-wrapper"><div class="tj-copyright-text"><p>&copy; 2026 <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>. All rights reserved.</p></div></div>
-        </div>
-      </div></div></div></div></div>
+      <nav aria-label="Popular courses"><h3>Popular Courses</h3><ul class="forsk-footer-links"><li><a href="python-programming-course-jaipur.php">Python Programming</a></li><li><a href="java-programming-course-jaipur.php">Java Programming</a></li><li><a href="full-stack-development-course-jaipur.php">Full Stack Development</a></li><li><a href="data-analytics-course-jaipur.php">Data Analytics</a></li><li><a href="data-science-course-jaipur.php">Data Science</a></li><li><a href="artificial-intelligence-course-jaipur.php">Artificial Intelligence</a></li></ul></nav>
+      <nav aria-label="Forsk Coding School links"><h3>Explore Forsk</h3><ul class="forsk-footer-links"><li><a href="courses.php">All Courses</a></li><li><a href="about.php">About Forsk</a></li><li><a href="internship-programs-jaipur.php">Internships</a></li><li><a href="diploma-programs-jaipur.php">Diploma Programs</a></li><li><a href="contact.php">Contact Us</a></li><li><a href="blog/">Learning Guides</a></li></ul></nav>
+      <div class="forsk-footer-contact-col"><h3>Contact Forsk</h3><div class="forsk-footer-contact">
+        <div class="forsk-contact-row"><span class="forsk-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><strong>Jaipur Branch</strong><span><?= htmlspecialchars(SITE_PRIMARY_AREA . ', ' . SITE_LOCALITY . ', ' . SITE_REGION, ENT_QUOTES, 'UTF-8') ?></span></div></div>
+        <div class="forsk-contact-row"><span class="forsk-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span><div><strong>Call Admissions</strong><a href="tel:<?= htmlspecialchars(SITE_PHONE_E164, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_PHONE_DISPLAY, ENT_QUOTES, 'UTF-8') ?></a></div></div>
+        <div class="forsk-contact-row"><span class="forsk-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><strong>Email</strong><a href="mailto:<?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(SITE_EMAIL, ENT_QUOTES, 'UTF-8') ?></a></div></div>
+      </div><a class="forsk-whatsapp-mini" href="https://wa.me/<?= htmlspecialchars($footerWhatsApp, ENT_QUOTES, 'UTF-8') ?>?text=<?= htmlspecialchars($footerWhatsAppText, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">WhatsApp for Course Counselling</a></div>
     </div>
+    <div class="forsk-footer-bottom"><div>&copy; <?= htmlspecialchars((string)$footerYear, ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars(SITE_NAME, ENT_QUOTES, 'UTF-8') ?>. All rights reserved.</div><div class="forsk-footer-legal"><a href="privacy-policy.php">Privacy Policy</a><a href="terms-and-conditions.php">Terms &amp; Conditions</a></div></div>
   </div>
 </footer>
-<!-- end: Footer Section -->
 <?php
 $enableCoursePricingMentors = in_array($currentLandingPage, ['default.php', 'index.php', 'courses.php'], true);
 if ($enableCoursePricingMentors):
@@ -93,23 +44,5 @@ if ($enableCoursePricingMentors):
 <link rel="stylesheet" href="assets/css/course-pricing-mentors.css">
 <script>window.FORSK_COURSE_PRICING = <?= json_encode($FORSK_COURSE_PRICING, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>;</script>
 <?php endif; ?>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/gsap-scroll-smoother.js"></script>
-<script src="assets/js/gsap-scroll-to-plugin.min.js"></script>
-<script src="assets/js/gsap-scroll-trigger.min.js"></script>
-<script src="assets/js/gsap-split-text.min.js"></script>
-<script src="assets/js/jquery.nice-select.min.js"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script src="assets/js/venobox.min.js"></script>
-<script src="assets/js/gsap-animation.js"></script>
-<script src="assets/js/meanmenu.js"></script>
-<script src="assets/js/imagesloaded-pkgd.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/local-site.js"></script>
-<?php if ($enableCoursePricingMentors): ?>
-<script src="assets/js/course-pricing-mentors.js"></script>
-<script src="assets/js/mentor-card-fallback.js"></script>
-<?php endif; ?>
+<script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/gsap.min.js"></script><script src="assets/js/gsap-scroll-smoother.js"></script><script src="assets/js/gsap-scroll-to-plugin.min.js"></script><script src="assets/js/gsap-scroll-trigger.min.js"></script><script src="assets/js/gsap-split-text.min.js"></script><script src="assets/js/jquery.nice-select.min.js"></script><script src="assets/js/swiper.min.js"></script><script src="assets/js/venobox.min.js"></script><script src="assets/js/gsap-animation.js"></script><script src="assets/js/meanmenu.js"></script><script src="assets/js/imagesloaded-pkgd.js"></script><script src="assets/js/isotope.pkgd.min.js"></script><script src="assets/js/main.js"></script><script src="assets/js/local-site.js"></script>
+<?php if ($enableCoursePricingMentors): ?><script src="assets/js/course-pricing-mentors.js"></script><script src="assets/js/mentor-card-fallback.js"></script><?php endif; ?>
