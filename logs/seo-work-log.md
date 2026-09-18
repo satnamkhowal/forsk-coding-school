@@ -36,3 +36,11 @@ A separate DSA course landing-page filename could not be found in the repository
 2. Third-party citations (LinkedIn, Collegedunia, UrbanPro, Sulekha) contain inconsistent historical locations and should be corrected through account-owner/contact workflows.
 3. Newly committed local-resource routes must be checked on the live deployment for HTTP 200, canonical tags, rendered schema and sitemap discovery.
 4. Do not create pages for Mansarovar, Pratap Nagar, Sodala, Triton Mall or other areas as physical branches unless Forsk confirms current official NAP for each.
+
+### Local content cluster
+Created three distinct local-intent resources and linked them from the Shyam Nagar branch hub:
+- `/how-to-reach-forsk-coding-school-shyam-nagar/` — verified address, map, metro references and travel planning.
+- `/colleges-near-forsk-coding-school-shyam-nagar/` — nearby college resource with official links and a strict no-fabricated-partnership policy.
+- `/coding-courses-for-college-students-shyam-nagar-jaipur/` — goal-based course selection for college students.
+
+Course-specific near-area doorway pages were intentionally not mass-generated. Existing canonical Jaipur course pages remain the primary course pages, with local student-resource links added to them.
