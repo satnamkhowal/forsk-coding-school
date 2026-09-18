@@ -1,2 +1,18 @@
 .branch-card,.success-card,.enroll-benefit{background:#fff;border:1px solid rgba(17,24,39,.08);border-radius:18px;box-shadow:0 12px 32px rgba(17,24,39,.06)}
 .branch-card{height:100%;padding:28px}.branch-card h2,.branch-card h3{margin-bottom:12px}.branch-card p{margin-bottom:10px}.branch-meta{display:grid;gap:10px;margin:20px 0}.branch-meta strong{display:block;margin-bottom:2px}.branch-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.enroll-benefits{display:grid;gap:14px;margin:24px 0}.enroll-benefit{padding:18px}.enroll-benefit strong,.enroll-benefit span{display:block}.enroll-benefit span{margin-top:5px}.form-check-row{display:flex;align-items:flex-start;gap:10px;margin:8px 0 20px}.form-check-row input{margin-top:5px}.required-mark{color:#b42318}.success-card{padding:42px;text-align:center}.success-icon{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;font-size:34px;font-weight:700;background:#ecfdf3;color:#067647}@media(max-width:767px){.branch-card{padding:22px}.branch-actions{display:grid}.branch-actions .tj-btn-primary,.branch-actions .tj-text-btn{width:100%;justify-content:center}.success-card{padding:28px 20px}}
+
+/* local-student-seo */
+.branch-map{margin-top:20px;overflow:hidden;border-radius:16px;border:1px solid rgba(17,24,39,.08);background:#f7f8fa}
+.branch-map iframe{display:block;width:100%;height:360px;border:0}.branch-map-small iframe{height:240px}
+.branch-list{margin:18px 0 0;padding-left:22px}.branch-list li{margin-bottom:10px}
+.branch-note{margin-top:16px;padding:12px 14px;border-radius:12px;background:#f7f8fa;font-size:.94rem}
+.local-course-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0}
+.local-course-link{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 18px;border:1px solid rgba(17,24,39,.08);border-radius:14px;background:#fff;font-weight:600}
+.local-course-link:hover{transform:translateY(-2px)}
+.branch-faq{padding:20px 0;border-top:1px solid rgba(17,24,39,.08)}.branch-faq:first-of-type{border-top:0}.branch-faq h3{font-size:1.1rem;margin-bottom:8px}.branch-faq p{margin-bottom:0}
+.branch-lead-form{margin-top:22px}.branch-lead-form .form-input{margin-bottom:18px}.branch-lead-form label{display:block;font-weight:600;margin-bottom:7px}.branch-lead-form input,.branch-lead-form textarea{width:100%}.branch-consent{display:flex!important;align-items:flex-start;gap:10px;font-weight:400!important;margin:0 0 20px}.branch-consent input{width:auto;margin-top:5px}.branch-honeypot{position:absolute!important;left:-9999px!important}
+.pg-table-wrap{overflow-x:auto;border:1px solid rgba(17,24,39,.08);border-radius:16px;background:#fff}
+.pg-table{width:100%;min-width:1100px;border-collapse:collapse}.pg-table th,.pg-table td{padding:16px;vertical-align:top;text-align:left;border-bottom:1px solid rgba(17,24,39,.08)}.pg-table th{background:#f7f8fa;font-size:.92rem}.pg-table td span{display:block;margin-top:5px;font-size:.9rem;line-height:1.45}
+.student-link-list{display:grid;gap:10px;margin:18px 0}.student-link-list a{padding:12px 14px;border:1px solid rgba(17,24,39,.08);border-radius:12px;background:#fff;font-weight:600}
+@media(max-width:991px){.local-course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:575px){.local-course-grid{grid-template-columns:1fr}.branch-map iframe{height:280px}}
