@@ -131,11 +131,7 @@ $header_variant='header-1';
                         industry demands. Instead of spending years waiting.</p>
                       <div class="tj_wpost_video tj-fade-anim">
                         <img src="assets/images/blog/blog-video.webp" alt="Video">
-                        <a class="tj_video_btn video-popup" data-autoplay="true" data-vbtype="video"
-                          data-maxwidth="1200px"
-                          href="#">
-                          <span><i class="tji-play"></i></span>
-                        </a>
+                        
                       </div>
                       <h3 class="tj-fade-anim">Table of content</h3>
                       <p class="tj-fade-anim">Modern employers increasingly recognize online certifications from
