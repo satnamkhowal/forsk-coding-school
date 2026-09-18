@@ -246,6 +246,21 @@ $header_variant = 'header-1';
     </div>
   </div></div></section>
 
+  <section class="section-gap-bottom"><div class="container">
+    <div class="row justify-content-center"><div class="col-lg-9 text-center">
+      <div class="sec-heading sec-heading-center">
+        <span class="sec-subtitle"><i class="tji-subtitle"></i> Local student guides</span>
+        <h2 class="sec-title">Plan study, travel and college life around Shyam Nagar</h2>
+        <p class="desc">Use focused local resources instead of thin duplicate location pages.</p>
+      </div>
+    </div></div>
+    <div class="local-course-grid">
+      <a class="local-course-link" href="<?= htmlspecialchars(site_url('how-to-reach-forsk-coding-school-shyam-nagar/'), ENT_QUOTES, 'UTF-8') ?>">How to reach Forsk Shyam Nagar<span aria-hidden="true">→</span></a>
+      <a class="local-course-link" href="<?= htmlspecialchars(site_url('colleges-near-forsk-coding-school-shyam-nagar/'), ENT_QUOTES, 'UTF-8') ?>">Colleges near Forsk Shyam Nagar<span aria-hidden="true">→</span></a>
+      <a class="local-course-link" href="<?= htmlspecialchars(site_url('coding-courses-for-college-students-shyam-nagar-jaipur/'), ENT_QUOTES, 'UTF-8') ?>">Coding course guide for college students<span aria-hidden="true">→</span></a>
+    </div>
+  </div></section>
+
   <section class="section-gap-bottom"><div class="container"><div class="row rg-30">
     <div class="col-lg-7">
       <div class="branch-card">
