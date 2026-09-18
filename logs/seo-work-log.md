@@ -44,3 +44,13 @@ Created three distinct local-intent resources and linked them from the Shyam Nag
 - `/coding-courses-for-college-students-shyam-nagar-jaipur/` — goal-based course selection for college students.
 
 Course-specific near-area doorway pages were intentionally not mass-generated. Existing canonical Jaipur course pages remain the primary course pages, with local student-resource links added to them.
+
+### Local SEO quality-control audit
+- Canonical/metadata system: maintained pages use the shared `includes/head.php`, which outputs viewport, canonical, robots, Open Graph, sitemap discovery and organization schema. The newly created local pages each define a unique title, description, canonical, exactly one H1, breadcrumbs and page-specific schema.
+- Robots: repository `robots.txt` allows normal public pages and blocks private/transactional utility paths. No new student-resource path was added to a disallow rule.
+- Mobile: the shared head includes the responsive viewport and the local branch/PG stylesheet includes responsive breakpoints. No PageSpeed/Lighthouse score has been invented; quantitative performance testing remains a separate live-deployment task.
+- Sitemap: the root sitemap index references the dedicated local-student-resources sitemap, which contains the PG/detail/directions/college/course-selection pages.
+- NAP: current core site configuration and verified branch data use Shyam Nagar +91 72319 68183. Google business data checked during this work matches the address and phone.
+- Opening hours: public sources conflict. The current website contact information and Google business hours are not identical, so no new opening-hours schema was added. Owner verification is required before changing website or Google Business Profile hours.
+- Indexability/deployment: repository source is ready, but newly committed directory routes still require live HTTP 200/rendered-canonical/schema verification after deployment and subsequent Search Console discovery.
+- Citation cleanup: a separate `logs/citation-cleanup.csv` now tracks first-party legacy pages plus LinkedIn, Collegedunia, UrbanPro and Sulekha inconsistencies.
