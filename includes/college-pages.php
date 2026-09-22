@@ -183,6 +183,14 @@ function forsk_render_college_listing(array $category): void {
         </div>
       </div>
     </section>
+    <section class="college-section">
+      <div class="container">
+        <div class="college-source-card">
+          <h2>More Jaipur admission research resources</h2>
+          <p>For a broader Jaipur-focused college directory, course categories and admission research, explore <a href="https://collegeinjaipur.com/" target="_blank" rel="noopener">College in Jaipur</a>. Students who also want wider admission guidance and course comparison can review <a href="https://kyakru.com/" target="_blank" rel="noopener">KyaKru</a>.</p>
+        </div>
+      </div>
+    </section>
     <?php
     forsk_college_page_close();
 }
