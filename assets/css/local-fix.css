@@ -37,3 +37,30 @@
 @media(max-width:575px){
  .tj-instructor-section .tj-instructor-img{width:145px!important;max-width:145px!important}
 }
+
+/* === Mobile-first site pass — 2026-09-22 === */
+html { overflow-x: hidden; }
+body { overflow-x: clip; -webkit-text-size-adjust: 100%; }
+img, svg, video, canvas, iframe { max-width: 100%; height: auto; }
+@media (max-width: 991.98px) {
+  .container, .container-fluid { padding-left: 16px; padding-right: 16px; }
+  .header-area .header-wrapper { min-width: 0; gap: 12px; }
+  .header-area .site_logo { min-width: 0; }
+  .header-area .site_logo img { width: min(170px, 52vw); height: auto; }
+  .header-area .menu_bar, .header-area .menu-toggle, .header-area button[aria-controls] {
+    min-width: 44px; min-height: 44px;
+  }
+  .header-area .mainmenu ul, .mobile-menu, .mobile-menu ul { max-width: 100%; }
+  .header-area nav a, .mobile-menu a { min-height: 44px; display: flex; align-items: center; white-space: normal; overflow-wrap: anywhere; }
+  .row > [class*="col-"] { min-width: 0; }
+  table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+@media (max-width: 767.98px) {
+  body { font-size: 16px; }
+  input, select, textarea, button { font-size: 16px !important; max-width: 100%; }
+  .header-area .site_logo img { width: min(150px, 48vw); }
+  h1, .hero-title, .banner-title { font-size: clamp(2rem, 9vw, 2.8rem) !important; line-height: 1.08 !important; overflow-wrap: anywhere; }
+  h2, .section-title { overflow-wrap: anywhere; }
+  .btn, .tj-primary-btn, button, input[type="submit"] { min-height: 44px; }
+  .floating-contact, .floating-actions { max-width: calc(100vw - 24px); }
+}
