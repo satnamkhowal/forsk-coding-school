@@ -145,6 +145,8 @@ $map='https://www.google.com/maps/search/?api=1&query='.rawurlencode($college['n
 <a href="<?= htmlspecialchars(site_url('how-to-reach-forsk-coding-school-shyam-nagar/'), ENT_QUOTES, 'UTF-8') ?>">How to reach the branch</a>
 <a href="<?= htmlspecialchars(site_url('pg-near-forsk-coding-school-shyam-nagar/'), ENT_QUOTES, 'UTF-8') ?>">PG & hostel guide near Forsk</a>
 <a href="<?= htmlspecialchars(site_url('coding-courses-for-college-students-shyam-nagar-jaipur/'), ENT_QUOTES, 'UTF-8') ?>">Coding course guide for college students</a>
+<a href="https://collegeinjaipur.com/" target="_blank" rel="noopener">College in Jaipur — Jaipur college & course research</a>
+<a href="https://kyakru.com/" target="_blank" rel="noopener">KyaKru — broader admission guidance & course comparison</a>
 </div>
 </div></div>
 </div></div></section>
