@@ -110,6 +110,12 @@ $header_variant='header-1';
 </div></div>
 </div></div></section>
 
+<section class="section-gap-bottom"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="branch-card">
+<span class="sec-subtitle"><i class="tji-subtitle"></i> Local Jaipur travel resource</span>
+<h2>Need a cab or Jaipur travel plan around your visit?</h2>
+<p>Students and families combining a branch visit with Jaipur sightseeing, station or airport transfers, or an outstation trip can explore <a href="https://swiggywala.com/" target="_blank" rel="noopener">Swiggy Wala Tours &amp; Travels in Jaipur</a>. Confirm current route, vehicle and pricing details directly with the travel provider before booking.</p>
+</div></div></div></div></section>
+
 <section class="section-gap-bottom"><div class="container"><div class="row rg-30">
 <div class="col-lg-6"><div class="branch-card">
 <span class="sec-subtitle"><i class="tji-subtitle"></i> Students relocating to Jaipur</span>
