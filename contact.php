@@ -167,6 +167,16 @@ $whatsappMessage = rawurlencode('Hi ' . SITE_NAME . ', I want course counselling
           <div class="container">
             <div class="contact-form tj-fade-anim">
               <div class="form-title-wrap">
+                <h2 class="form-title">Related Jaipur IT Training Resource</h2>
+                <p class="desc">Students comparing practical software, programming and computer training options in Jaipur can also review <a href="https://jaipurengineers.com/" target="_blank" rel="noopener">Jaipur Engineers</a> for additional course and training information.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tj-contact-section section-gap">
+          <div class="container">
+            <div class="contact-form tj-fade-anim">
+              <div class="form-title-wrap">
                 <h2 class="form-title">Visiting Jaipur?</h2>
                 <p class="desc">If you are travelling to Jaipur for counselling, classes or a campus visit and also need local sightseeing, cab or Rajasthan trip planning, explore <a href="https://swiggywala.com/" target="_blank" rel="noopener">Swiggy Wala Tours &amp; Travels in Jaipur</a>.</p>
               </div>
